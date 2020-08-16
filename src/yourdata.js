@@ -1,56 +1,62 @@
-export default
+export default {
+  //(Please Do Not Remove The comma(,) after every variable)
+  //Change The Website Template
+  name: 'Matthew Hucker\'s',
+  headerTagline: [
+    //Line 1 For Header
+    'Matthew Hucker',
+    //Line 2 For Header
+    'JUDO ',
+    //Line 3 For Header
+    'BJJ',
+    'WRESTLING', 
+    'SUMO'
+  ],
+  //Contact Email
+  contactEmail: 'hello@fullfatgrappling.com',
+  // Add Your About Text Here
+  abouttext: 'Full Fat Martial Arts. If in doubt, use your Judo. ',
+  aboutImage: '',
+  //Change This To Hide The Image of About Section (True Or False)
+  ShowAboutImage: false, //true or false (Change Here)
+  // Change Projects Here
+  projects: [
     {
-        //(Please Do Not Remove The comma(,) after every variable)
-        //Change The Website Template
-        name :'Full Fat Grappling.',
-        headerTagline: [//Line 1 For Header
-                        'Matthew Hucker',
-                        //Line 2 For Header
-                        'JUDO ',
-                        //Line 3 For Header
-                        'BJJ'
-    ],
-        //Contact Email
-        contactEmail:'hello@fullfatgrappling.com',
-        // Add Your About Text Here
-        abouttext: "Full Fat Martial Arts",
-        aboutImage:'./assets/mainImg.jpg',
-       //Change This To Hide The Image of About Section (True Or False)
-       ShowAboutImage:true,//true or false (Change Here)
-       // Change Projects Here 
-       projects:[
-           {
-            id: 1,//DO NOT CHANGE THIS (Please)😅
-            title:'JUDO', //Project Title - Add Your Project Title Here
-             service:'Close Combat', // Add Your Service Type Here
-            //Project Image - Add Your Project Image Here
-             imageSrc:"https://images.unsplash.com/photo-1558104631-0fa41a8f6c20?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-             //Project URL - Add Your Project Url Here
-             url:'http://chetanverma.com/'
-            },
-            {
-                id: 2,//DO NOT CHANGE THIS (Please)😅
-                title: 'Project Two',
-                service: 'Website Development',
-                imageSrc: "https://images.unsplash.com/photo-1554866585-cd94860890b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-                url: 'http://chetanverma.comt4/'
-            },
-            { 
-                id: 3,//DO NOT CHANGE THIS (Please)😅
-                title: 'Project Three',
-                service: 'Web App',
-                imageSrc: "https://images.unsplash.com/photo-1511500118080-275313ec90a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-                url: 'http://chetanverma.com/'
-            },
-            {
-                id: 4,//DO NOT CHANGE THIS (Please)😅
-                title: 'Project Four',
-                service: 'Branding',
-                imageSrc: "https://images.unsplash.com/photo-1558452919-08ae4aea8e29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-                url: 'http://chetanverma.com/'
-           }
+      id: 1, //DO NOT CHANGE THIS (Please)😅
+      title: 'CLASSES', //Project Title - Add Your Project Title Here
+      service: '', // Add Your Service Type Here
+      //Project Image - Add Your Project Image Here
+      imageSrc:
+        'https://pixabay.com/get/57e6d3464d56ab14f6da8c7dda35367b1c38dbe25455794b_1280.jpg',
+      //Project URL - Add Your Project Url Here
+      url: '#',
+    },
+    {
+      id: 2, //DO NOT CHANGE THIS (Please)😅
+      title: 'TUTORIALS',
+      service: '',
+      imageSrc:
+        'https://pixabay.com/get/55e3d6444d5bb10ff3d89960c62d3e791038d6ec5a50_640.jpg',
+      url: '#',
+    },
+    {
+      id: 3, //DO NOT CHANGE THIS (Please)😅
+      title: 'COMPS',
+      service: 'History and Upcoming',
+      imageSrc:
+        'https://pixabay.com/get/52e4d0474250ac14f1dc8460da293277123ad9ec525070_640.jpg',
+      url: '#',
+    },
+    {
+      id: 4, //DO NOT CHANGE THIS (Please)😅
+      title: 'MERCH',
+      service: 'Gear',
+      imageSrc:
+        'https://pixabay.com/get/54e1d7424c57a914f1dc8460da293277123ad9ec535577_640.jpg',
+      url: '#',
+    },
 
-                    /*
+    /*
 
                     If You Want To Add More Project just Copy and Paste This At The End (Update the id Respectively)
                 ,{
@@ -61,22 +67,21 @@ export default
                 url: ''
             }
                 */
-        ],
-        social: [
-            // Add Or Remove The Link Accordingly
-            
-            {
-                name: 'Instagram',
-                url: 'https://www.instagram.com/fullfatjudo/'
-            }, 
-            {
-                name: 'Instagram - Matthew Hucker',
-                url: 'https://www.instagram.com/matthewhucker/'
-            }, 
-            {
-                name: 'Created by Nick @ Small Dog Designs',
-                url: 'https://www.smalldogdesigns.com/'
-            }
+  ],
+  social: [
+    // Add Or Remove The Link Accordingly
 
-        ]
-    }
+    {
+      name: 'Instagram',
+      url: 'https://www.instagram.com/fullfatjudo/',
+    },
+    {
+      name: 'Instagram - Matthew Hucker',
+      url: 'https://www.instagram.com/matthewhucker/',
+    },
+    {
+      name: 'Created by Nick @ Small Dog Designs',
+      url: 'https://www.smalldogdesigns.com/',
+    },
+  ],
+};

@@ -16,8 +16,8 @@ class Contact extends Component {
         <Fade bottom>
           <div className="contact-content">
             <h1>
-              Let’s create your next<br></br>
-              <span className="amazing-color">experience together</span>
+          Something wise,  <br></br>
+              <span className="amazing-color">Something wiser</span>
             </h1>
             <a href={`mailto:${data.contactEmail}`} className="email">
               {data.contactEmail}
@@ -35,7 +35,7 @@ class Contact extends Component {
         </Fade>
 
         <span className="footer">
-          Made by Nick @ <a href="http://chetanverma.com/">Small Dog Designs</a>
+          Made by Nick @ <a href="www.nickgillham.co.uk">Small Dog Designs</a>
         </span>
       </div>
     );
