@@ -13,7 +13,28 @@ class Header extends Component {
 
     return (
       <div>
-       
+        
+        <h1 className='heading-background'>FULLFAT</h1>
+        
+            <header>
+                <h1 className='nameHeader' >
+                    <Fade bottom cascade>{data.name}</Fade></h1>
+            </header>
+            <Fade bottom>
+            
+            <p className='header-title'>
+            {data.headerTagline[0]}<br></br>{data.headerTagline[1]}<br></br>
+            {data.headerTagline[2]}
+               <br></br>
+               {data.headerTagline[3]}
+               <br></br>
+               {data.headerTagline[4]}
+               <br></br>
+                   
+                </p>
+               
+            </Fade>
+       {/**
         <header>
           <Flash count={3}  bottom cascade>
             <h1 className="nameHeader">{data.name}</h1>
@@ -34,6 +55,7 @@ class Header extends Component {
             <Roll delay={2000}> {data.headerTagline[3]}</Roll>
             <Roll delay={2500}> {data.headerTagline[4]}</Roll>
           </p>
+       */ }
       </div>
     );
   }
