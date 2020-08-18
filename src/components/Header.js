@@ -17,13 +17,12 @@ class Header extends Component {
         <h1 className='heading-background'>FULLFAT</h1>
         
             <header>
-                <h1 className='nameHeader' >
-                    <Fade bottom cascade>{data.name}</Fade></h1>
+                <h1 className='nameHeader' ></h1>
             </header>
             <Fade bottom>
             
             <p className='header-title'>
-            {data.headerTagline[0]}<br></br>{data.headerTagline[1]}<br></br>
+            <span className='nameHeader'>{data.headerTagline[0]}</span><br></br>{data.headerTagline[1]}<br></br>
             {data.headerTagline[2]}
                <br></br>
                {data.headerTagline[3]}

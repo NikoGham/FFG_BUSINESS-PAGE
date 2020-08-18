@@ -4,7 +4,7 @@ export default {
   name: 'Matthew Hucker\'s',
   headerTagline: [
     //Line 1 For Header
-    'Matthew Hucker',
+    'Matthew Hucker\'s',
     //Line 2 For Header
     'JUDO ',
     //Line 3 For Header
