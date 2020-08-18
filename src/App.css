@@ -10,6 +10,10 @@
   
 }
 
+.caramelFont {
+  color: rgb(151, 105, 6);
+}
+
 body {
   font-size: 16px;
   background: black;
@@ -38,11 +42,11 @@ body {
 .heading-background{
   position: fixed;
   opacity: 0.5;
-  font-size: 25em;
-  left:-0.2em;
+  font-size: 23.5em;
+  left:-0.1em;
   top:-0.5em;
   z-index: -100;
-  color:#767577;
+  color:#1b1b1b;
 }
 header{
   display: flex;

@@ -9,31 +9,33 @@ class Header extends Component {
   state = {};
 
   render() {
-
-
     return (
       <div>
-        
-        <h1 className='heading-background'>FULLFAT</h1>
-        
-            <header>
-                <h1 className='nameHeader' ></h1>
-            </header>
-            <Fade bottom>
-            
-            <p className='header-title'>
-            <span className='nameHeader'>{data.headerTagline[0]}</span><br></br>{data.headerTagline[1]}<br></br>
-            {data.headerTagline[2]}
-               <br></br>
-               {data.headerTagline[3]}
-               <br></br>
-               {data.headerTagline[4]}
-               <br></br>
-                   
-                </p>
-               
-            </Fade>
-       {/**
+        <Flash cascade>
+          {' '}
+          <h1 className="heading-background">FULLFAT</h1>
+        </Flash>
+
+        <header>
+          <h1 className="nameHeader"></h1>
+        </header>
+        <Fade bottom>
+          <p className="header-title">
+            <span className="nameHeader">{data.headerTagline[0]}</span>
+            <br></br>
+
+            <span className="caramelFont">
+              <Roll> {data.headerTagline[1]}</Roll>
+
+              <Roll delay={500} duration={1000}>{data.headerTagline[2]}</Roll>
+
+              <Roll delay={1000}>{data.headerTagline[3]}</Roll>
+
+              <Roll delay={1500}>{data.headerTagline[4]}</Roll>
+            </span>
+          </p>
+        </Fade>
+        {/**
         <header>
           <Flash count={3}  bottom cascade>
             <h1 className="nameHeader">{data.name}</h1>
@@ -54,7 +56,7 @@ class Header extends Component {
             <Roll delay={2000}> {data.headerTagline[3]}</Roll>
             <Roll delay={2500}> {data.headerTagline[4]}</Roll>
           </p>
-       */ }
+       */}
       </div>
     );
   }
