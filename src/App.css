@@ -176,7 +176,7 @@ li .link:hover {
 }
 
 .contact .email {
-  color: black;
+  color: #ffffff;
   font-size: 2em;
 }
 .contact li {
@@ -188,7 +188,7 @@ li .link:hover {
 }
 .contact li a {
   text-decoration: none;
-  color: black;
+  color: rgb(255, 251, 251);
 }
 .footer {
   position: relative;

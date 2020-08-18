@@ -10,14 +10,14 @@ class Contact extends Component {
         <h1>
           <Fade bottom cascade>
             {' '}
-            Contact.
+            Get in touch.
           </Fade>
         </h1>
         <Fade bottom>
           <div className="contact-content">
             <h1>
-          Something wise,  <br></br>
-              <span className="amazing-color">Something wiser</span>
+          Use,  <br></br>
+              <span className="amazing-color">Your Judo</span>
             </h1>
             <a href={`mailto:${data.contactEmail}`} className="email">
               {data.contactEmail}

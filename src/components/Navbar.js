@@ -11,13 +11,12 @@ class Navbar extends Component {
                 <li><Link
                     className='link'
                     activeClass="active"
-                    to="homw"
+                    
                     spy={true}
-                    smooth={true}
                     offset={-70}
                     duration={500}
-                    onClick={this.scrollToTop}
-                >Home</Link></li>
+                    delay={500}
+                ><i class="fab fa-instagram"></i></Link></li>
                 <li><Link
                     className='link'
                     activeClass="active"
