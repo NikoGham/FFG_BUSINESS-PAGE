@@ -23,10 +23,10 @@ class Contact extends Component {
               {data.contactEmail}
             </a>
             <ul>
-              {data.social.map((link, index) => (
+              {data.social.map((link, index,) => (
                 <li key={index}>
                   <a target="_blank" rel="noopener noreferrer" href={link.url}>
-                    {link.name}
+                    {link.name} <i className="fab fa-instagram linkSocial"></i>
                   </a>
                 </li>
               ))}

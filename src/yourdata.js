@@ -15,7 +15,7 @@ export default {
   //Contact Email
   contactEmail: 'hello@fullfatgrappling.com',
   // Add Your About Text Here
-  abouttext: 'Full Fat Martial Arts. If in doubt, use your Judo. ',
+  abouttext: 'Full Fat Martial Arts. If in doubt, use your Judo.  FILLER --  Vestibulum pulvinar enim efficitur leo tincidunt lobortis. Nulla ut dolor in dolor congue consectetur in a urna. Curabitur dapibus, augue eget cursus feugiat, ipsum nisl finibus magna, luctus pharetra urna urna in neque. Maecenas arcu arcu, sodales id tellus sit amet, convallis euismod elit. Maecenas dapibus nisi vitae sem tincidunt fringilla. In tristique tristique mi non semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec ornare non metus et ultricies. Praesent commodo metus sed aliquet porta. Nam condimentum magna sed tellus tristique, et tristique sapien tincidunt. Aenean ornare nibh ipsum, eget hendrerit dolor semper blandit. Cras vehicula, quam faucibus sagittis pellentesque, diam quam commodo diam, at suscipit ipsum sapien euismod nibh. Praesent vehicula risus et elit venenatis, at iaculis elit tempor. Aenean tristique neque luctus tempus laoreet. Sed quis rhoncus enim, eu gravida lacus. Phasellus est magna, facilisis at purus a, placerat porta erat. --FILLER ',
   aboutImage: '',
   //Change This To Hide The Image of About Section (True Or False)
   ShowAboutImage: false, //true or false (Change Here)
@@ -72,16 +72,14 @@ export default {
     // Add Or Remove The Link Accordingly
 
     {
-      name: 'Instagram',
+      name: 'FFG',
       url: 'https://www.instagram.com/fullfatjudo/',
+      icon: '<i className="fab fa-instagram"></i>',
     },
     {
-      name: 'Instagram - Matthew Hucker',
+      name: 'Matthew Hucker',
       url: 'https://www.instagram.com/matthewhucker/',
     },
-    {
-      name: 'Created by Nick @ Small Dog Designs',
-      url: 'https://www.smalldogdesigns.com/',
-    },
+    
   ],
 };
