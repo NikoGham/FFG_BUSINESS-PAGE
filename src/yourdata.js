@@ -26,9 +26,7 @@ export default {
       title: 'CLASSES', //Project Title - Add Your Project Title Here
       service: '', // Add Your Service Type Here
       //Project Image - Add Your Project Image Here
-      imageSrc:
-        'https://pixabay.com/get/57e6d3464d56ab14f6da8c7dda35367b1c38dbe25455794b_1280.jpg',
-      //Project URL - Add Your Project Url Here
+      imageSrc: '../assets/img1.jpg',      //Project URL - Add Your Project Url Here
       url: '#',
     },
     {

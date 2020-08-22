@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
-import Roll from 'react-reveal/Roll';
 import Flash from 'react-reveal/Flash';
 import Pulse from 'react-reveal/Pulse';
 import data from '../yourdata';
@@ -11,7 +10,7 @@ class Header extends Component {
   render() {
     return (
       <div>
-        <Flash cascade>
+        <Flash forever={true} cascade>
           {' '}
           <h1 className="heading-background">FULLFAT</h1>
         </Flash>
@@ -19,22 +18,21 @@ class Header extends Component {
         <header>
           <h1 className="nameHeader"></h1>
         </header>
-        <Fade bottom>
+       
           <p className="header-title">
-            <span className="nameHeader">{data.headerTagline[0]}</span>
-            <br></br>
-
+            <Fade  duration={5000} ><span className="nameHeader">{data.headerTagline[0]}</span></Fade>
+            
             <span className="caramelFont">
-              <Roll> {data.headerTagline[1]}</Roll>
+              <Pulse> {data.headerTagline[1]}</Pulse>
 
-              <Roll delay={500} duration={1000}>{data.headerTagline[2]}</Roll>
+              <Pulse delay={500} >{data.headerTagline[2]}</Pulse>
 
-              <Roll delay={1000}>{data.headerTagline[3]}</Roll>
+              <Pulse delay={1000} >{data.headerTagline[3]}</Pulse>
 
-              <Roll delay={1500}>{data.headerTagline[4]}</Roll>
+              <Pulse delay={1500} >{data.headerTagline[4]}</Pulse>
             </span>
           </p>
-        </Fade>
+        
         {/**
         <header>
           <Flash count={3}  bottom cascade>

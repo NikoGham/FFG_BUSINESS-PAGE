@@ -4,6 +4,10 @@
   font-family: mHucker;
   src: url(./assets/Fonts/Niconne-Regular.ttf);
 }
+@font-face {
+  font-family: sdd;
+  src:url(./assets/Fonts/AdventPro-Light.ttf)
+}
 
 :root{
   --gingerBread: #cf9332;
@@ -258,7 +262,7 @@ li .link:hover {
 .work .work-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2em;
+  grid-gap: 1em;
 }
 
 .project img {
@@ -300,10 +304,11 @@ li .link:hover {
   position: relative;
   top: 2em;
   padding: 1em;
+  font-family: sdd;
 }
 .footer a {
   text-decoration: none;
-  color: #2c59fb;
+  color: #f3982f;
 }
 
 /* SMARTPHONES PORTRAIT */

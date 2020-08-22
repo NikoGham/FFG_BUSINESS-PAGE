@@ -37,7 +37,7 @@ class Navbar extends Component {
               offset={-70}
               duration={500}
             >
-              Work
+              Activity
             </Link>
           </li>
           <li>

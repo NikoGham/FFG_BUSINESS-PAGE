@@ -35,7 +35,7 @@ class Contact extends Component {
         </Fade>
 
         <span className="footer">
-          Made by Nick @ <a href="www.nickgillham.co.uk">Small Dog Designs</a>
+          Made by <a href="www.nickgillham.co.uk"> Nick @ Small Dog Designs</a>
         </span>
       </div>
     );
