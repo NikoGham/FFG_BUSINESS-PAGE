@@ -157,7 +157,7 @@ a:hover, a:focus {
 button {
 	border: none;
 	padding: 0.6em 1.2em;
-	background: #388a5a;
+	background: none;
 	color: #fff;
 	font-family: 'Lato', Calibri, Arial, sans-serif;
 	font-size: 1em;
@@ -169,10 +169,11 @@ button {
 	border-radius: 2px;
 }
 
+/* 
 button:hover {
 	background: #2c774b;
 }
-
+*/ 
 .info {
 	text-align: center;
 	font-size: 1.5em;
