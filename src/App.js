@@ -7,14 +7,15 @@ import Work from './components/work';
 import Contact from './components/Contact';
 import Navbar from './components/Navbar'
 
-function App() {
+const App = () => {
+
+ 
+
   return (
     <div className="App">
-      <Navbar></Navbar>
       <div className="App-header">
       <Header></Header>
       </div>
-      
       <div className='About'>
         <About></About>
       </div>
