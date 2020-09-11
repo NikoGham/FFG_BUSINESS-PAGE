@@ -19,19 +19,18 @@
     <link rel="stylesheet" href="../src/App.css" />
     <script src="js/modernizr.custom.js"></script>
 
-    <title>|| HUCKER'S FULL FAT GRAPPLING ||</title>
+    <title>|| FULL FAT GRAPPLING ||</title>
   </head>
   <body>
     <div id="st-container" class="st-container">
       <nav class="st-menu st-effect-13" id="menu-13">
         <ul>
-          <li><a id="aboutClick" class="icon icon-data" href="#">About</a></li>
-          <li><a class="icon icon-location" href="#">Child Athletes</a></li>
-          <li><a class="icon icon-study" href="#">Adults </a></li>
-          <li><a class="icon icon-photo" href="#">Membership</a></li>
-          <li><a class="icon icon-wallet" href="#">Timetable</a></li>
-          <br />
-          <li><a class="icon icon-wallet" href="#">Merch</a></li>
+          <li><button onclick="showAbout()">About</button></li>
+          <li><button onclick="hide()">Child Athletes</button></li>
+          <li><button onclick="hide()">Adult Athletes</button></li>
+          <li><button onclick="hide()">Membership</button></li>
+          <li><button onclick="hide()">Timetable</button></li>
+          <li><button onclick="hide()">Merch</button></li>
         </ul>
       </nav>
 
@@ -48,7 +47,6 @@
               <!-- <button data-effect="st-effect-13" class="">Fall down</button> -->
 
               <button data-effect="st-effect-13" class="menu-btn">
-
                 <div class="btn-line"></div>
                 <div class="btn-line"></div>
                 <div class="btn-line"></div>
@@ -56,12 +54,11 @@
             </div>
             <div class="App">
               <div class="App-header">
-                <div id="header"></div>
+                <div id="header" class=""></div>
               </div>
-
-              <div id="about"></div>
-              <div id="work"></div>
-              <div id="contact"></div>
+              <div id="about" class="hide"></div>
+              <div id="work" class="hide"></div>
+              <div id="contact" class="hide"></div>
             </div>
 
             <div class="main clearfix">
@@ -78,5 +75,28 @@
     <!-- /st-container -->
     <script src="js/classie.js"></script>
     <script src="js/sidebarEffects.js"></script>
+    <script>
+      let headerHide = document.getElementById('header');
+      let aboutHide = document.getElementById('about');
+      let workHide = document.getElementById('work');
+      let contactHide = document.getElementById('contact');
+
+      let showHeader = () => {
+      };
+
+      let showAbout = () => {
+        headerHide.classList.toggle('hide')
+        /* 
+        workHide.classList.toggle('hide', true)
+        contactHide.classList.toggle('hide', true) */
+
+      };
+      let showWork = () => {
+        headerHide.classList.toggle('hide');
+      };
+      let showContact = () => {
+        headerHide.classList.toggle('hide');
+      };
+    </script>
   </body>
 </html>

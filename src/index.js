@@ -8,9 +8,8 @@ import Work from './components/work';
 import Contact from './components/Contact';
 
 
-/*ReactDOM.render(<App about={about} />, document.getElementById('root'));*/
 ReactDOM.render(<Header />, document.getElementById('header'));
-/*ReactDOM.render(<About />, document.getElementById('about'));
+ReactDOM.render(<About />, document.getElementById('about'));
 ReactDOM.render(<Work />, document.getElementById('work'));
 ReactDOM.render(<Contact />, document.getElementById('contact')); 
 
