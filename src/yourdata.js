@@ -8,14 +8,14 @@ export default {
     //Line 2 For Header
     'JUDO ',
     //Line 3 For Header
-    'BJJ',
+    'JUI JITSU',
     'WRESTLING', 
-    'SUMO'
+    
   ],
   //Contact Email
   contactEmail: 'hello@fullfatgrappling.com',
   // Add Your About Text Here
-  abouttext: 'Full Fat Martial Arts. If in doubt, use your Judo.  FILLER --  Vestibulum pulvinar enim efficitur leo tincidunt lobortis. Nulla ut dolor in dolor congue consectetur in a urna. Curabitur dapibus, augue eget cursus feugiat, ipsum nisl finibus magna, luctus pharetra urna urna in neque. Maecenas arcu arcu, sodales id tellus sit amet, convallis euismod elit. Maecenas dapibus nisi vitae sem tincidunt fringilla. In tristique tristique mi non semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec ornare non metus et ultricies. Praesent commodo metus sed aliquet porta. Nam condimentum magna sed tellus tristique, et tristique sapien tincidunt. Aenean ornare nibh ipsum, eget hendrerit dolor semper blandit. Cras vehicula, quam faucibus sagittis pellentesque, diam quam commodo diam, at suscipit ipsum sapien euismod nibh. Praesent vehicula risus et elit venenatis, at iaculis elit tempor. Aenean tristique neque luctus tempus laoreet. Sed quis rhoncus enim, eu gravida lacus. Phasellus est magna, facilisis at purus a, placerat porta erat. --FILLER ',
+  abouttext: 'Welcome to Full Fat Grappling. The home of great ambition and high expectation. Our focus is to benefit anyone in any grappling sport, specialising in the Olympic sport of JUDO. To be \'Full Fat\', is to practice entirely. This is achieved by voiding the neglect of technique, physical attributions or mental preparation. In Japan, the heart of the sport, the expectation to young judoka, is to be fully aware of all techniques and how to perform them correctly in line with their performance style by the age of 16-18 years old. The judokas will also be highly advanced in mental toughness and respect for the sports culture and philosophy. Often in judo, judokas and coaches alike are caught up in physical toughness too early, resulting in successful and dominant results locally and early in development, but then becoming stuck at national and international levels later on. By teaching our students the culture of judo, the importance of excellent technical ability and significance of repetition, we hope they will become unstuck at a later stage and increase the chance of our athletes longevity in the sport. We also believe highly in the importance of children and adults learning to cope with loss and failure and to strive for success. To teach a judoka that by losing a fight, they stand to gain much more knowledge than the victor, means they don\'t need to receive a runners up medal to feel they have achieved something, avoiding false success.We welcome anybody from any walk of life who is willing to train hard, be respectful and have fun. So don\'t be shy to approach us, come along and watch or get on the mat, there is a class for everyone.',
   aboutImage: '',
   //Change This To Hide The Image of About Section (True Or False)
   ShowAboutImage: false, //true or false (Change Here)
