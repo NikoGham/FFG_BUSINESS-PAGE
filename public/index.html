@@ -26,8 +26,8 @@
       <nav class="st-menu st-effect-13" id="menu-13">
         <ul>
           <li><button onclick="showAbout()">About</button></li>
-          <li><button onclick="hide()">Child Athletes</button></li>
-          <li><button onclick="hide()">Adult Athletes</button></li>
+          <li><button onclick="showChild()">Child Athletes</button></li>
+          <li><button onclick="showContact()">Adult Athletes</button></li>
           <li><button onclick="hide()">Membership</button></li>
           <li><button onclick="hide()">Timetable</button></li>
           <li><button onclick="hide()">Merch</button></li>
@@ -82,15 +82,22 @@
       let workHide = document.getElementById('work');
       let contactHide = document.getElementById('contact');
 
-      let showHeader = () => {};
 
-      let showAbout = () => {
-        headerHide.classList.toggle('hide')
+      let showHeader = () => { /* if needed for a home button say */ 
+        headerHide.classList.toggle('hide', true);
         aboutHide.classList.toggle('hide')
-        /* 
-        workHide.classList.toggle('hide', true)
-        contactHide.classList.toggle('hide', true) */
+        workHide.classList.toggle('hide')
+        contactHide.classList.toggle('hide')
       };
+
+      let showChild = () => {
+        headerHide.classList.toggle('hide', true)
+        aboutHide.classList.toggle('hide', true)
+        workHide.classList.toggle('hide')
+        contactHide.classList.toggle('hide', true)
+
+      };
+
       let showWork = () => {
         headerHide.classList.toggle('hide');
         aboutHide.classList.toggle('hide')
