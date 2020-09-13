@@ -25,12 +25,19 @@
     <div id="st-container" class="st-container">
       <nav class="st-menu st-effect-13" id="menu-13">
         <ul>
-          <li><button onclick="showAbout()">About</button></li><br>
-          <li><button onclick="showChild()">Child Athletes</button></li><br>
-          <li><button onclick="showAdult()">Adult Athletes</button></li><br>
-          <li><button onclick="hide()">Membership</button></li><br>
-          <li><button onclick="hide()">Timetable</button></li><br>
-          <li><button onclick="hide()">Merch</button></li>
+          <li><button onclick="showAbout()">About</button></li>
+          <br />
+          <li><button onclick="showChild()">Child Athletes</button></li>
+          <br />
+          <li><button onclick="showAdult()">Adult Athletes</button></li>
+          <br />
+          <li><button onclick="showMember()">Membership</button></li>
+          <br />
+          <li><button onclick="showTimetable()">Timetable</button></li>
+          <br />
+          <li><button onclick="showContact()">Contact</button></li>
+          <br />
+          <li><button onclick="showMerch()">Merch</button></li>
         </ul>
       </nav>
 
@@ -55,11 +62,15 @@
             <div class="App">
               <div class="App-header">
                 <div id="header" class=""></div>
-              
-              <div id="about" class="hide"></div>
-              <div id="work" class="hide"></div>
-              <div id="contact" class="hide"></div>
-            </div>
+
+                <div id="about" class="hide"></div>
+                <div id="work" class="hide"></div>
+                <div id="contact" class="hide"></div>
+                <div id="adult" class="hide"></div>
+                <div id="membership" class="hide"></div>
+                <div id="timetable" class="hide"></div>
+                <div id="merch" class="hide"></div>
+              </div>
             </div>
 
             <div class="main clearfix">
@@ -81,34 +92,107 @@
       let aboutHide = document.getElementById('about');
       let workHide = document.getElementById('work');
       let contactHide = document.getElementById('contact');
+      let adultHide = document.getElementById('adult');
+      let memberHide = document.getElementById('membership');
+      let timetableHide = document.getElementById('timetable');
+      let merchHide = document.getElementById('merch');
 
-
-      let showHeader = () => { /* if needed for a home button say */ 
+      let showHeader = () => {
+        /* if needed for a home button say */
         headerHide.classList.toggle('hide', true);
-        aboutHide.classList.toggle('hide')
-        workHide.classList.toggle('hide')
-        contactHide.classList.toggle('hide')
+        aboutHide.classList.toggle('hide');
+        workHide.classList.toggle('hide');
+        contactHide.classList.toggle('hide');
+      };
+
+      let showAbout = () => {
+        /* About page */
+        headerHide.classList.toggle('hide', true);
+        aboutHide.classList.toggle('hide');
+        workHide.classList.toggle('hide', true);
+        contactHide.classList.toggle('hide', true);
+        adultHide.classList.toggle('hide', true);
+        memberHide.classList.toggle('hide', true);
+        timetableHide.classList.toggle('hide', true);
+        merchHide.classList.toggle('hide', true);
       };
 
       let showChild = () => {
-        headerHide.classList.toggle('hide', true)
-        aboutHide.classList.toggle('hide', true)
-        workHide.classList.toggle('hide')
-        contactHide.classList.toggle('hide', true)
+        /* Work page */
+        headerHide.classList.toggle('hide', true);
+        aboutHide.classList.toggle('hide', true);
+        workHide.classList.toggle('hide');
+        contactHide.classList.toggle('hide', true);
+        adultHide.classList.toggle('hide', true);
+        memberHide.classList.toggle('hide', true);
+        timetableHide.classList.toggle('hide', true);
+        merchHide.classList.toggle('hide', true);
 
       };
 
-      let showAdult = () => { /* work */ 
-        headerHide.classList.toggle('hide');
-        aboutHide.classList.toggle('hide')
-        workHide.classList.toggle('hide')
-        contactHide.classList.toggle('hide')
+      let showAdult = () => {
+        /*  Adult Athletes page */
+        headerHide.classList.toggle('hide', true);
+        aboutHide.classList.toggle('hide', true);
+        workHide.classList.toggle('hide', true);
+        contactHide.classList.toggle('hide', true);
+        adultHide.classList.toggle('hide');
+        memberHide.classList.toggle('hide', true);
+        timetableHide.classList.toggle('hide', true);
+        merchHide.classList.toggle('hide', true);
+      };
+
+      
+
+      let showContact = () => {
+        /*  Contact page */
+        headerHide.classList.toggle('hide', true);
+        aboutHide.classList.toggle('hide', true);
+        workHide.classList.toggle('hide', true);
+        contactHide.classList.toggle('hide');
+        adultHide.classList.toggle('hide', true);
+        memberHide.classList.toggle('hide', true);
+        timetableHide.classList.toggle('hide', true);
+        merchHide.classList.toggle('hide', true);
+      };
+
+      let showMember = () => {
+        /*  Contact page */
+        headerHide.classList.toggle('hide', true);
+        aboutHide.classList.toggle('hide', true);
+        workHide.classList.toggle('hide', true);
+        contactHide.classList.toggle('hide', true);
+        adultHide.classList.toggle('hide', true);
+        memberHide.classList.toggle('hide');
+        timetableHide.classList.toggle('hide', true);
+        merchHide.classList.toggle('hide', true);
+      };
+
+      let showTimetable = () => {
+        /*  Contact page */
+        headerHide.classList.toggle('hide', true);
+        aboutHide.classList.toggle('hide', true);
+        workHide.classList.toggle('hide', true);
+        contactHide.classList.toggle('hide', true);
+        adultHide.classList.toggle('hide', true);
+        memberHide.classList.toggle('hide', true);
+        timetableHide.classList.toggle('hide');
+        merchHide.classList.toggle('hide', true);
+      };
+
+      let showMerch = () => {
+        /*  Contact page */
+        headerHide.classList.toggle('hide', true);
+        aboutHide.classList.toggle('hide', true);
+        workHide.classList.toggle('hide', true);
+        contactHide.classList.toggle('hide', true);
+        adultHide.classList.toggle('hide', true);
+        memberHide.classList.toggle('hide', true);
+        timetableHide.classList.toggle('hide', true);
+        merchHide.classList.toggle('hide');
+      };
 
 
-      };
-      let showContact = () => { /* contact */
-        headerHide.classList.toggle('hide');
-      };
     </script>
   </body>
 </html>
