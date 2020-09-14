@@ -88,7 +88,7 @@ body {
 .heading-background {
   position: fixed;
   opacity: 0.5;
-  font-size: 23.5em;
+  font-size: 20em;
   left: -0.1em;
   top: -0.5em;
   z-index: 1;
@@ -361,8 +361,9 @@ li .link:hover {
   }
 
   .heading-background {
-    display: none;
+
   }
+
   nav {
     display: none;
   }

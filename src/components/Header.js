@@ -10,29 +10,27 @@ class Header extends Component {
   render() {
     return (
       <div>
-        
-
-        <header>
-        
-        </header>
-        <Flash forever={true} cascade>
+        <header></header>
+        <Flash forever={true} duration={3000} cascade>
           {' '}
           <h1 className="heading-background">FULLFAT</h1>
         </Flash>
-          <p className="header-title">
-            <Fade  duration={5000} ><span className="nameHeader">{data.headerTagline[0]}</span></Fade>
-            
-            <span className="caramelFont">
-              <Pulse> {data.headerTagline[1]}</Pulse>
+        <p className="header-title">
+          <Fade duration={5000} delay={2000}>
+            <span className="nameHeader">{data.headerTagline[0]}</span>
+          </Fade>
 
-              <Pulse delay={500} >{data.headerTagline[2]}</Pulse>
+          <span className="caramelFont">
+            <Pulse> {data.headerTagline[1]}</Pulse>
 
-              <Pulse delay={1000} >{data.headerTagline[3]}</Pulse>
+            <Pulse delay={750}>{data.headerTagline[2]}</Pulse>
 
-              <Pulse delay={1500} >{data.headerTagline[4]}</Pulse>
-            </span>
-          </p>
-        
+            <Pulse delay={1250}>{data.headerTagline[3]}</Pulse>
+
+            <Pulse delay={1750}>{data.headerTagline[4]}</Pulse>
+          </span>
+        </p>
+
         {/**
         <header>
           <Flash count={3}  bottom cascade>
