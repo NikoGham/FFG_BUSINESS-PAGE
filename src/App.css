@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans&display=swap');
 
-
-/* NICK GILLHAM EDITS */ 
+/* NICK GILLHAM EDITS */
 
 @font-face {
   font-family: mHucker;
@@ -9,17 +8,16 @@
 }
 @font-face {
   font-family: sdd;
-  src:url(./assets/Fonts/AdventPro-Light.ttf)
+  src: url(./assets/Fonts/AdventPro-Light.ttf);
 }
 
-:root{
+:root {
   --gingerBread: #cf9332;
   --caramelFont: rgb(151, 105, 6);
 }
 
 .nameHeader {
   font-family: mHucker;
-  
 }
 
 .caramelFont {
@@ -35,24 +33,29 @@
   left: 35px;
   top: 35px;
   cursor: pointer;
-  transition: all 0.5s ease-out; }
-  .menu-btn .btn-line {
-    width: 28px;
-    height: 3px;
-    margin: 0 0 5px 0;
-    background: var(--caramelFont);
-    transition: all 0.5s ease-out; }
-  .menu-btn.close {
-    transform: rotate(180deg); }
-    .menu-btn.close .btn-line:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 5px); }
-    .menu-btn.close .btn-line:nth-child(2) {
-      opacity: 0; }
-    .menu-btn.close .btn-line:nth-child(3) {
-      transform: rotate(-45deg) translate(7px, -6px); }
+  transition: all 0.5s ease-out;
+}
+.menu-btn .btn-line {
+  width: 28px;
+  height: 3px;
+  margin: 0 0 5px 0;
+  background: var(--caramelFont);
+  transition: all 0.5s ease-out;
+}
+.menu-btn.close {
+  transform: rotate(180deg);
+}
+.menu-btn.close .btn-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-btn.close .btn-line:nth-child(2) {
+  opacity: 0;
+}
+.menu-btn.close .btn-line:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
 
 /* ORIGINAL TEMPLATE HAMBURGER MENU FROM BRAD TRAVERSY'S MODERN PORTFOLIO  */
-
 
 .hide {
   display: none;
@@ -64,17 +67,14 @@ body {
   font-size: 16px;
   background: black;
   font-family: 'Open Sans', sans-serif;
-  overflow-x: hidden;
+  overflow: hidden;
   z-index: 1;
   color: #fefdff;
 }
 
-
 .App {
   text-align: center;
 }
-
-
 
 .App-header {
   position: relative;
@@ -83,28 +83,28 @@ body {
   flex-direction: column;
   align-items: center;
   color: #fefdff;
-  top:4em;
+  top: 4em;
 }
-.heading-background{
+.heading-background {
   position: fixed;
   opacity: 0.5;
   font-size: 23.5em;
-  left:-0.1em;
-  top:-0.5em;
-  z-index: -100;
-  color:#1b1b1b;
+  left: -0.1em;
+  top: -0.5em;
+  z-index: 1;
+  color: #1b1b1b;
 }
-header{
+header {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-header h1{
-font-size: 1em;
-font-weight: 400;  
-padding: 2em;
-margin-right: 50em;
+header h1 {
+  font-size: 1em;
+  font-weight: 400;
+  padding: 2em;
+  margin-right: 50em;
 }
 
 nav {
@@ -128,7 +128,7 @@ nav li .link {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
 }
- .linkSocial {
+.linkSocial {
   text-decoration: none;
   position: relative;
   color: var(--gingerBread);
@@ -137,8 +137,8 @@ nav li .link {
 }
 
 .linkSocial:hover {
-	-webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-	        animation: heartbeat 1.5s ease-in-out infinite both;
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
 }
 
 /*
@@ -158,7 +158,7 @@ nav li .link {
  * animation heartbeat
  * ----------------------------------------
  */
- /*
+/*
  @-webkit-keyframes heartbeat {
   from {
     -webkit-transform: scale(1);
@@ -261,6 +261,7 @@ li .link:hover {
   font-size: 3em;
   text-align: left;
   top: 2em;
+  z-index: 2;
 }
 .about {
   display: flex;

@@ -10,15 +10,15 @@ class Header extends Component {
   render() {
     return (
       <div>
+        
+
+        <header>
+        
+        </header>
         <Flash forever={true} cascade>
           {' '}
           <h1 className="heading-background">FULLFAT</h1>
         </Flash>
-
-        <header>
-          <h1 className="nameHeader"></h1>
-        </header>
-       
           <p className="header-title">
             <Fade  duration={5000} ><span className="nameHeader">{data.headerTagline[0]}</span></Fade>
             
