@@ -9,38 +9,32 @@ class Header extends Component {
   state = {};
 
   render() {
-  
-
     return (
       <Container>
         <Row>
           <Col>
-       
-        <p className="header-title">
-          <Fade duration={5000} delay={2000}>
-            <span className="nameHeader">{data.headerTagline[0]}</span>
-          </Fade>
-         
-          <span className="caramelFont">
-            <Pulse> {data.headerTagline[1]}</Pulse>
+            <Flash forever={true} duration={3000} delay={2100} cascade>
+              <h1 className="heading-background">FULLFAT</h1>
+            </Flash>
 
-            <Pulse delay={750}>{data.headerTagline[2]}</Pulse>
+            <p className="header-title">
+              <Fade duration={5000} delay={2000}>
+                <span className="nameHeader">{data.headerTagline[0]}</span>
+              </Fade>
 
-            <Pulse delay={1250}>{data.headerTagline[3]}</Pulse>
+              <span className="caramelFont">
+                <Pulse> {data.headerTagline[1]}</Pulse>
 
-            <Pulse delay={1750}>{data.headerTagline[4]}</Pulse>
-          </span>
-          
+                <Pulse delay={750}>{data.headerTagline[2]}</Pulse>
 
-        </p>
-        <Flash forever={true} duration={3000} delay={2100} cascade>
-          {' '}
-          <h1 className="heading-background">FULLFAT</h1>
-        </Flash>
-       
-       </Col>
-       </Row>
-       <Row></Row>
+                <Pulse delay={1250}>{data.headerTagline[3]}</Pulse>
+
+                <Pulse delay={1750}>{data.headerTagline[4]}</Pulse>
+              </span>
+            </p>
+          </Col>
+        </Row>
+        <Row></Row>
       </Container>
     );
   }

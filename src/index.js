@@ -11,6 +11,7 @@ import Adult from './components/Adult';
 import Membership from './components/Membership';
 import Timetable from './components/Timetable';
 import Merch from './components/Merch';
+import Sidebar from './components/Sidebar'
 
 ReactDOM.render(<Header />, document.getElementById('header'));
 ReactDOM.render(<About />, document.getElementById('about'));
@@ -20,6 +21,7 @@ ReactDOM.render(<Adult />, document.getElementById('adult'));
 ReactDOM.render(<Membership />, document.getElementById('membership')); 
 ReactDOM.render(<Timetable />, document.getElementById('timetable')); 
 ReactDOM.render(<Merch />, document.getElementById('merch')); 
+/*ReactDOM.render(<Sidebar />, document.getElementById('menu-11'))
 
 /*  NIKO WHAT IF YOU IMPORT THE INDIVIDUAL COMPONENTS AND THEN 
 RENDER THEM SEPERATELY, THEN MAKE UP A BIT OF CONDITIONAL JS DEPENDENT ON A CLICK EVENT?
