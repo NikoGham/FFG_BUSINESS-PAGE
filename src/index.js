@@ -46,5 +46,24 @@ function toggleMenu() {
 }
 
 const about = document.getElementById("aboutclick");
-
 about.addEventListener('click', toggleMenu)
+const adult = document.getElementById("adultclick");
+adult.addEventListener('click', toggleMenu)
+const child = document.getElementById("childclick");
+child.addEventListener('click', toggleMenu)
+const contact = document.getElementById("contclick");
+contact.addEventListener('click', toggleMenu)
+const merch = document.getElementById("merchclick");
+merch.addEventListener('click', toggleMenu)
+const member = document.getElementById("memclick");
+member.addEventListener('click', toggleMenu)
+const timetable = document.getElementById("timeclick");
+timetable.addEventListener('click', toggleMenu)
+
+
+/* POTENTIAL REFACTOR SOLUTION 
+const list = document.getElementsByTagName("UL");
+
+console.log(list) 
+
+*/ 

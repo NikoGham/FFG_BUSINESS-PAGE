@@ -1,6 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Jumbotron } from 'reactstrap';
-import { Button } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 
 /* Remember Niko, it's just fancy Javascript */ 
 
@@ -12,15 +11,7 @@ const Adult = (props) => {
     <Container>
       <Row>
         <Col>
-        <Jumbotron >
-        <h1 className="display-3">Adult Athletes</h1>
-        <p className="lead">This is a simplze hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.</p>
-        <hr className="my-2" />
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <p className="lead">
-          <Button color="primary">Learn More</Button>
-        </p>
-        </Jumbotron>
+        <h1>Adults</h1>
         </Col>
       </Row>
     </Container>
