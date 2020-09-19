@@ -11,7 +11,6 @@ import Adult from './components/Adult';
 import Membership from './components/Membership';
 import Timetable from './components/Timetable';
 import Merch from './components/Merch';
-import Sidebar from './components/Sidebar'
 
 ReactDOM.render(<Header />, document.getElementById('header'));
 ReactDOM.render(<About />, document.getElementById('about'));
@@ -45,3 +44,7 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+const about = document.getElementById("aboutclick");
+
+about.addEventListener('click', toggleMenu)

@@ -64,7 +64,15 @@
 			});
 		} );
 
+		const aboutClick = document.getElementById("aboutclick")
+	aboutClick.addEventListener('click', resetMenu )
+	console.log("test")
+
+	
 	}
+
+	
+	
 
 	init();
 
