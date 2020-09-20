@@ -12,7 +12,7 @@
 }
 
 :root {
-  --gingerBread: #D4AF37;
+  --gingerBread: #d4af37;
   --caramelFont: rgb(151, 105, 6);
 }
 
@@ -86,15 +86,15 @@ body {
 }
 
 .heading-background {
-  position: fixed;
+  position: relative;
   text-align: center;
-  opacity: 0.2;
-  font-size: 20em;
+  opacity: 0.1;
+  font-size: 17em;
   left: 0em;
   top: 0em;
   /* Needed to change the top/left alignment, I did this with something else not to long ago */
   z-index: 1;
-  color: #4d4c4c;
+  color: #272727;
 }
 
 header {
@@ -272,7 +272,7 @@ li .link:hover {
   font-family: 'Montserrat', sans-serif;
   font-size: 3em;
   text-align: left;
-  top: 2em;
+  top: 0em;
   z-index: 2;
 }
 .about {
@@ -370,10 +370,6 @@ li .link:hover {
     font-size: 5em;
     padding: 1em;
     margin-right: 0em;
-  }
-
-  .heading-background {
-
   }
 
   nav {
