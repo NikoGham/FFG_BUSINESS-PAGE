@@ -86,12 +86,11 @@ body {
 }
 
 .heading-background {
-  position: relative;
-  text-align: center;
+  position: fixed;
+  text-align: left;
   opacity: 0.1;
   font-size: 17em;
-  left: 0em;
-  top: 0em;
+margin-right: 100px;
   /* Needed to change the top/left alignment, I did this with something else not to long ago */
   z-index: 1;
   color: #272727;
@@ -373,8 +372,13 @@ li .link:hover {
   }
 
   nav {
+    display: block;
+  }
+
+  .heading-background {
     display: none;
   }
+
   .header-title {
     font-size: 3em;
     text-align: left;
@@ -450,7 +454,7 @@ li .link:hover {
   }
 
   nav {
-    display: none;
+    display: block;
   }
   .header-title {
     font-size: 3.6em;

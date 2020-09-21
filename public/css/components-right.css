@@ -520,7 +520,6 @@ body,
 	-webkit-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
 	-webkit-transition-speed: 0.2s;
-	transition-speed: 0.2s;
 }
 
 /* Effect 14: Delayed 3D rotate */
