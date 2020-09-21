@@ -3,7 +3,9 @@ import Fade from 'react-reveal/Fade';
 import Flash from 'react-reveal/Flash';
 import Pulse from 'react-reveal/Pulse';
 import data from '../yourdata';
+import { tsParticles } from "tsparticles";
 import { Container, Row, Col } from 'reactstrap';
+import Particles from 'react-tsparticles';
 
 class Header extends Component {
   state = {};
@@ -11,6 +13,7 @@ class Header extends Component {
   render() {
     return (
       <Container>
+        <Particles  ></Particles>
         <Row>
           <Col>
             <Flash forever={true} duration={3000} delay={2100} cascade>
@@ -34,7 +37,7 @@ class Header extends Component {
             </p>
           </Col>
         </Row>
-        <Row></Row>
+       
       </Container>
     );
   }
