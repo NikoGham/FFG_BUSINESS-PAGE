@@ -18,14 +18,16 @@ body,
   height: 100%;
 }
 
+/* hides the scroll on ABOUT ALSO */
+
 .st-content {
-  overflow-y: scroll;
-  background: #141412;
+  overflow-y: hidden;
+  background: #000000;
 }
 
 .st-content,
 .st-content-inner {
-  position: relative;
+  position: static;
 }
 
 .st-container {

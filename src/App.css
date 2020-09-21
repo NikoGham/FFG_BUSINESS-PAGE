@@ -79,18 +79,14 @@ body {
 .App-header {
   position: relative;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #fefdff;
+  color: #fafafa;
 }
 
 .heading-background {
   position: fixed;
-  text-align: left;
+  text-align: center;
   opacity: 0.1;
   font-size: 17em;
-margin-right: 100px;
   /* Needed to change the top/left alignment, I did this with something else not to long ago */
   z-index: 1;
   color: #272727;
