@@ -12,12 +12,13 @@
 }
 
 :root {
-  --gingerBread: #d4af37;
-  --caramelFont: rgb(151, 105, 6);
+  --gingerBread: #B0861C;
+  --caramelFont: #B0861C;
 }
 
 .nameHeader {
   font-family: mHucker;
+  color: #FFFBDB;
 }
 
 .caramelFont {
@@ -61,8 +62,11 @@
   display: none;
 }
 
-.particleFun {
-  
+#tsparticles {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  opacity: 0.3;
 }
 
 /* NICK GILLHAM EDITS END */

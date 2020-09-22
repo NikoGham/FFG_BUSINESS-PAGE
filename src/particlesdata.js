@@ -1,4 +1,4 @@
- 
+ export const particleDate = [
     {
         "background": {
           "color": {
@@ -313,3 +313,4 @@
           "url": "https://cdn.matteobruni.it/images/particles/smalldeer.svg"
         }
 }
+ ]
