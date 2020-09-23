@@ -3,7 +3,6 @@ import Fade from 'react-reveal/Fade';
 import Flash from 'react-reveal/Flash';
 import Pulse from 'react-reveal/Pulse';
 import data from '../yourdata';
-import {particlesdata} from '../particlesdata';
 import { Container, Row, Col } from 'reactstrap';
 import Particles from 'react-tsparticles';
 
@@ -94,7 +93,7 @@ class Header extends Component {
         }} />
         <Row>
           <Col>
-            <Flash forever={true} duration={3000} delay={2100} cascade>
+            <Flash forever={true} duration={5000} delay={2100} cascade>
               <h1 className="heading-background">FULLFAT</h1>
             </Flash>
 

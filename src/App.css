@@ -18,7 +18,7 @@
 
 .nameHeader {
   font-family: mHucker;
-  color: #FFFBDB;
+  color: #FFFBDB; 
 }
 
 .caramelFont {
@@ -91,7 +91,7 @@ body {
 }
 
 .heading-background {
-  position: fixed;
+  position: relative;
   text-align: center;
   opacity: 0.1;
   font-size: 17em;
@@ -274,8 +274,7 @@ li .link:hover {
   position: relative;
   font-family: 'Montserrat', sans-serif;
   font-size: 3em;
-  text-align: left;
-  top: 0em;
+  text-align: center;
   z-index: 2;
 }
 .about {
