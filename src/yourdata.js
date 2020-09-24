@@ -8,7 +8,7 @@ export default {
     //Line 2 For Header
     'JUDO ',
     //Line 3 For Header
-    'JUI JITSU',
+    'JIU JITSU',
     'WRESTLING', 
     
   ],

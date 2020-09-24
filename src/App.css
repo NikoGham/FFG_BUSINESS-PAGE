@@ -98,7 +98,7 @@ body {
   /* Needed to change the top/left alignment, I did this with something else not to long ago */
   z-index: 1;
   color: #272727;
-}
+  font-family: 'Playfair Display', serif;}
 
 header {
   display: flex;
@@ -273,7 +273,7 @@ li .link:hover {
 }
 .header-title {
   position: relative;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif;  
   font-size: 3em;
   text-align: center;
   z-index: 2;

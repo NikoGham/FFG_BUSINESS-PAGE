@@ -10,20 +10,20 @@
       integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
       crossorigin="anonymous"
     />
-
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;900&display=swap" rel="stylesheet">     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/demo.css" />
     <link rel="stylesheet" type="text/css" href="css/component.css" />
     <link rel="stylesheet" type="text/css" href="../src/App.css" />
     <script src="js/modernizr.custom.js"></script>
-
     <title>|| FULL FAT GRAPPLING ||</title>
   </head>
   <body>
     <div id="st-container" class="st-container">
       <nav class="st-menu st-effect-11" id="menu-11">
         <ul>
+          <li onclick="showHeader()" id="headerclick"> <i class="fas fa-home"></i></li>
+          <br />
           <li onclick="showAbout()" id="aboutclick"> <i class="fas fa-cookie-bite"></i> About</li>
           <br />
           <li onclick="showChild()" id="childclick"><i class="fas fa-award"></i> Child Athletes</li>
@@ -99,10 +99,14 @@
 
       let showHeader = () => {
         /* if needed for a home button say */
-        headerHide.classList.toggle('hide', true);
-        aboutHide.classList.toggle('hide');
-        workHide.classList.toggle('hide');
-        contactHide.classList.toggle('hide');
+        headerHide.classList.toggle('hide');
+        aboutHide.classList.toggle('hide', true);
+        workHide.classList.toggle('hide', true);
+        contactHide.classList.toggle('hide', true);
+        adultHide.classList.toggle('hide', true);
+        memberHide.classList.toggle('hide', true);
+        timetableHide.classList.toggle('hide', true);
+        merchHide.classList.toggle('hide', true);
       };
 
       let showAbout = () => {

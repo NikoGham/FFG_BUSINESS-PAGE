@@ -44,7 +44,8 @@ function toggleMenu() {
     showMenu = false;
   }
 }
-
+const header = document.getElementById("headerclick");
+header.addEventListener('click', toggleMenu)
 const about = document.getElementById("aboutclick");
 about.addEventListener('click', toggleMenu)
 const adult = document.getElementById("adultclick");
