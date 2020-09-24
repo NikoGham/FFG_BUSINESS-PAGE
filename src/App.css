@@ -11,6 +11,8 @@
   src: url(./assets/Fonts/AdventPro-Light.ttf);
 }
 
+/* HEADER FONT FOR USE font-family: 'Playfair Display', serif; */
+
 :root {
   --gingerBread: #B0861C;
   --caramelFont: #B0861C;
@@ -278,27 +280,29 @@ li .link:hover {
   text-align: center;
   z-index: 2;
 }
+
+/* ABOUT EDITS NICK GILLHAM  */ 
+
 .about {
   display: flex;
   flex-direction: row;
 }
 .about-content {
   position: relative;
-  left: 15em;
+  
 }
 .about-content h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 5em;
-  text-align: left;
+  font-family: 'Playfair Display', serif;
+    font-size: 5em;
+  text-align: center;
 }
 .about-content p {
   font-size: 1.3em;
-  text-align: left;
-  width: 37em;
+  text-align: center;
+  width: 75%;
 }
-.about img {
-  margin-left: 5em;
-}
+
+
 .work {
   position: relative;
   display: flex;
