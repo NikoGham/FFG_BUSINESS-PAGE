@@ -13,18 +13,24 @@ class About extends Component {
         <Row>
           <Col>
             <div className="about">
-              <div className="about-content">
-                <h1>
-                  <Fade left cascade>
-                    About.
-                  </Fade>
-                </h1>
-                <Fade bottom>
-                  <p>{data.abouttext}</p>
+              <h1>
+                <Fade left cascade>
+                  About.
                 </Fade>
-              </div>
+              </h1>
             </div>{' '}
           </Col>
+        </Row>
+        <Row>
+          <Col md={2}></Col>
+          <Col>
+            <div className="about-content">
+              <Fade bottom>
+                <p>{data.abouttext}</p>
+              </Fade>
+            </div>
+          </Col>
+          <Col md={2}></Col>
         </Row>
       </Container>
     );

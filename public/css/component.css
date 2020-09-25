@@ -8,6 +8,7 @@
 :root {
   --gingerBread: #f59a08;
   --caramelFont: rgb(151, 105, 6);
+  --background:  #1E1014;
 }
 
 html,
@@ -22,7 +23,7 @@ body,
 
 .st-content {
   overflow-y: hidden;
-  background: #000000;
+  background: var(--background);
 }
 
 .st-content,

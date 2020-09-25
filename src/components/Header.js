@@ -15,7 +15,7 @@ class Header extends Component {
         < Particles width={"100%"} id="tsparticles" params={{
           background: {
             color: {
-              value: "#000",
+              value: "",
             },
           },
           fpsLimit: 30,
@@ -93,7 +93,7 @@ class Header extends Component {
         }} />
         <Row>
           <Col>
-            <Flash forever={true} duration={5000} delay={2100} cascade>
+            <Flash forever={true} duration={10000} delay={2100} cascade>
               <h1 className="heading-background">FULLFAT</h1>
             </Flash>
 
