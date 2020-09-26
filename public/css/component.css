@@ -22,7 +22,7 @@ body,
 /* hides the scroll on ABOUT ALSO */
 
 .st-content {
-  overflow-y: hidden;
+  overflow-y: scroll;
   background: var(--background);
 }
 

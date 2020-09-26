@@ -80,7 +80,7 @@ body {
   font-size: 16px;
   background: var(--background);
   font-family: 'Open Sans', sans-serif;
-  overflow: hidden;
+  overflow: visible;
   z-index: 1;
   color: #fefdff;
 }
@@ -291,6 +291,7 @@ li .link:hover {
   text-align: center;
   font-family: 'Playfair Display', serif;
   font-size: 5em;
+  overflow: visible;
 }
 
 .about h1 {
@@ -299,9 +300,11 @@ li .link:hover {
 
 .about-content p {
   font-size: 1.3em;
+  letter-spacing: 3px;
   text-align: center;
   font-family: 'Playfair Display', serif;
   color: var(--textBeige);
+  padding: 10px;
 }
 
 .work {

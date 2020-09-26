@@ -27,6 +27,13 @@ class About extends Component {
             <div className="about-content">
               <Fade bottom>
                 <p>{data.abouttext}</p>
+                <p>{data.abouttextlist}</p>
+                <p>{data.abouttext2}</p>
+                <p>{data.abouttext3}</p>
+                <p>{data.abouttext4}</p>
+
+
+
               </Fade>
             </div>
           </Col>
