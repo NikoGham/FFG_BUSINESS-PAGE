@@ -24,6 +24,7 @@ class About extends Component {
         <Row>
           <Col md={2}></Col>
           <Col>
+          <p>We recognise</p>
             <div className="about-content">
               <Fade bottom>
                 <p>{data.abouttext}</p>
