@@ -293,6 +293,7 @@ li .link:hover {
 
 /* ABOUT EDITS NICK GILLHAM  */
 
+
 .about {
   text-align: center;
   font-family: 'Playfair Display', serif;
@@ -311,7 +312,10 @@ li .link:hover {
   padding: 10px;
   font-family: 'Lato', sans-serif;
   color: var(--textBeige);
+  list-style: none;
 }
+
+
 
 .work {
   position: relative;
