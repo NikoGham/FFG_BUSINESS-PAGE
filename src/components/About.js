@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'reactstrap';
-
+import child from '../assets/CHILD_PHOTO.jpg'
 import data from '../yourdata';
 
 class About extends Component {
   state = {};
 
   render() {
+    const honor = data.abouttextlist;
+    const honorList = honor.map((item, index) => <li key={index}>{item}</li>);
+
     return (
       <Container fluid>
         <Row>
@@ -24,17 +27,19 @@ class About extends Component {
         <Row>
           <Col md={2}></Col>
           <Col>
-          <p>We recognise</p>
             <div className="about-content">
-              <Fade bottom>
+              <Fade left slow>
                 <p>{data.abouttext}</p>
-                <p>{data.abouttextlist}</p>
+                <Row>
+                  <Col><div><img src={child} alt="Child Throw in Judo" style={{margin: "auto", width: "10rem"}}></img></div></Col>
+                  <Col>
+                    <ul style={styleList}> {honorList} </ul>
+                  </Col>
+                </Row>
+
                 <p>{data.abouttext2}</p>
                 <p>{data.abouttext3}</p>
                 <p>{data.abouttext4}</p>
-
-
-
               </Fade>
             </div>
           </Col>
@@ -43,6 +48,12 @@ class About extends Component {
       </Container>
     );
   }
+}
+
+const styleList = {
+  color: "#fffff", 
+  fontFamily: 'Lato', 
+  listStyle: 'none'
 }
 
 export default About;
