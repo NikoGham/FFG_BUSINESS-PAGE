@@ -9,21 +9,20 @@ class Contact extends Component {
       <div>
         <h1>
           <Fade bottom cascade>
-            {' '}
-            Get in touch.
+            Contact us
           </Fade>
         </h1>
         <Fade bottom>
           <div className="contact-content">
             <h1>
-          Always use,  <br></br>
+              Always use, <br></br>
               <span className="amazing-color">Your Judo</span>
             </h1>
             <a href={`mailto:${data.contactEmail}`} className="email">
               {data.contactEmail}
             </a>
             <ul>
-              {data.social.map((link, index,) => (
+              {data.social.map((link, index) => (
                 <li key={index}>
                   <a target="_blank" rel="noopener noreferrer" href={link.url}>
                     {link.name} <i className="fab fa-instagram linkSocial"></i>

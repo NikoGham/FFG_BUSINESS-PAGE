@@ -82,9 +82,13 @@ Text font :     font-family: 'Lato', sans-serif; */
 
 /* NICK GILLHAM EDITS END */
 
+/*BackgroundColor setting for behind pusher*/
+
+
 body {
+  background-image: url(./assets/1875.jpg) no-repeat center fixed;
+  background-size: cover;
   font-size: 16px;
-  background: var(--background);
   font-family: 'Open Sans', sans-serif;
   overflow: visible;
   z-index: 1;
@@ -99,6 +103,7 @@ body {
   position: relative;
   min-height: 100vh;
   color: #fafafa;
+  background-color: var(--background);
 }
 
 .heading-background {
