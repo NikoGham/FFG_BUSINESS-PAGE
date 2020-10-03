@@ -1,0 +1,13 @@
+***** CONTACT *****  
+
+ <div className="contact-content">
+                <h1>
+                  Always use, <br></br>
+                  <span className="amazing-color">Your Judo</span>
+                </h1>
+                <a href={`mailto:${data.contactEmail}`} className="email">
+                  {data.contactEmail}
+                </a>
+              </div>
+
+              
