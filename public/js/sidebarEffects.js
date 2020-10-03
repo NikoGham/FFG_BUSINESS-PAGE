@@ -17,7 +17,6 @@ var SidebarMenuEffects = (function () {
     return e.parentNode && hasParentClass(e.parentNode, classname);
   }
 
-  // http://coveroverflow.com/a/11381730/989439
   function mobilecheck() {
     var check = false;
     (function (a) {
@@ -45,12 +44,13 @@ var SidebarMenuEffects = (function () {
       resetMenu = function () {
         classie.remove(container, 'st-menu-open');
       },
+      
       bodyClickFn = function (evt) {
         if (!hasParentClass(evt.target, 'st-menu')) {
           resetMenu();
           document.removeEventListener(eventtype, bodyClickFn);
         }
-      },
+      }
       resetClickFn = function (evt) {
         if (evt.target == reset) {
           resetMenu();
@@ -68,15 +68,17 @@ var SidebarMenuEffects = (function () {
         classie.add(container, effect);
         setTimeout(function () {
           classie.add(container, 'st-menu-open');
-        }, 25);
-        document.addEventListener(eventtype, bodyClickFn);
+        }, 100);
+        //This event triggers the body click to cause menu collapse
+        //document.addEventListener(eventtype, bodyClickFn);
         document.addEventListener(eventtype, resetClickFn);
       });
     });
 
+    const headClick = document.getElementById('headerclick');
+    headClick.addEventListener('click', resetMenu);
     const aboutClick = document.getElementById('aboutclick');
     aboutClick.addEventListener('click', resetMenu);
-    console.log('test');
 
     const adult = document.getElementById('adultclick');
     adult.addEventListener('click', resetMenu);

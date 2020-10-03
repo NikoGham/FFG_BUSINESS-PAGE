@@ -22,7 +22,8 @@ body,
 /* hides the scroll on ABOUT ALSO */
 
 .st-content {
-  overflow-y: scroll;
+  overflow-y: auto;
+  overflow-x: hidden; /*FIXED ANNOYING X SCROLL BAR ON HOME PAGE*/
 }
 
 .st-content,
@@ -130,7 +131,7 @@ body,
   letter-spacing: 1px;
   font-weight: 400;
   -webkit-transition: background 0.3s, box-shadow 0.3s;
-  transition: background 0.3s, box-shadow 0.3s;
+  transition: transform 1s;
 }
 
 
@@ -140,7 +141,7 @@ body,
 }
 
 .st-menu ul li:hover {
-
+transform: scale(1.2);
   color: #FFD700;
 }
 
