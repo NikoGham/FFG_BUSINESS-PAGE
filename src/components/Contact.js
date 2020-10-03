@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
 import data from '../yourdata';
-import { Container, Row, Col, Form } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
+import Form from 'react-bootstrap/Form';
 import Footer from './Footer';
 
 class Contact extends Component {
@@ -9,7 +10,9 @@ class Contact extends Component {
   render() {
     return (
       <Container fluid>
-        <Row> {/* TOP ROW WITH HEADING  */ }
+        <Row>
+          {' '}
+          {/* TOP ROW WITH HEADING  */}
           <Col>
             <h1>
               <Fade bottom cascade>
@@ -21,7 +24,7 @@ class Contact extends Component {
             </h1>
           </Col>
         </Row>
-{/* MIDDLE ROW FOR CONTENT */ }
+        {/* MIDDLE ROW FOR CONTENT */}
         <Row>
           <Col>
             <Fade delay>
@@ -33,18 +36,15 @@ class Contact extends Component {
                 scrolling="no"
                 marginheight="0"
                 marginwidth="0"
+                title="Location"
               ></iframe>
             </Fade>
           </Col>
           <Col>
-          <Form>
-            <Form.Group>
-              
-            </Form.Group>
-          </Form>
+        
           </Col>
         </Row>
-{/* BOTTOM ROW FOR FOOTER  */ }
+        {/* BOTTOM ROW FOR FOOTER  */}
         <Row>
           <Col>
             <Fade bottom></Fade>
