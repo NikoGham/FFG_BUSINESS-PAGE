@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
 import data from '../yourdata';
 import { Container, Row, Col } from 'reactstrap';
-import Form from 'react-bootstrap/Form';
+import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import Footer from './Footer';
 
 class Contact extends Component {
@@ -11,7 +11,6 @@ class Contact extends Component {
     return (
       <Container fluid>
         <Row>
-          {' '}
           {/* TOP ROW WITH HEADING  */}
           <Col>
             <h1>
@@ -26,7 +25,7 @@ class Contact extends Component {
         </Row>
         {/* MIDDLE ROW FOR CONTENT */}
         <Row>
-          <Col>
+          <Col md={6}>
             <Fade delay>
               <iframe
                 width="600"
@@ -40,8 +39,36 @@ class Contact extends Component {
               ></iframe>
             </Fade>
           </Col>
-          <Col>
-        
+                  {/* FORM COLUMN */}
+                 
+          <Col md={6}>
+      <Form>
+<FormGroup>
+  <Label for="nameBox">Name</Label>
+  <Input type="text" name="text" id="nameBox" placeholder="Athlete Name" bsSize="lg"></Input>
+</FormGroup>
+<FormGroup>
+  <Label for="emailBox">Email</Label>
+  <Input type="email" name="email" id="emailBox" placeholder="Email"></Input>
+</FormGroup>
+<FormGroup>
+  <Label for="regardingSelect">What is your query regarding?</Label>
+  <Input type="select" name="selectMulti" id="regardingSelect" >
+    <option>Child Athletes</option>
+    <option>Adult Athletes</option>
+    <option>Membership</option>
+    <option>Timetable</option>
+    <option>Why isn't my heel hook working?</option>
+    <option>Teach me how to throw for BJJ</option>
+    <option>Other</option>
+  </Input>
+</FormGroup>
+<FormGroup>
+  <Label for="textArea">Message</Label>
+  <Input type="textarea" name="text" id="textArea"></Input>
+</FormGroup>
+      </Form>
+<Button>Submit</Button>
           </Col>
         </Row>
         {/* BOTTOM ROW FOR FOOTER  */}
