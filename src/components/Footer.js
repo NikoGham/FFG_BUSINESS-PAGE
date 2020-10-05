@@ -3,6 +3,13 @@ import { Container, Row, Col } from 'reactstrap';
 import data from '../yourdata';
 
 const Footer = () => {
+  const listStyleFoot = {
+    listStyle: 'none',
+    float:"left"
+  };
+
+ 
+
   return (
     <Container className="footer-sdd">
       <Row>
@@ -10,7 +17,7 @@ const Footer = () => {
           <ul style={listStyleFoot}>
             {data.social.map((link, index) => (
               <li key={index}>
-                <a target="_blank" rel="noopener noreferrer" href={link.url}>
+                <a  target="_blank" rel="noopener noreferrer" href={link.url}>
                   {link.name} <i className="fab fa-instagram linkSocial"></i>
                 </a>
               </li>
@@ -19,7 +26,7 @@ const Footer = () => {
         </Col>
         <Col md="3">
           <span>
-            Crafted by{' '}
+            Crafted by
             <a href="www.nickgillham.co.uk"> Nick @ Small Dog Designs</a>
           </span>
         </Col>
@@ -28,9 +35,5 @@ const Footer = () => {
     </Container>
   );
 };
-
-const listStyleFoot = {
-  listStyle: "none"
-}
 
 export default Footer;
