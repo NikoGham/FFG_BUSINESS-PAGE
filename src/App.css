@@ -396,7 +396,7 @@ li .link:hover {
   right: 0.5em;
   padding: 1em;
   font-family: sdd;
-  opacity: 0.3;
+  opacity: 1;
   text-decoration: none;
 }
 
