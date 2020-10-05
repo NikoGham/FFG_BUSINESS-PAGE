@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import data from '';
+import data from '../yourdata';
 
 const Footer = () => {
   return (
