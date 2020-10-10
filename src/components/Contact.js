@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
-import data from '../yourdata';
 import { Container, Row, Col } from 'reactstrap';
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import Footer from './Footer';
 
 class Contact extends Component {

@@ -21,7 +21,7 @@ class About extends Component {
                   About.
                 </Fade>
               </h1>
-            </div>{' '}
+            </div>
           </Col>
         </Row>
         <Row>

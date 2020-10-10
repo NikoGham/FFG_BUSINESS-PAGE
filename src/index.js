@@ -5,7 +5,7 @@ import './App.css';
 
 import Header from './components/Header';
 import About from './components/About';
-import Work from './components/work';
+import Child from './components/Child';
 import Contact from './components/Contact';
 import Adult from './components/Adult';
 import Membership from './components/Membership';
@@ -14,7 +14,7 @@ import Merch from './components/Merch';
 
 ReactDOM.render(<Header />, document.getElementById('header'));
 ReactDOM.render(<About />, document.getElementById('about'));
-ReactDOM.render(<Work />, document.getElementById('work'));
+ReactDOM.render(<Child />, document.getElementById('work'));
 ReactDOM.render(<Contact />, document.getElementById('contact'));
 ReactDOM.render(<Adult />, document.getElementById('adult'));
 ReactDOM.render(<Membership />, document.getElementById('membership')); 

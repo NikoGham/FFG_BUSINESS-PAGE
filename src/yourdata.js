@@ -83,12 +83,12 @@ export default {
     // Add Or Remove The Link Accordingly
 
     {
-      name: 'FFG',
+      name: 'FULL FAT GRAPPLING',
       url: 'https://www.instagram.com/fullfatjudo/',
       icon: '<i className="fab fa-instagram"></i>',
     },
     {
-      name: 'Matthew Hucker',
+      name: 'Matt Hucker - Coach',
       url: 'https://www.instagram.com/matthewhucker/',
     },
     
