@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import image1 from '../assets/1875.jpg';
 import {
   Carousel,
   CarouselItem,
@@ -9,6 +10,7 @@ import {
 
 const items = [
   {
+    src:image1,
     id: 1,
     altText: 'Slide 1',
     caption: 'Slide 1'
@@ -51,6 +53,7 @@ const AdultCarousel = (props) => {
       <CarouselItem
         className="custom-tag"
         tag="div"
+        src={item.src}
         key={item.id}
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
