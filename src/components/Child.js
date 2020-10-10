@@ -11,7 +11,7 @@ class Child extends Component {
         <Row>
           <Col>
             <div>
-              <Fade>
+              <Fade left>
                 <h1>Child Athletes</h1>
                 <hr />
               </Fade>
