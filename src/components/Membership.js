@@ -23,9 +23,19 @@ import CardsMem from './CardsMem'
                  </div>
                </Col>
              </Row>
-             <Row>
+             <Row >
+                 <Col md={2}>     
+                 </Col>
                <Col>
-               <CardsMem />
+               <Fade left duration={1000}>
+               <CardsMem header1={"Child Athletes"} image1={"./assets/1875.jpg"} header2={"Adult Athletes"} header3={"Part-time Athletes"}/>
+               </Fade>
+               </Col>
+               <Col md={2}>
+               </Col>
+             </Row>
+             <Row>
+             <Col >
                </Col>
              </Row>
              <Row>
