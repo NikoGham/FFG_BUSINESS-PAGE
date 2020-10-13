@@ -9,14 +9,20 @@ import AdultCarousel from './AdultCarousel'
 
 
 const Adult = (props) => {
+
+  const headerStyle = {
+   margin: "3rem",
+  };
+
+
   return (
-    <Container>
+    <Container fluid>
     <Row>
       <Col>
         <div>
           <Fade left>
-            <h1>Adult Athletes</h1>
-            <hr />
+            <h1 style={headerStyle}>Adult Athletes  <hr /></h1>
+          
           </Fade>
         </div>
       </Col>
@@ -28,11 +34,13 @@ const Adult = (props) => {
     </Row>
     <Row>
       <Col>
-      <h2>Text </h2>
+      <h2 style={headerStyle}> Inspiring Excellence through Courage and Committment </h2>
       </Col>
     </Row>
-    <Row>
+    <Row >
+      <Col >
       <Footer />
+      </Col>
     </Row>
   </Container>
   );

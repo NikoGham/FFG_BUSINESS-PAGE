@@ -5,18 +5,27 @@ import data from '../yourdata';
 const Footer = () => {
   const listStyleFoot = {
     listStyle: 'none',
-    float:"left"
+    float:"left", 
+    color: '#ffffff', 
+    position: 'absolute', 
+  };
+
+  const styleLink = {
+    listStyle: 'none',
+    color: '#ffffff', 
+    position: 'absolute',
+    left: '0.5em'
   };
 
  
 
   return (
-    <Container className="footer-sdd">
+    <Container fluid className="footer-sdd">
       <Row>
-        <Col>
+        <Col >
           <ul style={listStyleFoot}>
             {data.social.map((link, index) => (
-              <li key={index}>
+              <li key={index} >
                 <a  target="_blank" rel="noopener noreferrer" href={link.url}>
                   {link.name} <i className="fab fa-instagram linkSocial"></i>
                 </a>
@@ -24,13 +33,15 @@ const Footer = () => {
             ))}
           </ul>
         </Col>
-        <Col md="3">
-          <span>
+        <Col></Col>
+      
+        <Col auto>
+          <span className="footer-link
+          ">
             Crafted by
-            <a href="www.nickgillham.co.uk"> Nick @ Small Dog Designs</a>
+            <a target={"_blank"} href="https://www.nickgillham.co.uk"> Nick @ Small Dog Designs</a>
           </span>
         </Col>
-        <div></div>
       </Row>
     </Container>
   );

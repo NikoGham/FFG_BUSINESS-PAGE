@@ -381,28 +381,24 @@ li .link:hover {
   text-decoration: none;
   color: rgb(255, 251, 251);
 }
-.footer {
-  position: absolute;
-  bottom: 1em;
-  right: 1em;
-  padding: 1em;
-  font-family: sdd;
-  opacity: 0.3;
-}
+
 
 .footer-sdd {
-  position: absolute;
-  bottom: 1em;
-  right: 0.5em;
-  padding: 1em;
-  font-family: sdd;
-  opacity: 1;
+  margin: 2rem;
   text-decoration: none;
 }
+.footer-link {
+  font-family: sdd;
+  opacity: 0.2;
+  position: relative;
+  
+}
+
+
 
 .footer, .footer-sdd a {
   text-decoration: none;
-  color: #f3982f;
+  color: #feffea;
 }
 
 /* SMARTPHONES PORTRAIT */

@@ -6,14 +6,19 @@ import ChildCarousel from './subcomponents/ChildCarousel'
 
 class Child extends Component {
   render() {
+
+    const headerStyle = {
+      margin: "3rem",
+     };
+
     return (
-      <Container>
+      <Container fluid>
         <Row>
           <Col>
             <div>
               <Fade left>
-                <h1>Child Athletes</h1>
-                <hr />
+                <h1 style={headerStyle}>Child Athletes <hr /></h1>
+                
               </Fade>
             </div>
           </Col>
@@ -24,7 +29,9 @@ class Child extends Component {
           </Col>
         </Row>
         <Row>
+          <Col >
           <Footer />
+          </Col>
         </Row>
       </Container>
     );
