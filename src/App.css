@@ -41,6 +41,10 @@ hr {
   width: 50%;
 }
 
+h1 {
+  font-family: 'Playfair Display', serif;
+
+}
 /* ORIGINAL TEMPLATE HAMBURGER MENU FROM BRAD TRAVERSY'S MODERN PORTFOLIO  */
 
 /* NOTE TO SELF - USE POSITION ABSOLUTE AND LEFT/RIGHT/TOP ETC TO POSITION*/
@@ -384,14 +388,19 @@ li .link:hover {
 
 
 .footer-sdd {
-  margin: 2rem;
-  text-decoration: none;
- 
+  height: 100%;
+  align-items: flex-end;
+  background-color: #feffea;
 }
+
 .footer-link {
   font-family: sdd;
   opacity: 0.2;
-  position: relative;
+  font-size: small;
+  
+}
+
+.hello {
   
 }
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
 import Footer from './Footer';
-import { Container, Row, Col, Table } from 'reactstrap';
+import { Container, Row, Col, Table } from 'react-bootstrap';
 
 class Timetable extends Component {
   render() {
@@ -23,43 +23,98 @@ class Timetable extends Component {
           </Col>
         </Row>
         <Row>
-          <Col>
-          <Table hover>
+          <Col xs={2}></Col>
+          <Col >
+          <Table hover striped bordered variant="dark" size="sm">
       <thead>
         <tr>
           <th></th>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>Username</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+          <th>Sunday</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
+      <tr>
+          <th scope="row" >6:00 - 7:00</th>
+          <td></td>
+          <td>Full Time Athletes - Adult</td>
+          <td></td>
+          <td>Full Time Athletes - Adult</td>
+          <td></td>
+          <td></td>
+          <td>Full Time Athletes - Adult</td>
         </tr>
         <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
+          <th scope="row">16:30 - 17:15</th>
+          <td></td>
+          <td>Judo PT </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
         </tr>
         <tr>
-          <th scope="row">3</th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
+          <th scope="row">17:00 - 17:45</th>
+          <td>Child Athletes - Judo - 5-8yrs</td>
+          <td></td>
+          <td></td>
+          <td>Judo PT</td>
+          <td></td>
+          <td></td>
+          <td></td>
         </tr>
+        <tr>
+          <th scope="row">18:00 - 18:45</th>
+          <td>Child Athletes - Judo - 8-13yrs</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope="row">18:00 - 19:00</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td> Power and Agility </td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope="row">18:00 - 19:20</th>
+          <td></td>
+          <td>Mobility and Core</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          
+        </tr>
+       
+        
       </tbody>
     </Table>
           </Col>
-        </Row>
-        <Row>
-          <Col >
-          <Footer />
+          <Col xs={2}>
+            
           </Col>
+        </Row>
+        
+        <Row >
+        <Col md={{span: 12}}>
+        <Footer />
+
+        </Col>
         </Row>
       </Container>
     );
