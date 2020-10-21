@@ -5,11 +5,18 @@ import child from '../assets/CHILD_PHOTO.jpg'
 import data from '../yourdata';
 
 class About extends Component {
-  state = {};
+  state = {
+    title: "About"
+  };
+
+  
 
   render() {
     const honor = data.abouttextlist;
     const honorList = honor.map((item, index) => <li key={index}>{item}</li>);
+    const headerStyle = {
+      margin: "3rem",
+     };
 
     return (
       <Container fluid>
@@ -18,8 +25,9 @@ class About extends Component {
             <div className="about">
               <h1>
                 <Fade left cascade>
-                  About.
-                </Fade>
+            <h1 style={headerStyle}> {this.state.title}  <hr /></h1>
+          
+          </Fade>
               </h1>
             </div>
           </Col>
@@ -37,8 +45,10 @@ class About extends Component {
                   </Col>
                 </Row>
 
-                <p>{data.abouttext2}</p>
+                <p>{data.abouttext21}</p>
+    <quote>{data.abouttextQuote}</quote>
                 <p>{data.abouttext3}</p>
+    <p>{data.abouttext31}</p>
                 <p>{data.abouttext4}</p>
               </Fade>
             </div>
