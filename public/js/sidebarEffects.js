@@ -92,6 +92,9 @@ var SidebarMenuEffects = (function () {
     member.addEventListener('click', resetMenu);
     const timetable = document.getElementById('timeclick');
     timetable.addEventListener('click', resetMenu);
+
+    const MenuClose = document.getElementById('st-container')
+    MenuClose.addEventListener('click', resetMenu);
   }
 
   init();

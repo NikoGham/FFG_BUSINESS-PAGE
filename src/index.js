@@ -61,6 +61,21 @@ member.addEventListener('click', toggleMenu)
 const timetable = document.getElementById("timeclick");
 timetable.addEventListener('click', toggleMenu)
 
+function toggleMenuMain() {
+  if (!showMenu) {
+    return null;
+  } else {
+    menuBtn.classList.remove('close');
+    // Set Menu State
+    showMenu = false;
+  }
+}
+
+const MenuClose = document.getElementById('st-container')
+MenuClose.addEventListener('click', toggleMenuMain)
+
+
+
 
 /* POTENTIAL REFACTOR SOLUTION 
 const list = document.getElementsByTagName("UL");
