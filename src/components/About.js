@@ -14,9 +14,17 @@ class About extends Component {
   render() {
     const honor = data.abouttextlist;
     const honorList = honor.map((item, index) => <li key={index}>{item}</li>);
+    
     const headerStyle = {
       margin: "3rem",
      };
+
+     const styleList = {
+      color: "#fffff", 
+      fontFamily: 'Lato', 
+      listStyle: 'none'
+    }
+    
 
     return (
       <Container fluid>
@@ -60,10 +68,5 @@ class About extends Component {
   }
 }
 
-const styleList = {
-  color: "#fffff", 
-  fontFamily: 'Lato', 
-  listStyle: 'none'
-}
 
 export default About;
