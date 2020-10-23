@@ -1,72 +1,78 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'reactstrap';
-import child from '../assets/CHILD_PHOTO.jpg'
+import child from '../assets/CHILD_PHOTO.jpg';
 import data from '../yourdata';
 
 class About extends Component {
-  state = {
-    title: "About"
-  };
+	state = {
+		title: 'About'
+	};
 
-  
+	render() {
+		const honor = data.abouttextlist;
+		const honorList = honor.map((item, index) => <li key={index}>{item}</li>);
 
-  render() {
-    const honor = data.abouttextlist;
-    const honorList = honor.map((item, index) => <li key={index}>{item}</li>);
-    
-    const headerStyle = {
-      margin: "3rem",
-     };
+		const headerStyle = {
+			margin: '3rem'
+		};
 
-     const styleList = {
-      color: "#fffff", 
-      fontFamily: 'Lato', 
-      listStyle: 'none'
-    }
-    
+		const styleList = {
+			color: '#fffff',
+			fontFamily: 'Lato',
+			listStyle: 'none'
+		};
 
-    return (
-      <Container fluid>
-        <Row>
-          <Col>
-            <div className="about">
-              <h1>
-                <Fade left cascade>
-            <h1 style={headerStyle}> {this.state.title}  <hr /></h1>
-          
-          </Fade>
-              </h1>
-            </div>
-          </Col>
-        </Row>
-        <Row>
-          <Col md={2}></Col>
-          <Col>
-            <div className="about-content">
-              <Fade left slow>
-                <p>{data.abouttext}</p>
-                <Row>
-                  <Col><div><img src={child} alt="Child Throw in Judo" style={{margin: "auto", width: "10rem"}}></img></div></Col>
-                  <Col>
-                    <ul style={styleList}> {honorList} </ul>
-                  </Col>
-                </Row>
+		return (
+			<Container fluid>
+				<Row>
+					<Col>
+						<div className='about'>
+							<h1>
+								<Fade left cascade>
+									<h1 style={headerStyle}>
+										{' '}
+										{this.state.title} <hr />
+									</h1>
+								</Fade>
+							</h1>
+						</div>
+					</Col>
+				</Row>
+				<Row>
+					<Col md={2} />
+					<Col>
+						<div className='about-content'>
+							<Fade left slow>
+								<p>{data.abouttext}</p>
+								<Row>
+									<Col>
+										<div>
+											<img
+												src={child}
+												alt='Child Throw in Judo'
+												style={{ margin: 'auto', width: '10rem' }}
+											/>
+										</div>
+									</Col>
+									<Col>
+										<ul style={styleList}> {honorList} </ul>
+									</Col>
+								</Row>
 
-                <p>{data.abouttext21}</p>
-    <quote>{data.abouttextQuote}</quote>
-                <p>{data.abouttext3}</p>
-    <p>{data.abouttext31}</p>
-                <p>{data.abouttext4}</p>
-              </Fade>
-            </div>
-          </Col>
-          <Col md={2}></Col>
-        </Row>
-      </Container>
-    );
-  }
+								<p>{data.abouttext21}</p>
+								<quote>{data.abouttextQuote}</quote>
+								<p>{data.abouttext3}</p>
+								<p>{data.abouttext31}</p>
+								<p>{data.abouttext4}</p>
+							</Fade>
+						</div>
+					</Col>
+					<Col md={2} />
+				</Row>
+			</Container>
+		);
+	}
 }
-
 
 export default About;
