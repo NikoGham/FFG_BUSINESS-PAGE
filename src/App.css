@@ -14,12 +14,15 @@
 /* HEADER FONT FOR USE font-family: 'Playfair Display', serif;
 Text font :     font-family: 'Lato', sans-serif; */
 
+/* COLOR SCHEMES FOUND ON THIS SITE ( FOR FUTURE REFERENCE) https://smithhonig.com/color-palettes-inspired-by-japan-japanese-color-palettes/ */ 
+
 :root {
   --gingerBread: #b0861c;
   --caramelFont: #b0861c;
   --textBeige: #feffea;
-  --background:  #1E1014;
-
+  --background:  #c9c4b1;
+  --behindPusherBg: #5c594a;
+  --hamBugColor: #5c594a;
 }
 
 .nameHeader {
@@ -42,7 +45,7 @@ hr {
 }
 
 h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: ;
 
 }
 /* ORIGINAL TEMPLATE HAMBURGER MENU FROM BRAD TRAVERSY'S MODERN PORTFOLIO  */
@@ -60,7 +63,7 @@ h1 {
   width: 28px;
   height: 3px;
   margin: 0 0 5px 0;
-  background: var(--caramelFont);
+  background: var(--hamBugColor);
   transition: all 0.5s ease-out;
 }
 .menu-btn.close {
@@ -100,7 +103,7 @@ body {
   overflow: hidden;
   z-index: 1;
   color: #1E1014;
-  background-color: #1E1014;/*Fixes background color durrrr */
+  background-color: var(--behindPusherBg);/*Fixes background color durrrr */
 
 }
 
@@ -163,7 +166,7 @@ nav li .link {
   text-decoration: none;
   color: fefdff;
   padding: 1em;
-  opacity: 0.5;
+  opacity: 1;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -279,16 +282,7 @@ li .link:hover {
   opacity: 1;
 }
 
-.header-title button {
-  background: black;
-  border: 0px;
-  padding: 1em 3em;
-  transition: all 0.2s ease-out;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -ms-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-}
+
 .header-title button:hover {
   opacity: 0.8;
 }
@@ -397,10 +391,6 @@ li .link:hover {
   font-family: sdd;
   opacity: 0.2;
   font-size: small;
-  
-}
-
-.hello {
   
 }
 

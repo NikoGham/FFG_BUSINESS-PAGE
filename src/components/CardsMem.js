@@ -1,43 +1,52 @@
 import React from 'react';
-import {
-  Card, CardHeader, CardImg, CardTitle, CardText, CardDeck,
-  CardSubtitle, CardBody
-} from 'reactstrap';
+import Card from 'react-bootstrap/Card';
+import CardDeck from 'react-bootstrap/CardDeck';
 
-const Cards = (props) => {
-  return (
-    <CardDeck >
-     <Card className="hoverCard" style={{ backgroundColor: '#333', borderColor: '#333'}}>
-  <CardHeader> {props.header1}</CardHeader>
-        <CardImg top width="100%" src={props.image1} alt="Card image cap" />
-        <CardBody>
-          <CardTitle>Full Time</CardTitle>
-          <CardSubtitle>£30 Per month</CardSubtitle>
-          <CardText>Access All Sessions</CardText>
-          
-        </CardBody>
-      </Card>
-      <Card style={{ backgroundColor: '#333', borderColor: '#333' }}>
-      <CardHeader> {props.header2}</CardHeader>
+function CardsMem() {
+	return (
+		<div>
+			<CardDeck>
+				<Card>
+					<Card.Img variant='top' src='holder.js/100px160' />
+					<Card.Body>
+						<Card.Title>Card title</Card.Title>
+						<Card.Text>
+							This is a wider card with supporting text below as a natural lead-in to additional content.
+							This content is a little bit longer.
+						</Card.Text>
+					</Card.Body>
+					<Card.Footer>
+						<small className='text-muted'>Last updated 3 mins ago</small>
+					</Card.Footer>
+				</Card>
+				<Card>
+					<Card.Img variant='top' src='holder.js/100px160' />
+					<Card.Body>
+						<Card.Title>Card title</Card.Title>
+						<Card.Text>
+							This card has supporting text below as a natural lead-in to additional content.{' '}
+						</Card.Text>
+					</Card.Body>
+					<Card.Footer>
+						<small className='text-muted'>Last updated 3 mins ago</small>
+					</Card.Footer>
+				</Card>
+				<Card>
+					<Card.Img variant='top' src='holder.js/100px160' />
+					<Card.Body>
+						<Card.Title>Card title</Card.Title>
+						<Card.Text>
+							This is a wider card with supporting text below as a natural lead-in to additional content.
+							This card has even longer content than the first to show that equal height action.
+						</Card.Text>
+					</Card.Body>
+					<Card.Footer>
+						<small className='text-muted'>Last updated 3 mins ago</small>
+					</Card.Footer>
+				</Card>
+			</CardDeck>
+		</div>
+	);
+}
 
-        <CardImg top width="75%" src="./assets/1875.jpg" alt="Card image cap" />
-        <CardBody>
-  <CardTitle>{props.header2}</CardTitle>
-          <CardSubtitle>Card subtitle</CardSubtitle>
-          <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
-        </CardBody>
-      </Card>
-      <Card style={{ backgroundColor: '#333', borderColor: '#333', width:'75%' }}>
-      <CardHeader> {props.header3}</CardHeader>
-        <CardImg top width="75%" src="./assets/1875.jpg" alt="Card image cap" />
-        <CardBody>
-  <CardTitle>{props.header3}</CardTitle>
-          <CardSubtitle>Card subtitle</CardSubtitle>
-          <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
-        </CardBody>
-      </Card>
-    </CardDeck>
-  );
-};
-
-export default Cards;
+export default CardsMem;

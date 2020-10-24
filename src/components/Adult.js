@@ -2,7 +2,7 @@ import React
  from 'react';
 import Fade from 'react-reveal/Fade';
 import Footer from './Footer';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import AdultCarousel from './AdultCarousel'
 
 /* Remember Niko, it's just fancy Javascript */ 

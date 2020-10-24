@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade';
 import Flash from 'react-reveal/Flash';
 import Pulse from 'react-reveal/Pulse';
 import data from '../yourdata';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import Particles from 'react-tsparticles';
 
 class Header extends Component {

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col } from 'react-bootstrap';
+import MerchCarousel from './MerchCarousel';
 
 class Merch extends Component {
 	state = {
@@ -15,26 +16,20 @@ class Merch extends Component {
 			<Container fluid>
 				<Row>
 					<Col>
-						<div className=''>
-							<h1>
-								<Fade left slow cascade>
-									<h1 style={headerStyle}>
-										{' '}
-										{this.state.title} <hr />
-									</h1>
-								</Fade>
+						<Fade left slow cascade>
+							<h1 style={headerStyle}>
+								{' '}
+								{this.state.title} <hr />
 							</h1>
-						</div>
+						</Fade>
 					</Col>
 				</Row>
 				<Row>
 					<Col md={2} />
 					<Col>
 						<Fade left slow>
-							<p />
 							<Row>
-								<Col />
-								<Col />
+								<MerchCarousel />
 							</Row>
 						</Fade>
 					</Col>
