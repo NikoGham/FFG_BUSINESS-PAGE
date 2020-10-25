@@ -93,8 +93,8 @@ class Header extends Component {
         }} />
         <Row>
           <Col>
-            <Flash forever={true} duration={10000} delay={2100} cascade>
-              <h1 className="heading-background">FULLFAT</h1>
+            <Flash  duration={10000} delay={2100} cascade>
+              <h1 className="heading-background">FULL FAT</h1>
             </Flash>
 
             <p className="header-title">

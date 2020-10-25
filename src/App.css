@@ -11,6 +11,11 @@
   src: url(./assets/Fonts/AdventPro-Light.ttf);
 }
 
+@font-face{
+  font-family: japanBrush;
+  src: url(./assets/Fonts/Kashima\ Demo.otf)
+}
+
 /* HEADER FONT FOR USE font-family: 'Playfair Display', serif;
 Text font :     font-family: 'Lato', sans-serif; */
 
@@ -21,17 +26,22 @@ Text font :     font-family: 'Lato', sans-serif; */
   --caramelFont: #b0861c;
   --textBeige: #feffea;
   --background:  #c9c4b1;
-  --behindPusherBg: #5c594a;
+  --behindPusherBg: #c9c4b1;
   --hamBugColor: #5c594a;
+  --redJapPalette:#b24332;
+  --creamJapPalette: #c9c4b1;
+  --blackJapPalette: #080703;
+  --fullFatTitle: #080703;
+  --headerListTitle: #080703;
 }
 
 .nameHeader {
   font-family: mHucker;
-  color: #fffbdb;
+  color: var(--behindPusherBg);
 }
 
 .caramelFont {
-  color: var(--caramelFont);
+  color: var(--headerListTitle);
 }
 
 .text {
@@ -45,7 +55,7 @@ hr {
 }
 
 h1 {
-  font-family: ;
+  font-family: 'Lato';
 
 }
 /* ORIGINAL TEMPLATE HAMBURGER MENU FROM BRAD TRAVERSY'S MODERN PORTFOLIO  */
@@ -87,9 +97,15 @@ h1 {
 
 #tsparticles {
   position: fixed;
-  z-index:-1;
+  z-index:1;
   width: 100%;
   opacity: 0.3;
+}
+
+
+.menuHomeSVG {
+  height: 30%;
+  width: 30%;
 }
 
 /* NICK GILLHAM EDITS END */
@@ -116,6 +132,11 @@ body {
   min-height: 100vh;
   color: #fffafa; /*CONTROLS TITLE FONTS ON ALL COMPS*/
   background-color: var(--background);
+  background-image: url(./assets/dot.svg);
+  background-position: bottom  ;
+  background-repeat: no-repeat;
+  background-size: cover;  /*contain--Resize the background image to make sure the image is fully visible*/
+  background-origin: border-box;
 }
 
 .heading-background {
@@ -125,8 +146,8 @@ body {
   font-size: 17em;
   /* Needed to change the top/left alignment, I did this with something else not to long ago */
   z-index: 1;
-  color: rgb(67, 60, 60);
-  font-family: 'Playfair Display', serif;
+  color: var(--fullFatTitle);
+  font-family: japanBrush;
 }
 
 header {
