@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: mHucker;
-  src: url(./assets/Fonts/Niconne-Regular.ttf);
+  src: url(./assets/Fonts/Breathing.ttf);
 }
 @font-face {
   font-family: sdd;
@@ -14,6 +14,11 @@
 @font-face{
   font-family: japanBrush;
   src: url(./assets/Fonts/Kashima\ Demo.otf)
+}
+
+@font-face {
+  font-family: MoykoTitle;
+  src: url(./assets/Fonts/Moyko.ttf)
 }
 
 /* HEADER FONT FOR USE font-family: 'Playfair Display', serif;
@@ -37,7 +42,7 @@ Text font :     font-family: 'Lato', sans-serif; */
 
 .nameHeader {
   font-family: mHucker;
-  color: var(--behindPusherBg);
+  color: var(--blackJapPalette);
 }
 
 .caramelFont {
@@ -314,8 +319,8 @@ li .link:hover {
 }
 .header-title {
   position: relative;
-  font-family: 'Playfair Display', serif;
-  font-size: 3em;
+  font-family: moykoTitle;
+  font-size: 4em;
   text-align: center;
   z-index: 2;
 }
