@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col} from 'react-bootstrap';
-import Form from 'react-bootstrap/Form'
-import Button from 'react-bootstrap/Button'
 import Footer from './Footer';
 
 class Contact extends Component {

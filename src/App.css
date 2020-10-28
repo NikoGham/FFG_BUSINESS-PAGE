@@ -4,11 +4,21 @@
 
 @font-face {
   font-family: mHucker;
-  src: url(./assets/Fonts/Niconne-Regular.ttf);
+  src: url(./assets/Fonts/Breathing.ttf);
 }
 @font-face {
   font-family: sdd;
   src: url(./assets/Fonts/AdventPro-Light.ttf);
+}
+
+@font-face{
+  font-family: japanBrush;
+  src: url(./assets/Fonts/Kashima\ Demo.otf)
+}
+
+@font-face {
+  font-family: MoykoTitle;
+  src: url(./assets/Fonts/Moyko.ttf)
 }
 
 /* HEADER FONT FOR USE font-family: 'Playfair Display', serif;
@@ -21,17 +31,22 @@ Text font :     font-family: 'Lato', sans-serif; */
   --caramelFont: #b0861c;
   --textBeige: #feffea;
   --background:  #c9c4b1;
-  --behindPusherBg: #5c594a;
+  --behindPusherBg: #c9c4b1;
   --hamBugColor: #5c594a;
+  --redJapPalette:#b24332;
+  --creamJapPalette: #c9c4b1;
+  --blackJapPalette: #080703;
+  --fullFatTitle: #080703;
+  --headerListTitle: #080703;
 }
 
 .nameHeader {
   font-family: mHucker;
-  color: #fffbdb;
+  color: var(--blackJapPalette);
 }
 
 .caramelFont {
-  color: var(--caramelFont);
+  color: var(--headerListTitle);
 }
 
 .text {
@@ -40,12 +55,12 @@ Text font :     font-family: 'Lato', sans-serif; */
 }
 
 hr {
-  background-color: #feffea;
+  background-color: var(--blackJapPalette);
   width: 50%;
 }
 
 h1 {
-  font-family: ;
+  font-family: 'Lato';
 
 }
 /* ORIGINAL TEMPLATE HAMBURGER MENU FROM BRAD TRAVERSY'S MODERN PORTFOLIO  */
@@ -87,9 +102,15 @@ h1 {
 
 #tsparticles {
   position: fixed;
-  z-index:-1;
+  z-index:1;
   width: 100%;
   opacity: 0.3;
+}
+
+
+.menuHomeSVG {
+  height: 30%;
+  width: 30%;
 }
 
 /* NICK GILLHAM EDITS END */
@@ -116,6 +137,11 @@ body {
   min-height: 100vh;
   color: #fffafa; /*CONTROLS TITLE FONTS ON ALL COMPS*/
   background-color: var(--background);
+  background-image: url(./assets/dot.svg);
+  background-position: bottom  ;
+  background-repeat: no-repeat;
+  background-size: cover;  /*contain--Resize the background image to make sure the image is fully visible*/
+  background-origin: border-box;
 }
 
 .heading-background {
@@ -125,8 +151,8 @@ body {
   font-size: 17em;
   /* Needed to change the top/left alignment, I did this with something else not to long ago */
   z-index: 1;
-  color: rgb(67, 60, 60);
-  font-family: 'Playfair Display', serif;
+  color: var(--fullFatTitle);
+  font-family: japanBrush;
 }
 
 header {
@@ -293,8 +319,8 @@ li .link:hover {
 }
 .header-title {
   position: relative;
-  font-family: 'Playfair Display', serif;
-  font-size: 3em;
+  font-family: moykoTitle;
+  font-size: 4em;
   text-align: center;
   z-index: 2;
 }
@@ -304,9 +330,19 @@ li .link:hover {
 
 .about {
   text-align: center;
-  font-family: 'Playfair Display', serif;
+  font-family: MoykoTitle;
   font-size: 5em;
   overflow: visible;
+}
+
+.aboutBG {
+  background-image: url(./assets/31747.jpg);
+  background-position: bottom  ;
+  background-repeat: no-repeat;
+  background-size: cover;  /*contain--Resize the background image to make sure the image is fully visible*/
+  background-origin: border-box;
+  z-index: 3;
+  filter: sepia(50%) contrast(110%);
 }
 
 .about h1 {
@@ -314,13 +350,15 @@ li .link:hover {
 }
 
 .about-content p {
-  font-size: 1.3em;
+  font-size: 1.6em;
+  color: var(--blackJapPalette);
   letter-spacing: 3px;
   text-align: center;
   padding: 10px;
-  font-family: 'Lato', sans-serif;
-  color: var(--textBeige);
+  font-family: MoykoTitle;
+  color: var(--blackJapPalette);
   list-style: none;
+  font-weight: bold;
 }
 
 
