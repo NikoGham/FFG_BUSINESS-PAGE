@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
+import Image from 'react-bootstrap/Image';
 import child from '../assets/CHILD_PHOTO.jpg';
 import data from '../yourdata';
 
@@ -11,31 +12,33 @@ class About extends Component {
 
 	render() {
 		const honor = data.abouttextlist;
-		const honorList = honor.map((item, index) => <li key={index}>{item}</li>);
+		const honorList = honor.map((item, index) => <h4 key={index}>{item}<hr /></h4>);
 
 		const headerStyle = {
-			margin: '3rem'
+			margin: '3rem',
+			fontFamily: 'MoykoTitle',
+			color: 'var(--blackJapPalette)'
 		};
 
 		const styleList = {
-			color: '#fffff',
-			fontFamily: 'Lato',
+			color: 'var(--blackJapPalette)',
+			fontFamily: 'MoykoTitle',
 			listStyle: 'none'
 		};
 
+		
 		return (
-			<Container fluid>
+			<Container className='aboutBG' fluid>
 				<Row>
 					<Col>
-						<div className='about'>
-							<h1>
-								<Fade left cascade>
+							<div className='about'>
+							<Fade left cascade>
 									<h1 style={headerStyle}>
 										{' '}
 										{this.state.title} <hr />
 									</h1>
 								</Fade>
-							</h1>
+							
 						</div>
 					</Col>
 				</Row>
@@ -48,24 +51,22 @@ class About extends Component {
 								<Row>
 									<Col>
 										<div>
-											<img
-												src={child}
-												alt='Child Throw in Judo'
-												style={{ margin: 'auto', width: '10rem' }}
-											/>
+											<Image src={child} alt='Child Throw in Judo' thumbnail />
 										</div>
 									</Col>
-									<Col>
+									<Col style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
 										<ul style={styleList}> {honorList} </ul>
 									</Col>
 								</Row>
+								<Row>
+									<p>{data.abouttext21}</p>
+									<p>{data.abouttextQuote}</p>
 
-								<p>{data.abouttext21}</p>
-								<quote>{data.abouttextQuote}</quote>
-								<p>{data.abouttext3}</p>
-								<p>{data.abouttext31}</p>
-								<p>{data.abouttext4}</p>
-							</Fade>
+									<p>{data.abouttext3}</p>
+									<p>{data.abouttext31}</p>
+									<p>{data.abouttext4}</p>
+								</Row>
+							</Fade> 
 						</div>
 					</Col>
 					<Col md={2} />

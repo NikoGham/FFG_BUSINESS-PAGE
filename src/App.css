@@ -55,7 +55,7 @@ Text font :     font-family: 'Lato', sans-serif; */
 }
 
 hr {
-  background-color: #feffea;
+  background-color: var(--blackJapPalette);
   width: 50%;
 }
 
@@ -330,9 +330,19 @@ li .link:hover {
 
 .about {
   text-align: center;
-  font-family: 'Playfair Display', serif;
+  font-family: MoykoTitle;
   font-size: 5em;
   overflow: visible;
+}
+
+.aboutBG {
+  background-image: url(./assets/31747.jpg);
+  background-position: bottom  ;
+  background-repeat: no-repeat;
+  background-size: cover;  /*contain--Resize the background image to make sure the image is fully visible*/
+  background-origin: border-box;
+  z-index: 3;
+  filter: sepia(50%) contrast(110%);
 }
 
 .about h1 {
@@ -340,13 +350,15 @@ li .link:hover {
 }
 
 .about-content p {
-  font-size: 1.3em;
+  font-size: 1.6em;
+  color: var(--blackJapPalette);
   letter-spacing: 3px;
   text-align: center;
   padding: 10px;
-  font-family: 'Lato', sans-serif;
-  color: var(--textBeige);
+  font-family: MoykoTitle;
+  color: var(--blackJapPalette);
   list-style: none;
+  font-weight: bold;
 }
 
 
