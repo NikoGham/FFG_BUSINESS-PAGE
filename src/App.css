@@ -148,7 +148,7 @@ body {
   position: relative;
   text-align: center;
   opacity: 0.1;
-  font-size: 17em;
+  font-size: 7em;
   /* Needed to change the top/left alignment, I did this with something else not to long ago */
   z-index: 1;
   color: var(--fullFatTitle);
@@ -319,6 +319,7 @@ li .link:hover {
 }
 .header-title {
   position: relative;
+  margin-top: 20px;
   font-family: moykoTitle;
   font-size: 4em;
   text-align: center;
@@ -461,7 +462,7 @@ li .link:hover {
   .header-title {
     font-size: 3em;
     text-align: left;
-    top: 1em;
+    top: 0em;
     left: 1em;
   }
   .about {

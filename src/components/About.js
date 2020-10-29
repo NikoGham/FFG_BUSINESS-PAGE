@@ -7,7 +7,7 @@ import data from '../yourdata';
 
 class About extends Component {
 	state = {
-		title: 'About'
+		title: ''
 	};
 
 	render() {
