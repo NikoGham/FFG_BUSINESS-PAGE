@@ -81,7 +81,7 @@ class Header extends Component {
               value: 0.5,
             },
             shape: {
-              type: "circle",
+              type: "triangle",
             },
             size: {
               random: true,
@@ -99,7 +99,7 @@ class Header extends Component {
 
             </p>
             <Flash  duration={10000} delay={2100} cascade>
-              <h1 className="heading-background">FULL FAT <br></br>Grappling</h1>
+              <h1 className="heading-background">FULL FAT <br></br><span id="grappleStyle">GRAPPLING</span></h1>
               
             </Flash>
 
