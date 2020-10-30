@@ -60,7 +60,8 @@ hr {
 }
 
 h1 {
-	font-family: 'Lato';
+  font-family: 'Nanum Myeongjo', serif;
+  text-transform: uppercase;
 }
 /* ORIGINAL TEMPLATE HAMBURGER MENU FROM BRAD TRAVERSY'S MODERN PORTFOLIO  */
 
@@ -342,14 +343,13 @@ li .link:hover {
 	overflow: visible;
 }
 
-.aboutBG {
-	background-image: url(./assets/31747.jpg);
+.childrenBG {
+	background-image: url(./assets/31731.jpg);
 	background-position: bottom;
 	background-repeat: no-repeat;
 	background-size: cover; /*contain--Resize the background image to make sure the image is fully visible*/
 	background-origin: border-box;
 	z-index: 3;
-	filter: sepia(50%) contrast(110%);
 }
 
 .about h1 {

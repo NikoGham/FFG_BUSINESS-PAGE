@@ -28,7 +28,7 @@ class About extends Component {
 
 		
 		return (
-			<Container className='aboutBG' fluid>
+			<Container className='childrenBG' fluid>
 				<Row>
 					<Col>
 							<div className='about'>
