@@ -22,7 +22,8 @@ class About extends Component {
 
 		const styleList = {
 			color: 'var(--blackJapPalette)',
-			fontFamily: 'MoykoTitle',
+			fontFamily: 'Nanum Myeongjo, serif', 
+
 			listStyle: 'none'
 		};
 
