@@ -21,9 +21,10 @@ class About extends Component {
 		};
 
 		const styleList = {
-			color: 'var(--blackJapPalette)',
+			color: 'var(--creamJapPalette)',
 			fontFamily: 'Nanum Myeongjo, serif', 
-
+			fontSize: '200%',
+			textTransform: 'touppercase',
 			listStyle: 'none'
 		};
 
@@ -36,7 +37,7 @@ class About extends Component {
 							<Fade left cascade>
 									<h1 style={headerStyle}>
 										{' '}
-										{this.state.title} <hr />
+										{this.state.title} 
 									</h1>
 								</Fade>
 							
@@ -60,12 +61,14 @@ class About extends Component {
 									</Col>
 								</Row>
 								<Row>
+								<hr />
 									<p>{data.abouttext21}</p>
+									<hr />
 									<p>{data.abouttextQuote}</p>
-
-									<p>{data.abouttext3}</p>
-									<p>{data.abouttext31}</p>
-									<p>{data.abouttext4}</p>
+									<hr />
+									<p>{data.abouttext3}</p><hr />
+									<p>{data.abouttext31}</p><hr />
+									<p>{data.abouttext4}</p><hr />
 								</Row>
 							</Fade> 
 						</div>

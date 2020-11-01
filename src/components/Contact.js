@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col} from 'react-bootstrap';
-import Footer from './Footer';
 
 class Contact extends Component {
   state = {};
@@ -45,13 +44,8 @@ class Contact extends Component {
         </Row>
         {/* BOTTOM ROW FOR FOOTER  */}
         <Row>
-          <Col>
-            <Fade bottom></Fade>
-          </Col>
-          <Col sm={'AUTO'}>
-            <Footer />
-          </Col>
-          {/*Why the fuck does AUTO work nicely but auto doesn;t? */}
+        
+      
         </Row>
       </Container>
     );

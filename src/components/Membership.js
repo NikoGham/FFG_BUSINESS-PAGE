@@ -45,7 +45,6 @@ import CardsMem from './CardsMem'
              </Row>
              <Row >
                <Col >
-               <Footer />
                </Col>
              </Row>
             
