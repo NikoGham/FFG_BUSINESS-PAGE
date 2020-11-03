@@ -245,7 +245,7 @@ li .link:hover {
 }
 
 .childrenBG {
-	background-color: var(--redJapPalette);
+	background-color: var(--blackJapPalette);
 
 }
 
@@ -254,9 +254,9 @@ li .link:hover {
 }
 
 .about-content p {
-	font-size: 1.6em;
+	font-size: 1.4em;
 	color: var(--creamJapPalette);
-	letter-spacing: 3px;
+	letter-spacing: 2px;
 	text-align: center;
 	padding: 10px;
 	font-family: 'Nanum Myeongjo', serif;
