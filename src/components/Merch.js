@@ -13,7 +13,7 @@ class Merch extends Component {
 		};
 
 		return (
-			<Container fluid>
+			<Container className='childrenBG' fluid>
 				<Row>
 					<Col>
 						<Fade left slow cascade>

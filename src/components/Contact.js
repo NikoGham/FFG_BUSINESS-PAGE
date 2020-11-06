@@ -6,7 +6,7 @@ class Contact extends Component {
   state = {};
   render() {
     return (
-      <Container fluid>
+      <Container className='childrenBG' fluid>
         <Row>
           {/* TOP ROW WITH HEADING  */}
           <Col>

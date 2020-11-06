@@ -12,7 +12,7 @@ class Child extends Component {
      };
 
     return (
-      <Container fluid>
+      <Container className='childrenBG' fluid>
         <Row>
           <Col>
             <div>

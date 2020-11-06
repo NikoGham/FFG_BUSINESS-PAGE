@@ -27,6 +27,7 @@ Text font :     font-family: 'Lato', sans-serif; */
 /* COLOR SCHEMES FOUND ON THIS SITE ( FOR FUTURE REFERENCE) https://smithhonig.com/color-palettes-inspired-by-japan-japanese-color-palettes/ */
 
 :root {
+	--goldGrappFont: #9c7c38;
 	--gingerBread: #b0861c;
 	--caramelFont: #b0861c;
 	--textBeige: #feffea;
@@ -35,6 +36,7 @@ Text font :     font-family: 'Lato', sans-serif; */
 	--hamBugColor: #5c594a;
 	--redJapPalette: #b24332;
 	--creamJapPalette: #c9c4b1;
+	--optimalOnBlack: #CDB174;
 	--blackJapPalette: #080703;
 	--fullFatTitle: #080703;
 	--headerListTitle: #080703;
@@ -337,6 +339,10 @@ li .link:hover {
 	color: #feffea;
 }
 
+.linkSocial {
+	color: var(--goldGrappFont);
+	font-size: x-large;
+}
 /* SMARTPHONES PORTRAIT */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 	body {

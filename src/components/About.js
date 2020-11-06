@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image';
 import child from '../assets/CHILD_PHOTO.jpg';
 import child1 from '../assets/Adult.jpg';
+import Footer from './Footer';
 
 import data from '../yourdata';
 
@@ -52,11 +53,9 @@ class About extends Component {
 						<div className='about-content'>
 							<Fade left slow>
 								<p>
-									Welcome to Full Fat Grappling. <br></br> 
-									<hr></hr>
-									The home of great ambition and high
-									expectation. Our focus is to benefit anyone in any grappling sport, specialising in
-									the Olympic sport of JUDO.
+									Welcome to Full Fat Grappling. <br />
+									The home of great ambition and high expectation. Our focus is to benefit anyone in
+									any grappling sport, specialising in the Olympic sport of JUDO.
 								</p>
 								<Row>
 									<Col>
@@ -68,27 +67,40 @@ class About extends Component {
 										<ul style={styleList}> {honorList} </ul>
 									</Col>
 								</Row>
-								<Row>
-									<Col>
+							</Fade>
+
+							<Row>
+								<Col>
+									<Fade slow>
 										<p>{data.abouttext21}</p>
 										<hr />
-
+									</Fade>
+									<Fade slow>
 										<p>{data.abouttextQuote}</p>
-
+									</Fade>
+									<Fade slow>
 										<Image src={child1} alt='Child Throw in Judo' thumbnail />
-
+									</Fade>
+									<Fade slow>
 										<p>{data.abouttext3}</p>
 										<hr />
+									</Fade>
+									<Fade slow>
 										<p>{data.abouttext31}</p>
 										<Image src={child1} alt='Child Throw in Judo' thumbnail />
-
+									</Fade>
+									<Fade slow>
 										<p>{data.abouttext4}</p>
-									</Col>
-								</Row>
-							</Fade>
+									</Fade>
+								</Col>
+							</Row>
 						</div>
 					</Col>
 					<Col md={2} />
+				</Row>
+			
+				<Row style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }} >
+					<Footer  />
 				</Row>
 			</Container>
 		);

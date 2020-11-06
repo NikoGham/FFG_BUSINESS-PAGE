@@ -11,7 +11,7 @@ class Timetable extends Component {
      };
 
     return (
-      <Container fluid>
+      <Container className='childrenBG' fluid>
         <Row>
           <Col>
             <div>
