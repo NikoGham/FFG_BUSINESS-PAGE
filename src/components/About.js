@@ -69,7 +69,7 @@ class About extends Component {
 
 										<p>{data.abouttextQuote}</p>
 
-										<Image src={child} alt='Child Throw in Judo' thumbnail />
+										<Image src={child1} alt='Child Throw in Judo' thumbnail />
 
 										<hr />
 										<p>{data.abouttext3}</p>
