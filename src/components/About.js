@@ -51,7 +51,13 @@ class About extends Component {
 					<Col>
 						<div className='about-content'>
 							<Fade left slow>
-								<p>{data.abouttext}</p>
+								<p>
+									Welcome to Full Fat Grappling. <br></br> 
+									<hr></hr>
+									The home of great ambition and high
+									expectation. Our focus is to benefit anyone in any grappling sport, specialising in
+									the Olympic sport of JUDO.
+								</p>
 								<Row>
 									<Col>
 										<div>
@@ -71,13 +77,12 @@ class About extends Component {
 
 										<Image src={child1} alt='Child Throw in Judo' thumbnail />
 
-										<hr />
 										<p>{data.abouttext3}</p>
 										<hr />
 										<p>{data.abouttext31}</p>
-										<hr />
+										<Image src={child1} alt='Child Throw in Judo' thumbnail />
+
 										<p>{data.abouttext4}</p>
-										<hr />
 									</Col>
 								</Row>
 							</Fade>
