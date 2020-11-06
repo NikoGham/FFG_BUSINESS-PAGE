@@ -29,10 +29,8 @@ class About extends Component {
 		};
 
 		const styleList = {
-			color: 'var(--creamJapPalette)',
 			fontFamily: 'Nanum Myeongjo, serif',
-			fontSize: '200%',
-			textTransform: 'touppercase',
+			fontSize: '100%',
 			listStyle: 'none'
 		};
 
@@ -53,7 +51,7 @@ class About extends Component {
 						<div className='about-content'>
 							<Fade left slow>
 								<p>
-									Welcome to Full Fat Grappling. <br />
+									Welcome to FULL FAT GRAPPLING <br /> <hr />
 									The home of great ambition and high expectation. Our focus is to benefit anyone in
 									any grappling sport, specialising in the Olympic sport of JUDO.
 								</p>

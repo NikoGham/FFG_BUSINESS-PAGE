@@ -9,16 +9,15 @@ export default {
     
   ],
 
-  abouttext: 'Welcome to Full Fat Grappling. The home of great ambition and high expectation. Our focus is to benefit anyone in any grappling sport, specialising in the Olympic sport of JUDO. ',
   abouttextlist: [
-    'Courtesy', 
-    'Courage',
-    'Honesty',
-    'Honour', 
-    'Modesty', 
-    'Respect',
-    'Self Control', 
-    'Friendship'
+    'Courtesy 礼儀', 
+    'Courage 勇気',
+    'Honesty 正直',
+    'Honour 名誉', 
+    'Modesty 謙虚', 
+    'Respect 尊敬',
+    'Self Control 自制心', 
+    'Friendship 友情'
   ],
   abouttext2: 'To be \'Full Fat\', is to practice entirely. This is achieved by voiding the neglect of technique, physical attributions or mental preparation. In Japan, the heart of the sport, the expectation to young judoka, is to be fully aware of all techniques and how to perform them correctly in line with their performance style by the age of 16-18 years old. The judokas will also be highly advanced in mental toughness and respect for the sports culture and philosophy.',
   abouttext21: ' Often in judo, judokas and coaches alike are caught up in physical toughness too early, resulting in successful and dominant results locally and early in development, but then becoming stuck at national and international levels later on.',

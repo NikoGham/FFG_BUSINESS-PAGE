@@ -80,7 +80,7 @@ h1 {
 	width: 28px;
 	height: 3px;
 	margin: 0 0 5px 0;
-	background: var(--hamBugColor);
+	background: var(--redJapPalette);
 	transition: all 0.5s ease-out;
 }
 .menu-btn.close {
@@ -248,6 +248,8 @@ li .link:hover {
 
 .childrenBG {
 	background-color: var(--blackJapPalette);
+	color: var(--optimalOnBlack);
+
 
 }
 
@@ -257,7 +259,7 @@ li .link:hover {
 
 .about-content p {
 	font-size: 1.4em;
-	color: var(--creamJapPalette);
+	color: var(--optimalOnBlack);
 	letter-spacing: 2px;
 	text-align: center;
 	padding: 10px;
