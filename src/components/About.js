@@ -13,6 +13,9 @@ class About extends Component {
 		title: ''
 	};
 
+	// Small notes - Bring 1st image in so more symmetrical. Grey out more when on menu. Change Japanese Characters to red jap color pallette. 
+	// Coding => How can I achieve a task and win a battle with the skills and tools I currently know and/or can discover and learn. 
+
 	render() {
 		const honor = data.abouttextlist;
 		const honorList = honor.map((item, index) => (
