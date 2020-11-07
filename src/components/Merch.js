@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
-import MerchCarousel from './MerchCarousel';
 
 class Merch extends Component {
 	state = {
@@ -29,7 +28,6 @@ class Merch extends Component {
 					<Col>
 						<Fade left slow>
 							<Row>
-								<MerchCarousel />
 							</Row>
 						</Fade>
 					</Col>
