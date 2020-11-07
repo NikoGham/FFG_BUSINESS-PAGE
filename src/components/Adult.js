@@ -46,6 +46,7 @@ const Adult = (props) => {
       <Col >
       </Col>
     </Row>
+    <Footer />
   </Container>
   );
 };

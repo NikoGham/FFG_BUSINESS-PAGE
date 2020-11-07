@@ -98,6 +98,7 @@ h1 {
 
 /* ORIGINAL TEMPLATE HAMBURGER MENU FROM BRAD TRAVERSY'S MODERN PORTFOLIO  */
 
+/* do not edit */
 .hide {
 	display: none;
 }
@@ -114,33 +115,28 @@ h1 {
 	width: 30%;
 }
 
-/* NICK GILLHAM EDITS END */
 
 /*BackgroundColor setting for behind pusher*/
 
-body {
+html, body {
+	min-height: 100vh;
+
 	font-size: 16px;
-	font-family: 'Open Sans', sans-serif;
 	overflow: hidden;
-	z-index: 1;
 	color: #1e1014;
-	background-color: var(--behindPusherBg); /*Fixes background color durrrr */
+	background-color: var(--gingerBread); /*Fixes background color durrrr */
 }
 
 .App {
 	text-align: center;
+	min-height: 100vh;
+
 }
 
 .App-header {
 	position: relative;
 	min-height: 100vh;
-	color: #fffafa; /*CONTROLS TITLE FONTS ON ALL COMPS*/
-	background-color: var(--background);
-	background-image: url(./assets/dot.svg);
-	background-position: bottom;
-	background-repeat: no-repeat;
-	background-size: cover; /*contain--Resize the background image to make sure the image is fully visible*/
-	background-origin: border-box;
+	color: #fffafa; 
 }
 
 .heading-background {
@@ -156,6 +152,17 @@ body {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
 
+
+}
+
+.homeBG {
+	height: 100%;
+	background-color: var(--background);
+	background-image: url(./assets/dot.svg);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover; /*contain--Resize the background image to make sure the image is fully visible*/
+	background-origin: border-box;
 }
 
 #grappleStyle {
@@ -234,7 +241,7 @@ li .link:hover {
 	font-family: mHucker;
 	font-size: 3em;
 	text-align: left;
-  z-index: 2;
+  z-index: 8;
 }
 
 /* ABOUT EDITS NICK GILLHAM  */
@@ -247,8 +254,10 @@ li .link:hover {
 }
 
 .childrenBG {
+	text-align: center;
 	background-color: var(--blackJapPalette);
 	color: var(--optimalOnBlack);
+	min-height: 100%;
 
 
 }

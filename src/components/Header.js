@@ -10,7 +10,7 @@ class Header extends Component {
 
   render() {
     return (
-      <Container fluid>
+      <Container className="homeBG" fluid>
         < Particles width={"100%"} id="tsparticles" params={{
           background: {
             color: {
