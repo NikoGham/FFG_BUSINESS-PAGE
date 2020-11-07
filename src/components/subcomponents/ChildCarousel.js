@@ -2,6 +2,12 @@
 import React, {useState} from 'react';
 
 import Carousel from 'react-bootstrap/Carousel'
+import image2 from '../../assets/2.jpg'
+import image3 from '../../assets/3.jpg'
+import image4 from '../../assets/4.jpg'
+import image5 from '../../assets/5.jpg'
+import image6 from '../../assets/6.jpg'
+import image7 from '../../assets/7.jpg'
 
 
 function ChildCarousel() {
@@ -15,40 +21,51 @@ function ChildCarousel() {
     <Carousel activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=First slide&bg=373940"
+          className="d-block w-100 main "
+          src={image2}
           alt="First slide"
         />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
+       
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=282c34"
-          alt="Second slide"
+          className="d-block w-100 main "
+          src={image3}
+          alt="First slide"
         />
-
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
+       
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=20232a"
-          alt="Third slide"
+          className="d-block w-100 main "
+          src={image4}
+          alt="First slide"
         />
-
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
+       
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100 main "
+          src={image5}
+          alt="First slide"
+        />
+       
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100 main "
+          src={image6}
+          alt="First slide"
+        />
+       
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100 main "
+          src={image7}
+          alt="First slide"
+        />
+       
       </Carousel.Item>
     </Carousel>
   );

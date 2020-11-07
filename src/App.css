@@ -258,8 +258,16 @@ li .link:hover {
 	background-color: var(--blackJapPalette);
 	color: var(--optimalOnBlack);
 	min-height: 100%;
+}
 
-
+.childrenText {
+	font-size: 1.2em;
+	color: var(--optimalOnBlack);
+	letter-spacing: 2px;
+	text-align: center;
+	font-family: 'Nanum Myeongjo', serif;
+	list-style: none;
+	font-weight: bold;
 }
 
 .about h1 {
@@ -276,30 +284,20 @@ li .link:hover {
 	list-style: none;
 	font-weight: bold;
 }
+/* CHILD ATHLETES  */
 
-.work {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	left: 15em;
-	top: 8em;
-	align-items: flex-start;
-}
-.work .heading {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 5em;
-	text-align: left;
-}
-.work .work-content {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 1em;
-}
-
-.project img {
+/* use em toi edit images to nice size  */
+.main {
 	width: 30em;
-	height: 30em;
+	height: 40em;
 }
+
+
+
+
+
+
+
 .contact {
 	position: relative;
 	top: 20em;
