@@ -28,7 +28,7 @@ import CardsMem from './CardsMem'
                  </Col>
                <Col>
                <Fade left duration={1000}>
-               <CardsMem header1={"Child Athletes"} image1={"./assets/1875.jpg"} header2={"Adult Athletes"} header3={"Part-time Athletes"}/>
+               <CardsMem header1={"Standard"} image1={"./assets/1875.jpg"} header2={"Preimum"} header3={"One-time"}/>
                </Fade>
                </Col>
                <Col md={2}>
