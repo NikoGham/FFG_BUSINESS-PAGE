@@ -14,7 +14,7 @@ const Footer = () => {
 				<i className='fab fa-youtube linkSocial' />
 			</a>
 
-			<a style={style} target='_blank' rel='noopener noreferrer' href={'https://www.instagram.com/fullfatjudo/'}>
+			<a className="linkSocial"style={style} target='_blank' rel='noopener noreferrer' href={'https://www.instagram.com/fullfatjudo/'}>
 				<i  className='fab fa-facebook linkSocial' />
 			</a>
 
@@ -23,7 +23,8 @@ const Footer = () => {
 };
 
 const style = {
-  padding: '2rem',
+  paddingLeft: '1rem',
+  paddingRight: '1rem'
 
 }
 

@@ -257,7 +257,7 @@ li .link:hover {
 	text-align: center;
 	background-color: var(--blackJapPalette);
 	color: var(--optimalOnBlack);
-	min-height: 100%;
+	min-height: 100vh;
 }
 
 .childrenText {
@@ -286,7 +286,7 @@ li .link:hover {
 }
 /* CHILD ATHLETES  */
 
-/* use em toi edit images to nice size  */
+/* use em to edit images to nice size  */
 .main {
 	width: 30em;
 	height: 40em;
@@ -298,37 +298,8 @@ li .link:hover {
 
 
 
-.contact {
-	position: relative;
-	top: 20em;
-	left: 15em;
-	text-align: left;
-}
-.contact h1 {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 5em;
-	text-align: left;
-}
-.amazing-color {
-	color: #cf9332;
-	opacity: 1;
-}
 
-.contact .email {
-	color: #ffffff;
-	font-size: 2em;
-}
-.contact li {
-	display: inline-block;
-	margin-top: 0;
-	margin-bottom: 0;
-	margin-right: 1em;
-	margin-left: 0;
-}
-.contact li a {
-	text-decoration: none;
-	color: rgb(255, 251, 251);
-}
+
 
 .footer-sdd {
 	height: 100%;
@@ -336,21 +307,22 @@ li .link:hover {
 	background-color: #feffea;
 }
 
-.footer-link {
-	font-family: sdd;
-	opacity: 0.2;
-	font-size: small;
-}
 
-.footer,
-.footer-sdd a {
-	text-decoration: none;
-	color: #feffea;
-}
 
 .linkSocial {
 	color: var(--goldGrappFont);
 	font-size: x-large;
+	transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	
+}
+
+.linkSocial:hover {
+	transform: scale(1.4);
+
 }
 /* SMARTPHONES PORTRAIT */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {

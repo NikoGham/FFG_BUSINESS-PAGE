@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col} from 'react-bootstrap';
+import Footer from './Footer'
+import ContactForm from "./subcomponents/ContactForm"
 
 class Contact extends Component {
   state = {};
   render() {
     return (
-      <Container className='childrenBG' fluid>
+      <Container className='childrenBG contact' fluid>
         <Row>
           {/* TOP ROW WITH HEADING  */}
           <Col>
@@ -37,16 +39,14 @@ class Contact extends Component {
             </Fade>
           </Col>
                   {/* FORM COLUMN */}
-                 
-          <Col md={6}>
-    
+        
+          <Col md={2}>
           </Col>
         </Row>
         {/* BOTTOM ROW FOR FOOTER  */}
-        <Row>
-        
-      
-        </Row>
+        <Row style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+					<Footer />
+				</Row>
       </Container>
     );
   }
