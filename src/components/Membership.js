@@ -24,14 +24,14 @@ import CardsMem from './CardsMem'
                </Col>
              </Row>
              <Row >
-                 <Col md={2}>     
+                 <Col md={3}>     
                  </Col>
                <Col>
                <Fade left duration={1000}>
-               <CardsMem header1={"Standard"} image1={"./assets/1875.jpg"} header2={"Preimum"} header3={"One-time"}/>
+               <CardsMem header1={"Standard"} image1={"./assets/10.png"} header2={"Premium"} image2={"./assets/5.jpg"} />
                </Fade>
                </Col>
-               <Col md={2}>
+               <Col md={3}>
                </Col>
              </Row>
              <Row>

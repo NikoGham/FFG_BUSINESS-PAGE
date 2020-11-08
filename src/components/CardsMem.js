@@ -3,12 +3,12 @@ import Card from 'react-bootstrap/Card';
 import CardDeck from 'react-bootstrap/CardDeck';
 import Button from 'react-bootstrap/Button'
 
-function CardsMem({ header1, header2, header3, image1 }) {
+function CardsMem({ header1, header2, image1, image2 }) {
 	return (
 		<div>
-			<CardDeck>
-				<Card>
-					<Card.Img variant='top' src={image1} />
+			<CardDeck >
+				<Card  bg="light" >
+					<Card.Img  variant='top' src={image1} />
 					<Card.Body>
 						<Card.Title>{header1} <hr></hr></Card.Title>
 						<Card.Text>
@@ -19,37 +19,31 @@ function CardsMem({ header1, header2, header3, image1 }) {
 						</Card.Text>
 					</Card.Body>
 					<Card.Footer>
-						<small className='text-muted'>Enquire...</small>
-						<Button></Button>
+						<Button style={style} variant="secondary">Enquire</Button>
 					</Card.Footer>
 				</Card>
-				<Card>
-					<Card.Img variant='top' src='holder.js/100px160' />
+				<Card bg="dark" >
+					<Card.Img variant='top' src={image2} />
 					<Card.Body>
 						<Card.Title>{header2}<hr></hr></Card.Title>
 						<Card.Text>
-							This card has supporting text below as a natural lead-in to additional content.{' '}
-						</Card.Text>
+						<p>Child - Access All Sessions - £40 </p>
+							<p>Adult - Access All Sessions - £50 </p>						</Card.Text>
 					</Card.Body>
 					<Card.Footer>
-						<small className='text-muted'>Last updated 3 mins ago</small>
+					<Button style={style} variant="secondary" >Enquire</Button>
+
 					</Card.Footer>
 				</Card>
-				<Card>
-					<Card.Img variant='top' src='holder.js/100px160' />
-					<Card.Body>
-						<Card.Title>{header3}</Card.Title>
-						<Card.Text>
 			
-						</Card.Text>
-					</Card.Body>
-					<Card.Footer>
-						<small className='text-muted'>Last updated 3 mins ago</small>
-					</Card.Footer>
-				</Card>
 			</CardDeck>
 		</div>
 	);
+}
+
+const style = {
+	width: "50%", 
+	height: ""
 }
 
 export default CardsMem;
