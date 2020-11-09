@@ -115,6 +115,11 @@ h1 {
 	width: 30%;
 }
 
+.menuHomeSVGsub {
+	height: 10%;
+	width: 10%;
+	color: white;
+}
 
 /*BackgroundColor setting for behind pusher*/
 
@@ -150,13 +155,14 @@ html, body {
   font-family: 'Nanum Myeongjo', serif;
   font-weight: 700;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-color: #000;
 
 
 }
 
 .homeBG {
-	height: 100%;
+	min-height: 100vh;
+	/* Must have min-height: 100vh; or else it shrinks to fit content */
 	background-color: var(--background);
 	background-image: url(./assets/dot.svg);
 	background-position: bottom;
@@ -263,7 +269,6 @@ li .link:hover {
 .childrenText {
 	font-size: 1.2em;
 	color: var(--optimalOnBlack);
-	letter-spacing: 2px;
 	text-align: center;
 	font-family: 'Nanum Myeongjo', serif;
 	list-style: none;
@@ -277,7 +282,6 @@ li .link:hover {
 .about-content p {
 	font-size: 1.4em;
 	color: var(--optimalOnBlack);
-	letter-spacing: 2px;
 	text-align: center;
 	padding: 10px;
 	font-family: 'Nanum Myeongjo', serif;

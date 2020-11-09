@@ -50,7 +50,7 @@ class Header extends Component {
           },
           particles: {
             color: {
-              value: "#ffffff",
+              value: "#000",
             },
             links: {
               color: "#ffffff",
