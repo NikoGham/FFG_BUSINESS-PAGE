@@ -358,8 +358,6 @@ li .link:hover {
 
 .linkSocial:hover {
 	transform: scale(1.4);
-
-
 }
 
 
@@ -368,6 +366,8 @@ li .link:hover {
  * Licensed under the MIT license - https://opensource.org/licenses/MIT
  * Copyright (c) 2020 Christian Pucci
  */
+
+ 
 .puffIn {
 	-webkit-animation-name: puffIn;
 			animation-name: puffIn; }
