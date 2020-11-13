@@ -1,11 +1,12 @@
 import React from "react";
+import '@fortawesome/fontawesome-free/css/all.min.css'; 
+import'bootstrap-css-only/css/bootstrap.min.css'; 
+import'mdbreact/dist/css/mdb.css';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon, MDBInput } from 'mdbreact';
 
 const ContactForm = () => {
 return (
-<MDBContainer>
-  <MDBRow>
-    <MDBCol md="6">
+
       <form>
         <p className="h5 text-center mb-4">Write to us</p>
         <div className="grey-text">
@@ -23,9 +24,7 @@ return (
           </MDBBtn>
         </div>
       </form>
-    </MDBCol>
-  </MDBRow>
-</MDBContainer>
+
 );
 };
 

@@ -9,6 +9,7 @@ class Contact extends Component {
   render() {
     return (
       <Container className='childrenBG contact' fluid>
+
         <Row>
           {/* TOP ROW WITH HEADING  */}
           <Col>
@@ -24,7 +25,8 @@ class Contact extends Component {
         </Row>
         {/* MIDDLE ROW FOR CONTENT */}
         <Row>
-          <Col md={6}>
+          <Col md={1} />
+          <Col md={5}>
             <Fade delay>
               <iframe
                 width="600"
@@ -40,7 +42,9 @@ class Contact extends Component {
           </Col>
                   {/* FORM COLUMN */}
         
-          <Col md={2}>
+          <Col md={5}>
+          <ContactForm></ContactForm>
+
           </Col>
         </Row>
         {/* BOTTOM ROW FOR FOOTER  */}
