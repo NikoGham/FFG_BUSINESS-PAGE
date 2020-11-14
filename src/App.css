@@ -64,6 +64,11 @@ hr {
 h1 {
   font-family: 'Nanum Myeongjo', serif;
   text-transform: uppercase;
+  padding: 10px;
+}
+
+.subTextFont {
+	font-family: 'Montserrat', sans-serif;
 }
 /* ORIGINAL TEMPLATE HAMBURGER MENU FROM BRAD TRAVERSY'S MODERN PORTFOLIO  */
 
@@ -219,6 +224,7 @@ header h1 {
 	font-weight: 400;
 	padding: 2em;
 	margin-right: 50em;
+	
 }
 
 nav {

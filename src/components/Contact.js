@@ -43,7 +43,10 @@ class Contact extends Component {
                   {/* FORM COLUMN */}
         
           <Col md={5}>
-          <ContactForm></ContactForm>
+            <Fade delay={500}>
+            <ContactForm></ContactForm>
+            </Fade>
+          
 
           </Col>
         </Row>
