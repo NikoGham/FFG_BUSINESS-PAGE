@@ -6,9 +6,7 @@ import { Container, Row, Col, Table } from 'react-bootstrap';
 class Timetable extends Component {
   render() {
 
-    const headerStyle = {
-      margin: "3rem",
-     };
+
 
     return (
       <Container className='childrenBG' fluid>
@@ -16,7 +14,7 @@ class Timetable extends Component {
           <Col>
             <div>
               <Fade left>
-                <h1 style={headerStyle}>Timetable <hr /></h1>
+                <h1 >Timetable <hr /></h1>
                 
               </Fade>
             </div>

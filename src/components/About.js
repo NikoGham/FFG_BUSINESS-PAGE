@@ -10,11 +10,11 @@ import data from '../yourdata';
 
 class About extends Component {
 	state = {
-		title: ''
+		title: 'CREED'
 	};
 
-	// Small notes - Bring 1st image in so more symmetrical. Grey out more when on menu. Change Japanese Characters to red jap color pallette. 
-	// Coding => How can I achieve a task and win a battle with the skills and tools I currently know and/or can discover and learn. 
+	// Small notes - Bring 1st image in so more symmetrical. Grey out more when on menu. Change Japanese Characters to red jap color pallette.
+	// Coding => How can I achieve a task and win a battle with the skills and tools I currently know and/or can discover and learn.
 
 	render() {
 		const honor = data.abouttextlist;
@@ -26,9 +26,8 @@ class About extends Component {
 		));
 
 		const headerStyle = {
-			margin: '3rem',
 			fontFamily: 'MoykoTitle',
-			color: 'var(--blackJapPalette)'
+			color: 'var(--optimalOnBlack)'
 		};
 
 		const styleList = {
@@ -43,7 +42,8 @@ class About extends Component {
 					<Col>
 						<div className='about'>
 							<Fade left cascade>
-								<h1 style={headerStyle}> {this.state.title}</h1>
+								<h1> {this.state.title}</h1>
+								<hr></hr>
 							</Fade>
 						</div>
 					</Col>
@@ -54,9 +54,9 @@ class About extends Component {
 						<div className='about-content'>
 							<Fade left slow>
 								<p>
-									Welcome to FULL FAT GRAPPLING <br /> <hr />
-									The home of great ambition and high expectation. Our focus is to benefit anyone in
-									any grappling sport, specialising in the Olympic sport of JUDO.
+									Welcome to FULL FAT GRAPPLING. The home of great ambition and high expectation. Our
+									focus is to benefit anyone in any grappling sport, specialising in the Olympic sport
+									of JUDO.
 								</p>
 								<Row>
 									<Col>
@@ -99,9 +99,9 @@ class About extends Component {
 					</Col>
 					<Col md={2} />
 				</Row>
-			
-				<Row style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }} >
-					<Footer  />
+
+				<Row style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+					<Footer />
 				</Row>
 			</Container>
 		);

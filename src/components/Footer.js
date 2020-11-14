@@ -5,7 +5,6 @@ const Footer = () => {
 
 	return (
 		<div>
-      	<hr />
 			<a style={style} target='_blank' rel='noopener noreferrer' href={'https://www.instagram.com/fullfatjudo/'}>
 				<i className='fab fa-instagram linkSocial' />
 			</a>

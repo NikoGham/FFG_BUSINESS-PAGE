@@ -37,7 +37,7 @@ function AdultCarousel() {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100 main"
+          className="d-block w-50 main"
           src={image3}
           alt="Third slide"
         />
