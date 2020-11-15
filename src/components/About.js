@@ -43,7 +43,6 @@ class About extends Component {
 						<div className='about'>
 							<Fade left cascade>
 								<h1> {this.state.title}</h1>
-								<hr></hr>
 							</Fade>
 						</div>
 					</Col>
