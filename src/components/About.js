@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image';
 import child from '../assets/CHILD_PHOTO.jpg';
 import child1 from '../assets/Adult.jpg';
+import headImage from '../assets/17.jpg';
 import Footer from './Footer';
 
 import data from '../yourdata';
@@ -25,11 +26,6 @@ class About extends Component {
 			</h4>
 		));
 
-		const headerStyle = {
-			fontFamily: 'MoykoTitle',
-			color: 'var(--optimalOnBlack)'
-		};
-
 		const styleList = {
 			fontFamily: 'Nanum Myeongjo, serif',
 			fontSize: '100%',
@@ -38,6 +34,16 @@ class About extends Component {
 
 		return (
 			<Container className='childrenBG' fluid>
+				{/* Header */}
+				<header className='' style={{ maxWidth: 1500 }} id='home'>
+					<img
+						className=''
+						src={headImage}
+						alt='Architecture'
+						style={{ height: '100vh', width: '100%', opacity: 0.2, position: 'fixed', zIndex: '0' }}
+					/>
+				</header>
+
 				<Row>
 					<Col>
 						<div className='about'>
@@ -99,12 +105,34 @@ class About extends Component {
 					<Col md={2} />
 				</Row>
 
-				<Row style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+				<Row style={styleDiv}>
 					<Footer />
+				</Row>
+				<Row style={styleDiv2}>
+					<p>  Unit 4, 24 Norbury Road, Cardiff, CF5 3AU | 08420934824 | info@fullfatgrappling.com</p>
 				</Row>
 			</Container>
 		);
 	}
 }
+
+const styleDiv = {
+	backgroundColor: 'var(--goldGrappFont)',
+	display: 'flex',
+	alignItems: 'center',
+	justifyContent: 'center',
+	height: "8vh"
+};
+
+const styleDiv2 = {
+	backgroundColor: 'var(--caramelFont)',
+	display: 'flex',
+	alignItems: 'center',
+	justifyContent: 'center',
+	height: "7vh", 
+	color: "#000", 
+	fontFamily: 'Montserrat',
+
+};
 
 export default About;
