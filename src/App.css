@@ -349,6 +349,11 @@ li .link:hover {
 	transform: translate(0px, -20px);
 }
 
+#cardMemPriceText {
+	color: var(--creamJapPalette);
+
+}
+
 
 
 /*!

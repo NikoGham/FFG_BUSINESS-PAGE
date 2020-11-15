@@ -142,7 +142,7 @@ const styleDiv2 = {
 const FooterContainer = {
 	backgroundColor: 'var(--caramelFont)',
 	position: 'static',
-	width: '100%',
+	width: 'auto',
 	bottom: '0px',
 	display: 'flex',
 	justifyContent: 'center'
@@ -152,7 +152,7 @@ const carouselContainer = {
 	position: 'fixed',
 	top: '0px',
 	height: '50%',
-	width: 'auto',
+	width: '100%',
 	opacity: 0.3
 };
 
