@@ -70,12 +70,33 @@ class Child extends Component {
 					</Col>
 					<Col />
 				</Row>
-				<Row style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '2rem' }}>
+				<Row style={styleDiv}>
 					<Footer />
+				</Row>
+				<Row style={styleDiv2}>
+					<p>  Unit 4, 24 Norbury Road, Cardiff, CF5 3AU | 08420934824 | info@fullfatgrappling.com</p>
 				</Row>
 			</Container>
 		);
 	}
 }
 
+const styleDiv = {
+	backgroundColor: 'var(--goldGrappFont)',
+	display: 'flex',
+	alignItems: 'center',
+	justifyContent: 'center',
+	height: "8vh"
+};
+
+const styleDiv2 = {
+	backgroundColor: 'var(--caramelFont)',
+	display: 'flex',
+	alignItems: 'center',
+	justifyContent: 'center',
+	height: "7vh", 
+	color: "#000", 
+	fontFamily: 'Montserrat',
+
+};
 export default Child;
