@@ -141,7 +141,7 @@ const styleDiv2 = {
 
 const FooterContainer = {
 	backgroundColor: 'var(--caramelFont)',
-	position: 'relative',
+	position: 'static',
 	width: '100%',
 	bottom: '0px',
 	display: 'flex',
@@ -157,7 +157,6 @@ const carouselContainer = {
 };
 
 const carouselItem = {
-	transform: "scale(0.5)"
 };
 
 export default Child;
