@@ -334,6 +334,23 @@ li .link:hover {
 	transform: scale(2.3);
 }
 
+/* MEMBERSHIP PAGE - TRANSITIONS */
+
+.cardText {
+	font-weight: bold;
+	transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+}
+
+.cardText:hover {
+	transform: translate(0px, -20px);
+}
+
+
+
 /*!
  * Magic - https://www.minimamente.com
  * Licensed under the MIT license - https://opensource.org/licenses/MIT

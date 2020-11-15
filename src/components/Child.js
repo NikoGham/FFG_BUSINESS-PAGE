@@ -152,7 +152,7 @@ const carouselContainer = {
 	position: 'fixed',
 	top: '0px',
 	height: '50%',
-	width: '100%',
+	width: 'auto',
 	opacity: 0.3
 };
 

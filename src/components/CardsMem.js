@@ -6,8 +6,8 @@ import Button from 'react-bootstrap/Button'
 function CardsMem({ header1, header2, image1, image2 }) {
 	return (
 		<div>
-			<CardDeck >
-				<Card  bg="light" >
+			<CardDeck  >
+				<Card className="subTextFont cardText " bg="light" >
 					<Card.Img  variant='top' src={image1} />
 					<Card.Body>
 						<Card.Title>{header1} <hr></hr></Card.Title>
@@ -19,10 +19,10 @@ function CardsMem({ header1, header2, image1, image2 }) {
 						</Card.Text>
 					</Card.Body>
 					<Card.Footer>
-						<Button style={style} variant="secondary">Enquire</Button>
+						<Button style={style} variant="warning">Enquire</Button>
 					</Card.Footer>
 				</Card>
-				<Card bg="dark" >
+				<Card className="subTextFont cardText" bg="dark" >
 					<Card.Img variant='top' src={image2} />
 					<Card.Body>
 						<Card.Title>{header2}<hr></hr></Card.Title>
@@ -31,7 +31,7 @@ function CardsMem({ header1, header2, image1, image2 }) {
 							<p>Adult - Access All Sessions - £50 </p>						</Card.Text>
 					</Card.Body>
 					<Card.Footer>
-					<Button style={style} variant="secondary" >Enquire</Button>
+					<Button style={style} variant="warning" >Enquire</Button>
 
 					</Card.Footer>
 				</Card>
@@ -42,7 +42,7 @@ function CardsMem({ header1, header2, image1, image2 }) {
 }
 
 const style = {
-	width: "50%", 
+	width: "75%", 
 	height: ""
 }
 
