@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
 import Footer from './Footer';
 import { Container, Row, Col, Table } from 'react-bootstrap';
+import { MDBMask, MDBView, MDBContainer } from "mdbreact";
 
 class Timetable extends Component {
   render() {
@@ -14,7 +15,7 @@ class Timetable extends Component {
           <Col>
             <div>
               <Fade left>
-                <h1 >Timetable <hr /></h1>
+                <h1 >Timetable </h1>
                 
               </Fade>
             </div>
@@ -23,7 +24,8 @@ class Timetable extends Component {
         <Row>
           <Col xs={2}></Col>
           <Col >
-          <Table hover striped bordered variant="dark" size="sm">
+       
+      <Table className=" tablebg" hover striped bordered variant="dark" size="sm">
       <thead>
         <tr>
           <th></th>
@@ -102,21 +104,53 @@ class Timetable extends Component {
         
       </tbody>
     </Table>
+         
           </Col>
           <Col xs={2}>
             
           </Col>
         </Row>
         
-        <Row >
-        <Col md={{span: 12}}>
-        <Footer />
-
-        </Col>
-        </Row>
+      {/*FOOTER SECTION */}
+				<Row style={FooterContainer}>
+					<Row style={styleDiv}>
+						<Footer />
+					</Row>
+					<Row style={styleDiv2}>
+						<p> Unit 4, 24 Norbury Road, Cardiff, CF5 3AU | 08420934824 | info@fullfatgrappling.com</p>
+					</Row>
+				</Row>
       </Container>
     );
   }
 }
 
+const styleDiv = {
+	backgroundColor: 'var(--goldGrappFont)',
+	display: 'flex',
+	alignItems: 'center',
+	justifyContent: 'center',
+	height: '8vh',
+	width: '100%'
+};
+
+const styleDiv2 = {
+	backgroundColor: 'var(--caramelFont)',
+	display: 'flex',
+	alignContent: 'center',
+	justifyContent: 'center',
+	height: '7vh',
+	width: '100%',
+	color: '#000',
+	fontFamily: 'Montserrat'
+};
+
+const FooterContainer = {
+	backgroundColor: 'var(--caramelFont)',
+	position: 'absolute',
+	width: '100%',
+	bottom: '0px',
+	display: 'flex',
+	justifyContent: 'center'
+};
 export default Timetable;

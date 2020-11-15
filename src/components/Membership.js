@@ -85,7 +85,7 @@ const FooterContainer = {
 	bottom: '0px',
 	display: 'flex',
   justifyContent: 'center', 
-  opacity: 0.6
+  
 };
 
 export default Membership

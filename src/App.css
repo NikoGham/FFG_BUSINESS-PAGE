@@ -59,14 +59,15 @@ Text font :     font-family: 'Lato', sans-serif; */
 hr {
 	background-color: var(--creamJapPalette);
 	width: 100%;
-	flex-direction: inherit;
+	flex-direction: flex;
 	justify-content: center;
+	justify-items: center;
 }
 
 h1 {
 	font-family: 'Nanum Myeongjo', serif;
 	text-transform: uppercase;
-	padding: 10px;
+	padding: 20px;
 }
 
 .subTextFont {
@@ -354,6 +355,30 @@ li .link:hover {
 
 }
 
+
+
+/* TIMETABLE PAGE  */
+
+.tablebg {
+	opacity: 1;
+	height: 100%;
+	width: 100%;
+}
+
+.tablebg::before {
+	background-image: url(./assets/kano.jpg);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover; /*contain--Resize the background image to make sure the image is fully visible*/
+	background-origin: border-box;
+	content: "";
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	opacity: 0.05;
+}
 
 
 /*!
