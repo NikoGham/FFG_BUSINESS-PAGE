@@ -141,7 +141,7 @@ const styleDiv2 = {
 
 const FooterContainer = {
 	backgroundColor: 'var(--caramelFont)',
-	position: 'fixed',
+	position: 'relative',
 	width: '100%',
 	bottom: '0px',
 	display: 'flex',
