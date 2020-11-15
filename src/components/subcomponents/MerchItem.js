@@ -1,19 +1,18 @@
 import React from "react";
 import { MDBMask, MDBView, MDBContainer, MDBRow, MDBCol } from "mdbreact";
 
-class HoverPage extends React.Component {
-  render() {
+function MerchItem ({box1, box2, zoomBox}) {
     return (
       <MDBContainer className="mt-5">
         <MDBRow>
           <MDBCol md="4">
             <MDBView hover>
               <img
-                src="https://mdbootstrap.com/img/Others/documentation/forest-sm-mini.jpg"
+                src={box1}
                 className="img-fluid"
                 alt=""
               />
-              <MDBMask className="flex-center" overlay="red-strong">
+              <MDBMask className="flex-center" overlay="black-strong">
                 <p className="white-text">Strong overlay</p>
               </MDBMask>
             </MDBView>
@@ -21,7 +20,7 @@ class HoverPage extends React.Component {
           <MDBCol md="4">
             <MDBView hover>
               <img
-                src="https://mdbootstrap.com/img/Others/documentation/forest-sm-mini.jpg"
+                src={box2}
                 className="img-fluid"
                 alt=""
               />
@@ -47,7 +46,7 @@ class HoverPage extends React.Component {
           <MDBCol md="6">
             <MDBView hover zoom>
               <img
-                src="https://mdbootstrap.com/img/Others/documentation/img%20(131)-mini.jpg"
+                src={zoomBox}
                 className="img-fluid"
                 alt=""
               />
@@ -68,6 +67,6 @@ class HoverPage extends React.Component {
       </MDBContainer>
     );
   }
-}
 
-export default HoverPage;
+
+export default MerchItem;
