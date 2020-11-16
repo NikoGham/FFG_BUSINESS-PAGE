@@ -47,9 +47,6 @@ const style = {
 }
 
 
-const styleText = {
-color: "var(--creamJapPalette)"
-}
 
 
 

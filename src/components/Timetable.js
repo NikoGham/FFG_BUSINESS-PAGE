@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
 import Footer from './Footer';
 import { Container, Row, Col, Table } from 'react-bootstrap';
-import { MDBMask, MDBView, MDBContainer } from "mdbreact";
 
 class Timetable extends Component {
   render() {
@@ -117,8 +116,7 @@ class Timetable extends Component {
 						<Footer />
 					</Row>
 					<Row style={styleDiv2}>
-						<p> Unit 4, 24 Norbury Road, Cardiff, CF5 3AU | 08420934824 | info@fullfatgrappling.com</p>
-					</Row>
+          <p> Full Fat Grappling, Pratten's Charlton La, Radstock BA3 4BD, United Kingdom| 07877 816 749 | info@fullfatgrappling.com</p>					</Row>
 				</Row>
       </Container>
     );

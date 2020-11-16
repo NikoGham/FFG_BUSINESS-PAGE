@@ -38,7 +38,7 @@ class Merch extends Component {
 					<Col>
 						<Fade left slow>
 							<Row>
-								<MerchItem box1={WhiteTee} box2={BlackFront} zoomBox={BlackJumperFront}/>
+								<MerchItem box1={WhiteTee} box2={BlackFront} zoomBox={BlackJumperFront} shadowBox={WhiteBack} box3={BlackBack} />
 							</Row>
 						</Fade>
 					</Col>
@@ -49,8 +49,7 @@ class Merch extends Component {
 					<Col>
 						<Fade left slow>
 							<Row>
-								<MerchItem />
-							</Row>
+							<MerchItem box1={GreyBack} box2={GreyFront} zoomBox={GreyJumperFront} shadowBox={WhiteBack} box3={PinkJumperFront} />							</Row>
 						</Fade>
 					</Col>
 					<Col md={2} />
@@ -60,7 +59,6 @@ class Merch extends Component {
 					<Col>
 						<Fade left slow>
 							<Row>
-								<MerchItem />
 							</Row>
 						</Fade>
 					</Col>
@@ -73,7 +71,7 @@ class Merch extends Component {
 						<Footer />
 					</Row>
 					<Row style={styleDiv2}>
-						<p> Full Fat Grappling / Full Fat Judo, Pratten's Charlton La, Radstock BA3 4BD, United Kingdom| 08420934824 | info@fullfatgrappling.com</p>
+						<p> Full Fat Grappling, Pratten's Charlton La, Radstock BA3 4BD, United Kingdom| 07877 816 749 | info@fullfatgrappling.com</p>
 					</Row>
 				</Row>
 			</Container>

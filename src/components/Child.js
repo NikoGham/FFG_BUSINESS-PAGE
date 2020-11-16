@@ -2,16 +2,14 @@ import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
 import Footer from './Footer';
 import { Container, Row, Col } from 'react-bootstrap';
-import ChildCarousel from './subcomponents/ChildCarousel';
 
 import {
 	MDBCarousel,
-	MDBCarouselCaption,
 	MDBCarouselInner,
 	MDBCarouselItem,
 	MDBView,
 	MDBMask,
-	MDBContainer
+	
 } from 'mdbreact';
 
 import image2 from '../assets/2.jpg';
@@ -30,7 +28,7 @@ class Child extends Component {
 				<Row style={carouselContainer}>
 					<MDBCarousel
 						activeItem={1}
-						length={2}
+						length={6}
 						showControls={true}
 						showIndicators={true}
 						className='z-depth-1'
@@ -45,11 +43,31 @@ class Child extends Component {
 
 							<MDBCarouselItem itemId='2'>
 								<MDBView>
-									<img
-										className='d-block w-100'
-										src={image3}
-										alt='Third slide'
-									/>
+									<img className='d-block w-100' src={image3} alt='Third slide' />
+									<MDBMask overlay='black-light' />
+								</MDBView>
+							</MDBCarouselItem>
+							<MDBCarouselItem itemId='3'>
+								<MDBView>
+									<img className='d-block w-100' src={image4} alt='Third slide' />
+									<MDBMask overlay='black-light' />
+								</MDBView>
+							</MDBCarouselItem>
+							<MDBCarouselItem itemId='4'>
+								<MDBView>
+									<img className='d-block w-100' src={image5} alt='Third slide' />
+									<MDBMask overlay='black-light' />
+								</MDBView>
+							</MDBCarouselItem>
+							<MDBCarouselItem itemId='5'>
+								<MDBView>
+									<img className='d-block w-100' src={image6} alt='Sixth slide' />
+									<MDBMask overlay='black-light' />
+								</MDBView>
+							</MDBCarouselItem>
+							<MDBCarouselItem itemId='6'>
+								<MDBView>
+									<img className='d-block w-100' src={image7} alt='Seventh slide' />
 									<MDBMask overlay='black-light' />
 								</MDBView>
 							</MDBCarouselItem>
@@ -111,7 +129,11 @@ class Child extends Component {
 						<Footer />
 					</Row>
 					<Row style={styleDiv2}>
-						<p> Unit 4, 24 Norbury Road, Cardiff, CF5 3AU | 08420934824 | info@fullfatgrappling.com</p>
+						<p>
+							{' '}
+							Full Fat Grappling, Pratten's Charlton La, Radstock BA3 4BD, United Kingdom| 07877 816 749 |
+							info@fullfatgrappling.com
+						</p>{' '}
 					</Row>
 				</Row>
 			</Container>
@@ -156,7 +178,6 @@ const carouselContainer = {
 	opacity: 0.3
 };
 
-const carouselItem = {
-};
+const carouselItem = {};
 
 export default Child;

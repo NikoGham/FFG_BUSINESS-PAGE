@@ -5,19 +5,14 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 import {
 	MDBCarousel,
-	MDBCarouselCaption,
 	MDBCarouselInner,
 	MDBCarouselItem,
 	MDBView,
 	MDBMask,
-	MDBContainer
 } from 'mdbreact';
 
-import image2 from '../assets/2.jpg';
-import image4 from '../assets/4.jpg';
-import image3 from '../assets/3.jpg';
+
 import image5 from '../assets/5.jpg';
-import image6 from '../assets/6.jpg';
 import image7 from '../assets/7.jpg';
 
 class Adult extends Component {
@@ -46,7 +41,7 @@ class Adult extends Component {
 								<MDBView>
 									<img
 										className='d-block w-100'
-										src={image4}
+										src={image7}
 										alt='Third slide'
 									/>
 									<MDBMask overlay='black-light' />
@@ -110,8 +105,7 @@ class Adult extends Component {
 						<Footer />
 					</Row>
 					<Row style={styleDiv2}>
-						<p> Unit 4, 24 Norbury Road, Cardiff, CF5 3AU | 08420934824 | info@fullfatgrappling.com</p>
-					</Row>
+					<p> Full Fat Grappling, Pratten's Charlton La, Radstock BA3 4BD, United Kingdom| 07877 816 749 | info@fullfatgrappling.com</p>					</Row>
 				</Row>
 			</Container>
 		);

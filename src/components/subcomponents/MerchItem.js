@@ -1,7 +1,7 @@
 import React from "react";
 import { MDBMask, MDBView, MDBContainer, MDBRow, MDBCol } from "mdbreact";
 
-function MerchItem ({box1, box2, zoomBox}) {
+function MerchItem ({box1, box2, zoomBox, shadowBox, box3}) {
     return (
       <MDBContainer className="mt-5">
         <MDBRow>
@@ -32,7 +32,7 @@ function MerchItem ({box1, box2, zoomBox}) {
           <MDBCol md="4">
             <MDBView hover>
               <img
-                src="https://mdbootstrap.com/img/Others/documentation/forest-sm-mini.jpg"
+                src={box3}
                 className="img-fluid"
                 alt=""
               />
@@ -56,9 +56,8 @@ function MerchItem ({box1, box2, zoomBox}) {
             </MDBView>
           </MDBCol>
           <MDBCol md="6">
-            <h5 className="text-center">Shadow effect</h5>
             <img
-              src="https://mdbootstrap.com/img/Others/documentation/4.jpg"
+              src={shadowBox}
               className="img-fluid rounded-circle hoverable"
               alt=""
             />
