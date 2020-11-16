@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image';
 import child from '../assets/CHILD_PHOTO.jpg';
 import child1 from '../assets/Adult.jpg';
+import image3 from '../assets/9.jpg';
 import headImage from '../assets/17.jpg';
 import Footer from './Footer';
 
@@ -27,8 +28,8 @@ class About extends Component {
 		));
 
 		const styleList = {
-			fontFamily: 'Nanum Myeongjo, serif',
-			fontSize: '100%',
+			fontFamily: 'Montserrat',
+
 			listStyle: 'none'
 		};
 
@@ -91,10 +92,7 @@ class About extends Component {
 										<p>{data.abouttext3}</p>
 										<hr />
 									</Fade>
-									<Fade slow>
-										<p>{data.abouttext31}</p>
-										<Image src={child1} alt='Child Throw in Judo' thumbnail />
-									</Fade>
+									
 									<Fade slow>
 										<p>{data.abouttext4}</p>
 									</Fade>
@@ -109,7 +107,12 @@ class About extends Component {
 					<Footer />
 				</Row>
 				<Row style={styleDiv2}>
-				<p> Full Fat Grappling, Pratten's Charlton La, Radstock BA3 4BD, United Kingdom| 07877 816 749 | info@fullfatgrappling.com</p>				</Row>
+					<p>
+						{' '}
+						Full Fat Grappling, Pratten's Charlton La, Radstock BA3 4BD, United Kingdom| 07877 816 749 |
+						info@fullfatgrappling.com
+					</p>{' '}
+				</Row>
 			</Container>
 		);
 	}
@@ -120,7 +123,7 @@ const styleDiv = {
 	display: 'flex',
 	alignItems: 'center',
 	justifyContent: 'center',
-	height: "8vh"
+	height: '8vh'
 };
 
 const styleDiv2 = {
@@ -128,10 +131,9 @@ const styleDiv2 = {
 	display: 'flex',
 	alignItems: 'center',
 	justifyContent: 'center',
-	height: "7vh", 
-	color: "#000", 
-	fontFamily: 'Montserrat',
-
+	height: '7vh',
+	color: '#000',
+	fontFamily: 'Montserrat'
 };
 
 export default About;

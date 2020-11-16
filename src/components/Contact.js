@@ -70,7 +70,6 @@ const styleDiv = {
 };
 
 const styleDiv2 = {
-	backgroundColor: 'var(--optimalOnBlack)',
 	display: 'flex',
 	alignContent: 'center',
 	alignItems: 'center',
