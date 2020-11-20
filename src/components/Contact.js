@@ -25,12 +25,12 @@ class Contact extends Component {
 				<Row>
 					<Col md={1} />
 					<Col md={5}>
-						<Fade delay>
+						<Fade >
 							<iframe
 								width='600'
 								height='500'
 								src='https://maps.google.com/maps?q=full%20fat%20grappling,%20Radstock%20BA3%204BD&t=&z=13&ie=UTF8&iwloc=B&output=embed'
-								frameborder='0'
+								frameBorder='100'
 								scrolling='no'
 								marginheight='0'
 								marginwidth='0'
