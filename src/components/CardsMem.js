@@ -28,7 +28,7 @@ function CardsMem({ header1, header2, image1, image2 }) {
 						<Card.Title>{header2}<hr></hr></Card.Title>
 						<Card.Text id="cardMemPriceText" >
 						<p>Child - Access All Sessions - £40 </p>
-							<p>Adult - Access All Sessions - £50 </p>						</Card.Text>
+							<p>Adult - Access All Sessions - £60 </p>						</Card.Text>
 					</Card.Body>
 					<Card.Footer>
 					<Button style={style} variant="warning" >Enquire</Button>
