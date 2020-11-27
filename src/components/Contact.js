@@ -32,8 +32,8 @@ class Contact extends Component {
 								src='https://maps.google.com/maps?q=full%20fat%20grappling,%20Radstock%20BA3%204BD&t=&z=13&ie=UTF8&iwloc=B&output=embed'
 								frameBorder='100'
 								scrolling='no'
-								marginheight='0'
-								marginwidth='0'
+								marginHeight='0'
+								marginWidth='0'
 								title='Location'
 							/>
 						</Fade>

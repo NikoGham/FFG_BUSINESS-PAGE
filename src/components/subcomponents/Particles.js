@@ -1,7 +1,8 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 import Particles from 'react-tsparticles';
 
-export const Particles = () => {
+
+const ParticlesBG = () => {
     return (
        <Fragment>
            < Particles width={"100%"} id="tsparticles" params={{
@@ -86,3 +87,5 @@ export const Particles = () => {
        </Fragment>
     )
 }
+
+export default ParticlesBG

@@ -12,7 +12,7 @@ import CardsMem from './CardsMem'
          
          
            return (
-             <Container className='childrenBG' fluid noGutters>
+             <Container className='childrenBG' fluid >
              <Row>
                <Col>
                  <div>
