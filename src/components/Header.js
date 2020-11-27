@@ -11,6 +11,7 @@ class Header extends Component {
 	render() {
 		return (
 			<Container className='homeBG' fluid>
+				<Particles />
 				<Row>
 					<Col>
 						<p className='header-title'>
