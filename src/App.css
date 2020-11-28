@@ -74,7 +74,6 @@ h1 {
 	font-family: 'Montserrat', sans-serif;
 }
 
-
 /* ORIGINAL TEMPLATE HAMBURGER MENU FROM BRAD TRAVERSY'S MODERN PORTFOLIO  */
 
 /* NOTE TO SELF - USE POSITION ABSOLUTE AND LEFT/RIGHT/TOP ETC TO POSITION*/
@@ -117,7 +116,7 @@ h1 {
 	position: fixed;
 	z-index: 1;
 	width: 100%;
-	opacity: 0.3;
+	opacity: 0.7;
 }
 
 .menuHomeSVG {
@@ -128,7 +127,7 @@ h1 {
 .menuHomeSVGsub {
 	height: 1.5rem;
 	width: 1.5rem;
-	color:#ffffff;
+	color: #ffffff;
 }
 
 /*BackgroundColor setting for behind pusher*/
@@ -176,8 +175,7 @@ body {
 	color: var(--goldGrappFont);
 	font-weight: 1000;
 	font-size: 10rem;
-	-webkit-animation: text-shadow-drop-bl 0.6s both;
-	animation: text-shadow-drop-bl 0.6s both;
+
 }
 
 /* ----------------------------------------------
@@ -271,7 +269,7 @@ li .link:hover {
 .header-title {
 	position: relative;
 	left: 8%;
-	top: -15%;
+	top: -80%;
 	transform: rotate(-15deg);
 	font-family: mHucker;
 	font-size: 3em;
@@ -321,8 +319,6 @@ li .link:hover {
 	height: 40em;
 }
 
-
-
 .linkSocial {
 	color: var(--blackJapPalette);
 	transform: scale(1.8);
@@ -355,10 +351,7 @@ li .link:hover {
 
 #cardMemPriceText {
 	color: var(--creamJapPalette);
-
 }
-
-
 
 /* TIMETABLE PAGE  */
 
@@ -391,136 +384,117 @@ li .link:hover {
 
 /* ================================================================== */
 
-
 /* screenwidth less than 1024px
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 1024px) {
-
-    /* header styles
+	/* header styles
    ------------------------------------------------------------------ */
-  
-
-  
 }
 
 /* screenwidth less than 900px
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 900px) {
-
-    /* header styles
+	/* header styles
    ------------------------------------------------------------------ */
-  
 
-
-   /* About Section
+	/* About Section
    ------------------------------------------------------------------- */
- 
 
-   /* Resume Section
+	/* Resume Section
    ------------------------------------------------------------------- */
-     
 
-   /* Testimonials Section
+	/* Testimonials Section
    ------------------------------------------------------------------- */
-   
 
-    /* Call to Action Section
+	/* Call to Action Section
    ------------------------------------------------------------------- */
-  
 
-   /* Contact Section
+	/* Contact Section
    ------------------------------------------------------------------- */
- 
 }
 
 /* mobile wide/smaller tablets
 ---------------------------------------------------------------------- */
 
 @media only screen and (max-width: 767px) {
-
-   /* mobile navigation
+	/* mobile navigation
    -------------------------------------------------------------------- */
-  
-   
 
-   
-
-
-   /* Header Styles
+	/* Header Styles
    -------------------------------------------------------------------- */
- 
 
-
-   /* About Section
+	/* About Section
    -------------------------------------------------------------------- */
-   
 
-   /* Resume Section
+	/* Resume Section
    --------------------------------------------------------------------- */
-   
 
-
-   /* Call To Action Section
+	/* Call To Action Section
    /* ----------------------------------------------------------------- */
-   
 
-   /* Portfolio Section
+	/* Portfolio Section
    /* ----------------------------------------------------------------- */
-   
-   /* Testimonials Section
-   ----------------------------------------------------------------------- */
-   
 
-
-   /* contact Section
+	/* Testimonials Section
    ----------------------------------------------------------------------- */
-  
-   /* footer
+
+	/* contact Section
+   ----------------------------------------------------------------------- */
+
+	/* footer
    ------------------------------------------------------------------------ */
-  
-   /* copyright */
-   
 
-
+	/* copyright */
 }
 
 /* mobile narrow
   -------------------------------------------------------------------------- */
 
 @media only screen and (max-width: 480px) {
-
-   /* Header
+	/* Header
    -------------------------------------------------------------------- */
-   .header-title {
-      font-size: 15px;
-      position: relative;
-      top: 50px;
+
+   .homeBG{
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: space-evenly;
    }
 
+	.header-title {
+		font-size: 25px;
+		position: absolute;
+		top: 100px;
+	}
 
-   .heading-background {
-      position: relative;
-      top: 5rem;
-   }
-   /* header styles
-   -------------------------------------------------------------------- */
-   
-  
-   /* header social links */
-  
-   /* footer
-   ------------------------------------------------------------------------ */
+	.heading-background {
+		position: relative;
+		top: 5rem;
+	}
 
-   /* social links */
-    
+	#grappleStyle {
+		position: relative;
+		text-align: center;
+		font-size: 13vw;
+		z-index: 1;
 
+	}
+
+	
+#tsparticles {
+	position: fixed;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.7;
 }
 
+	/* header styles
+   -------------------------------------------------------------------- */
 
+	/* header social links */
 
+	/* footer
+   ------------------------------------------------------------------------ */
 
-
-
-
-
-
+	/* social links */
+}

@@ -32,8 +32,8 @@ class Header extends Component {
 				<Row>
 					<Col md={12}>
 						<Flash duration={10000} delay={2100} cascade>
-							<h1>
-								<span id='grappleStyle'>GRAPPLING</span>
+							<h1 id='grappleStyle'>
+								GRAPPLING
 							</h1>
 						</Flash>
 					</Col>
