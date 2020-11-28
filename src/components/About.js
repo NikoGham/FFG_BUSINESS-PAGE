@@ -4,7 +4,6 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image';
 import child from '../assets/CHILD_PHOTO.jpg';
 import child1 from '../assets/Adult.jpg';
-import image3 from '../assets/9.jpg';
 import headImage from '../assets/17.jpg';
 import Footer from './Footer';
 
@@ -65,12 +64,12 @@ class About extends Component {
 									of JUDO.
 								</p>
 								<Row>
-									<Col>
+									<Col sm={6}>
 										<div>
 											<Image src={child} alt='Child Throw in Judo' thumbnail />
 										</div>
 									</Col>
-									<Col style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+									<Col sm={true} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
 										<ul style={styleList}> {honorList} </ul>
 									</Col>
 								</Row>

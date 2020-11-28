@@ -13,7 +13,7 @@ function CardsMem({ header1, header2, image1, image2 }) {
 						{header1} <hr />
 					</Card.Title>
 					<Card.Text id='cardMemPriceText'>
-						Child - 4 Sessions per month - £20 
+						Child - 4 Sessions per month - £20 <br></br>
 						Adult - 4 Sessions per month - £30 
 					</Card.Text>
 				</Card.Body>
@@ -32,7 +32,7 @@ function CardsMem({ header1, header2, image1, image2 }) {
 						<hr />
 					</Card.Title>
 					<Card.Text id='cardMemPriceText'>
-						Child - Access All Sessions - £40 
+						Child - Access All Sessions - £40 <br></br>
 						Adult - Access All Sessions - £60 
 					</Card.Text>
 				</Card.Body>

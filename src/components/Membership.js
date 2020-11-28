@@ -17,7 +17,7 @@ import CardsMem from './CardsMem'
                <Col>
                  <div>
                    <Fade left>
-                     <h1 >Memberships </h1>
+                     <h1 className="memTitle">Memberships </h1>
                    
                    </Fade>
                  </div>

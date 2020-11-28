@@ -29,8 +29,8 @@ class Child extends Component {
 					<MDBCarousel
 						activeItem={1}
 						length={6}
-						showControls={true}
-						showIndicators={true}
+						showControls={false}
+						showIndicators={false}
 						className='z-depth-1'
 					>
 						<MDBCarouselInner>
@@ -80,7 +80,7 @@ class Child extends Component {
 					<Col>
 						<div>
 							<Fade left>
-								<h1>Child Athletes </h1>
+								<h1 id="childTitle">Child Athletes </h1>
 							</Fade>
 						</div>
 					</Col>
@@ -173,7 +173,7 @@ const FooterContainer = {
 const carouselContainer = {
 	position: 'fixed',
 	top: '0px',
-	height: '50%',
+	height: '100%',
 	width: '100%',
 	opacity: 0.3
 };
