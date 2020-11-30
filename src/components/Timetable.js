@@ -3,27 +3,33 @@ import Fade from 'react-reveal/Fade';
 import Footer from './Footer';
 import { Container, Row, Col, Table } from 'react-bootstrap';
 
-class Timetable extends Component {
-  render() {
 
+class Child extends Component {
+	render() {
+		return (
+			<Container className='childrenBG' fluid>
+				{/*CAROSEL BACKGROUND TOP SECTION */}
 
+				<Row >
+				
+				</Row>
+				{/*CONTENT SECTION */}
 
-    return (
-      <Container className='childrenBG' fluid>
-        <Row>
-          <Col>
-            <div>
-              <Fade left>
-                <h1 className="memTitle">Timetable </h1>
-                
-              </Fade>
-            </div>
-          </Col>
-        </Row>
-        <Row >
-          <Col >
-       
-      <Table className="tablebg" hover striped bordered variant="dark" >
+				<Row>
+					<Col>
+						<div  style={{}}>
+							<Fade left>
+								<h1 id="memTitle">Timetable </h1>
+                <hr style={{width: "25%", margin: "auto"}} />
+							</Fade>
+						</div>
+					</Col>
+				</Row>
+				<Row>
+					<Col md={2} />
+					<Col className='childrenText' md={8}>
+						<Fade left slow>
+            <Table className="tablebg" hover striped size="sm" bordered responsive variant="dark" >
       <thead>
         <tr>
           <th></th>
@@ -102,22 +108,37 @@ class Timetable extends Component {
         
       </tbody>
     </Table>
-         
-          </Col>
-      
-        </Row>
-        
-      {/*FOOTER SECTION */}
+						</Fade>
+						<Fade left slow>
+							<p>
+								An apple is an edible fruit produced by an apple tree (Malus domestica). Apple trees are
+								cultivated worldwide and are the most widely grown species in the genus Malus. The tree
+								originated in Central Asia, where its wild ancestor, Malus sieversii, is still found
+								today. Apples have been grown for thousands of years in Asia and Europe and were brought
+								to North America by European colonists. Apples have religious and mythological
+							
+							</p>
+							<hr />
+						</Fade>
+					</Col>
+					<Col md={2} />
+				</Row>
+				{/*FOOTER SECTION */}
 				<Row style={FooterContainer}>
-					<Row id="memFooter" style={styleDiv}>
+					<Row style={styleDiv}>
 						<Footer />
 					</Row>
 					<Row style={styleDiv2}>
-          <p> Full Fat Grappling, Pratten's Charlton La, Radstock BA3 4BD, United Kingdom| 07877 816 749 | info@fullfatgrappling.com</p>					</Row>
+						<p>
+							
+							Full Fat Grappling, Pratten's Charlton La, Radstock BA3 4BD, United Kingdom| 07877 816 749 |
+							info@fullfatgrappling.com
+						</p>
+					</Row>
 				</Row>
-      </Container>
-    );
-  }
+			</Container>
+		);
+	}
 }
 
 const styleDiv = {
@@ -142,10 +163,14 @@ const styleDiv2 = {
 
 const FooterContainer = {
 	backgroundColor: 'var(--caramelFont)',
-	position: 'absolute',
-	width: '100%',
+	position: 'static',
+	width: 'auto',
 	bottom: '0px',
 	display: 'flex',
 	justifyContent: 'center'
 };
-export default Timetable;
+
+
+
+
+export default Child;

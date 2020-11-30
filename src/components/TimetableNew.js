@@ -4,31 +4,26 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Footer from './Footer';
 import ContactForm from './subcomponents/ContactForm';
 
-
-
-class Child extends Component {
+class Contact extends Component {
+	state = {};
 	render() {
 		return (
-			<Container className='childrenBG' fluid>
-			
-				{/*CONTENT SECTION */}
+			<Container className='childrenBG contact' >
+				{/* TOP ROW WITH HEADING  */}
 
 				<Row>
 					<Col>
-						<div>
-							<Fade left>
-								<h1 id="childTitle">contact us </h1>
-								<hr style={{width: "25%", margin: "auto"}} />
-
-							</Fade>
-						</div>
+					
+						<Fade left cascade>
+							<h1 className='memTitle'>Contact us</h1>
+						</Fade>
 					</Col>
 				</Row>
+				{/* MIDDLE ROW FOR CONTENT */}
 				<Row>
-					<Col sm={1} />
-					<Col className='childrenText' sm={5}>
-						<Fade left slow>
-						<iframe
+					<Col md={6}>
+						<Fade>
+							<iframe
 								src='https://maps.google.com/maps?q=full%20fat%20grappling,%20Radstock%20BA3%204BD&t=&z=13&ie=UTF8&iwloc=B&output=embed'
 								frameBorder='100'
 								scrolling='no'
@@ -37,27 +32,25 @@ class Child extends Component {
 								title='Location'
 							/>
 						</Fade>
-						</Col>
-						<Col sm={5}>
-						<Fade left slow>
-						<ContactForm />
+					</Col>
+					{/* FORM COLUMN */}
+
+					<Col className="smStyle" md={6}>
+						<Fade delay={500}>
+							<ContactForm />
 						</Fade>
-						</Col>
-					
-					
-					<Col sm={1} />
+					</Col>
 				</Row>
 				{/*FOOTER SECTION */}
 				<Row style={FooterContainer}>
-					<Row style={styleDiv}>
+					<Row id="memFooter"style={styleDiv}>
 						<Footer />
 					</Row>
 					<Row style={styleDiv2}>
 						<p>
-							{' '}
 							Full Fat Grappling, Pratten's Charlton La, Radstock BA3 4BD, United Kingdom| 07877 816 749 |
 							info@fullfatgrappling.com
-						</p>{' '}
+						</p>
 					</Row>
 				</Row>
 			</Container>
@@ -75,9 +68,10 @@ const styleDiv = {
 };
 
 const styleDiv2 = {
-	backgroundColor: 'var(--caramelFont)',
 	display: 'flex',
 	alignContent: 'center',
+	alignItems: 'center',
+
 	justifyContent: 'center',
 	height: '7vh',
 	width: '100%',
@@ -87,16 +81,11 @@ const styleDiv2 = {
 
 const FooterContainer = {
 	backgroundColor: 'var(--caramelFont)',
-	position: 'relative',
-	float: "bottom",
-	width: 'auto',
+	position: 'absolute',
+	width: '100%',
 	bottom: '0px',
 	display: 'flex',
-	justifyContent: 'center', 
-	
+	justifyContent: 'center',
+	marginTop: '1rem'
 };
-
-
-
-
-export default Child;
+export default Contact;
