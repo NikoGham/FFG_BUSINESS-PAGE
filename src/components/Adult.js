@@ -28,7 +28,7 @@ class Adult extends Component {
 						showControls={false}
 						showIndicators={false}
 						className='z-depth-1'
-						fade 
+						 
 					>
 						<MDBCarouselInner>
 							<MDBCarouselItem itemId='1'>

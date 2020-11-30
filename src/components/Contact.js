@@ -8,7 +8,7 @@ class Contact extends Component {
 	state = {};
 	render() {
 		return (
-			<Container className='childrenBG contact' fluid>
+			<Container className='childrenBG contact' >
 				{/* TOP ROW WITH HEADING  */}
 
 				<Row>
@@ -21,8 +21,7 @@ class Contact extends Component {
 				</Row>
 				{/* MIDDLE ROW FOR CONTENT */}
 				<Row>
-					<Col />
-					<Col md={5}>
+					<Col md={6}>
 						<Fade>
 							<iframe
 								src='https://maps.google.com/maps?q=full%20fat%20grappling,%20Radstock%20BA3%204BD&t=&z=13&ie=UTF8&iwloc=B&output=embed'
@@ -36,12 +35,11 @@ class Contact extends Component {
 					</Col>
 					{/* FORM COLUMN */}
 
-					<Col md={5}>
+					<Col className="smStyle" md={6}>
 						<Fade delay={500}>
 							<ContactForm />
 						</Fade>
 					</Col>
-					<Col />
 				</Row>
 				{/*FOOTER SECTION */}
 				<Row style={FooterContainer}>
@@ -50,10 +48,9 @@ class Contact extends Component {
 					</Row>
 					<Row style={styleDiv2}>
 						<p>
-							{' '}
 							Full Fat Grappling, Pratten's Charlton La, Radstock BA3 4BD, United Kingdom| 07877 816 749 |
 							info@fullfatgrappling.com
-						</p>{' '}
+						</p>
 					</Row>
 				</Row>
 			</Container>
@@ -84,8 +81,8 @@ const styleDiv2 = {
 
 const FooterContainer = {
 	backgroundColor: 'var(--caramelFont)',
-	position: 'relative',
-	width: 'auto',
+	position: 'absolute',
+	width: '100%',
 	bottom: '0px',
 	display: 'flex',
 	justifyContent: 'center',
