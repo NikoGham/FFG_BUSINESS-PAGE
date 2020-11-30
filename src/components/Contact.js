@@ -9,26 +9,22 @@ class Contact extends Component {
 	render() {
 		return (
 			<Container className='childrenBG contact' fluid>
+				{/* TOP ROW WITH HEADING  */}
+
 				<Row>
-					{/* TOP ROW WITH HEADING  */}
 					<Col>
-						<h1>
-							<Fade bottom cascade>
-								Contact us
-								<Fade left delay={500}>
-								</Fade>
-							</Fade>
-						</h1>
+					
+						<Fade left cascade>
+							<h1 className='memTitle'>Contact us</h1>
+						</Fade>
 					</Col>
 				</Row>
 				{/* MIDDLE ROW FOR CONTENT */}
 				<Row>
-					<Col md={1} />
+					<Col />
 					<Col md={5}>
-						<Fade >
+						<Fade>
 							<iframe
-								width='600'
-								height='500'
 								src='https://maps.google.com/maps?q=full%20fat%20grappling,%20Radstock%20BA3%204BD&t=&z=13&ie=UTF8&iwloc=B&output=embed'
 								frameBorder='100'
 								scrolling='no'
@@ -45,15 +41,20 @@ class Contact extends Component {
 							<ContactForm />
 						</Fade>
 					</Col>
-					<Col md={1} />
+					<Col />
 				</Row>
 				{/*FOOTER SECTION */}
 				<Row style={FooterContainer}>
-					<Row style={styleDiv}>
+					<Row id="memFooter"style={styleDiv}>
 						<Footer />
 					</Row>
 					<Row style={styleDiv2}>
-					<p> Full Fat Grappling, Pratten's Charlton La, Radstock BA3 4BD, United Kingdom| 07877 816 749 | info@fullfatgrappling.com</p>					</Row>
+						<p>
+							{' '}
+							Full Fat Grappling, Pratten's Charlton La, Radstock BA3 4BD, United Kingdom| 07877 816 749 |
+							info@fullfatgrappling.com
+						</p>{' '}
+					</Row>
 				</Row>
 			</Container>
 		);

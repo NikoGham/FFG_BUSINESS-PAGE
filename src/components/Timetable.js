@@ -14,17 +14,16 @@ class Timetable extends Component {
           <Col>
             <div>
               <Fade left>
-                <h1 >Timetable </h1>
+                <h1 className="memTitle">Timetable </h1>
                 
               </Fade>
             </div>
           </Col>
         </Row>
-        <Row>
-          <Col xs={2}></Col>
+        <Row >
           <Col >
        
-      <Table className=" tablebg" hover striped bordered variant="dark" size="sm">
+      <Table className="tablebg" hover striped bordered variant="dark" >
       <thead>
         <tr>
           <th></th>
@@ -105,14 +104,12 @@ class Timetable extends Component {
     </Table>
          
           </Col>
-          <Col xs={2}>
-            
-          </Col>
+      
         </Row>
         
       {/*FOOTER SECTION */}
 				<Row style={FooterContainer}>
-					<Row style={styleDiv}>
+					<Row id="memFooter" style={styleDiv}>
 						<Footer />
 					</Row>
 					<Row style={styleDiv2}>

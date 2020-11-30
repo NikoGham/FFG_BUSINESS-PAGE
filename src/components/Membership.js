@@ -45,7 +45,7 @@ import CardsMem from './CardsMem'
              </Row>
             {/*FOOTER SECTION */}
 				<Row style={FooterContainer}>
-					<Row style={styleDiv}>
+					<Row id="memFooter" style={styleDiv}>
 						<Footer />
 					</Row>
 					<Row style={styleDiv2}>
