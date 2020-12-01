@@ -68,9 +68,9 @@ class Merch extends Component {
 			
 				 
 					<Row style={styleDiv2}>
-						<Col sm={12}>
+					
 						<Footer />
-						</Col>
+				
 						
 					</Row>
 				
@@ -84,17 +84,17 @@ class Merch extends Component {
 const styleDiv2 = {
 	backgroundColor: 'var(--caramelFont)',
 	display: 'flex',
-	alignContent: 'center',
+	flexDirection: "row", 
+
 	justifyContent: 'center',
-	height: '13vh',
+	height: '10vh',
 	width: '100vw',
 	color: '#000',
 	fontFamily: 'Montserrat', 
-	position: "fixed", 
+	position: "relative", 
 	bottom: "0px",
-    left: "0px",
-    right: '0px',
-    marginBottom: "0px"
+	marginTop: "10vh"
+
 	
 };
 

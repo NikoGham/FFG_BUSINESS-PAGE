@@ -2,7 +2,7 @@ import React, {Fragment} from 'react';
 
 const Footer = () => {
 	return (
-		<Fragment>
+		<div className="containerDiv">
 		<div style={style}>
 			<a target='_blank' rel='noopener noreferrer' href={'https://www.instagram.com/fullfatgrappling/'}>
 				<i className='fab fa-instagram linkSocial' />
@@ -28,9 +28,8 @@ const Footer = () => {
 		<div>
 
 		<p> Full Fat Grappling, Pratten's Charlton La, Radstock BA3 4BD, United Kingdom| 07877 816 749 | info@fullfatgrappling.com</p>
-
 		</div>
-		</Fragment>
+		</div>
 	);
 };
 
@@ -38,9 +37,14 @@ const style = {
 	display: "flex", 
 	flexDirection: "row", 
 	justifyContent: "space-evenly", 
-	margin: "10px"
+	alignContent: "center",
+	margin: "1rem", 
+
 	
 };
+
+
+
 
 
 

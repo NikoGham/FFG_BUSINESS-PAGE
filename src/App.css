@@ -360,7 +360,13 @@ li .link:hover {
 	width: 100%;
 	height: 100%;
  }
-/* screenwidth less than 1024px
+
+
+ /* FOOTER PAGE  */
+ 
+
+ 
+ /* screenwidth less than 1024px
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 1024px) {
 	
