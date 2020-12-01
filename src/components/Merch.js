@@ -26,8 +26,7 @@ class Merch extends Component {
 				<Row> {/* TITLE ROW */}
 					<Col>
 						<Fade left slow cascade>
-							<h1 >
-								{' '}
+							<h1 className="memTitle">
 								{this.state.title}
 							</h1>
 						</Fade>
@@ -38,7 +37,7 @@ class Merch extends Component {
 					<Col>
 						<Fade left slow>
 							<Row>
-								<MerchItem box1={WhiteTee} box2={BlackFront} zoomBox={BlackJumperFront} shadowBox={WhiteBack} box3={BlackBack} />
+								<MerchItem box1={WhiteTee} box1Text="White Tee" box2={BlackFront} zoomBox={BlackJumperFront} shadowBox={WhiteBack} box3={BlackBack} />
 							</Row>
 						</Fade>
 					</Col>
@@ -66,46 +65,38 @@ class Merch extends Component {
 				</Row>
 
 				{/*FOOTER SECTION */}
-				<Row style={FooterContainer}>
-					<Row style={styleDiv}>
-						<Footer />
-					</Row>
+			
+				 
 					<Row style={styleDiv2}>
-						<p> Full Fat Grappling, Pratten's Charlton La, Radstock BA3 4BD, United Kingdom| 07877 816 749 | info@fullfatgrappling.com</p>
+						<Col sm={12}>
+						<Footer />
+						</Col>
+						
 					</Row>
-				</Row>
+				
 			</Container>
 		);
 	}
 }
 
-const styleDiv = {
-	backgroundColor: 'var(--goldGrappFont)',
-	display: 'flex',
-	alignItems: 'center',
-	justifyContent: 'center',
-	height: '8vh',
-	width: '100%'
-};
+
 
 const styleDiv2 = {
 	backgroundColor: 'var(--caramelFont)',
 	display: 'flex',
 	alignContent: 'center',
 	justifyContent: 'center',
-	height: '7vh',
-	width: '100%',
+	height: '13vh',
+	width: '100vw',
 	color: '#000',
-	fontFamily: 'Montserrat'
+	fontFamily: 'Montserrat', 
+	position: "fixed", 
+	bottom: "0px",
+    left: "0px",
+    right: '0px',
+    marginBottom: "0px"
+	
 };
 
-const FooterContainer = {
-	backgroundColor: 'var(--caramelFont)',
-	position: 'relative',
-	width: 'auto',
-	bottom: '0px',
-	display: 'flex',
-	justifyContent: 'center'
-};
 
 export default Merch;

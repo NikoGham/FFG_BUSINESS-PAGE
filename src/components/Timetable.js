@@ -126,7 +126,7 @@ class Child extends Component {
 				{/*FOOTER SECTION */}
 				<Row style={FooterContainer}>
 					<Row style={styleDiv}>
-						<Footer />
+						<Footer/>
 					</Row>
 					<Row style={styleDiv2}>
 						<p>
@@ -167,7 +167,7 @@ const FooterContainer = {
 	width: 'auto',
 	bottom: '0px',
 	display: 'flex',
-	justifyContent: 'center'
+  justifyContent: 'center',
 };
 
 

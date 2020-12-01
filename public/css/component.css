@@ -82,6 +82,7 @@ body,
   visibility: hidden;
   width: 300px;
   height: 100%;
+  min-height: 100vh;
   background: var(--menuBgColor);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;

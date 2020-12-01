@@ -46,17 +46,12 @@ class Child extends Component {
 					<Col sm={1} />
 				</Row>
 				{/*FOOTER SECTION */}
-				<Row style={FooterContainer}>
+				
 					<Row style={styleDiv}>
 						<Footer />
 					</Row>
-					<Row style={styleDiv2}>
-						<p>
-							Full Fat Grappling, Pratten's Charlton La, Radstock BA3 4BD, United Kingdom| 07877 816 749 |
-							info@fullfatgrappling.com
-						</p>
-					</Row>
-				</Row>
+					
+				
 			</Container>
 		);
 	}
@@ -67,30 +62,12 @@ const styleDiv = {
 	display: 'flex',
 	alignItems: 'center',
 	justifyContent: 'center',
-	height: '8vh',
-	width: '100%'
+	height: '10vh',
+	width: '100vw', 
+	position: "relative", 
+	bottom: '0px'
 };
 
-const styleDiv2 = {
-	backgroundColor: 'var(--caramelFont)',
-	display: 'flex',
-	alignContent: 'center',
-	justifyContent: 'center',
-	height: '7vh',
-	width: '100%',
-	color: '#000',
-	fontFamily: 'Montserrat'
-};
-
-const FooterContainer = {
-	backgroundColor: 'var(--caramelFont)',
-	position: 'fixed',
-	width: '100%',
-	bottom: '0px',
-	display: 'flex',
-	justifyContent: 'center', 
-	
-};
 
 
 

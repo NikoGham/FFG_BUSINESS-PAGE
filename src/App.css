@@ -300,6 +300,7 @@ li .link:hover {
 	-ms-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	z-index: 5;
+	font-size: 3vh;
 }
 
 .linkSocial:hover {
@@ -508,6 +509,8 @@ li .link:hover {
 
  .memTitle {
 	 font-size: 1.8rem;
+	 position: relative;
+	 left: 10%;
  }
 
  #memFooter {

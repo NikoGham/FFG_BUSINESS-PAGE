@@ -1,43 +1,43 @@
 import React from "react";
 import { MDBMask, MDBView, MDBContainer, MDBRow, MDBCol } from "mdbreact";
 
-function MerchItem ({box1, box2, zoomBox, shadowBox, box3}) {
+function MerchItem ({box1, box1Text, box2, zoomBox, shadowBox, box3}) {
     return (
       <MDBContainer className="mt-5">
         <MDBRow>
           <MDBCol md="4">
-            <MDBView hover>
+            <MDBView hover zoom>
               <img
                 src={box1}
                 className="img-fluid"
                 alt=""
               />
-              <MDBMask className="flex-center" overlay="black-strong">
-                <p className="white-text">Strong overlay</p>
+              <MDBMask className="flex-center" overlay="black-light">
+                <p className="white-text">{box1Text} </p>
               </MDBMask>
             </MDBView>
           </MDBCol>
           <MDBCol md="4">
-            <MDBView hover>
+            <MDBView hover zoom>
               <img
                 src={box2}
                 className="img-fluid"
                 alt=""
               />
-              <MDBMask className="flex-center" overlay="red-light">
-                <p className="white-text">Light overlay</p>
+              <MDBMask className="flex-center" overlay="black-light">
+                <p className="white-text"></p>
               </MDBMask>
             </MDBView>
           </MDBCol>
           <MDBCol md="4">
-            <MDBView hover>
+            <MDBView hover zoom>
               <img
                 src={box3}
                 className="img-fluid"
                 alt=""
               />
-              <MDBMask className="flex-center" overlay="red-slight">
-                <p className="white-text">Super light overlay</p>
+              <MDBMask className="flex-center" overlay="black-light">
+                <p className="white-text"></p>
               </MDBMask>
             </MDBView>
           </MDBCol>
@@ -50,17 +50,22 @@ function MerchItem ({box1, box2, zoomBox, shadowBox, box3}) {
                 className="img-fluid"
                 alt=""
               />
-              <MDBMask className="flex-center">
-                <p className="white-text">Zoom effect</p>
+              <MDBMask className="flex-center"  overlay="black-light">
+                <p className="white-text"></p>
               </MDBMask>
             </MDBView>
           </MDBCol>
           <MDBCol md="6">
-            <img
-              src={shadowBox}
-              className="img-fluid rounded-circle hoverable"
-              alt=""
-            />
+            <MDBView hover zoom>
+              <img
+                src={shadowBox}
+                className="img-fluid"
+                alt=""
+              />
+              <MDBMask className="flex-center" overlay="black-light">
+                <p className="white-text"></p>
+              </MDBMask>
+            </MDBView>
           </MDBCol>
         </MDBRow>
       </MDBContainer>
