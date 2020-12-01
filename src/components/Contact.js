@@ -24,7 +24,7 @@ class Child extends Component {
 						</div>
 					</Col>
 				</Row>
-				<Row>
+				<Row >
 					<Col sm={1} />
 					<Col className='childrenText' sm={5}>
 						<Fade left slow>
@@ -42,9 +42,7 @@ class Child extends Component {
 						<Fade left slow>
 						<ContactForm />
 						</Fade>
-						</Col>
-					
-					
+						</Col>					
 					<Col sm={1} />
 				</Row>
 				{/*FOOTER SECTION */}
@@ -54,10 +52,9 @@ class Child extends Component {
 					</Row>
 					<Row style={styleDiv2}>
 						<p>
-							{' '}
 							Full Fat Grappling, Pratten's Charlton La, Radstock BA3 4BD, United Kingdom| 07877 816 749 |
 							info@fullfatgrappling.com
-						</p>{' '}
+						</p>
 					</Row>
 				</Row>
 			</Container>
@@ -87,9 +84,8 @@ const styleDiv2 = {
 
 const FooterContainer = {
 	backgroundColor: 'var(--caramelFont)',
-	position: 'relative',
-	float: "bottom",
-	width: 'auto',
+	position: 'fixed',
+	width: '100%',
 	bottom: '0px',
 	display: 'flex',
 	justifyContent: 'center', 
