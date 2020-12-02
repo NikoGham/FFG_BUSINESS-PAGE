@@ -363,7 +363,20 @@ li .link:hover {
 
 
  /* FOOTER PAGE  */
+
  
+  /* MERCHANDISE PAGE  */
+
+  .sizeBox {
+	  border: rgb(49, 49, 49) solid;
+	  border-width: 1px;
+	  padding: 1.5px;
+	  margin: 2px;
+	  color: var(--creamJapPalette);
+	  box-sizing: border-box;
+	  width: 100px;
+
+  }
 
  
  /* screenwidth less than 1024px

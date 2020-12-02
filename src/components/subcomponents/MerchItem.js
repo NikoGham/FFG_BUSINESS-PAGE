@@ -13,7 +13,11 @@ function MerchItem ({box1, box1Text, box2, zoomBox, shadowBox, box3}) {
                 alt=""
               />
               <MDBMask className="flex-center" overlay="black-light">
-                <p className="white-text">{box1Text} </p>
+                
+               <p className="childrenText">{box1Text} <br></br> £15 <br></br> Sizes <span className="sizeBox">SM</span> <span className="sizeBox">M</span><span className="sizeBox">L</span></p>
+               
+                
+              
               </MDBMask>
             </MDBView>
           </MDBCol>
@@ -25,7 +29,7 @@ function MerchItem ({box1, box1Text, box2, zoomBox, shadowBox, box3}) {
                 alt=""
               />
               <MDBMask className="flex-center" overlay="black-light">
-                <p className="white-text"></p>
+              <p className="childrenText">{box1Text} <br></br> £15 <br></br> Sizes <span className="sizeBox">SM</span> <span className="sizeBox">M</span><span className="sizeBox">L</span></p>
               </MDBMask>
             </MDBView>
           </MDBCol>
@@ -37,7 +41,7 @@ function MerchItem ({box1, box1Text, box2, zoomBox, shadowBox, box3}) {
                 alt=""
               />
               <MDBMask className="flex-center" overlay="black-light">
-                <p className="white-text"></p>
+              <p className="childrenText">{box1Text} <br></br> £15 <br></br> Sizes <span className="sizeBox">SM</span> <span className="sizeBox">M</span><span className="sizeBox">L</span></p>
               </MDBMask>
             </MDBView>
           </MDBCol>
@@ -51,7 +55,8 @@ function MerchItem ({box1, box1Text, box2, zoomBox, shadowBox, box3}) {
                 alt=""
               />
               <MDBMask className="flex-center"  overlay="black-light">
-                <p className="white-text"></p>
+              <p className="childrenText">{box1Text} <br></br> £15 <br></br> Sizes <span className="sizeBox">SM</span> <span className="sizeBox">M</span><span className="sizeBox">L</span></p>
+                <p></p>
               </MDBMask>
             </MDBView>
           </MDBCol>
@@ -63,7 +68,7 @@ function MerchItem ({box1, box1Text, box2, zoomBox, shadowBox, box3}) {
                 alt=""
               />
               <MDBMask className="flex-center" overlay="black-light">
-                <p className="white-text"></p>
+              <p className="childrenText">{box1Text} <br></br> £15 <br></br> Sizes <span className="sizeBox">SM</span> <span className="sizeBox">M</span><span className="sizeBox">L</span></p>
               </MDBMask>
             </MDBView>
           </MDBCol>
