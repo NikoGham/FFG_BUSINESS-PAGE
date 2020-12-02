@@ -34,7 +34,7 @@ const ParticlesBG = () => {
                 speed: 3,
               },
               push: {
-                quantity: 4,
+                quantity: 10,
               },
               repulse: {
                 distance: 200,
@@ -72,14 +72,14 @@ const ParticlesBG = () => {
               value: 80,
             },
             opacity: {
-              value: 0.5,
+              value: 1,
             },
             shape: {
-              type: "triangle",
+              type: "circle",
             },
             size: {
               random: true,
-              value: 5,
+              value: 20,
             },
           },
           detectRetina: true,

@@ -89,11 +89,12 @@ class About extends Component {
 									</Fade>
 									<Fade slow>
 										<p>{data.abouttext3}</p>
-										<hr />
 									</Fade>
 									
 									<Fade slow>
 										<p>{data.abouttext4}</p>
+										<hr />
+
 									</Fade>
 								</Col>
 							</Row>
@@ -105,13 +106,7 @@ class About extends Component {
 				<Row style={styleDiv}>
 					<Footer />
 				</Row>
-				<Row style={styleDiv2}>
-					<p>
-						{' '}
-						Full Fat Grappling, Pratten's Charlton La, Radstock BA3 4BD, United Kingdom| 07877 816 749 |
-						info@fullfatgrappling.com
-					</p>{' '}
-				</Row>
+				
 			</Container>
 		);
 	}
@@ -125,14 +120,6 @@ const styleDiv = {
 	height: '8vh'
 };
 
-const styleDiv2 = {
-	backgroundColor: 'var(--caramelFont)',
-	display: 'flex',
-	alignItems: 'center',
-	justifyContent: 'center',
-	height: '7vh',
-	color: '#000',
-	fontFamily: 'Montserrat'
-};
+
 
 export default About;

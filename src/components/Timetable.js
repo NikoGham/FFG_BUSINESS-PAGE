@@ -111,66 +111,37 @@ class Child extends Component {
 						</Fade>
 						<Fade left slow>
 							<p>
-								An apple is an edible fruit produced by an apple tree (Malus domestica). Apple trees are
-								cultivated worldwide and are the most widely grown species in the genus Malus. The tree
-								originated in Central Asia, where its wild ancestor, Malus sieversii, is still found
-								today. Apples have been grown for thousands of years in Asia and Europe and were brought
-								to North America by European colonists. Apples have religious and mythological
-							
+							Regular training was declared essential by Kano in his cornerstone book, the Kodokan. The benefits of repeat muscle exposure and mental stimulation provide for the foundations to high calibre combat rediness and spiritual personal development. 
 							</p>
 							<hr />
 						</Fade>
 					</Col>
 					<Col md={2} />
 				</Row>
-				{/*FOOTER SECTION */}
-				<Row style={FooterContainer}>
-					<Row style={styleDiv}>
-						<Footer/>
-					</Row>
-					<Row style={styleDiv2}>
-						<p>
-							
-							Full Fat Grappling, Pratten's Charlton La, Radstock BA3 4BD, United Kingdom| 07877 816 749 |
-							info@fullfatgrappling.com
-						</p>
-					</Row>
+					{/*FOOTER SECTION */}
+
+          <Row style={styleDiv2}>
+					<Footer />
 				</Row>
 			</Container>
 		);
 	}
 }
 
-const styleDiv = {
-	backgroundColor: 'var(--goldGrappFont)',
-	display: 'flex',
-	alignItems: 'center',
-	justifyContent: 'center',
-	height: '8vh',
-	width: '100%'
-};
-
 const styleDiv2 = {
 	backgroundColor: 'var(--caramelFont)',
 	display: 'flex',
-	alignContent: 'center',
+	flexDirection: 'row',
+
 	justifyContent: 'center',
-	height: '7vh',
-	width: '100%',
+	height: '10vh',
+	width: '100vw',
 	color: '#000',
-	fontFamily: 'Montserrat'
-};
-
-const FooterContainer = {
-	backgroundColor: 'var(--caramelFont)',
-	position: 'static',
-	width: 'auto',
+	fontFamily: 'Montserrat',
+	position: 'relative',
 	bottom: '0px',
-	display: 'flex',
-  justifyContent: 'center',
+	marginTop: '10vh'
 };
-
-
 
 
 export default Child;
