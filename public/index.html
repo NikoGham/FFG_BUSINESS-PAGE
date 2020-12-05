@@ -174,10 +174,7 @@
          
           About</li>
           <br />
-          <li onclick="showChild()" id="childclick"><i class="fas fa-award"></i> Child Athletes</li>
-          <br />
-          <li onclick="showAdult()" id="adultclick"><i class="fas fa-chess-knight"></i> Adult Athletes</li>
-          <br />
+          
           <li onclick="showMember()"id="memclick"><i class="fas fa-key"></i> Membership</li>
           <br />
           <li onclick="showTimetable()" id="timeclick"><i class="far fa-calendar-alt"></i> Timetable</li>
@@ -211,9 +208,7 @@
                 <div id="header" class=""></div>
 
                 <div id="about" class="hide"></div>
-                <div id="work" class="hide"></div>
                 <div id="contact" class="hide"></div> 
-                <div id="adult" class="hide"></div>
                 <div id="membership" class="hide"></div>
                 <div id="timetable" class="hide"></div>
                 <div id="merch" class="hide"></div>
@@ -238,9 +233,7 @@
 
       let headerHide = document.getElementById('header');
       let aboutHide = document.getElementById('about');
-      let workHide = document.getElementById('work');
       let contactHide = document.getElementById('contact');
-      let adultHide = document.getElementById('adult');
       let memberHide = document.getElementById('membership');
       let timetableHide = document.getElementById('timetable');
       let merchHide = document.getElementById('merch');
@@ -249,9 +242,7 @@
         /* if needed for a home button say */
         headerHide.classList.toggle('hide');
         aboutHide.classList.toggle('hide', true);
-        workHide.classList.toggle('hide', true);
         contactHide.classList.toggle('hide', true);
-        adultHide.classList.toggle('hide', true);
         memberHide.classList.toggle('hide', true);
         timetableHide.classList.toggle('hide', true);
         merchHide.classList.toggle('hide', true);
@@ -261,48 +252,18 @@
         /* About page */
         headerHide.classList.toggle('hide', true);
         aboutHide.classList.toggle('hide');
-        workHide.classList.toggle('hide', true);
         contactHide.classList.toggle('hide', true);
-        adultHide.classList.toggle('hide', true);
         memberHide.classList.toggle('hide', true);
         timetableHide.classList.toggle('hide', true);
         merchHide.classList.toggle('hide', true);
       };
 
-      let showChild = () => {
-        /* Work page */
-        headerHide.classList.toggle('hide', true);
-        aboutHide.classList.toggle('hide', true);
-        workHide.classList.toggle('hide');
-        contactHide.classList.toggle('hide', true);
-        adultHide.classList.toggle('hide', true);
-        memberHide.classList.toggle('hide', true);
-        timetableHide.classList.toggle('hide', true);
-        merchHide.classList.toggle('hide', true);
-
-      };
-
-      let showAdult = () => {
-        /*  Adult Athletes page */
-        headerHide.classList.toggle('hide', true);
-        aboutHide.classList.toggle('hide', true);
-        workHide.classList.toggle('hide', true);
-        contactHide.classList.toggle('hide', true);
-        adultHide.classList.toggle('hide');
-        memberHide.classList.toggle('hide', true);
-        timetableHide.classList.toggle('hide', true);
-        merchHide.classList.toggle('hide', true);
-      };
-
-      
 
       let showContact = () => {
         /*  Contact page */
         headerHide.classList.toggle('hide', true);
         aboutHide.classList.toggle('hide', true);
-        workHide.classList.toggle('hide', true);
         contactHide.classList.toggle('hide');
-        adultHide.classList.toggle('hide', true);
         memberHide.classList.toggle('hide', true);
         timetableHide.classList.toggle('hide', true);
         merchHide.classList.toggle('hide', true);
@@ -312,9 +273,7 @@
         /*  Contact page */
         headerHide.classList.toggle('hide', true);
         aboutHide.classList.toggle('hide', true);
-        workHide.classList.toggle('hide', true);
         contactHide.classList.toggle('hide', true);
-        adultHide.classList.toggle('hide', true);
         memberHide.classList.toggle('hide');
         timetableHide.classList.toggle('hide', true);
         merchHide.classList.toggle('hide', true);
@@ -324,9 +283,7 @@
         /*  Contact page */
         headerHide.classList.toggle('hide', true);
         aboutHide.classList.toggle('hide', true);
-        workHide.classList.toggle('hide', true);
         contactHide.classList.toggle('hide', true);
-        adultHide.classList.toggle('hide', true);
         memberHide.classList.toggle('hide', true);
         timetableHide.classList.toggle('hide');
         merchHide.classList.toggle('hide', true);
@@ -336,9 +293,7 @@
         /*  Contact page */
         headerHide.classList.toggle('hide', true);
         aboutHide.classList.toggle('hide', true);
-        workHide.classList.toggle('hide', true);
         contactHide.classList.toggle('hide', true);
-        adultHide.classList.toggle('hide', true);
         memberHide.classList.toggle('hide', true);
         timetableHide.classList.toggle('hide', true);
         merchHide.classList.toggle('hide');

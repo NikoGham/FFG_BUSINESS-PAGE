@@ -8,18 +8,14 @@ import './App.css';
 
 import Header from './components/Header';
 import About from './components/About';
-import Child from './components/Child';
 import Contact from './components/Contact';
-import Adult from './components/Adult';
 import Membership from './components/Membership';
 import Timetable from './components/Timetable';
 import Merch from './components/Merch';
 
 ReactDOM.render(<Header />, document.getElementById('header'));
 ReactDOM.render(<About />, document.getElementById('about'));
-ReactDOM.render(<Child />, document.getElementById('work'));
 ReactDOM.render(<Contact />, document.getElementById('contact'));
-ReactDOM.render(<Adult />, document.getElementById('adult'));
 ReactDOM.render(<Membership />, document.getElementById('membership')); 
 ReactDOM.render(<Timetable />, document.getElementById('timetable')); 
 ReactDOM.render(<Merch />, document.getElementById('merch')); 
@@ -51,10 +47,6 @@ const header = document.getElementById("headerclick");
 header.addEventListener('click', toggleMenu)
 const about = document.getElementById("aboutclick");
 about.addEventListener('click', toggleMenu)
-const adult = document.getElementById("adultclick");
-adult.addEventListener('click', toggleMenu)
-const child = document.getElementById("childclick");
-child.addEventListener('click', toggleMenu)
 const contact = document.getElementById("contclick");
 contact.addEventListener('click', toggleMenu)
 const merch = document.getElementById("merchclick");

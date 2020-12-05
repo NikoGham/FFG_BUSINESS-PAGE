@@ -80,10 +80,8 @@ var SidebarMenuEffects = (function () {
     const aboutClick = document.getElementById('aboutclick');
     aboutClick.addEventListener('click', resetMenu);
 
-    const adult = document.getElementById('adultclick');
-    adult.addEventListener('click', resetMenu);
-    const child = document.getElementById('childclick');
-    child.addEventListener('click', resetMenu);
+    
+ 
     const contact = document.getElementById('contclick');
     contact.addEventListener('click', resetMenu);
     const merch = document.getElementById('merchclick');
