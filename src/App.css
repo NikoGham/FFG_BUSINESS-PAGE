@@ -330,14 +330,14 @@ li .link:hover {
 
 .tablebg {
 	opacity: 1;
-	height: 75%;
+	height: 50vh;
 	margin: auto;
 	width: 100%;
 	
 
 }
 
-.tablebg::before {
+.tablebg::after {
 	background-image: url(./assets/kano.jpg);
 	background-position: top;
 	background-repeat: no-repeat;
@@ -349,8 +349,10 @@ li .link:hover {
 	right: 0px;
 	bottom: 0px;
 	left: 0px;
-	opacity: 0.05;
+	opacity: 0.1;
+	transition: ease-in-out;
 }
+
 
 
 

@@ -10,4 +10,82 @@
                 </a>
               </div>
 
-              
+              	<Fade left slow>
+            <Table className="tablebg" hover striped size="sm" bordered responsive variant="dark" >
+      <thead>
+        <tr>
+          <th></th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+          <th>Sunday</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+          <th scope="row" >6:00 - 7:00</th>
+          <td></td>
+          <td>Full Time Athletes - Adult</td>
+          <td></td>
+          <td>Full Time Athletes - Adult</td>
+          <td></td>
+          <td></td>
+          <td>Full Time Athletes - Adult</td>
+        </tr>
+        <tr>
+          <th scope="row">16:30 - 17:15</th>
+          <td></td>
+          <td>Judo PT </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope="row">17:00 - 17:45</th>
+          <td>Child Athletes - Judo - 5-8yrs</td>
+          <td></td>
+          <td></td>
+          <td>Judo PT</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope="row">18:00 - 18:45</th>
+          <td>Child Athletes - Judo - 8-13yrs</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope="row">18:00 - 19:00</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td> Power and Agility </td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope="row">18:00 - 19:20</th>
+          <td></td>
+          <td>Mobility and Core</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          
+        </tr>
+       
+        
+      </tbody>
