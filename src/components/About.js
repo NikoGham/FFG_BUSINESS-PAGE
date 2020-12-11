@@ -64,37 +64,59 @@ class About extends Component {
 									of JUDO.
 								</p>
 								<Row>
+								<Col sm={1} />
 									<Col sm={6}>
 										<div>
 											<Image src={child} alt='Child Throw in Judo' thumbnail />
 										</div>
 									</Col>
-									<Col sm={true} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-										<ul style={styleList}> {honorList} </ul>
+									<Col
+										sm={true}
+										style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+									>
+										<ul style={styleList}>
+											<li>Courtesy <span className="specChars">礼儀</span> </li>
+											<hr /> 
+											<li>Courage <span className="specChars">勇気</span></li>
+											<hr />
+											<li> Honesty <span className="specChars">正直</span> </li>
+											<hr />
+											<li>Honour <span className="specChars">名誉</span> </li>
+											<hr />
+											<li> Modesty <span className="specChars">謙虚</span> </li>
+											<hr />
+											<li> Respect <span className="specChars">尊敬 </span></li>
+											<hr />
+											<li>Self Control <span className="specChars">自制心</span> </li>
+											<hr />
+											<li> Friendship <span className="specChars">友情</span> </li>
+											<hr />
+										</ul>
 									</Col>
+									<Col sm={1} />
+
 								</Row>
 							</Fade>
 
 							<Row>
 								<Col>
-									<Fade slow>
+									<Fade left slow>
 										<p>{data.abouttext21}</p>
 										<hr />
 									</Fade>
-									<Fade slow>
+									<Fade right slow>
 										<p>{data.abouttextQuote}</p>
 									</Fade>
-									<Fade slow>
+									<Fade left slow>
 										<Image src={child1} alt='Child Throw in Judo' thumbnail />
 									</Fade>
-									<Fade slow>
+									<Fade right slow>
 										<p>{data.abouttext3}</p>
 									</Fade>
-									
-									<Fade slow>
+
+									<Fade left slow>
 										<p>{data.abouttext4}</p>
 										<hr />
-
 									</Fade>
 								</Col>
 							</Row>
@@ -106,7 +128,6 @@ class About extends Component {
 				<Row style={styleDiv}>
 					<Footer />
 				</Row>
-				
 			</Container>
 		);
 	}
@@ -119,7 +140,5 @@ const styleDiv = {
 	justifyContent: 'center',
 	height: '8vh'
 };
-
-
 
 export default About;

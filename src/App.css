@@ -283,6 +283,11 @@ li .link:hover {
 	font-family: 'Montserrat', sans-serif;
 	list-style: none;
 }
+
+.specChars {
+	color: var(--redJapPalette)
+}
+
 /* CHILD ATHLETES  */
 
 /* use em to edit images to nice size  */
