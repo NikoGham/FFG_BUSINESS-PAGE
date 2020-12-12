@@ -10,7 +10,7 @@ return (
         <div className="grey-text subFontText">
           <MDBInput label="Your name" name="name"  group type="text" validate error="wrong"
             success="right" />
-          <MDBInput label="Your email" name="email" group type="email" validate error="wrong"
+          <MDBInput required label="Your email" name="email" group type="email" validate error="wrong"
             success="right" />
           <MDBInput label="Subject" name="subject" group type="text"  validate error="wrong" success="right" />
           <MDBInput type="textarea" rows="2" label="Your message" name="message" />

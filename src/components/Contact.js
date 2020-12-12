@@ -39,7 +39,7 @@ class Child extends Component {
 							<ContactForm />
 						</Fade>
 					</Col>
-					<Col sm={1} />
+					<Col sm={1} style={style3} />
 				</Row>
 				{/*FOOTER SECTION */}
 
@@ -53,17 +53,16 @@ class Child extends Component {
 
 const styleDiv2 = {
 	backgroundColor: 'var(--caramelFont)',
-	display: 'flex',
 	flexDirection: 'row',
-
 	justifyContent: 'center',
-	height: '12vh',
-	width: '100vw',
-	color: '#000',
-	fontFamily: 'Montserrat',
-	position: 'relative',
+	position: 'absolute',
 	bottom: '0px',
-	marginTop: '10vh'
+	width: '100vw', 
+	marginTop: "20px"
 };
 
+
+const style3 = {
+	marginTop: "200px"
+};
 export default Child;
