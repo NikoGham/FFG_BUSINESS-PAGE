@@ -18,14 +18,7 @@ class About extends Component {
 	// Coding => How can I achieve a task and win a battle with the skills and tools I currently know and/or can discover and learn.
 
 	render() {
-		const honor = data.abouttextlist;
-		const honorList = honor.map((item, index) => (
-			<h4 key={index}>
-				{item}
-				<hr />
-			</h4>
-		));
-
+	
 		const styleList = {
 			fontFamily: 'Montserrat',
 
