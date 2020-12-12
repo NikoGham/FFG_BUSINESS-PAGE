@@ -5,7 +5,8 @@ import { MDBBtn, MDBIcon, MDBInput } from 'mdbreact';
 const ContactForm = () => {
 return (
 
-      <form name="contact" netlify>
+      <form name="contact" method="post">
+        <input type="hidden" name="form-name" value="contact" />
         <div className="grey-text subFontText">
           <MDBInput label="Your name" name="name"  group type="text" validate error="wrong"
             success="right" />
@@ -21,7 +22,6 @@ return (
           </MDBBtn>
         </div>
       </form>
-
 );
 };
 
