@@ -24,14 +24,14 @@ class Header extends Component {
 
 				<Row>
 					<Col md={12}>
-						<Flash duration={10000} delay={2100} cascade>
+						<Flash  delay={2100} >
 							<h1 className='heading-background'>FULL FAT </h1>
 						</Flash>
 					</Col>
 				</Row>
 				<Row>
 					<Col md={12}>
-						<Flash duration={10000} delay={2100} cascade>
+						<Flash  delay={2100} >
 							<h1 id='grappleStyle'>
 								GRAPPLING
 							</h1>

@@ -44,7 +44,7 @@ const ParticlesBG = () => {
           },
           particles: {
             color: {
-              value: "#000",
+              value: "#ffffff",
             },
             links: {
               color: "#ffffff",
@@ -79,7 +79,7 @@ const ParticlesBG = () => {
             },
             size: {
               random: true,
-              value: 20,
+              value: 2,
             },
           },
           detectRetina: true,
