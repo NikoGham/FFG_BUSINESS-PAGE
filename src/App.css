@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans&display=swap');
 
-/* NICK GILLHAM EDITS */
+/* NICK GILLHAM GLOBAL EDITS */
 
 @font-face {
 	font-family: mHucker;
@@ -42,9 +42,8 @@ Text font :     font-family: 'Lato', sans-serif; */
 	--headerListTitle: #080703;
 }
 
-.nameHeader {
-	font-family: mHucker;
-	color: var(--optimalOnBlack);
+* {
+	box-sizing: border-box;
 }
 
 .caramelFont {
@@ -67,7 +66,6 @@ hr {
 h1 {
 	font-family: 'Nanum Myeongjo', serif;
 	text-transform: uppercase;
-	padding: 20px;
 }
 
 .subTextFont {
@@ -105,94 +103,66 @@ h1 {
 	transform: rotate(-45deg) translate(7px, -63px);
 }
 
-/* ORIGINAL TEMPLATE HAMBURGER MENU FROM BRAD TRAVERSY'S MODERN PORTFOLIO  */
+
 
 /* do not edit */
 .hide {
 	display: none;
 }
 
-#tsparticles {
-	position: fixed;
-	z-index: 1;
-	width: 100%;
-	opacity: 0.4;
-}
-
-.menuHomeSVG {
-	height: 20%;
-	width: 20%;
-}
-
-.menuHomeSVGsub {
-	height: 1.5rem;
-	width: 1.5rem;
-	color: #ffffff;
-}
-
-/*BackgroundColor setting for behind pusher*/
 
 html,
 body {
 	min-height: 100vh;
 
-	font-size: 16px;
 	overflow: hidden;
-	color: #1e1014;
-	background-color: var(--gingerBread); /*Fixes background color durrrr */
+	background-color: var(--goldGrappFont); /*Fixes background color durrrr */
 }
 
-.App {
-	text-align: center;
-	min-height: 100vh;
-}
-
-.heading-background {
-	position: relative;
-	text-align: center;
-	opacity: 0.1;
-	font-size: 7em;
-	/* Needed to change the top/left alignment, I did this with something else not to long ago */
-	z-index: 1;
-	color: var(--textBeige);
-	font-family: 'Nanum Myeongjo', serif;
-	font-weight: 700;
-	-webkit-text-stroke-width: 2px;
-	-webkit-text-stroke-color: #000;
-}
+/* <-----<----- <----- <-----  HEADER   ------>------>------>------>------> */
 
 .homeBG {
-	min-height: 100vh;
-	/* Must have min-height: 100vh; or else it shrinks to fit content */
+	height: 100vh;
 	background-color: var(--blackJapPalette);
-	background-position: bottom;
-	background-repeat: no-repeat;
-	background-size: cover; /*contain--Resize the background image to make sure the image is fully visible*/
-	background-origin: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#header-title {
+	transform: rotate(-15deg);
+	font-family: mHucker;
+	font-size: calc(20px + 2vw);
+	z-index: 8;
+	color: var(--optimalOnBlack);
+	align-self: start;
+	margin-left: 3vw;
+	margin-top: 3vw;
+}
+
+#fullFatTitle {
+	font-size: 15vw;
+	color: var(--textBeige);
+	font-family: 'Nanum Myeongjo', serif;
 }
 
 #grappleStyle {
 	color: var(--goldGrappFont);
-	font-weight: 1000;
-	font-size: 10rem;
+	letter-spacing: 10px;
+	line-height: 1.6;
+	font-size: 10vw;
 }
 
-
-
-header {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: bottom;
+#tsparticles {
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	opacity: 0.4;
 }
 
-header h1 {
-	font-size: 1em;
-	font-weight: 400;
-	padding: 2em;
-	margin-right: 50em;
-}
-
+/* <-----<----- <----- <-----  MENU SIDE BAR  ------>------>------>------>------> */
 nav {
 	position: fixed;
 	left: 60em;
@@ -200,7 +170,7 @@ nav {
 	z-index: 100;
 }
 
-/* AFFECTS MENU SIDE BAR STYLE */
+
 nav li {
 	display: inline-block;
 	cursor: pointer;
@@ -234,21 +204,22 @@ li .link:hover {
 	opacity: 1;
 }
 
-.header-title button:hover {
-	opacity: 0.8;
+.menuHomeSVG {
+	height: 20%;
+	width: 20%;
 }
 
-.header-title {
-	position: relative;
-	left: 8%;
-	top: -80%;
-	transform: rotate(-15deg);
-	font-family: mHucker;
-	font-size: 3em;
-	text-align: left;
-	z-index: 8;
-	color: var(--creamJapPalette);
+.menuHomeSVGsub {
+	height: 1.5rem;
+	width: 1.5rem;
+	color: #ffffff;
 }
+
+/* <-----<----- <----- <-----  MENU SIDE BAR END ------>------>------>------>------> */
+
+
+
+
 
 /* ABOUT EDITS NICK GILLHAM  */
 
@@ -285,7 +256,7 @@ li .link:hover {
 }
 
 .specChars {
-	color: var(--redJapPalette)
+	color: var(--redJapPalette);
 }
 
 /* CHILD ATHLETES  */
@@ -338,8 +309,6 @@ li .link:hover {
 	height: 50vh;
 	margin: auto;
 	width: 100%;
-	
-
 }
 
 .tablebg::after {
@@ -358,50 +327,40 @@ li .link:hover {
 	transition: ease-in-out;
 }
 
-
-
-
 /* CONTACT PAGE  */
 
- iframe {
+iframe {
 	width: 100%;
 	height: 100%;
- }
+}
 
+/* FOOTER PAGE  */
 
- /* FOOTER PAGE  */
+/* MERCHANDISE PAGE  */
 
- 
-  /* MERCHANDISE PAGE  */
+.sizeBox {
+	border: rgb(49, 49, 49) solid;
+	border-width: 1px;
+	padding: 1.5px;
+	margin: 2px;
+	color: var(--creamJapPalette);
+	box-sizing: border-box;
+	width: 100px;
+}
 
-  .sizeBox {
-	  border: rgb(49, 49, 49) solid;
-	  border-width: 1px;
-	  padding: 1.5px;
-	  margin: 2px;
-	  color: var(--creamJapPalette);
-	  box-sizing: border-box;
-	  width: 100px;
-
-  }
-
- 
- /* screenwidth less than 1024px
+/* screenwidth less than 1024px
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 1024px) {
-	
 	/* About Section
    -------------------------------------------------------------------- */
 
 	/* CHILD ATHLETES
    -------------------------------------------------------------------- */
 
-
-
-   	/* ADULT 
+	/* ADULT 
    -------------------------------------------------------------------- */
 
-   	/* TIMETABLE
+	/* TIMETABLE
    -------------------------------------------------------------------- */
 
 	/* MEMBERSHIP
@@ -410,27 +369,23 @@ li .link:hover {
 	/* CONTACT
    -------------------------------------------------------------------- */
 
-   	/* MERCH
+	/* MERCH
    -------------------------------------------------------------------- */
-
 }
 
 /* screenwidth less than 900px
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 900px) {
-
 	/* About Section
    -------------------------------------------------------------------- */
 
 	/* CHILD ATHLETES
    -------------------------------------------------------------------- */
 
-
-
-   	/* ADULT 
+	/* ADULT 
    -------------------------------------------------------------------- */
 
-   	/* TIMETABLE
+	/* TIMETABLE
    -------------------------------------------------------------------- */
 
 	/* MEMBERSHIP
@@ -439,28 +394,24 @@ li .link:hover {
 	/* CONTACT
    -------------------------------------------------------------------- */
 
-   	/* MERCH
+	/* MERCH
    -------------------------------------------------------------------- */
-
 }
 
 /* mobile wide/smaller tablets
 ---------------------------------------------------------------------- */
 
 @media only screen and (max-width: 767px) {
-
 	/* About Section
    -------------------------------------------------------------------- */
 
 	/* CHILD ATHLETES
    -------------------------------------------------------------------- */
 
-
-
-   	/* ADULT 
+	/* ADULT 
    -------------------------------------------------------------------- */
 
-   	/* TIMETABLE
+	/* TIMETABLE
    -------------------------------------------------------------------- */
 
 	/* MEMBERSHIP
@@ -469,48 +420,47 @@ li .link:hover {
 	/* CONTACT
    -------------------------------------------------------------------- */
 
-   	/* MERCH
+	/* MERCH
    -------------------------------------------------------------------- */
-
 }
 
-/* mobile narrow
-  -------------------------------------------------------------------------- */
+
 
 @media only screen and (max-width: 480px) {
 	/* Header
    -------------------------------------------------------------------- */
 
-	.homeBG {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-evenly;
-	}
+	
 
-	.header-title {
-		font-size: 25px;
-		position: absolute;
-		top: 100px;
-	}
+	#header-title {
+		transform: rotate(-10deg);
+		font-family: mHucker;
+		margin: 5vw;
 
-	.heading-background {
-		position: relative;
-		top: 5rem;
 	}
-
+	
+	#fullFatTitle {
+		font-size: 15vw;
+		color: var(--textBeige);
+		letter-spacing: 10px;
+		
+	
+	}
+	
 	#grappleStyle {
-		position: relative;
-		text-align: center;
-		font-size: 13vw;
-		z-index: 1;
+		color: var(--goldGrappFont);
+		letter-spacing: 10px;
+		font-size: 10vw;
 	}
-
+	
 	#tsparticles {
 		position: fixed;
-		z-index: 0;
+		z-index: 1;
 		width: 100%;
 		height: 100%;
+		opacity: 0.4;
 	}
+	
 
 	/* ABOUT
    -------------------------------------------------------------------- */
@@ -518,45 +468,39 @@ li .link:hover {
 	/* CHILD ATHLETES
    -------------------------------------------------------------------- */
 
-   
-
-   	/* ADULT ATHLETES
+	/* ADULT ATHLETES
    -------------------------------------------------------------------- */
 
-   	/* TIMETABLE
+	/* TIMETABLE
    -------------------------------------------------------------------- */
 
-   /*Also uses #memFooter on Footer */
+	/*Also uses #memFooter on Footer */
 
-   
 	/* MEMBERSHIP
    -------------------------------------------------------------------- */
 
- .memTitle {
-	 font-size: 1.8rem;
-	 position: relative;
-	 left: 10%;
- }
+	.memTitle {
+		font-size: 1.8rem;
+		position: relative;
+		left: 10%;
+	}
 
- #memFooter {
-	 margin-bottom: 2vh;
- }
+	#memFooter {
+		margin-bottom: 2vh;
+	}
 
 	/* CONTACT
    -------------------------------------------------------------------- */
-   /*Also uses #memFooter and .memTitle on header and on Footer */
+	/*Also uses #memFooter and .memTitle on header and on Footer */
 
-   iframe {
-	width: 100%;
-	height: 100%;
- }
+	iframe {
+		width: 100%;
+		height: 100%;
+	}
 
- .smStyle {
-text-align: center;
-}
-   	/* MERCH
+	.smStyle {
+		text-align: center;
+	}
+	/* MERCH
    -------------------------------------------------------------------- */
-
-   
-
 }
