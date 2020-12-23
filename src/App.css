@@ -221,6 +221,17 @@ li .link:hover {
 	min-height: 100vh;
 }
 
+.aboutTitle {
+	align-self: center;
+	text-align: center;
+	width: 50vw;
+	font-family: MoykoTitle;
+	font-size: 100px;
+	color: var(--optimalOnBlack);
+	letter-spacing: 5px;
+	margin: 3vw 2vw 0vw 0vw;
+}
+
 .about-content {
 	display: flex;
 	flex-direction: column;
@@ -233,13 +244,9 @@ li .link:hover {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	height: 90vh;
-
-	margin: 8vh 0;
-	
+	align-items: center;
+	height: 80vh;	
 }
-
-
 
 .about-content li {
 	font-size: 100%;
@@ -252,28 +259,16 @@ li .link:hover {
 	text-transform: uppercase;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
-
 #headParaContainer {
-	width: 57%;
-	text-align: left;
+	width: 50vw;
+	text-align: right;
 }
 
 
 #headPara {
-	font-size: 1.5rem;
+	font-size: 1.5vw;
 	line-height: 2.2;
-}
-
-.aboutTitle {
-	align-self: center;
-	text-align: center;
-	width: 50vw;
-	font-family: MoykoTitle;
-	font-size: 5em;
-	color: var(--optimalOnBlack);
-	letter-spacing: 5px;
-	margin: 3vw 3vw 0vw;
+	width: 100%;
 }
 
 .imageContainerAbout {
@@ -281,25 +276,35 @@ li .link:hover {
 	height: auto;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: space-around;
+	align-items: center;
+	margin: 2vw 0;
+	text-align: center;
+
 }
 
 .imageAbout {
 	width: 25vw;
-	height: auto;
+	height: 25vw;
 	border-radius: 1%;
-	filter: sepia(50%);
+	filter: sepia(30%);
 	opacity: 0.6;
 }
 
 .about-content p {
-	font-size: 1.5rem;
-	letter-spacing: 2px;
-	line-height: 1.8;
+	width: 50%;
+	font-size: 1.2vw;
+	letter-spacing: 4px;
+	line-height: 1.6;
 	font-family: 'Montserrat', sans-serif;
 	list-style: none;
 	color: var(--creamJapPalette);
 
+}
+
+#bottomTextAbout {
+	width: 100%;
+	text-align: center;
 }
 
 .specChars {
