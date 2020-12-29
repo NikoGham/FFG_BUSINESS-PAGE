@@ -391,9 +391,12 @@ iframe {
 /* FOOTER PAGE  */
 #FooterContainerDiv {
 	background-color: var(--caramelFont);
-	width: 100%;
+	width: 100vw;
 	text-align: center;
+
 }
+
+
 
 /* MERCHANDISE PAGE  */
 
@@ -486,7 +489,7 @@ iframe {
 	font-size: 100px;
 	color: var(--optimalOnBlack);
 	letter-spacing: 5px;
-	margin: 5vw 2vw 0vw 0vw;
+	margin: 20vw 2vw 0vw 0vw;
 }
 
 .about-content {
@@ -504,7 +507,7 @@ iframe {
 	justify-content: space-between;
 	height: 100vh;
 	width: 100vw;
-	margin: 10vw 10vw 10vw 10vw;
+	margin: 10vw 10vw 10vw 0vw;
 }
 
 .about-content li {

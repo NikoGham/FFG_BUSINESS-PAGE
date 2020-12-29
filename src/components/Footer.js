@@ -27,7 +27,7 @@ const Footer = () => {
 		</div>
 		<div>
 
-		<p style={{color: "#000",}}> Full Fat Grappling, Pratten's Charlton La, Radstock BA3 4BD, United Kingdom| 07877 816 749 | info@fullfatgrappling.com</p>
+		<p> Full Fat Grappling, Pratten's Charlton La, Radstock BA3 4BD, United Kingdom| 07877 816 749 | info@fullfatgrappling.com</p>
 		</div>
 		</div>
 	);
@@ -36,7 +36,7 @@ const Footer = () => {
 const style = {
 	display: "flex", 
 	flexDirection: "row", 
-	justifyContent: "space-around", 
+	justifyContent: "space-evenly", 
 	alignContent: "center",
 	margin: "1rem", 
 
