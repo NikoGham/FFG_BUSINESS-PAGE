@@ -15,15 +15,14 @@ import CardsMem from './CardsMem'
              <Container className='childrenBG' fluid >
              <Row>
                <Col>
-                 <div>
                    <Fade left>
-                     <h1 className="memTitle">Memberships </h1>
+                     <h1 id="memTitle">Memberships </h1>
+                     <hr style={{width:"50%"}}></hr>
                    
                    </Fade>
-                 </div>
                </Col>
              </Row>
-             <Row >
+             <Row style={{marginTop: "3vw"}}>
                  <Col md={3}>     
                  </Col>
                <Col>

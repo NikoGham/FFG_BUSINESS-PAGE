@@ -225,7 +225,6 @@ li .link:hover {
 	align-self: center;
 	text-align: center;
 	width: 50vw;
-	font-family: MoykoTitle;
 	font-size: 100px;
 	color: var(--optimalOnBlack);
 	letter-spacing: 5px;
@@ -245,7 +244,7 @@ li .link:hover {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	height: 80vh;	
+	height: 80vh;
 }
 
 .about-content li {
@@ -264,7 +263,6 @@ li .link:hover {
 	text-align: right;
 }
 
-
 #headPara {
 	font-size: 1.4vw;
 	line-height: 2.2;
@@ -280,7 +278,6 @@ li .link:hover {
 	align-items: center;
 	margin: 2vw 0;
 	text-align: left;
-
 }
 
 .imageAbout {
@@ -299,7 +296,6 @@ li .link:hover {
 	font-family: 'Montserrat', sans-serif;
 	list-style: none;
 	color: var(--creamJapPalette);
-
 }
 
 #bottomTextAbout {
@@ -338,6 +334,13 @@ li .link:hover {
 }
 
 /* MEMBERSHIP PAGE - TRANSITIONS */
+
+#memTitle {
+	font-size: 3rem;
+	color: var(--optimalOnBlack);
+	letter-spacing: 5px;
+	text-align: center;
+}
 
 .cardText {
 	font-weight: bold;
@@ -393,10 +396,7 @@ iframe {
 	background-color: var(--caramelFont);
 	width: 100vw;
 	text-align: center;
-
 }
-
-
 
 /* MERCHANDISE PAGE  */
 
@@ -475,104 +475,101 @@ iframe {
 @media only screen and (max-width: 767px) {
 	/* About Section
    -------------------------------------------------------------------- */
-   .childrenBG {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-}
+	.childrenBG {
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+	}
 
-.aboutTitle {
-	align-self: center;
-	text-align: center;
-	width: 50vw;
-	font-family: MoykoTitle;
-	font-size: 100px;
-	color: var(--optimalOnBlack);
-	letter-spacing: 5px;
-	margin: 20vw 2vw 0vw 0vw;
-}
+	.aboutTitle {
+		align-self: center;
+		text-align: center;
+		width: 50vw;
+		font-family: MoykoTitle;
+		font-size: 100px;
+		color: var(--optimalOnBlack);
+		letter-spacing: 5px;
+		margin: 20vw 2vw 0vw 0vw;
+	}
 
-.about-content {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-self: center;
-	width: 100%;
-}
+	.about-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-self: center;
+		width: 100%;
+	}
 
-#headContainer {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	height: 100vh;
-	width: 100vw;
-	margin: 10vw 10vw 10vw 0vw;
-}
+	#headContainer {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100vh;
+		width: 100vw;
+		margin: 10vw 10vw 10vw 0vw;
+	}
 
-.about-content li {
-	font-size: 100%;
-	letter-spacing: 5px;
-	line-height: 1.6;
-	color: var(--optimalOnBlack);
-	text-align: center;
-	font-family: 'Montserrat', sans-serif;
-	list-style: none;
-	text-transform: uppercase;
-}
+	.about-content li {
+		font-size: 100%;
+		letter-spacing: 5px;
+		line-height: 1.6;
+		color: var(--optimalOnBlack);
+		text-align: center;
+		font-family: 'Montserrat', sans-serif;
+		list-style: none;
+		text-transform: uppercase;
+	}
 
-#headParaContainer {
-	width: 75vw;
-	position: relative;
-}
+	#headParaContainer {
+		width: 75vw;
+		position: relative;
+	}
 
+	#headPara {
+		font-size: 75%;
+		line-height: 2.2;
+		width: 100%;
+		text-align: right;
+	}
 
-#headPara {
-	font-size: 75%;
-	line-height: 2.2;
-	width: 100%;
-	text-align: right;
-}
+	.imageContainerAbout {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		text-align: center;
+	}
 
-.imageContainerAbout {
-	width: 100%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	text-align: center;
+	.imageAbout {
+		width: 75vw;
+		height: 75vw;
+		border-radius: 1%;
+		filter: sepia(30%);
+		opacity: 0.6;
+	}
 
-}
+	.about-content p {
+		margin: 5vw;
+		width: 90%;
+		font-size: 75%;
+		letter-spacing: 4px;
+		line-height: 1.6;
+		font-family: 'Montserrat', sans-serif;
+		list-style: none;
+		color: var(--creamJapPalette);
+	}
 
-.imageAbout {
-	width: 75vw;
-	height: 75vw;
-	border-radius: 1%;
-	filter: sepia(30%);
-	opacity: 0.6;
-}
+	#bottomTextAbout {
+		width: 100%;
+		text-align: center;
+	}
 
-.about-content p {
-	margin: 5vw;
-	width: 90%;
-	font-size: 75%;
-	letter-spacing: 4px;
-	line-height: 1.6;
-	font-family: 'Montserrat', sans-serif;
-	list-style: none;
-	color: var(--creamJapPalette);
-
-}
-
-#bottomTextAbout {
-	width: 100%;
-	text-align: center;
-}
-
-.specChars {
-	color: var(--redJapPalette);
-}
+	.specChars {
+		color: var(--redJapPalette);
+	}
 	/* CHILD ATHLETES
    -------------------------------------------------------------------- */
 
@@ -584,6 +581,14 @@ iframe {
 
 	/* MEMBERSHIP
    -------------------------------------------------------------------- */
+
+   #memTitle {
+	font-size: 2rem;
+	color: var(--optimalOnBlack);
+	letter-spacing: 5px;
+	text-align: center;
+	margin-top: 25vw;
+}
 
 	/* CONTACT
    -------------------------------------------------------------------- */
