@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
 	return (
-		<div className="containerDiv">
+		<div id="FooterContainerDiv">
 		<div style={style}>
 			<a target='_blank' rel='noopener noreferrer' href={'https://www.instagram.com/fullfatgrappling/'}>
 				<i className='fab fa-instagram linkSocial' />
@@ -36,7 +36,7 @@ const Footer = () => {
 const style = {
 	display: "flex", 
 	flexDirection: "row", 
-	justifyContent: "space-evenly", 
+	justifyContent: "space-around", 
 	alignContent: "center",
 	margin: "1rem", 
 

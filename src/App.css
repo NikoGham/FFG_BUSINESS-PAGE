@@ -266,7 +266,7 @@ li .link:hover {
 
 
 #headPara {
-	font-size: 1.5vw;
+	font-size: 1.4vw;
 	line-height: 2.2;
 	width: 100%;
 }
@@ -279,7 +279,7 @@ li .link:hover {
 	justify-content: space-around;
 	align-items: center;
 	margin: 2vw 0;
-	text-align: center;
+	text-align: left;
 
 }
 
@@ -389,6 +389,11 @@ iframe {
 }
 
 /* FOOTER PAGE  */
+#FooterContainerDiv {
+	background-color: var(--caramelFont);
+	width: 100%;
+	text-align: center;
+}
 
 /* MERCHANDISE PAGE  */
 
@@ -467,7 +472,104 @@ iframe {
 @media only screen and (max-width: 767px) {
 	/* About Section
    -------------------------------------------------------------------- */
+   .childrenBG {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
 
+.aboutTitle {
+	align-self: center;
+	text-align: center;
+	width: 50vw;
+	font-family: MoykoTitle;
+	font-size: 100px;
+	color: var(--optimalOnBlack);
+	letter-spacing: 5px;
+	margin: 5vw 2vw 0vw 0vw;
+}
+
+.about-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-self: center;
+	width: 100%;
+}
+
+#headContainer {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
+	width: 100vw;
+	margin: 10vw 10vw 10vw 10vw;
+}
+
+.about-content li {
+	font-size: 100%;
+	letter-spacing: 5px;
+	line-height: 1.6;
+	color: var(--optimalOnBlack);
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	list-style: none;
+	text-transform: uppercase;
+}
+
+#headParaContainer {
+	width: 75vw;
+	position: relative;
+}
+
+
+#headPara {
+	font-size: 75%;
+	line-height: 2.2;
+	width: 100%;
+	text-align: right;
+}
+
+.imageContainerAbout {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+
+}
+
+.imageAbout {
+	width: 75vw;
+	height: 75vw;
+	border-radius: 1%;
+	filter: sepia(30%);
+	opacity: 0.6;
+}
+
+.about-content p {
+	margin: 5vw;
+	width: 90%;
+	font-size: 75%;
+	letter-spacing: 4px;
+	line-height: 1.6;
+	font-family: 'Montserrat', sans-serif;
+	list-style: none;
+	color: var(--creamJapPalette);
+
+}
+
+#bottomTextAbout {
+	width: 100%;
+	text-align: center;
+}
+
+.specChars {
+	color: var(--redJapPalette);
+}
 	/* CHILD ATHLETES
    -------------------------------------------------------------------- */
 

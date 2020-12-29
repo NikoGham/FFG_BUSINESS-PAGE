@@ -21,10 +21,9 @@ class About extends Component {
 
 	render() {
 		return (
-			<div className='childrenBG' fluid>
-				<header className=''>
+			<div className='childrenBG'>
+				<header>
 					<img
-						className=''
 						src={headImage}
 						alt='Background'
 						style={{ height: '100vh', width: '100%', opacity: 0.1, position: 'fixed', zIndex: '-1' }}
@@ -39,61 +38,59 @@ class About extends Component {
 				</div>
 				<div className='about-content'>
 					<div id='headContainer'>
-						<div id='listStyle'>
-							<ul>
-								<Fade left slow>
-									<li>
-										Courtesy <span className='specChars'>礼儀</span>
-									</li>
-									<hr />
-								</Fade>
-								<Fade left slow>
-									<li>
-										Courage <span className='specChars'>勇気</span>
-									</li>
-									<hr />
-								</Fade>
-								<Fade left slow>
-									<li>
-										Honesty <span className='specChars'>正直</span>
-									</li>
-									<hr />
-								</Fade>
+						<ul>
+							<Fade left slow>
+								<li>
+									Courtesy <span className='specChars'>礼儀</span>
+								</li>
+								<hr />
+							</Fade>
+							<Fade left slow>
+								<li>
+									Courage <span className='specChars'>勇気</span>
+								</li>
+								<hr />
+							</Fade>
+							<Fade left slow>
+								<li>
+									Honesty <span className='specChars'>正直</span>
+								</li>
+								<hr />
+							</Fade>
 
-								<Fade left slow>
-									<li>
-										Honour <span className='specChars'>名誉</span>
-									</li>
-									<hr />
-								</Fade>
+							<Fade left slow>
+								<li>
+									Honour <span className='specChars'>名誉</span>
+								</li>
+								<hr />
+							</Fade>
 
-								<Fade left slow>
-									<li>
-										Modesty <span className='specChars'>謙虚</span>
-									</li>
-									<hr />
-								</Fade>
+							<Fade left slow>
+								<li>
+									Modesty <span className='specChars'>謙虚</span>
+								</li>
+								<hr />
+							</Fade>
 
-								<Fade slow left>
-									<li>
-										Respect <span className='specChars'>尊敬 </span>
-									</li>
-									<hr />
-								</Fade>
-								<Fade slow left>
-									<li>
-										Self Control <span className='specChars'>自制心</span>
-									</li>
-									<hr />
-								</Fade>
-								<Fade slow left>
-									<li>
-										Friendship <span className='specChars'>友情</span>
-									</li>
-									<hr />
-								</Fade>
-							</ul>
-						</div>
+							<Fade slow left>
+								<li>
+									Respect <span className='specChars'>尊敬 </span>
+								</li>
+								<hr />
+							</Fade>
+							<Fade slow left>
+								<li>
+									Self Control <span className='specChars'>自制心</span>
+								</li>
+								<hr />
+							</Fade>
+							<Fade slow left>
+								<li>
+									Friendship <span className='specChars'>友情</span>
+								</li>
+								<hr />
+							</Fade>
+						</ul>
 						<Fade right slower>
 							<div id='headParaContainer'>
 								<p id='headPara'>
