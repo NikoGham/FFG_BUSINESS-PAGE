@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import Fade from 'react-reveal/Fade';
-import Footer from './Footer';
-import { Container, Row, Col } from 'react-bootstrap';
-import { Table, Thead, Tbody, Tr, Th, Td } from 'react-super-responsive-table';
-import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css';
+import React, { Component } from 'react'
+import Fade from 'react-reveal/Fade'
+import Footer from './Footer'
+import { Container, Row, Col } from 'react-bootstrap'
+import { Table, Thead, Tbody, Tr, Th, Td } from 'react-super-responsive-table'
+import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css'
 
 class Child extends Component {
 	render() {
@@ -43,42 +43,27 @@ class Child extends Component {
 								<Tbody>
 									<Tr>
 										<Td>N/A</Td>
-										<Td>6-7:00 Full time Athletes</Td>
+										<Td>
+											6:00-7:00 Full time Athletes <br />17:00-18:00 Child Athletes<br />18:00-19:00 Child
+											Athlete PT
+										</Td>
 										<Td>N/A</Td>
 
-										<Td>6-7:00 Full time Athletes</Td>
+										<Td>6:00-7:00 Full time Athletes</Td>
 										<Td>N/A</Td>
 										<Td>N/A</Td>
 
-										<Td>6-7:00 Full time Athletes</Td>
+										<Td>6:00-7:00 Full time Athletes</Td>
 									</Tr>
-									<Tr>
-										<Td />
-
-										<Td>17-18:00 Child Athletes</Td>
-									</Tr>
-									<Tr>
-                    <Td></Td>
-										<Td>18-19:00 Child Athlete PT</Td>
-
-										<Td />
-									</Tr>
-									<Tr>
-										<Td />
-										<Td />
-										<Td />
-									</Tr>
-									<Tr>
-										<Td />
-										<Td />
-										<Td />
-									</Tr>
+								
+									
 								</Tbody>
 							</Table>
 						</Fade>
 						{/* COMMENT DATA */}
 
 						<Fade left slow>
+
 							<p>
 								Regular training was declared essential by Kano in his cornerstone book, the Kodokan.
 								The benefits of repeat muscle exposure and mental stimulation provide for the
@@ -96,7 +81,7 @@ class Child extends Component {
 					<Footer />
 				</Row>
 			</Container>
-		);
+		)
 	}
 }
 
@@ -112,7 +97,7 @@ const styleDiv2 = {
 	fontFamily: 'Montserrat',
 	position: 'relative',
 	bottom: '0px',
-	marginTop: '10vh'
-};
+	marginTop: '2vh'
+}
 
-export default Child;
+export default Child

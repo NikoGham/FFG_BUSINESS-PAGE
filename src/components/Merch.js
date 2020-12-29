@@ -25,7 +25,9 @@ class Merch extends Component {
 					{/* TITLE ROW */}
 					<Col>
 						<Fade left slow cascade>
-							<h1 className='memTitle'>{this.state.title}</h1>
+							<h1 id='memTitle'>{this.state.title}</h1>
+							<hr style={{ width: '50%', margin: 'auto' }} />
+
 						</Fade>
 					</Col>
 				</Row>

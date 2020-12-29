@@ -13,7 +13,7 @@ class Child extends Component {
 					<Col>
 						<div>
 							<Fade left>
-								<h1 id='childTitle' className='memTitle'>
+								<h1 id='memTitle'>
 									contact us <hr style={{ width: '50%', margin: 'auto' }} />
 								</h1>
 							</Fade>
