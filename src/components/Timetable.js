@@ -16,7 +16,7 @@ class Child extends Component {
 				<Row>
 					<Col>
 						<div>
-							<Fade left>
+							<Fade left cascade>
 								<h1 id='memTitle'>Timetable </h1>
 								<hr style={{ width: '50%', margin: 'auto' }} />
 							</Fade>

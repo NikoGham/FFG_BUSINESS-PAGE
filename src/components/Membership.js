@@ -15,7 +15,7 @@ import CardsMem from './CardsMem'
              <Container className='childrenBG' fluid >
              <Row>
                <Col>
-                   <Fade left>
+                   <Fade left cascade>
                      <h1 id="memTitle">Memberships </h1>
                      <hr style={{width:"50%"}}></hr>
                    

@@ -12,7 +12,7 @@ class Child extends Component {
 				<Row>
 					<Col>
 						<div>
-							<Fade left>
+							<Fade left cascade>
 								<h1 id='memTitle'>
 									contact us <hr style={{ width: '50%', margin: 'auto' }} />
 								</h1>
