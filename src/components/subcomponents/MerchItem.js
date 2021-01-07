@@ -1,7 +1,7 @@
 import React from "react";
 import { MDBMask, MDBView, MDBContainer, MDBRow, MDBCol } from "mdbreact";
 
-function MerchItem ({box1, box1Text, box2, zoomBox, shadowBox, box3}) {
+function MerchItem ({box1, box1Text, box2, zoomBox, shadowBox, box3, teePrice, hoodPrice, box2Text, box3Text, box4Text, box5Text }) {
     return (
       <MDBContainer className="mt-5">
         <MDBRow>
@@ -14,7 +14,7 @@ function MerchItem ({box1, box1Text, box2, zoomBox, shadowBox, box3}) {
               />
               <MDBMask className="flex-center" overlay="black-light">
                 
-               <p className="childrenText">{box1Text} <br></br> £15 <br></br> Sizes <span className="sizeBox">SM</span> <span className="sizeBox">M</span><span className="sizeBox">L</span></p>
+               <p className="childrenText">{box1Text} <br></br> {teePrice} <br></br> Sizes <span className="sizeBox">S</span> <span className="sizeBox">M</span><span className="sizeBox">L</span></p>
                
                 
               
@@ -29,7 +29,7 @@ function MerchItem ({box1, box1Text, box2, zoomBox, shadowBox, box3}) {
                 alt=""
               />
               <MDBMask className="flex-center" overlay="black-light">
-              <p className="childrenText">{box1Text} <br></br> £15 <br></br> Sizes <span className="sizeBox">SM</span> <span className="sizeBox">M</span><span className="sizeBox">L</span></p>
+              <p className="childrenText">{box2Text} <br></br> {teePrice} <br></br> Sizes <span className="sizeBox">S</span> <span className="sizeBox">M</span><span className="sizeBox">L</span></p>
               </MDBMask>
             </MDBView>
           </MDBCol>
@@ -41,7 +41,7 @@ function MerchItem ({box1, box1Text, box2, zoomBox, shadowBox, box3}) {
                 alt=""
               />
               <MDBMask className="flex-center" overlay="black-light">
-              <p className="childrenText">{box1Text} <br></br> £15 <br></br> Sizes <span className="sizeBox">SM</span> <span className="sizeBox">M</span><span className="sizeBox">L</span></p>
+              <p className="childrenText">{box3Text} <br></br> {teePrice} <br></br> Sizes <span className="sizeBox">S</span> <span className="sizeBox">M</span><span className="sizeBox">L</span></p>
               </MDBMask>
             </MDBView>
           </MDBCol>
@@ -55,7 +55,7 @@ function MerchItem ({box1, box1Text, box2, zoomBox, shadowBox, box3}) {
                 alt=""
               />
               <MDBMask className="flex-center"  overlay="black-light">
-              <p className="childrenText">{box1Text} <br></br> £15 <br></br> Sizes <span className="sizeBox">SM</span> <span className="sizeBox">M</span><span className="sizeBox">L</span></p>
+              <p className="childrenText">{box4Text} <br></br> {hoodPrice} <br></br> Sizes <span className="sizeBox">S</span> <span className="sizeBox">M</span><span className="sizeBox">L</span></p>
                 <p></p>
               </MDBMask>
             </MDBView>
@@ -68,7 +68,7 @@ function MerchItem ({box1, box1Text, box2, zoomBox, shadowBox, box3}) {
                 alt=""
               />
               <MDBMask className="flex-center" overlay="black-light">
-              <p className="childrenText">{box1Text} <br></br> £15 <br></br> Sizes <span className="sizeBox">SM</span> <span className="sizeBox">M</span><span className="sizeBox">L</span></p>
+              <p className="childrenText">{box5Text} <br></br> {hoodPrice} <br></br> Sizes <span className="sizeBox">S</span> <span className="sizeBox">M</span><span className="sizeBox">L</span></p>
               </MDBMask>
             </MDBView>
           </MDBCol>
