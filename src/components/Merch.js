@@ -13,11 +13,20 @@ import GreyJumperFront from '../assets/GreyHood.jpeg';
 import PinkJumperFront from '../assets/PinkHoodie.jpeg';
 import RuckSack from '../assets/RuckSack.jpeg';
 import SackFront from '../assets/SackFront.jpeg';
+import LeftHat from '../assets/LeftHat1.jpg';
+import FrontHat from '../assets/FrontHat1.jpg';
+import RightHat from '../assets/RightHat1.jpg';
+
 
 const Merch = () => {
 
 	const [teePrice] = useState('£30')
-	const [hoodPrice] = useState("£40")
+	const [hoodPrice] = useState("£35")
+	const [pinkHoodPrice] = useState("£30")
+	const [ruckSackPrice] = useState("£25")
+	const [sackPrice] = useState("£60")
+
+	const [hatPrice] = useState("£18")
 
 		return (
 			<Container className='childrenBG' fluid>
@@ -47,8 +56,11 @@ const Merch = () => {
 									zoomBox={BlackJumperFront}
 									shadowBox={RuckSack}
 									box3={BlackBack}
-									teePrice={teePrice}
-									hoodPrice={hoodPrice}
+									box1Price={teePrice}
+									box2Price={teePrice}
+									box3Price={teePrice}
+									box4Price={hoodPrice}
+									box5Price={ruckSackPrice}
 								/>
 							</Row>
 						</Fade>
@@ -71,9 +83,13 @@ const Merch = () => {
 									zoomBox={GreyJumperFront}
 									shadowBox={SackFront}
 									box3={PinkJumperFront}
-									teePrice={teePrice}
-									hoodPrice={hoodPrice}
-								/>{' '}
+									
+									box1Price={teePrice}
+									box2Price={teePrice}
+									box3Price={pinkHoodPrice}
+									box4Price={hoodPrice}
+									box5Price={sackPrice}
+								/>
 							</Row>
 						</Fade>
 					</Col>
@@ -83,7 +99,23 @@ const Merch = () => {
 					<Col md={2} />
 					<Col>
 						<Fade left slow>
-							<Row />
+							<Row>
+							<MerchItem
+									box1={LeftHat}
+									box1Text='Hat'
+									box2Text='Hat'
+									box3Text='Hat'
+									
+									box2={RightHat}
+									hatTrue={true}
+									box3={FrontHat}
+
+									box1Price={hatPrice}
+									box2Price={hatPrice}
+									box3Price={hatPrice}
+									
+								/>
+							</Row>
 						</Fade>
 					</Col>
 					<Col md={2} />
@@ -100,7 +132,6 @@ const Merch = () => {
 
 
 const styleDiv2 = {
-	backgroundColor: 'var(--caramelFont)',
 	display: 'flex',
 	flexDirection: 'row',
 

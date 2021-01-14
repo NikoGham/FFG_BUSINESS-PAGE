@@ -29,6 +29,7 @@ Text font :     font-family: 'Lato', sans-serif; */
 :root {
 	--goldGrappFont: #FFD058;
 	/* improved color schemme GoldGrappFont, TextBeige, BlackJapPalette */
+	--pinkJap: #FFB9AC;
 	--textBeige: #FEFFEA;
 	--optimalOnBlack: #FFD058;
 	--blackJapPalette: #06090f;
@@ -58,6 +59,10 @@ hr {
 h1 {
 	font-family: 'Nanum Myeongjo', serif;
 	text-transform: uppercase;
+}
+
+p {
+	letter-spacing: 3px;
 }
 
 .subTextFont {
@@ -186,9 +191,7 @@ nav li .link {
 	-o-transition: all 0.3s ease-in-out;
 }
 
-li .link:hover {
-	opacity: 1;
-}
+
 .active {
 	color: var(--gingerBread);
 	opacity: 1;
@@ -202,7 +205,6 @@ li .link:hover {
 .menuHomeSVGsub {
 	height: 1.5rem;
 	width: 1.5rem;
-	color: #ffffff;
 }
 
 /* <-----<----- <----- <-----  MENU SIDE BAR END ------>------>------>------>------> */
@@ -298,7 +300,7 @@ li .link:hover {
 }
 
 .specChars {
-	color: var(--redJapPalette);
+	color: var(--pinkJap);
 }
 
 /* <-----<----- <----- <-----  ABOUT SECTION END  ------>------>------>------>------> */
@@ -311,21 +313,6 @@ li .link:hover {
 	height: 40em;
 }
 
-.linkSocial {
-	color: var(--blackJapPalette);
-	transform: scale(1.8);
-	transition: all 0.3s ease-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	z-index: 5;
-	font-size: 3vh;
-}
-
-.linkSocial:hover {
-	transform: scale(2.3);
-}
 
 /* MEMBERSHIP PAGE - TRANSITIONS */
 
@@ -388,31 +375,52 @@ iframe {
 
 /* FOOTER PAGE  */
 #FooterContainerDiv {
-	background-color: var(--caramelFont);
+	background-color: var(--blackJapPalette);
 	width: 100vw;
 	text-align: center;
+	opacity: 0.8;
+
 }
+
+.linkSocial {
+	color: var(--textBeige);
+	transform: scale(1.8);
+	transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	z-index: 5;
+	font-size: 3vh;
+}
+
+.linkSocial:hover {
+	transform: scale(2.3);
+}
+
+#footerText {
+	color: var(--textBeige);
+}
+
 
 /* MERCHANDISE PAGE  */
 
 .sizeBox {
-	border: rgb(49, 49, 49) solid;
+	border: var(--textBeige) solid;
 	border-width: 1px;
-	padding: 1.5px;
-	margin: 2px;
+	padding: 10px;
+	margin: 10px;
 	color: var(--creamJapPalette);
 	box-sizing: border-box;
-	width: 100px;
 }
 
 .childrenText {
 	font-size: 1.2em;
-	color: var(--creamJapPalette);
-	text-align: center;
+	color: var(--textBeige);
+	text-align: left;
 	font-family: 'Montserrat', sans-serif;
-	list-style: none;
-	padding: 2rem;
 }
+
 
 /* screenwidth less than 1024px
 --------------------------------------------------------------------- */
@@ -509,7 +517,7 @@ iframe {
 		font-size: 100%;
 		letter-spacing: 5px;
 		line-height: 1.6;
-		color: var(--optimalOnBlack);
+		color: var(--textBeige);
 		text-align: center;
 		font-family: 'Montserrat', sans-serif;
 		list-style: none;
@@ -554,7 +562,7 @@ iframe {
 		line-height: 1.6;
 		font-family: 'Montserrat', sans-serif;
 		list-style: none;
-		color: var(--creamJapPalette);
+		color: var(--textBeige);
 	}
 
 	#bottomTextAbout {
@@ -563,7 +571,7 @@ iframe {
 	}
 
 	.specChars {
-		color: var(--redJapPalette);
+		color: var(--pinkJap);
 	}
 	/* CHILD ATHLETES
    -------------------------------------------------------------------- */

@@ -27,7 +27,7 @@ const Footer = () => {
 		</div>
 		<div>
 
-		<p> Full Fat Grappling, Pratten's Charlton La, Radstock BA3 4BD, United Kingdom| 07877 816 749 | info@fullfatgrappling.com</p>
+		<p id="footerText"> Full Fat Grappling, Pratten's Charlton La, Radstock BA3 4BD, United Kingdom| 07877 816 749 | info@fullfatgrappling.com</p>
 		</div>
 		</div>
 	);
