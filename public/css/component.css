@@ -6,12 +6,16 @@
 }
 
 :root {
-  --gingerBread: #f59a08;
-  --caramelFont: rgb(151, 105, 6);
-  --background:  #a8536b;
-  --menuBgColor:#b24332;
-  --menuFontColor: #c9c4b1;
-  --menuFontColorHover: #080703;
+  --goldGrappFont: #FFD058;
+	/* improved color schemme GoldGrappFont, TextBeige, BlackJapPalette */
+	--textBeige: #FEFFEA;
+	--optimalOnBlack: #FFD058;
+	--blackJapPalette: #06090f;
+	--fullFatTitle: #06090f;
+  
+  --menuBgColor: #FFB9AC  ;
+  --menuFontColor: #06090f;
+  --menuFontColorHover: #06090f;
 }
 
 html,
@@ -128,8 +132,10 @@ body,
 }
 
 .st-menu ul li {
-  display: block;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   padding: 1em;
   outline: none;
   color: var(--menuFontColor);

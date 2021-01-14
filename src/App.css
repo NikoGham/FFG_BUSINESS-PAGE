@@ -27,28 +27,20 @@ Text font :     font-family: 'Lato', sans-serif; */
 /* COLOR SCHEMES FOUND ON THIS SITE ( FOR FUTURE REFERENCE) https://smithhonig.com/color-palettes-inspired-by-japan-japanese-color-palettes/ */
 
 :root {
-	--goldGrappFont: #b8860b;
-	--gingerBread: #b0861c;
-	--caramelFont: #b0861c;
-	--textBeige: #feffea;
-	--background: #c9c4b1;
-	--behindPusherBg: #080703;
-	--hamBugColor: #5c594a;
-	--redJapPalette: #b24332;
-	--creamJapPalette: #c9c4b1;
-	--optimalOnBlack: #cdb174;
-	--blackJapPalette: #080703;
-	--fullFatTitle: #080703;
+	--goldGrappFont: #FFD058;
+	/* improved color schemme GoldGrappFont, TextBeige, BlackJapPalette */
+	--textBeige: #FEFFEA;
+	--optimalOnBlack: #FFD058;
+	--blackJapPalette: #06090f;
+	--fullFatTitle: #06090f;
 	--headerListTitle: #080703;
+	--oldBlack: #080703;
 }
 
 * {
 	box-sizing: border-box;
 }
 
-.caramelFont {
-	color: var(--headerListTitle);
-}
 
 .text {
 	font-family: 'Lato', sans-serif;
@@ -56,7 +48,7 @@ Text font :     font-family: 'Lato', sans-serif; */
 }
 
 hr {
-	background-color: var(--creamJapPalette);
+	background-color: var(--textBeige);
 	width: 100%;
 	flex-direction: flex;
 	justify-content: center;
@@ -87,7 +79,7 @@ h1 {
 	width: 28px;
 	height: 3px;
 	margin: 0 0 7px 0;
-	background: var(--creamJapPalette);
+	background: var(--textBeige);
 	transition: all 0.5s ease-out;
 }
 .menu-btn.close {
@@ -127,28 +119,30 @@ body {
 	align-items: center;
 }
 
-#header-title {
-	transform: rotate(-15deg);
+#hucker-title {
+	transform: rotate(-10deg);
 	font-family: mHucker;
-	font-size: calc(20px + 2vw);
+	font-size: calc(12px + 2vw);
 	z-index: 8;
-	color: var(--optimalOnBlack);
-	align-self: start;
-	margin-left: 3vw;
-	margin-top: 3vw;
+	color: var(--textBeige);
+	align-self: flex-start;
+	margin-left: 15vw;
+	opacity: 0.7;
+	letter-spacing: 6px;
 }
 
 #fullFatTitle {
-	font-size: 15vw;
+	font-size: 9vw;
 	color: var(--textBeige);
 	font-family: 'Nanum Myeongjo', serif;
+	letter-spacing: 15px;
 }
 
 #grappleStyle {
 	color: var(--goldGrappFont);
 	letter-spacing: 15px;
 	line-height: 1.6;
-	font-size: 10vw;
+	font-size: 5vw;
 }
 
 #tsparticles {
@@ -583,13 +577,13 @@ iframe {
 	/* MEMBERSHIP
    -------------------------------------------------------------------- */
 
-   #memTitle {
-	font-size: 2rem;
-	color: var(--optimalOnBlack);
-	letter-spacing: 5px;
-	text-align: center;
-	margin-top: 25vw;
-}
+	#memTitle {
+		font-size: 2rem;
+		color: var(--optimalOnBlack);
+		letter-spacing: 5px;
+		text-align: center;
+		margin-top: 25vw;
+	}
 
 	/* CONTACT
    -------------------------------------------------------------------- */
@@ -602,10 +596,18 @@ iframe {
 	/* Header
    -------------------------------------------------------------------- */
 
-	#header-title {
-		transform: rotate(-10deg);
+   .homeBG {
+	height: 100vh;
+	background-color: var(--blackJapPalette);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+	#hucker-title {
+		transform: rotate(0deg);
 		font-family: mHucker;
-		margin: 5vw;
 	}
 
 	#fullFatTitle {

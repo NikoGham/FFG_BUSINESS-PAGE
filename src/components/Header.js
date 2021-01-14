@@ -9,8 +9,7 @@ class Header extends Component {
 		return (
 			<div className='homeBG'>
 				<Particles />
-
-				<p id='header-title'>Matthew Hucker's</p>
+				<p id='hucker-title'>Matthew Hucker's</p>
 
 				<h1 id='fullFatTitle'>FULL FAT </h1>
 

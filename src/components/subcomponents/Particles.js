@@ -1,10 +1,9 @@
-import React, {Fragment} from 'react'
+import React from 'react'
 import Particles from 'react-tsparticles';
-
+ 
 
 const ParticlesBG = () => {
     return (
-       <Fragment>
            < Particles width={"100%"} id="tsparticles" params={{
           background: {
             color: {
@@ -34,7 +33,7 @@ const ParticlesBG = () => {
                 speed: 3,
               },
               push: {
-                quantity: 10,
+                quantity: 5,
               },
               repulse: {
                 distance: 200,
@@ -44,10 +43,10 @@ const ParticlesBG = () => {
           },
           particles: {
             color: {
-              value: "#ffffff",
+              value: "#feffea",
             },
             links: {
-              color: "#ffffff",
+              color: "#feffea",
               distance: 150,
               enable: true,
               opacity: 0.5,
@@ -69,7 +68,7 @@ const ParticlesBG = () => {
                 enable: true,
                 value_area: 800,
               },
-              value: 80,
+              value: 50,
             },
             opacity: {
               value: 1,
@@ -84,7 +83,6 @@ const ParticlesBG = () => {
           },
           detectRetina: true,
         }} />
-       </Fragment>
     )
 }
 
