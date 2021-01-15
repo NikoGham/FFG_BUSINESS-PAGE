@@ -67,6 +67,8 @@ p {
 
 .subTextFont {
 	font-family: 'Montserrat', sans-serif;
+	color: var(--textBeige);
+	text-align: center;
 }
 
 /* ORIGINAL TEMPLATE HAMBURGER MENU FROM BRAD TRAVERSY'S MODERN PORTFOLIO  */
@@ -76,9 +78,9 @@ p {
 	position: absolute;
 	z-index: 3;
 	left: 35px;
-	top: 35px;
+	top: 2vw;
 	cursor: pointer;
-	transition: all 0.5s ease-out;
+	transition: all 1s ease-out;
 }
 .menu-btn .btn-line {
 	width: 28px;
@@ -97,7 +99,7 @@ p {
 	opacity: 0;
 }
 .menu-btn.close .btn-line:nth-child(3) {
-	transform: rotate(-45deg) translate(7px, -63px);
+	transform: rotate(-45deg) translate(5px, -5px);
 }
 
 /* do not edit */
@@ -317,11 +319,13 @@ nav li .link {
 /* MEMBERSHIP PAGE - TRANSITIONS */
 
 #memTitle {
-	font-size: 3rem;
-	color: var(--optimalOnBlack);
-	letter-spacing: 5px;
+	font-size: 2rem;
+	color: var(--textBeige);
+	letter-spacing: 10px;
 	text-align: center;
-	margin-top: 3vw;
+	margin: 2vw;
+	align-self: center;
+
 }
 
 .cardText {
@@ -338,7 +342,7 @@ nav li .link {
 }
 
 #cardMemPriceText {
-	color: var(--creamJapPalette);
+	color: var(--textBeige);
 }
 
 /* TIMETABLE PAGE  */
@@ -348,6 +352,7 @@ nav li .link {
 	height: 50vh;
 	margin: auto;
 	width: 100%;
+	text-align: center;
 }
 
 .tablebg::after {
@@ -363,7 +368,13 @@ nav li .link {
 	bottom: 0px;
 	left: 0px;
 	opacity: 0.1;
-	transition: ease-in-out;
+}
+
+#timeTableText {
+text-align: center;
+font-size:1vw;
+margin: 2vw;
+line-height: 1.6;
 }
 
 /* CONTACT PAGE  */
@@ -392,14 +403,18 @@ iframe {
 	-o-transition: all 0.3s ease-in-out;
 	z-index: 5;
 	font-size: 3vh;
+	margin-top: 50%;
 }
 
 .linkSocial:hover {
 	transform: scale(2.3);
+	color: var(--goldGrappFont);
+
 }
 
 #footerText {
 	color: var(--textBeige);
+	font-size:1vw;
 }
 
 

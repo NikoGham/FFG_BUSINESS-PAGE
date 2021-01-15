@@ -3,6 +3,8 @@ import React from 'react';
 const Footer = () => {
 	return (
 		<div id="FooterContainerDiv">
+							<hr style={{ width: '100%', margin: 'auto' }} />
+
 		<div style={style}>
 			<a target='_blank' rel='noopener noreferrer' href={'https://www.instagram.com/fullfatgrappling/'}>
 				<i className='fab fa-instagram linkSocial' />
@@ -27,7 +29,7 @@ const Footer = () => {
 		</div>
 		<div>
 
-		<p id="footerText"> Full Fat Grappling, Pratten's Charlton La, Radstock BA3 4BD, United Kingdom| 07877 816 749 | info@fullfatgrappling.com</p>
+		<p id="footerText"> Full Fat Grappling, Pratten's Charlton La, Radstock BA3 4BD, United Kingdom| 07877 816 749 | info@fullfatgrappling.co.uk</p>
 		</div>
 		</div>
 	);

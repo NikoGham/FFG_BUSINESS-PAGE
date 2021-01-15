@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import Fade from 'react-reveal/Fade';
-import { Container, Row, Col } from 'react-bootstrap';
-import Footer from './Footer';
-import ContactForm from './subcomponents/ContactForm';
+import React, { Component } from 'react'
+import Fade from 'react-reveal/Fade'
+import { Container, Row, Col } from 'react-bootstrap'
+import Footer from './Footer'
+import ContactForm from './subcomponents/ContactForm'
 
 class Child extends Component {
 	render() {
@@ -14,7 +14,7 @@ class Child extends Component {
 						<div>
 							<Fade left cascade>
 								<h1 id='memTitle'>
-									contact us <hr style={{ width: '50%', margin: 'auto' }} />
+									contact us 
 								</h1>
 							</Fade>
 						</div>
@@ -42,12 +42,12 @@ class Child extends Component {
 					<Col sm={1} style={style3} />
 				</Row>
 				{/*FOOTER SECTION */}
-
 				<Row style={styleDiv2}>
+
 					<Footer />
 				</Row>
 			</Container>
-		);
+		)
 	}
 }
 
@@ -57,12 +57,11 @@ const styleDiv2 = {
 	justifyContent: 'center',
 	position: 'absolute',
 	bottom: '0px',
-	width: '100vw', 
-	marginTop: "20px"
-};
-
+	width: '100vw',
+	marginTop: '20px'
+}
 
 const style3 = {
-	marginTop: "200px"
-};
-export default Child;
+	marginTop: '200px'
+}
+export default Child

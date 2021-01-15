@@ -13,13 +13,13 @@ function CardsMem({ header1, header2, image1, image2 }) {
 						{header1} <hr />
 					</Card.Title>
 					<Card.Text id='cardMemPriceText'>
-						Child - 4 Sessions per month - £20 <br></br>
-						Adult - 4 Sessions per month - £30 
+						Child - 4 Sessions per month £20 <br></br>
+						Adult - 4 Sessions per month £30 
 					</Card.Text>
 				</Card.Body>
 
 				<Card.Footer>
-					<Button style={style} variant='warning'>
+					<Button style={style} >
 						Enquire
 					</Button>
 				</Card.Footer>
@@ -32,8 +32,8 @@ function CardsMem({ header1, header2, image1, image2 }) {
 						<hr />
 					</Card.Title>
 					<Card.Text id='cardMemPriceText'>
-						Child - Access All Sessions - £40 <br></br>
-						Adult - Access All Sessions - £60 
+						Child - Access All Sessions £40 <br></br>
+						Adult - Access All Sessions £60 
 					</Card.Text>
 				</Card.Body>
 				<Card.Footer>
@@ -48,7 +48,8 @@ function CardsMem({ header1, header2, image1, image2 }) {
 
 const style = {
 	width: '75%',
-	height: ''
+	height: '', 
+	backgroundColor: 'var(--goldGrappFont)'
 };
 
 export default CardsMem;

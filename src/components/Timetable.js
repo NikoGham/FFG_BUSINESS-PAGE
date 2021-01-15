@@ -9,8 +9,6 @@ class Child extends Component {
 	render() {
 		return (
 			<Container className='childrenBG' fluid>
-				{/*CAROSEL BACKGROUND TOP SECTION */}
-
 				{/*CONTENT SECTION */}
 
 				<Row>
@@ -18,7 +16,6 @@ class Child extends Component {
 						<div>
 							<Fade left cascade>
 								<h1 id='memTitle'>Timetable </h1>
-								<hr style={{ width: '50%', margin: 'auto' }} />
 							</Fade>
 						</div>
 					</Col>
@@ -41,12 +38,13 @@ class Child extends Component {
 									</Tr>
 								</Thead>
 								<Tbody>
+									{/* ROW 1  */}
 									<Tr>
 										<Td>N/A</Td>
 										<Td>
 											6:00-7:00 Full time Athletes <br />17:00-18:00 Child Athletes<br />18:00-19:00 Child
 											Athlete PT
-										</Td>
+										</Td>									
 										<Td>N/A</Td>
 
 										<Td>6:00-7:00 Full time Athletes</Td>
@@ -56,20 +54,17 @@ class Child extends Component {
 										<Td>6:00-7:00 Full time Athletes</Td>
 									</Tr>
 								
-									
 								</Tbody>
 							</Table>
 						</Fade>
 						{/* COMMENT DATA */}
 
 						<Fade left slow>
-
-							<p>
+							<p id="timeTableText">
 								Regular training was declared essential by Kano in his cornerstone book, the Kodokan.
 								The benefits of repeat muscle exposure and mental stimulation provide for the
 								foundations to high calibre combat rediness and spiritual personal development.
 							</p>
-							<hr />
 						</Fade>
 					</Col>
 					<Col md={2} />
@@ -77,7 +72,7 @@ class Child extends Component {
 
 				{/*FOOTER SECTION */}
 
-				<Row style={styleDiv2}>
+				<Row>
 					<Footer />
 				</Row>
 			</Container>
@@ -85,19 +80,5 @@ class Child extends Component {
 	}
 }
 
-const styleDiv2 = {
-	backgroundColor: 'var(--caramelFont)',
-	display: 'flex',
-	flexDirection: 'row',
-
-	justifyContent: 'center',
-	height: '10vh',
-	width: '100vw',
-	color: '#000',
-	fontFamily: 'Montserrat',
-	position: 'relative',
-	bottom: '0px',
-	marginTop: '2vh'
-}
 
 export default Child

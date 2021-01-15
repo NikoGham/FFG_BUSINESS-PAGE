@@ -33,9 +33,10 @@ function MerchItem({
 								{box1Text}
 								<br />
 								{box1Price}
-								<br />Sizes:<span className='sizeBox'>S</span>
+								
+								<br />Sizes:{hatTrue ? null : <span className='sizeBox'>S</span> }
 								<span className='sizeBox'>M</span>
-								<span className='sizeBox'>L</span>
+								{hatTrue ? null : <span className='sizeBox'>L</span> }
 							</p>
 						</MDBMask>
 					</MDBView>
@@ -48,9 +49,9 @@ function MerchItem({
 								{box2Text}
 								<br />
 								{box2Price}
-								<br />Sizes:<span className='sizeBox'>S</span>
+								<br />Sizes:{hatTrue ? null : <span className='sizeBox'>S</span> }
 								<span className='sizeBox'>M</span>
-								<span className='sizeBox'>L</span>
+								{hatTrue ? null : <span className='sizeBox'>L</span> }
 							</p>
 						</MDBMask>
 					</MDBView>
@@ -63,9 +64,9 @@ function MerchItem({
 								{box3Text}
 								<br />
 								{box3Price}
-								<br />Sizes:<span className='sizeBox'>S</span>
+								<br />Sizes:{hatTrue ? null : <span className='sizeBox'>S</span> }
 								<span className='sizeBox'>M</span>
-								<span className='sizeBox'>L</span>
+								{hatTrue ? null : <span className='sizeBox'>L</span> }
 							</p>
 						</MDBMask>
 					</MDBView>
