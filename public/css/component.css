@@ -91,6 +91,11 @@ body,
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   text-transform: uppercase;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .st-menu::after {
@@ -120,15 +125,8 @@ body,
   margin: 0;
   padding: 0;
   list-style: none;
-}
 
-.st-menu h2 {
-  margin: 0;
-  padding: 1em;
-  color: rgba(0, 0, 0, 0.4);
-  text-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
-  font-weight: 300;
-  font-size: 2em;
+
 }
 
 .st-menu ul li {
@@ -136,7 +134,7 @@ body,
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 1em;
+  padding: 1.2em;
   outline: none;
   color: var(--menuFontColor);
   text-transform: uppercase;
@@ -153,8 +151,7 @@ body,
 }
 
 .st-menu ul li:hover {
-transform: scale(1.1);
-  color: var(--menuFontColorHover);
+transform: scale(1.2);
 }
 
 /* Individual effects */

@@ -30,10 +30,9 @@ class About extends Component {
 					/>
 				</header>
 
-				<div className='aboutTitle'>
+				<div id='aboutTitle'>
 					<Fade left cascade>
 						<h1>CREED</h1>
-						<hr />
 					</Fade>
 				</div>
 				<div className='about-content'>
@@ -143,7 +142,6 @@ class About extends Component {
 }
 
 const styleDiv = {
-	backgroundColor: 'var(--goldGrappFont)',
 	display: 'flex',
 	alignItems: 'center',
 	justifyContent: 'center',

@@ -219,14 +219,15 @@ nav li .link {
 	min-height: 100vh;
 }
 
-.aboutTitle {
-	align-self: center;
+
+#aboutTitle {
+	font-size: 2rem;
+	color: var(--textBeige);
+	letter-spacing: 10px;
 	text-align: center;
-	width: 50vw;
-	font-size: 100px;
-	color: var(--optimalOnBlack);
-	letter-spacing: 5px;
-	margin: 3vw 2vw 0vw 0vw;
+	margin: 2vw;
+	align-self: center;
+
 }
 
 .about-content {
@@ -293,7 +294,7 @@ nav li .link {
 	line-height: 1.6;
 	font-family: 'Montserrat', sans-serif;
 	list-style: none;
-	color: var(--creamJapPalette);
+	color: var(--textBeige);
 }
 
 #bottomTextAbout {

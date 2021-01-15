@@ -19,7 +19,7 @@ function CardsMem({ header1, header2, image1, image2 }) {
 				</Card.Body>
 
 				<Card.Footer>
-					<Button style={style} >
+					<Button style={style} variant='warning' >
 						Enquire
 					</Button>
 				</Card.Footer>
