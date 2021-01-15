@@ -41,27 +41,23 @@ class Child extends Component {
 									{/* ROW 1  */}
 									<Tr>
 										<Td>N/A</Td>
-										<Td>
-											6:00-7:00 Full time Athletes <br />17:00-18:00 Child Athletes<br />18:00-19:00 Child
-											Athlete PT
-										</Td>									
+										<Td>Suspended until lockdown restrictions lift</Td>
 										<Td>N/A</Td>
 
-										<Td>6:00-7:00 Full time Athletes</Td>
+										<Td> Suspended until lockdown restrictions lift</Td>
 										<Td>N/A</Td>
 										<Td>N/A</Td>
 
-										<Td>6:00-7:00 Full time Athletes</Td>
+										<Td> Suspended until lockdown restrictions lift</Td>
 									</Tr>
-								
 								</Tbody>
 							</Table>
 						</Fade>
 						{/* COMMENT DATA */}
 
 						<Fade left slow>
-							<p id="timeTableText">
-								Regular training was declared essential by Kano in his cornerstone book, the Kodokan.
+							<p id='timeTableText'>
+								Regular training was declared essential by Kano in his cornerstone book, the Kodokan. <br /><br />
 								The benefits of repeat muscle exposure and mental stimulation provide for the
 								foundations to high calibre combat rediness and spiritual personal development.
 							</p>
@@ -79,6 +75,5 @@ class Child extends Component {
 		)
 	}
 }
-
 
 export default Child

@@ -27,11 +27,11 @@ Text font :     font-family: 'Lato', sans-serif; */
 /* COLOR SCHEMES FOUND ON THIS SITE ( FOR FUTURE REFERENCE) https://smithhonig.com/color-palettes-inspired-by-japan-japanese-color-palettes/ */
 
 :root {
-	--goldGrappFont: #FFD058;
+	--goldGrappFont: #ffd058;
 	/* improved color schemme GoldGrappFont, TextBeige, BlackJapPalette */
-	--pinkJap: #FFB9AC;
-	--textBeige: #FEFFEA;
-	--optimalOnBlack: #FFD058;
+	--pinkJap: #ffb9ac;
+	--textBeige: #feffea;
+	--optimalOnBlack: #ffd058;
 	--blackJapPalette: #06090f;
 	--fullFatTitle: #06090f;
 	--headerListTitle: #080703;
@@ -41,7 +41,6 @@ Text font :     font-family: 'Lato', sans-serif; */
 * {
 	box-sizing: border-box;
 }
-
 
 .text {
 	font-family: 'Lato', sans-serif;
@@ -193,7 +192,6 @@ nav li .link {
 	-o-transition: all 0.3s ease-in-out;
 }
 
-
 .active {
 	color: var(--gingerBread);
 	opacity: 1;
@@ -219,6 +217,15 @@ nav li .link {
 	min-height: 100vh;
 }
 
+#aboutImageBg {
+	height: 100vh;
+	width: 130%;
+	opacity: 0.1;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: -1;
+}
 
 #aboutTitle {
 	font-size: 2rem;
@@ -227,7 +234,6 @@ nav li .link {
 	text-align: center;
 	margin: 2vw;
 	align-self: center;
-
 }
 
 .about-content {
@@ -316,7 +322,6 @@ nav li .link {
 	height: 40em;
 }
 
-
 /* MEMBERSHIP PAGE - TRANSITIONS */
 
 #memTitle {
@@ -326,7 +331,6 @@ nav li .link {
 	text-align: center;
 	margin: 2vw;
 	align-self: center;
-
 }
 
 .cardText {
@@ -372,10 +376,10 @@ nav li .link {
 }
 
 #timeTableText {
-text-align: center;
-font-size:1vw;
-margin: 2vw;
-line-height: 1.6;
+	text-align: center;
+	font-size: 1vw;
+	margin: 2vw;
+	line-height: 1.6;
 }
 
 /* CONTACT PAGE  */
@@ -391,7 +395,6 @@ iframe {
 	width: 100vw;
 	text-align: center;
 	opacity: 0.8;
-
 }
 
 .linkSocial {
@@ -410,14 +413,12 @@ iframe {
 .linkSocial:hover {
 	transform: scale(2.3);
 	color: var(--goldGrappFont);
-
 }
 
 #footerText {
 	color: var(--textBeige);
-	font-size:1vw;
+	font-size: 1vw;
 }
-
 
 /* MERCHANDISE PAGE  */
 
@@ -436,7 +437,6 @@ iframe {
 	text-align: left;
 	font-family: 'Montserrat', sans-serif;
 }
-
 
 /* screenwidth less than 1024px
 --------------------------------------------------------------------- */
@@ -492,6 +492,13 @@ iframe {
 ---------------------------------------------------------------------- */
 
 @media only screen and (max-width: 767px) {
+	/* Footer  */
+
+	#footerText {
+		color: var(--textBeige);
+		font-size: 3vw;
+	}
+
 	/* About Section
    -------------------------------------------------------------------- */
 	.childrenBG {
@@ -500,15 +507,22 @@ iframe {
 		min-height: 100vh;
 	}
 
-	.aboutTitle {
-		align-self: center;
-		text-align: center;
+	#aboutImageBg {
+		height: 100vh;
+		width: 200%;
+		opacity: 0.1;
+		position: absolute;
+		right: 0;
+		z-index: -1;
+	}
+
+	#aboutTitle {
 		width: 50vw;
 		font-family: MoykoTitle;
 		font-size: 100px;
-		color: var(--optimalOnBlack);
+		color: var(--textBeige);
 		letter-spacing: 5px;
-		margin: 20vw 2vw 0vw 0vw;
+		margin-top: 20vw;
 	}
 
 	.about-content {
@@ -526,7 +540,6 @@ iframe {
 		justify-content: space-between;
 		height: 100vh;
 		width: 100vw;
-		margin: 10vw 10vw 10vw 0vw;
 	}
 
 	.about-content li {
@@ -597,6 +610,35 @@ iframe {
 
 	/* TIMETABLE
    -------------------------------------------------------------------- */
+	.tablebg {
+		opacity: 1;
+		height: 50vh;
+		width: 100%;
+		margin: auto;
+
+		text-align: center;
+	}
+
+	#timeTableText {
+		text-align: center;
+		font-size: 3vw;
+		line-height: 1.6;
+	}
+
+	.tablebg::after {
+		background-image: url(./assets/kano.jpg);
+		background-position: top;
+		background-repeat: no-repeat;
+		background-size: cover; /*contain--Resize the background image to make sure the image is fully visible*/
+		background-origin: border-box;
+		content: "";
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		left: 0px;
+		opacity: 0.1;
+	}
 
 	/* MEMBERSHIP
    -------------------------------------------------------------------- */
@@ -620,14 +662,14 @@ iframe {
 	/* Header
    -------------------------------------------------------------------- */
 
-   .homeBG {
-	height: 100vh;
-	background-color: var(--blackJapPalette);
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
+	.homeBG {
+		height: 100vh;
+		background-color: var(--blackJapPalette);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 
 	#hucker-title {
 		transform: rotate(0deg);

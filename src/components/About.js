@@ -26,7 +26,7 @@ class About extends Component {
 					<img
 						src={headImage}
 						alt='Background'
-						style={{ height: '100vh', width: '100%', opacity: 0.1, position: 'fixed', zIndex: '-1' }}
+						id='aboutImageBg'
 					/>
 				</header>
 
