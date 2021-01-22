@@ -4,22 +4,11 @@
 
 @font-face {
 	font-family: mHucker;
+	unicode-range: U+000-5FF;
 	src: url(./assets/Fonts/Breathing.ttf);
 }
-@font-face {
-	font-family: sdd;
-	src: url(./assets/Fonts/AdventPro-Light.ttf);
-}
 
-@font-face {
-	font-family: japanBrush;
-	src: url(./assets/Fonts/Kashima\ Demo.otf);
-}
 
-@font-face {
-	font-family: MoykoTitle;
-	src: url(./assets/Fonts/Moyko.ttf);
-}
 
 /* HEADER FONT FOR USE font-family: 'Playfair Display', serif;
 Text font :     font-family: 'Lato', sans-serif; */
@@ -127,7 +116,7 @@ body {
 
 #hucker-title {
 	transform: rotate(-10deg);
-	font-family: mHucker;
+	font-family: mHucker, sans-serif;
 	font-size: calc(12px + 2vw);
 	z-index: 8;
 	color: var(--textBeige);
@@ -518,7 +507,7 @@ iframe {
 
 	#aboutTitle {
 		width: 50vw;
-		font-family: MoykoTitle;
+		font-family: 'Montserrat', sans-serif;
 		font-size: 100px;
 		color: var(--textBeige);
 		letter-spacing: 5px;
@@ -673,7 +662,6 @@ iframe {
 
 	#hucker-title {
 		transform: rotate(0deg);
-		font-family: mHucker;
 	}
 
 	#fullFatTitle {
