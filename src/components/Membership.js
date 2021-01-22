@@ -3,6 +3,8 @@ import Fade from 'react-reveal/Fade'
 import Footer from './Footer'
 import { Container, Row, Col } from 'react-bootstrap'
 import CardsMem from './CardsMem'
+import image1 from '../assets/4.jpg'
+import image2 from '../assets/12.jpg'
 
 class Membership extends Component {
 	render() {
@@ -24,10 +26,10 @@ class Membership extends Component {
 					<Col>
 						<Fade left duration={1000}>
 							<CardsMem
-								header1={'Standard'}
-								image1={'./assets/10.png'}
-								header2={'Premium'}
-								image2={'./assets/5.jpg'}
+								header1={'STANDARD'}
+								image1={image1}
+								header2={'PREMIUM'}
+								image2={image2}
 							/>
 						</Fade>
 					</Col>

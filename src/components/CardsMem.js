@@ -1,7 +1,7 @@
-import React from 'react';
-import Card from 'react-bootstrap/Card';
-import CardDeck from 'react-bootstrap/CardDeck';
-import Button from 'react-bootstrap/Button';
+import React from 'react'
+import Card from 'react-bootstrap/Card'
+import CardDeck from 'react-bootstrap/CardDeck'
+import Button from 'react-bootstrap/Button'
 
 function CardsMem({ header1, header2, image1, image2 }) {
 	return (
@@ -13,13 +13,18 @@ function CardsMem({ header1, header2, image1, image2 }) {
 						{header1} <hr />
 					</Card.Title>
 					<Card.Text id='cardMemPriceText'>
-						Child - 4 Sessions per month £20 <br></br>
-						Adult - 4 Sessions per month £30 
+						<p>
+							Child - 4 Sessions per month <strong>£20</strong>
+						</p>
+						<br />
+						<p>
+							Adult - 4 Sessions per month <strong>£30</strong>
+						</p>
 					</Card.Text>
 				</Card.Body>
 
 				<Card.Footer>
-					<Button style={style} variant='warning' >
+					<Button style={style} variant='warning'>
 						Enquire
 					</Button>
 				</Card.Footer>
@@ -32,8 +37,13 @@ function CardsMem({ header1, header2, image1, image2 }) {
 						<hr />
 					</Card.Title>
 					<Card.Text id='cardMemPriceText'>
-						Child - Access All Sessions £40 <br></br>
-						Adult - Access All Sessions £60 
+						<p>
+							Child - Access All Sessions <strong>£40</strong>
+						</p>
+						<br />
+						<p>
+							Adult - Access All Sessions <strong> £60</strong>{' '}
+						</p>
 					</Card.Text>
 				</Card.Body>
 				<Card.Footer>
@@ -43,13 +53,13 @@ function CardsMem({ header1, header2, image1, image2 }) {
 				</Card.Footer>
 			</Card>
 		</CardDeck>
-	);
+	)
 }
 
 const style = {
 	width: '75%',
-	height: '', 
+	height: '',
 	backgroundColor: 'var(--goldGrappFont)'
-};
+}
 
-export default CardsMem;
+export default CardsMem
