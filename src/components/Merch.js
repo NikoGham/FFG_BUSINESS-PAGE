@@ -19,6 +19,9 @@ import RightHat from '../assets/RightHat1.jpg'
 import BlackTeeChuck from '../assets/BlackTeeChuck1.jpg'
 // import KidsTeeBlack from '../assets/KidsTeeBlack.jpg'
 import ShortsSide from '../assets/ShortsSide.jpg'
+import SackBlack from '../assets/SackBlack.jpg'
+import SackBlue from '../assets/SackBlue.jpg'
+import SackPink from '../assets/SackPink.jpg'
 
 const Merch = () => {
 	const [ teePrice ] = useState('£30')
@@ -117,7 +120,6 @@ const Merch = () => {
 								box3Price={hatPrice}
 								box4Price={kidsTeePrice}
 								box5Price={shortPrice}
-
 								zoomBox={BlackTeeChuck}
 								shadowBox={ShortsSide}
 							/>
@@ -126,7 +128,29 @@ const Merch = () => {
 				</Col>
 				<Col md={2} />
 			</Row>
+			<Row>
+				<Col md={2} />
+				<Col>
+					<Fade left slow>
+						<Row>
+							<MerchItem
+								box1={SackBlue}
+								box2={SackPink}
+								box3={SackBlack}
+								hatTrue={true}
 
+								box1Text='Rucksack'
+								box2Text='Rucksack'
+								box3Text='Rucksack'
+								box1Price={ruckSackPrice}
+								box2Price={ruckSackPrice}
+								box3Price={ruckSackPrice}
+							/>
+						</Row>
+					</Fade>
+				</Col>
+				<Col md={2} />
+			</Row>
 			{/*FOOTER SECTION */}
 
 			<Row style={styleDiv2}>
