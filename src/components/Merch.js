@@ -24,17 +24,21 @@ import SackBlue from '../assets/SackBlue.jpg'
 import SackPink from '../assets/SackPink.jpg'
 
 const Merch = () => {
-	const [ teePrice ] = useState('£30')
-	const [ hoodPrice ] = useState('£35')
-	const [ pinkHoodPrice ] = useState('£30')
-	const [ ruckSackPrice ] = useState('£25')
-	const [ sackPrice ] = useState('£60')
-	const [ shortPrice ] = useState('£25')
-	const [ kidsTeePrice ] = useState('£15')
+
 	// const [ kidsShortsPrice ] = useState('£15')
 	// const [ kidsHoodyPrice ] = useState('£25')
+	const [ price  ] = useState({
+		tee: '£30', 
+		hood: '£35', 
+		pinkHood: '30', 
+		ruckSack: '£25', 
+		sack: '£60',
+		short: '£25', 
+		kidsTee: '£15', 
+		hatPrice: '£18'
+	})
 
-	const [ hatPrice ] = useState('£18')
+	const { tee, hood, pinkHood, ruckSack, sack, short, kidsTee, hatPrice } = price
 
 	return (
 		<Container className='childrenBG' fluid>
@@ -62,11 +66,11 @@ const Merch = () => {
 								zoomBox={BlackJumperFront}
 								shadowBox={RuckSack}
 								box3={BlackBack}
-								box1Price={teePrice}
-								box2Price={teePrice}
-								box3Price={teePrice}
-								box4Price={hoodPrice}
-								box5Price={ruckSackPrice}
+								box1Price={tee}
+								box2Price={tee}
+								box3Price={tee}
+								box4Price={hood}
+								box5Price={ruckSack}
 							/>
 						</Row>
 					</Fade>
@@ -89,11 +93,11 @@ const Merch = () => {
 								zoomBox={GreyJumperFront}
 								shadowBox={SackFront}
 								box3={PinkJumperFront}
-								box1Price={teePrice}
-								box2Price={teePrice}
-								box3Price={pinkHoodPrice}
-								box4Price={hoodPrice}
-								box5Price={sackPrice}
+								box1Price={tee}
+								box2Price={tee}
+								box3Price={pinkHood}
+								box4Price={hood}
+								box5Price={sack}
 							/>
 						</Row>
 					</Fade>
@@ -118,8 +122,8 @@ const Merch = () => {
 								box1Price={hatPrice}
 								box2Price={hatPrice}
 								box3Price={hatPrice}
-								box4Price={kidsTeePrice}
-								box5Price={shortPrice}
+								box4Price={kidsTee}
+								box5Price={short}
 								zoomBox={BlackTeeChuck}
 								shadowBox={ShortsSide}
 							/>
@@ -142,9 +146,9 @@ const Merch = () => {
 								box1Text='Rucksack'
 								box2Text='Rucksack'
 								box3Text='Rucksack'
-								box1Price={ruckSackPrice}
-								box2Price={ruckSackPrice}
-								box3Price={ruckSackPrice}
+								box1Price={ruckSack}
+								box2Price={ruckSack}
+								box3Price={ruckSack}
 							/>
 						</Row>
 					</Fade>
