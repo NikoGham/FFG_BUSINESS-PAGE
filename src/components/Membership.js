@@ -25,7 +25,7 @@ class Membership extends Component {
 						<Fade left duration={1000}>
 							<CardsMem
 								header1={'Standard'}
-								image1={'./assets/standard.jpeg'}
+								image1={'./assets/standard.jpg'}
 								header2={'Premium'}
 								image2={'./assets/5.jpg'}
 							/>
