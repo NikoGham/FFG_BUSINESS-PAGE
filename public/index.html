@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-     
+
 <link rel="preload" as="font" href="../src/assets/Fonts/Breathing.ttf" type="font/ttf" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/demo.css" />
     <link rel="stylesheet" type="text/css" href="css/component.css" />
@@ -182,9 +182,9 @@
 
           <li onclick="showMerch()" id="merchclick"><i class="fas fa-socks"></i> Merch</li>
 
-          <li id="merchclick"><i class="far fa-id-badge"></i>Athletes (coming soon)</li>
+          <li onclick="showAth()" id="athclick"><i class="far fa-id-badge"></i>Athletes (coming soon)</li>
 
-          <li id="merchclick"><i class="fab fa-hubspot"></i>Affiliates (coming soon)</li>
+          <li onclick="showAff()" id="affclick"><i class="fab fa-hubspot"></i>Affiliates (coming soon)</li>
 
         </ul>
       </nav>
@@ -216,6 +216,9 @@
                 <div id="membership" class="hide"></div>
                 <div id="timetable" class="hide"></div>
                 <div id="merch" class="hide"></div>
+                <div id="athletes" class="hide"></div>
+                <div id="affiliates" class="hide"></div>
+
               </div>
             </div>
 
@@ -241,67 +244,139 @@
       let memberHide = document.getElementById('membership');
       let timetableHide = document.getElementById('timetable');
       let merchHide = document.getElementById('merch');
+      let athHide = document.getElementById('athletes');
+      let affHide = document.getElementById('affiliates');
 
       let showHeader = () => {
         /* if needed for a home button say */
+        if ( headerHide.classList.contains('hide')) {
         headerHide.classList.toggle('hide');
         aboutHide.classList.toggle('hide', true);
         contactHide.classList.toggle('hide', true);
         memberHide.classList.toggle('hide', true);
         timetableHide.classList.toggle('hide', true);
         merchHide.classList.toggle('hide', true);
+        athHide.classList.toggle('hide', true);
+        affHide.classList.toggle('hide', true);
+        } else {
+          headerHide.classList.toggle('hide', false);
+}
       };
 
       let showAbout = () => {
         /* About page */
+        if ( aboutHide.classList.contains('hide')) {
         headerHide.classList.toggle('hide', true);
         aboutHide.classList.toggle('hide');
         contactHide.classList.toggle('hide', true);
         memberHide.classList.toggle('hide', true);
         timetableHide.classList.toggle('hide', true);
         merchHide.classList.toggle('hide', true);
+        athHide.classList.toggle('hide', true);
+        affHide.classList.toggle('hide', true);
+        } else {
+          aboutHide.classList.toggle('hide', false);
+}
       };
 
 
       let showContact = () => {
         /*  Contact page */
+        if ( contactHide.classList.contains('hide')) {
         headerHide.classList.toggle('hide', true);
         aboutHide.classList.toggle('hide', true);
         contactHide.classList.toggle('hide');
         memberHide.classList.toggle('hide', true);
         timetableHide.classList.toggle('hide', true);
         merchHide.classList.toggle('hide', true);
+        athHide.classList.toggle('hide', true);
+        affHide.classList.toggle('hide', true);
+        } else {
+          contactHide.classList.toggle('hide', false);
+}
       };
 
       let showMember = () => {
-        /*  Contact page */
+        /*  Membership page */
+        if ( memberHide.classList.contains('hide')) {
         headerHide.classList.toggle('hide', true);
         aboutHide.classList.toggle('hide', true);
         contactHide.classList.toggle('hide', true);
         memberHide.classList.toggle('hide');
         timetableHide.classList.toggle('hide', true);
         merchHide.classList.toggle('hide', true);
+        athHide.classList.toggle('hide', true);
+        affHide.classList.toggle('hide', true);
+        } else {
+          memberHide.classList.toggle('hide', false);
+}
       };
 
       let showTimetable = () => {
-        /*  Contact page */
+        /*  Timetable page */
+        if ( timetableHide.classList.contains('hide')) {
         headerHide.classList.toggle('hide', true);
         aboutHide.classList.toggle('hide', true);
         contactHide.classList.toggle('hide', true);
         memberHide.classList.toggle('hide', true);
         timetableHide.classList.toggle('hide');
         merchHide.classList.toggle('hide', true);
+        athHide.classList.toggle('hide', true);
+        affHide.classList.toggle('hide', true);
+        } else {
+          timetableHide.classList.toggle('hide', false);
+}
       };
 
       let showMerch = () => {
-        /*  Contact page */
+        /*  Merch page */
+        if ( merchHide.classList.contains('hide')) {
         headerHide.classList.toggle('hide', true);
         aboutHide.classList.toggle('hide', true);
         contactHide.classList.toggle('hide', true);
         memberHide.classList.toggle('hide', true);
         timetableHide.classList.toggle('hide', true);
         merchHide.classList.toggle('hide');
+        athHide.classList.toggle('hide', true);
+        affHide.classList.toggle('hide', true);
+        } else {
+          merchHide.classList.toggle('hide', false);
+}
       };
+
+      let showAth = () => {
+        /*  Atheletes  page */
+        if ( athHide.classList.contains('hide')) {
+        headerHide.classList.toggle('hide', true);
+        aboutHide.classList.toggle('hide', true);
+        contactHide.classList.toggle('hide', true);
+        memberHide.classList.toggle('hide', true);
+        timetableHide.classList.toggle('hide', true);
+        merchHide.classList.toggle('hide', true);
+        athHide.classList.toggle('hide');
+        affHide.classList.toggle('hide', true);
+        } else {
+          athHide.classList.toggle('hide', false);
+}
+
+      };
+
+      let showAff = () => {
+        /*  Affiliates page */
+        if(affHide.classList.contains('hide')) {
+        headerHide.classList.toggle('hide', true);
+        aboutHide.classList.toggle('hide', true);
+        contactHide.classList.toggle('hide', true);
+        memberHide.classList.toggle('hide', true);
+        timetableHide.classList.toggle('hide', true);
+        merchHide.classList.toggle('hide', true);
+        athHide.classList.toggle('hide', true);
+        affHide.classList.toggle('hide');
+      } else {
+        affHide.classList.toggle('hide', false);
+      }
+    };
+
 
 
     </script>
