@@ -1,21 +1,21 @@
 import React, { Component } from 'react'
 import Fade from 'react-reveal/Fade'
 import { Row } from 'react-bootstrap'
-import Image from 'react-bootstrap/Image'
-import child from '../assets/CHILD_PHOTO.jpg'
-import child1 from '../assets/Adult.jpg'
-import child2 from '../assets/bvsg.jpg'
+
 
 import headImage from '../assets/17.jpg'
 import Footer from './Footer'
 
-import data from '../yourdata'
-
 class Affiliate extends Component {
 
+    state = {
+        headText: "We are proud to work with our affiliates who through mutual aid, benefit and trust, help our athletes walk the path to greatness.",
+        subText: "Our head coach Matthew hucker holds full First Aid, Child Protection, DBS certification and club insurance.",
+        subsubText: "Full Fat Grappling holds full membership with Britsh Judo Council and the UKBJJA."
+    }
 
-	// Small notes - Bring 1st image in so more symmetrical. Grey out more when on menu. Change Japanese Characters to red jap color pallette.
-	// Coding => How can I achieve a task and win a battle with the skills and tools I currently know and/or can discover and learn.
+
+
 
 	render() {
 		return (
@@ -30,71 +30,18 @@ class Affiliate extends Component {
 
 				<div id='aboutTitle'>
 					<Fade left cascade>
-						<h1>CREED</h1>
+						<h1>Affiliates</h1>
 					</Fade>
 				</div>
 				<div className='about-content'>
-					<div id='headContainer'>
-						<ul>
-							<Fade left slow>
-								<li>
-									Courtesy <span className='specChars'>礼儀</span>
-								</li>
-								<hr />
-							</Fade>
-							<Fade left slow>
-								<li>
-									Courage <span className='specChars'>勇気</span>
-								</li>
-								<hr />
-							</Fade>
-							<Fade left slow>
-								<li>
-									Honesty <span className='specChars'>正直</span>
-								</li>
-								<hr />
-							</Fade>
+					<div id='headContainerAff'>
 
-							<Fade left slow>
-								<li>
-									Honour <span className='specChars'>名誉</span>
-								</li>
-								<hr />
-							</Fade>
-
-							<Fade left slow>
-								<li>
-									Modesty <span className='specChars'>謙虚</span>
-								</li>
-								<hr />
-							</Fade>
-
-							<Fade slow left>
-								<li>
-									Respect <span className='specChars'>尊敬 </span>
-								</li>
-								<hr />
-							</Fade>
-							<Fade slow left>
-								<li>
-									Self Control <span className='specChars'>自制心</span>
-								</li>
-								<hr />
-							</Fade>
-							<Fade slow left>
-								<li>
-									Friendship <span className='specChars'>友情</span>
-								</li>
-								<hr />
-							</Fade>
-						</ul>
 						<Fade right slower>
-							<div id='headParaContainer'>
-								<p id='headPara'>
-									Welcome to FULL FAT GRAPPLING. <br /> The home of great ambition and high
-									expectation.<br />
-									<br /> Our focus is to benefit anyone in any grappling sport, specialising in the
-									olympic sport of JUDO.
+							<div id='headParaContainerAff'>
+								<p id='headParaAff'>
+								{this.state.headText}<br />
+									<br /> {this.state.subText} <br /> <br />
+                                    {this.state.subsubText}
 								</p>
 							</div>
 						</Fade>
@@ -102,31 +49,26 @@ class Affiliate extends Component {
 
 					<Fade left slow>
 						<div className='imageContainerAbout'>
-							<Image className='imageAbout' src={child} alt='Child Throw in Judo' />
 							<p>
-								{data.abouttext2} <br /> <br />
-								{data.abouttext21}
+							 <br /> <br />
+
 							</p>
 						</div>
 					</Fade>
 					<Fade left slow>
 						<div className='imageContainerAbout'>
-							<p>{data.abouttextQuote}</p>
 
-							<Image className='imageAbout' src={child2} alt='Child Throw in Judo' />
 						</div>
 					</Fade>
 
 					<Fade left slow>
 						<div className='imageContainerAbout'>
-							<Image className='imageAbout' src={child1} alt='Child Throw in Judo' />
-							<p>{data.abouttext3}</p>
 						</div>
 					</Fade>
 
 					<Fade left slow>
 						<div className='imageContainerAbout'>
-							<p id='bottomTextAbout'>{data.abouttext4}</p>
+							<p id='bottomTextAbout'></p>
 						</div>
 					</Fade>
 				</div>
