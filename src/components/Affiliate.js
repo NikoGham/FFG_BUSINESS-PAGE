@@ -3,7 +3,9 @@ import Fade from 'react-reveal/Fade';
 import { Row } from 'react-bootstrap';
 import Blob from './subcomponents/blob1';
 import Affiliateitem from './AffiliateItem';
-import image from '../assets/CEA.png'
+import image from '../assets/CEA.png';
+import image1 from '../assets/BJC.png';
+import image2 from '../assets/UKBJJA.png';
 
 // import headImage from '../assets/31731.jpg'
 import Footer from './Footer';
@@ -21,15 +23,6 @@ class Affiliate extends Component {
 	render() {
 		return (
 			<div className='childrenBG'>
-				{/* <header>
-					<img
-						src={headImage}
-						alt='Background'
-						id='aboutImageBg'
-					/>
-				</header> */}
-				<Blob />
-
 				<div id='aboutTitle'>
 					<Fade left cascade>
 						<h1>Affiliates</h1>
@@ -37,8 +30,10 @@ class Affiliate extends Component {
 				</div>
 				<div className='about-contentAff'>
 					<div id='headContainerAff'>
-						<Fade right slower>
+						<Fade left slower>
 							<div id='headParaContainerAff'>
+								<Blob />
+
 								<p id='headParaAff'>
 									{this.state.headText}
 									<br />
@@ -48,16 +43,30 @@ class Affiliate extends Component {
 							</div>
 						</Fade>
 					</div>
-
+					{/* add a Smooth scroll here  */}
+					{/* Also add a wave down side */}
+					<div id='clubHeaderAff'>
+						<Fade left cascade>
+							<h1>clubs</h1>
+						</Fade>
+					</div>
 					<Fade left slow>
-						<Affiliateitem title={"Clubs"} text={"Craig Ewer's Academy"} image={image} />
+						<Affiliateitem className='CEAImage' text={"Craig Ewer's Academy"} image={image} club={true} />
 					</Fade>
-					<Fade left slower>
-						<Affiliateitem text={null} />
-					</Fade>
-					<Fade left slower>
-						<Affiliateitem text={null} />
-					</Fade>
+					<hr style={{ opacity: '0.3' }} />
+					<div id='clubHeaderAff'>
+						<Fade left cascade>
+							<h1>associations</h1>
+						</Fade>
+					</div>
+					<div id='councilPos'>
+						<Fade left slower>
+							<Affiliateitem className='imageAboutAffBJC' text={null} image={image1} club={false} />
+						</Fade>
+						<Fade left slower>
+							<Affiliateitem className='imageAboutAffUKBJJA' image={image2} text={null} club={false} />
+						</Fade>
+					</div>
 				</div>
 
 				<Row style={styleDiv}>

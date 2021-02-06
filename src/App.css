@@ -57,6 +57,10 @@ p {
 	text-align: center;
 }
 
+ul li {
+	list-style: none;
+}
+
 /* ORIGINAL TEMPLATE HAMBURGER MENU FROM BRAD TRAVERSY'S MODERN PORTFOLIO  */
 
 /* NOTE TO SELF - USE POSITION ABSOLUTE AND LEFT/RIGHT/TOP ETC TO POSITION*/
@@ -450,8 +454,8 @@ iframe {
 .about-contentAff p {
 	margin: 5vw;
 	width: 90%;
-	font-size: 75%;
-	letter-spacing: 4px;
+	font-size: 50%;
+	letter-spacing: px;
 	line-height: 1.6;
 	font-family: 'Montserrat', sans-serif;
 	list-style: none;
@@ -459,25 +463,42 @@ iframe {
 }
 
 #headParaAff {
-	font-size: 1.2vw;
+	font-size: 1.1vw;
 	line-height: 2.2;
 	width: 100%;
 	border-left: var(--goldGrappFont) solid;
 	padding-left: 2vw;
 }
 
+#clubHeaderAff {
+	font-size: 1rem;
+	color: var(--textBeige);
+	letter-spacing: 10px;
+	text-align: center;
+	margin: 2vw;
+	align-self: center;
+}
+
+#councilPos {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
 .affItem {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
+
 	width: 100%;
-	align-self: center;
 	/* border: solid 0.2px #fff; */
-	margin: 1vw;
+	margin: 2vw;
 	color: var(--textBeige);
 }
 
 .gridText {
-	grid-column: 4 / 7;
+	grid-column: 1 / 4;
+
 	letter-spacing: 4px;
 	line-height: 1.6;
 	font-family: 'Montserrat', sans-serif;
@@ -485,29 +506,49 @@ iframe {
 	color: var(--textBeige);
 }
 
-.gridImage {
-	grid-column-start: 7;
-
-}
 
 
-.imageAboutAff {
+
+.CEAImage {
 	width: 10vw;
 	height: 10vw;
 	opacity: 0.6;
 	border-radius: 50%;
 	background-color: white;
 }
+.imageAboutAffBJC {
+	width: 10vw;
+	height: 10vw;
+	opacity: 0.6;
+}
+.imageAboutAffUKBJJA {
+	width: 20vw;
+	height: 10vw;
+	opacity: 0.6;
+}
+
+
 
 .blobAff {
-	opacity: 0.47;
+	opacity: 0.2;
 	position: absolute;
-	right: -200px;
-	top: -200px;
-	height: 80%;
-
+	right: -50rem;
+	top: -25rem;
+	height: 100vh;
 	z-index: 1;
+	animation: spin 25s linear 0s infinite normal forwards;
 }
+
+@keyframes spin {
+	from {
+		rotate: 0deg;
+	}
+
+	to {
+		rotate: 360deg;
+	}
+}
+
 /* screenwidth less than 1024px
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 1024px) {
