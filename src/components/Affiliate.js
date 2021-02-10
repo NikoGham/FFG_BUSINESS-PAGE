@@ -28,11 +28,12 @@ class Affiliate extends Component {
 						<h1>Affiliates</h1>
 					</Fade>
 				</div>
+				<Blob />
+
 				<div className='about-contentAff'>
 					<div id='headContainerAff'>
 						<Fade left slower>
 							<div id='headParaContainerAff'>
-								<Blob />
 
 								<p id='headParaAff'>
 									{this.state.headText}
@@ -47,16 +48,16 @@ class Affiliate extends Component {
 					{/* Also add a wave down side */}
 					<div id='clubHeaderAff'>
 						<Fade left cascade>
-							<h1>clubs</h1>
+							<h3>clubs</h3>
 						</Fade>
 					</div>
 					<Fade left slow>
-						<Affiliateitem className='CEAImage' text={"Craig Ewer's Academy"} image={image} club={true} />
+						<Affiliateitem className='CEAImage' text={"Craig Ewer's Academy"} image={image} club={true} web="https://www.craigewersacademy.co.uk" />
 					</Fade>
 					<hr style={{ opacity: '0.3' }} />
 					<div id='clubHeaderAff'>
 						<Fade left cascade>
-							<h1>associations</h1>
+							<h3>associations</h3>
 						</Fade>
 					</div>
 					<div id='councilPos'>

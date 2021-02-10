@@ -126,11 +126,7 @@ class About extends Component {
 						</div>
 					</Fade>
 
-					<Fade left slow>
-						<div className='imageContainerAbout'>
-							<p id='bottomTextAbout'>{data.abouttext4}</p>
-						</div>
-					</Fade>
+				
 				</div>
 
 				<Row style={styleDiv}>

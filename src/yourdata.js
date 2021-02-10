@@ -1,16 +1,14 @@
 export default {
- 
+
   name: 'Matthew Hucker\'s',
   headerTagline: [
     'Matthew Hucker\'s',
-    'JUDO ',
-    'JIU JITSU',
-    'WRESTLING', 
     
+
   ],
 
   abouttextlist: [
-  
+
   ],
   abouttext2: 'To be \'Full Fat\', is to practice entirely. This is achieved by voiding the neglect of technique, physical attributions or mental preparation. In Japan, the heart of the sport, the expectation to young judoka is to be fully aware of all techniques and how to perform them correctly in line with their performance style by the age of 16-18 years old. The judokas will also be highly advanced in mental toughness and respect for the sports culture and philosophy.',
   abouttext21: ' Often in judo, judokas and coaches alike are caught up in physical toughness too early, resulting in successful and dominant results locally and early in development, but then becoming stuck at national and international levels later on.',
@@ -19,7 +17,7 @@ export default {
   abouttext31: 'We welcome anybody from any walk of life who is willing to train hard, be respectful and have fun.',
   abouttext4: 'So don\'t be shy to approach us. Come along and watch or get on the mat, there is a class for everyone!',
 
-  
+
   social: [
 
     {
@@ -31,11 +29,11 @@ export default {
       name: 'Matt Hucker - Coach',
       url: 'https://www.instagram.com/matthewhucker/',
     },
-    
+
   ],
-  
-  adultText: '"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"', 
+
+  adultText: '"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"',
   adultText2: '"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"',
-    
-  
+
+
 };
