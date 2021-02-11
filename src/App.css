@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans&display=swap');
 
-
 @font-face {
 	font-family: mHucker;
 	unicode-range: U+000-5FF;
@@ -41,7 +40,8 @@ hr {
 	justify-items: center;
 }
 
-h1, h3 {
+h1,
+h3 {
 	font-family: 'Nanum Myeongjo', serif;
 	text-transform: uppercase;
 }
@@ -62,6 +62,12 @@ ul li {
 
 a {
 	text-decoration: none;
+	color: var(--goldGrappFont);
+}
+
+a:hover {
+	text-decoration: none;
+	color: var(--textBeige);
 }
 
 /* ORIGINAL TEMPLATE HAMBURGER MENU FROM BRAD TRAVERSY'S MODERN PORTFOLIO  */
@@ -234,7 +240,6 @@ nav li .link {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-
 }
 
 #headContainer {
@@ -491,8 +496,8 @@ iframe {
 
 .affItem {
 	display: flex;
-flex-direction: row;
-justify-content: center;
+	flex-direction: row;
+	justify-content: center;
 	width: 100%;
 	/* border: solid 0.2px #fff; */
 	margin: 2vw;
@@ -500,16 +505,13 @@ justify-content: center;
 }
 
 .gridText {
-
 	letter-spacing: 4px;
 	line-height: 1.6;
 	font-family: 'Montserrat', sans-serif;
 	list-style: none;
 	color: var(--textBeige);
+	padding: 4px;
 }
-
-
-
 
 .CEAImage {
 	width: 10vw;
@@ -529,15 +531,15 @@ justify-content: center;
 	opacity: 0.6;
 }
 
-
-
 .blobAff {
 	opacity: 0.2;
 	position: absolute;
-	bottom: 0px;
+	bottom: -50px;
 	left: 0px;
-	height: 50vh;
+	width: 100vw;
+	height: auto;
 	z-index: -1;
+
 	/* animation: spin 25s linear 0s infinite normal forwards; */
 }
 
@@ -553,7 +555,7 @@ justify-content: center;
 
 /* screenwidth less than 1024px
 --------------------------------------------------------------------- */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1025px) {
 	/* About Section
    -------------------------------------------------------------------- */
 
@@ -574,11 +576,131 @@ justify-content: center;
 
 	/* MERCH
    -------------------------------------------------------------------- */
+
+	/* <-----<----- <----- <-----  Affiliate SECTION  ------>------>------>------>------> */
+	.about-contentAff {
+		width: 75vw;
+	}
+
+	#headContainerAff {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		height: 100%;
+	}
+
+	#headParaContainerAff {
+		width: 50vw;
+		text-align: left;
+	}
+
+	.about-contentAff p {
+		margin: 5vw;
+		width: 90%;
+		font-size: 50%;
+		letter-spacing: px;
+		line-height: 1.6;
+		font-family: 'Montserrat', sans-serif;
+		list-style: none;
+		color: var(--textBeige);
+	}
+
+	#headParaAff {
+		font-size: 1.1vw;
+		line-height: 2.2;
+		width: 100%;
+		border-left: var(--goldGrappFont) solid;
+		padding-left: 2vw;
+	}
+
+	#clubHeaderAff {
+		font-size: 1rem;
+		color: var(--textBeige);
+		letter-spacing: 10px;
+		text-align: center;
+		margin: 2vw;
+		align-self: center;
+	}
+
+	#councilPos {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	.affItem {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		width: 100%;
+		/* border: solid 0.2px #fff; */
+		margin: 2vw;
+		color: var(--textBeige);
+	}
+
+	.gridText {
+		letter-spacing: 4px;
+		line-height: 1.6;
+		font-family: 'Montserrat', sans-serif;
+		list-style: none;
+		color: var(--textBeige);
+		padding: 4px;
+	}
+
+	.CEAImage {
+		width: 10vw;
+		height: 10vw;
+		opacity: 0.6;
+		border-radius: 50%;
+		background-color: white;
+	}
+	.imageAboutAffBJC {
+		width: 10vw;
+		height: 10vw;
+		opacity: 0.6;
+	}
+	.imageAboutAffUKBJJA {
+		width: 20vw;
+		height: 10vw;
+		opacity: 0.6;
+	}
+
+	.blobAff {
+		opacity: 0.2;
+		position: absolute;
+		bottom: 500px;
+		left: 200px;
+		transform: rotate(-90deg);
+		width: 100vh;
+		z-index: -1;
+		/* animation: spin 25s linear 0s infinite normal forwards; */
+	}
 }
 
 /* screenwidth less than 900px
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 900px) {
+	/* global classes and id's  */
+	.menu-btn {
+		position: absolute;
+		z-index: 3;
+		left: 20px;
+		top: 6vw;
+		cursor: pointer;
+		transition: all 1s ease-out;
+	}
+
+	#aboutTitle {
+		min-width: 50vw;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 100px;
+		color: var(--textBeige);
+		letter-spacing: 5px;
+		margin-top: 20vw;
+	}
+
 	/* About Section
    -------------------------------------------------------------------- */
 
@@ -599,6 +721,106 @@ justify-content: center;
 
 	/* MERCH
    -------------------------------------------------------------------- */
+
+	/* <-----<----- <----- <-----  Affiliate SECTION  ------>------>------>------>------> */
+
+	.about-contentAff {
+		width: 75vw;
+	}
+
+	#headContainerAff {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		height: 100%;
+		width: auto;
+	}
+
+	#headParaContainerAff {
+		width: 100%;
+		text-align: left;
+	}
+
+	#headParaAff {
+		font-size: 2.3vw;
+		line-height: 2.2;
+		width: 100%;
+		border-left: var(--goldGrappFont) solid;
+		padding-left: 2vw;
+	}
+
+	.about-contentAff p {
+		margin: 5vw;
+		width: 90%;
+		font-size: 50%;
+		letter-spacing: px;
+		line-height: 1.6;
+		font-family: 'Montserrat', sans-serif;
+		list-style: none;
+		color: var(--textBeige);
+	}
+
+	#clubHeaderAff {
+		font-size: 1rem;
+		color: var(--textBeige);
+		letter-spacing: 10px;
+		text-align: center;
+		margin: 2vw;
+		align-self: center;
+	}
+
+	#councilPos {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	.affItem {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		width: 100%;
+		margin: 2vw;
+		color: var(--textBeige);
+	}
+
+	.gridText {
+		letter-spacing: 4px;
+		line-height: 1.6;
+		font-family: 'Montserrat', sans-serif;
+		list-style: none;
+		color: var(--textBeige);
+		padding: 0px;
+	}
+
+	.gridText li {
+		white-space: nowrap;
+	}
+
+	.CEAImage {
+		width: 10vw;
+		height: 10vw;
+		opacity: 0.6;
+		border-radius: 50%;
+		background-color: white;
+	}
+	.imageAboutAffBJC {
+		width: 10vw;
+		height: 10vw;
+		opacity: 0.6;
+	}
+	.imageAboutAffUKBJJA {
+		width: 20vw;
+		height: 10vw;
+		opacity: 0.6;
+	}
+
+	.blobAff {
+		display: none;
+		/* animation: spin 25s linear 0s infinite normal forwards; */
+	}
 }
 
 /* mobile wide/smaller tablets
@@ -627,15 +849,6 @@ justify-content: center;
 		position: absolute;
 		right: 0;
 		z-index: -1;
-	}
-
-	#aboutTitle {
-		width: 50vw;
-		font-family: 'Montserrat', sans-serif;
-		font-size: 100px;
-		color: var(--textBeige);
-		letter-spacing: 5px;
-		margin-top: 20vw;
 	}
 
 	.about-content {
@@ -849,4 +1062,106 @@ justify-content: center;
 	}
 	/* MERCH
    -------------------------------------------------------------------- */
+
+   	/* <-----<----- <----- <-----  Affiliate SECTION  ------>------>------>------>------> */
+
+	.about-contentAff {
+		width: 75vw;
+	}
+
+	#headContainerAff {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		height: 100%;
+		width: auto;
+	}
+
+	#headParaContainerAff {
+		width: 100%;
+		text-align: left;
+	}
+
+	#headParaAff {
+		font-size: 2.3vw;
+		line-height: 2.2;
+		width: 100%;
+		border-left: var(--goldGrappFont) solid;
+		padding-left: 2vw;
+	}
+
+	.about-contentAff p {
+		margin: 5vw;
+		width: 90%;
+		font-size: 50%;
+		letter-spacing: px;
+		line-height: 1.6;
+		font-family: 'Montserrat', sans-serif;
+		list-style: none;
+		color: var(--textBeige);
+	}
+
+	#clubHeaderAff {
+		font-size: 1rem;
+		color: var(--textBeige);
+		letter-spacing: 10px;
+		text-align: center;
+		margin: 2vw;
+		align-self: center;
+		white-space: nowrap;
+	}
+
+	#councilPos {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	.affItem {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: flex-start;
+		width: 100%;
+		margin: 0vw;
+		color: var(--textBeige);
+	}
+
+	.gridText {
+		letter-spacing: 4px;
+		line-height: 1.6;
+		font-family: 'Montserrat', sans-serif;
+		list-style: none;
+		color: var(--textBeige);
+		padding: 0px;
+	}
+
+	.gridText li {
+		white-space: nowrap;
+	}
+
+	.CEAImage {
+		position: absolute;
+		z-index: -1;
+		width: 20vw;
+		height: 20vw;
+		opacity: 0.6;
+		border-radius: 50%;
+		background-color: white;
+	}
+	.imageAboutAffBJC {
+		width: 10vw;
+		height: 10vw;
+		opacity: 0.6;
+	}
+	.imageAboutAffUKBJJA {
+		width: 20vw;
+		height: 10vw;
+		opacity: 0.6;
+	}
+
+
+
 }

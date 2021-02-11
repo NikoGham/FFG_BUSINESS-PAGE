@@ -22,58 +22,72 @@ class Affiliate extends Component {
 
 	render() {
 		return (
-			<div className='childrenBG'>
-				<div id='aboutTitle'>
-					<Fade left cascade>
-						<h1>Affiliates</h1>
-					</Fade>
-				</div>
-				<Blob />
 
-				<div className='about-contentAff'>
-					<div id='headContainerAff'>
-						<Fade left slower>
-							<div id='headParaContainerAff'>
 
-								<p id='headParaAff'>
-									{this.state.headText}
-									<br />
-									<br /> {this.state.subText} <br /> <br />
-									{this.state.subsubText}
-								</p>
-							</div>
-						</Fade>
-					</div>
-					{/* add a Smooth scroll here  */}
-					{/* Also add a wave down side */}
-					<div id='clubHeaderAff'>
+				<div className='childrenBG'>
+					<div id='aboutTitle'>
 						<Fade left cascade>
-							<h3>clubs</h3>
+							<h1>Affiliates</h1>
 						</Fade>
 					</div>
-					<Fade left slow>
-						<Affiliateitem className='CEAImage' text={"Craig Ewer's Academy"} image={image} club={true} web="https://www.craigewersacademy.co.uk" />
-					</Fade>
-					<hr style={{ opacity: '0.3' }} />
-					<div id='clubHeaderAff'>
-						<Fade left cascade>
-							<h3>associations</h3>
-						</Fade>
-					</div>
-					<div id='councilPos'>
-						<Fade left slower>
-							<Affiliateitem className='imageAboutAffBJC' text={null} image={image1} club={false} />
-						</Fade>
-						<Fade left slower>
-							<Affiliateitem className='imageAboutAffUKBJJA' image={image2} text={null} club={false} />
-						</Fade>
-					</div>
-				</div>
 
-				<Row style={styleDiv}>
-					<Footer />
-				</Row>
-			</div>
+					<div className='about-contentAff'>
+						<div id='headContainerAff'>
+							<Fade left slower>
+								<div id='headParaContainerAff'>
+									<p id='headParaAff'>
+										{this.state.headText}
+										<br />
+										<br /> {this.state.subText} <br /> <br />
+										{this.state.subsubText}
+									</p>
+								</div>
+							</Fade>
+						</div>
+						{/* add a Smooth scroll here  */}
+						{/* Also add a wave down side */}
+						<div id='clubHeaderAff'>
+							<Fade left cascade>
+								<h3>clubs</h3>
+							</Fade>
+						</div>
+						<Fade left slow>
+							<Affiliateitem
+								className='CEAImage'
+								text={"Craig Ewer's Academy"}
+								image={image}
+								club={true}
+								web='https://www.craigewersacademy.co.uk'
+								inst={'https://www.instagram.com/ce_mma_/'}
+								fb={'https://www.facebook.com/CraigEwersAcademy'}
+							/>
+						</Fade>
+						<hr style={{ opacity: '0.3' }} />
+						<div id='clubHeaderAff'>
+							<Fade left cascade>
+								<h3>associations</h3>
+							</Fade>
+						</div>
+						<div id='councilPos'>
+							<Fade left slower>
+								<Affiliateitem className='imageAboutAffBJC' text={null} image={image1} club={false} />
+							</Fade>
+							<Fade left slower>
+								<Affiliateitem
+									className='imageAboutAffUKBJJA'
+									image={image2}
+									text={null}
+									club={false}
+								/>
+							</Fade>
+						</div>
+					</div>
+					<Blob />
+					<Row style={styleDiv}>
+						<Footer />
+					</Row>
+				</div>
+			
 		);
 	}
 }
