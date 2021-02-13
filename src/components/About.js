@@ -23,11 +23,7 @@ class About extends Component {
 		return (
 			<div className='childrenBG'>
 				<header>
-					<img
-						src={headImage}
-						alt='Background'
-						id='aboutImageBg'
-					/>
+					<img src={headImage} alt='Background' id='aboutImageBg' />
 				</header>
 
 				<div id='aboutTitle'>
@@ -93,10 +89,9 @@ class About extends Component {
 						<Fade right slower>
 							<div id='headParaContainer'>
 								<p id='headPara'>
-									Welcome to FULL FAT GRAPPLING. <br /> The home of great ambition and high
-									expectation.<br />
-									<br /> Our focus is to benefit anyone in any grappling sport, specialising in the
-									olympic sport of JUDO.
+									Welcome to FULL FAT GRAPPLING. <br /> The home of great ambition and high expectation.<br />
+									<br /> Our focus is to benefit anyone in any grappling sport, specialising in the olympic
+									sport of JUDO.
 								</p>
 							</div>
 						</Fade>
@@ -125,8 +120,6 @@ class About extends Component {
 							<p>{data.abouttext3}</p>
 						</div>
 					</Fade>
-
-				
 				</div>
 
 				<Row style={styleDiv}>
