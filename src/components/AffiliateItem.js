@@ -4,14 +4,11 @@ import Image from 'react-bootstrap/Image';
 const Affiliateitem = ({ className, text, image, club, web, inst, fb }) => {
 
 	const [isBig, setIsBig] = useState(false)
-	const [isMobile, setIsMobile] = useState(false)
 
 	useEffect(()=> {
 		if(window.innerWidth > 500) {
 			setIsBig(true)
-			setIsMobile(false)
 		} else {
-			setIsMobile(true)
 			setIsBig(false)
 		}
 	}, [])
