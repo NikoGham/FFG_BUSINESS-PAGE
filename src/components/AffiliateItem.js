@@ -1,11 +1,27 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Image from 'react-bootstrap/Image';
 
 const Affiliateitem = ({ className, text, image, club, web, inst, fb }) => {
+
+	const [isBig, setIsBig] = useState(false)
+	const [isMobile, setIsMobile] = useState(false)
+
+	useEffect(()=> {
+		if(window.innerWidth > 500) {
+			setIsBig(true)
+			setIsMobile(false)
+		} else {
+			setIsMobile(true)
+			setIsBig(false)
+		}
+	}, [])
+
 	return (
 		<div className='affItem'>
 			<div className='gridText'>
-				<h4>{text}</h4>
+				<h4 className={ club && "clubTitleAff"}>{text}</h4><div>
+
+			</div>
 				{club && (
 					<ul>
 						<li>Head Coach: Craig Ewers</li>
@@ -35,10 +51,10 @@ const Affiliateitem = ({ className, text, image, club, web, inst, fb }) => {
 					</ul>
 				)}
 			</div>
+			{(isBig) && <Image className={className} src={image} alt='Logo' />}
+			{!club && <Image className={className} src={image} alt='Logo' /> }
 
-			<div>
-				<Image className={className} src={image} alt='Logo' />
-			</div>
+
 		</div>
 	);
 };

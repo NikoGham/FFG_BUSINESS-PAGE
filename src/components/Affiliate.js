@@ -25,7 +25,7 @@ class Affiliate extends Component {
 
 
 				<div className='childrenBG'>
-					<div id='aboutTitle'>
+					<div id='aboutTitleAff'>
 						<Fade left cascade>
 							<h1>Affiliates</h1>
 						</Fade>
@@ -87,7 +87,7 @@ class Affiliate extends Component {
 						<Footer />
 					</Row>
 				</div>
-			
+
 		);
 	}
 }

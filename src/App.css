@@ -1046,7 +1046,7 @@ iframe {
 	font-size: 100px;
 	color: var(--textBeige);
 	letter-spacing: 5px;
-	margin: 25vw;
+	margin-bottom: 25vw;
 }
 
 #aboutImageBg {
@@ -1182,6 +1182,15 @@ iframe {
 		width: 75vw;
 	}
 
+	#aboutTitleAff {
+		min-width: 50vw;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 100px;
+		color: var(--textBeige);
+		letter-spacing: 5px;
+		margin-top: 20vw;
+	}
+
 	#headContainerAff {
 		display: flex;
 		flex-direction: row;
@@ -1225,6 +1234,10 @@ iframe {
 		white-space: nowrap;
 	}
 
+	.clubTitleAff {
+		font-size: 1rem;
+	}
+
 	#councilPos {
 		display: flex;
 		flex-direction: row;
@@ -1238,7 +1251,7 @@ iframe {
 		justify-content: center;
 		align-items: flex-start;
 		width: 100%;
-		margin: 0vw;
+		margin: 3vw;
 		color: var(--textBeige);
 	}
 
@@ -1251,13 +1264,16 @@ iframe {
 		padding: 0px;
 	}
 
+
+
+
 	.gridText li {
-		white-space: nowrap;
+		white-space:pre-wrap;
 	}
 
 	.CEAImage {
-		position: absolute;
-		z-index: -1;
+		position: relative;
+		float: right;
 		width: 20vw;
 		height: 20vw;
 		opacity: 0.6;
