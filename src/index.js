@@ -13,6 +13,7 @@ import Membership from './components/Membership';
 import Timetable from './components/Timetable';
 import Merch from './components/Merch';
 import Affiliate from './components/Affiliate';
+import Athletes from './components/Athletes'
 
 ReactDOM.render(<Header />, document.getElementById('header'));
 ReactDOM.render(<About />, document.getElementById('about'));
@@ -21,6 +22,7 @@ ReactDOM.render(<Membership />, document.getElementById('membership'));
 ReactDOM.render(<Timetable />, document.getElementById('timetable'));
 ReactDOM.render(<Merch />, document.getElementById('merch'));
 ReactDOM.render(<Affiliate />, document.getElementById('affiliates'));
+ReactDOM.render(<Athletes />, document.getElementById('athletes'));
 
 /*ReactDOM.render(<Sidebar />, document.getElementById('menu-11'))
 

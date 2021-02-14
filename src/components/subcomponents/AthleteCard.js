@@ -2,7 +2,7 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import CardDeck from 'react-bootstrap/CardDeck';
 
-function CardsMem({ header1, header2, image1, image2 }) {
+const CardsMem = ({ header1, header2, image1, image2 }) => {
 	return (
 		<CardDeck>
 			<Card className='subTextFont cardText ' bg='dark'>
@@ -18,7 +18,7 @@ function CardsMem({ header1, header2, image1, image2 }) {
 				</Card.Body>
 
 				<Card.Footer>
-				
+
 				</Card.Footer>
 			</Card>
 			<Card className='subTextFont cardText ' bg='dark'>
