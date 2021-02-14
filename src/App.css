@@ -141,7 +141,7 @@ body {
 }
 
 #fullFatTitle {
-	font-size: 9vw;
+	font-size: 5vw;
 	color: var(--textBeige);
 	font-family: 'Nanum Myeongjo', serif;
 	letter-spacing: 15px;
@@ -151,7 +151,7 @@ body {
 	color: var(--goldGrappFont);
 	letter-spacing: 15px;
 	line-height: 1.6;
-	font-size: 5vw;
+	font-size: 8vw;
 }
 
 #tsparticles {
