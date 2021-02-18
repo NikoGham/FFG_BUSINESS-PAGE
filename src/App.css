@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans&display=swap');
 
 @font-face {
-	font-family: mHucker;
-	unicode-range: U+000-5FF;
-	src: url(./assets/Fonts/Breathing.ttf);
+ font-family: mHucker;
+ unicode-range: U+000-5FF;
+ src: url(./assets/Fonts/Breathing.ttf);
 }
 
 /* HEADER FONT FOR USE font-family: 'Playfair Display', serif;
@@ -12,202 +12,202 @@ Text font :     font-family: 'Lato', sans-serif; */
 /* COLOR SCHEMES FOUND ON THIS SITE ( FOR FUTURE REFERENCE) https://smithhonig.com/color-palettes-inspired-by-japan-japanese-color-palettes/ */
 
 :root {
-	--goldGrappFont: #ffd058;
-	/* improved color schemme GoldGrappFont, TextBeige, BlackJapPalette */
-	--pinkJap: #ffb9ac;
-	--textBeige: #feffea;
-	--optimalOnBlack: #ffd058;
-	--blackJapPalette: #06090f;
-	--fullFatTitle: #06090f;
-	--headerListTitle: #080703;
-	--oldBlack: #080703;
+ --goldGrappFont: #ffd058;
+ /* improved color schemme GoldGrappFont, TextBeige, BlackJapPalette */
+ --pinkJap: #ffb9ac;
+ --textBeige: #feffea;
+ --optimalOnBlack: #ffd058;
+ --blackJapPalette: #06090f;
+ --fullFatTitle: #06090f;
+ --headerListTitle: #080703;
+ --oldBlack: #080703;
 }
 
 * {
-	box-sizing: border-box;
+ box-sizing: border-box;
 }
 
 .text {
-	font-family: 'Lato', sans-serif;
-	color: var(--textBeige);
+ font-family: 'Lato', sans-serif;
+ color: var(--textBeige);
 }
 
 hr {
-	background-color: var(--textBeige);
-	width: 100%;
-	flex-direction: flex;
-	justify-content: center;
-	justify-items: center;
+ background-color: var(--textBeige);
+ width: 100%;
+ flex-direction: flex;
+ justify-content: center;
+ justify-items: center;
 }
 
 h1,
 h3 {
-	font-family: 'Nanum Myeongjo', serif;
-	text-transform: uppercase;
+ font-family: 'Nanum Myeongjo', serif;
+ text-transform: uppercase;
 }
 
 p {
-	letter-spacing: 3px;
+ letter-spacing: 3px;
 }
 
 .subTextFont {
-	font-family: 'Montserrat', sans-serif;
-	color: var(--textBeige);
-	text-align: center;
+ font-family: 'Montserrat', sans-serif;
+ color: var(--textBeige);
+ text-align: center;
 }
 
 ul li {
-	list-style: none;
+ list-style: none;
 }
 
 a {
-	text-decoration: none;
-	color: var(--goldGrappFont);
+ text-decoration: none;
+ color: var(--goldGrappFont);
 }
 
 a:hover {
-	text-decoration: none;
-	color: var(--textBeige);
+ text-decoration: none;
+ color: var(--textBeige);
 }
 
 html {
-	scroll-behavior: smooth;
+ scroll-behavior: smooth;
 }
 /* ORIGINAL TEMPLATE HAMBURGER MENU FROM BRAD TRAVERSY'S MODERN PORTFOLIO  */
 
 /* NOTE TO SELF - USE POSITION ABSOLUTE AND LEFT/RIGHT/TOP ETC TO POSITION*/
 .menu-btn {
-	position: absolute;
-	z-index: 3;
-	left: 35px;
-	top: 2vw;
-	cursor: pointer;
-	transition: all 1s ease-out;
+ position: absolute;
+ z-index: 3;
+ left: 35px;
+ top: 2vw;
+ cursor: pointer;
+ transition: all 1s ease-out;
 }
 .menu-btn .btn-line {
-	width: 28px;
-	height: 3px;
-	margin: 0 0 7px 0;
-	background: var(--textBeige);
-	transition: all 0.5s ease-out;
+ width: 28px;
+ height: 3px;
+ margin: 0 0 7px 0;
+ background: var(--textBeige);
+ transition: all 0.5s ease-out;
 }
 .menu-btn.close {
-	transform: rotate(180deg);
+ transform: rotate(180deg);
 }
 .menu-btn.close .btn-line:nth-child(1) {
-	transform: rotate(45deg) translate(5px, 5px);
+ transform: rotate(45deg) translate(5px, 5px);
 }
 .menu-btn.close .btn-line:nth-child(2) {
-	opacity: 0;
+ opacity: 0;
 }
 .menu-btn.close .btn-line:nth-child(3) {
-	transform: rotate(-45deg) translate(5px, -5px);
+ transform: rotate(-45deg) translate(5px, -5px);
 }
 
 /* do not edit */
 .hide {
-	display: none;
+ display: none;
 }
 
 html,
 body {
-	min-height: 100vh;
+ min-height: 100vh;
 
-	overflow: hidden;
-	background-color: var(--blackJapPalette); /*Fixes background color durrrr */
+ overflow: hidden;
+ background-color: var(--blackJapPalette); /*Fixes background color durrrr */
 }
 
 /* <-----<----- <----- <-----  HEADER   ------>------>------>------>------> */
 
 .homeBG {
-	height: 100vh;
-	background-color: var(--blackJapPalette);
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+ height: 100vh;
+ background-color: var(--blackJapPalette);
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
 }
 
 #hucker-title {
-	transform: rotate(-10deg);
-	font-family: mHucker;
-	font-size: calc(12px + 2vw);
-	z-index: 8;
-	color: var(--textBeige);
-	align-self: flex-start;
-	margin-left: 15vw;
-	opacity: 0.7;
-	letter-spacing: 6px;
+ transform: rotate(-10deg);
+ font-family: mHucker;
+ font-size: calc(12px + 2vw);
+ z-index: 8;
+ color: var(--textBeige);
+ align-self: flex-start;
+ margin-left: 15vw;
+ opacity: 0.7;
+ letter-spacing: 6px;
 }
 
 #fullFatTitle {
-	font-size: 5vw;
-	color: var(--textBeige);
-	font-family: 'Nanum Myeongjo', serif;
-	letter-spacing: 15px;
+ font-size: 5vw;
+ color: var(--textBeige);
+ font-family: 'Nanum Myeongjo', serif;
+ letter-spacing: 15px;
 }
 
 #grappleStyle {
-	color: var(--goldGrappFont);
-	letter-spacing: 15px;
-	line-height: 1.6;
-	font-size: 8vw;
+ color: var(--goldGrappFont);
+ letter-spacing: 15px;
+ line-height: 1.6;
+ font-size: 8vw;
 }
 
 #tsparticles {
-	position: fixed;
-	z-index: 1;
-	width: 100%;
-	height: 100%;
-	opacity: 0.4;
+ position: fixed;
+ z-index: 1;
+ width: 100%;
+ height: 100%;
+ opacity: 0.4;
 }
 
 /* <-----<----- <----- <-----  MENU SIDE BAR  ------>------>------>------>------> */
 nav {
-	position: fixed;
-	left: 60em;
-	top: 6em;
-	z-index: 100;
+ position: fixed;
+ left: 60em;
+ top: 6em;
+ z-index: 100;
 }
 
 nav li {
-	display: inline-block;
-	cursor: pointer;
-	text-decoration: none;
-	color: fefdff;
-	padding: 1em;
-	opacity: 1;
-	transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
+ display: inline-block;
+ cursor: pointer;
+ text-decoration: none;
+ color: fefdff;
+ padding: 1em;
+ opacity: 1;
+ transition: all 0.3s ease-in-out;
+ -webkit-transition: all 0.3s ease-in-out;
+ -moz-transition: all 0.3s ease-in-out;
+ -ms-transition: all 0.3s ease-in-out;
+ -o-transition: all 0.3s ease-in-out;
 }
 nav li .link {
-	text-decoration: none;
-	color: fefdff;
-	padding: 1em;
-	opacity: 1;
-	transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
+ text-decoration: none;
+ color: fefdff;
+ padding: 1em;
+ opacity: 1;
+ transition: all 0.3s ease-in-out;
+ -webkit-transition: all 0.3s ease-in-out;
+ -moz-transition: all 0.3s ease-in-out;
+ -ms-transition: all 0.3s ease-in-out;
+ -o-transition: all 0.3s ease-in-out;
 }
 
 .active {
-	color: var(--gingerBread);
-	opacity: 1;
+ color: var(--gingerBread);
+ opacity: 1;
 }
 
 .menuHomeSVG {
-	height: 20%;
-	width: 20%;
+ height: 20%;
+ width: 20%;
 }
 
 .menuHomeSVGsub {
-	height: 1.5rem;
-	width: 1.5rem;
+ height: 1.5rem;
+ width: 1.5rem;
 }
 
 /* <-----<----- <----- <-----  MENU SIDE BAR END ------>------>------>------>------> */
@@ -215,105 +215,104 @@ nav li .link {
 /* <-----<----- <----- <-----  ABOUT SECTION  ------>------>------>------>------> */
 
 .childrenBG {
-	display: flex;
-	flex-direction: column;
-align-items: center;
-min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ min-height: 100vh;
 }
 
 #aboutImageBg {
-	height: 100vh;
-	width: 130%;
-	opacity: 0.1;
-	position: absolute;
-	top: 0;
-	right: 0;
-	z-index: -1;
+ height: 100vh;
+ width: 130%;
+ opacity: 0.1;
+ position: absolute;
+ top: 0;
+ right: 0;
+ z-index: -1;
 }
 
 #aboutTitle {
-
-	font-size: 2rem;
-	color: var(--textBeige);
-	letter-spacing: 10px;
-	text-align: center;
-	margin: 2vw;
-	align-self: center;
+ font-size: 2rem;
+ color: var(--textBeige);
+ letter-spacing: 10px;
+ text-align: center;
+ margin: 2vw;
+ align-self: center;
 }
 
 .about-content {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 75vw;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ width: 75vw;
 }
 
 #headContainer {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	height: 80vh;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+ height: 80vh;
 }
 
 .about-content li {
-	font-size: 100%;
-	letter-spacing: 5px;
-	line-height: 1.6;
-	color: var(--optimalOnBlack);
-	text-align: left;
-	font-family: 'Montserrat', sans-serif;
-	list-style: none;
-	text-transform: uppercase;
+ font-size: 100%;
+ letter-spacing: 5px;
+ line-height: 1.6;
+ color: var(--optimalOnBlack);
+ text-align: left;
+ font-family: 'Montserrat', sans-serif;
+ list-style: none;
+ text-transform: uppercase;
 }
 
 #headParaContainer {
-	width: 50vw;
-	text-align: right;
+ width: 50vw;
+ text-align: right;
 }
 
 #headPara {
-	font-size: 1.4vw;
-	line-height: 2.2;
-	width: 100%;
+ font-size: 1.4vw;
+ line-height: 2.2;
+ width: 100%;
 }
 
 .imageContainerAbout {
-	width: 100%;
-	height: auto;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-	margin: 2vw 0;
-	text-align: left;
+ width: 100%;
+ height: auto;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ align-items: center;
+ margin: 2vw 0;
+ text-align: left;
 }
 
 .imageAbout {
-	width: 25vw;
-	height: 25vw;
-	border-radius: 1%;
-	filter: sepia(30%);
-	opacity: 0.6;
+ width: 25vw;
+ height: 25vw;
+ border-radius: 1%;
+ filter: sepia(30%);
+ opacity: 0.6;
 }
 
 .about-content p {
-	width: 50%;
-	font-size: 1.2vw;
-	letter-spacing: 4px;
-	line-height: 1.6;
-	font-family: 'Montserrat', sans-serif;
-	list-style: none;
-	color: var(--textBeige);
+ width: 50%;
+ font-size: 1.2vw;
+ letter-spacing: 4px;
+ line-height: 1.6;
+ font-family: 'Montserrat', sans-serif;
+ list-style: none;
+ color: var(--textBeige);
 }
 
 #bottomTextAbout {
-	width: 100%;
-	text-align: center;
+ width: 100%;
+ text-align: center;
 }
 
 .specChars {
-	color: var(--pinkJap);
+ color: var(--pinkJap);
 }
 
 /* <-----<----- <----- <-----  ABOUT SECTION END  ------>------>------>------>------> */
@@ -322,976 +321,980 @@ min-height: 100vh;
 
 /* use em to edit images to nice size  */
 .main {
-	width: 30em;
-	height: 40em;
+ width: 30em;
+ height: 40em;
 }
 
 /* MEMBERSHIP PAGE - TRANSITIONS */
 
 #memTitle {
-	font-size: 2rem;
-	color: var(--textBeige);
-	letter-spacing: 10px;
-	text-align: center;
-	margin: 2vw;
-	align-self: center;
+ font-size: 2rem;
+ color: var(--textBeige);
+ letter-spacing: 10px;
+ text-align: center;
+ margin: 2vw;
+ align-self: center;
 }
 
 .cardText {
-	font-weight: bold;
-	transition: all 0.3s ease-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
+ font-weight: bold;
+ transition: all 0.3s ease-out;
+ -webkit-transition: all 0.3s ease-in-out;
+ -moz-transition: all 0.3s ease-in-out;
+ -ms-transition: all 0.3s ease-in-out;
+ -o-transition: all 0.3s ease-in-out;
 }
 
 .cardText:hover {
-	transform: translate(0px, -20px);
+ transform: translate(0px, -20px);
 }
 
 #cardMemPriceText {
-	color: var(--textBeige);
+ color: var(--textBeige);
 }
 
 /* TIMETABLE PAGE  */
 
 .tablebg {
-	opacity: 1;
-	height: 50vh;
-	margin: auto;
-	width: 100%;
-	text-align: center;
+ opacity: 1;
+ height: 50vh;
+ margin: auto;
+ width: 100%;
+ text-align: center;
 }
 
 .tablebg::after {
-	background-image: url(./assets/kano.jpg);
-	background-position: top;
-	background-repeat: no-repeat;
-	background-size: cover; /*contain--Resize the background image to make sure the image is fully visible*/
-	background-origin: border-box;
-	content: "";
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	bottom: 0px;
-	left: 0px;
-	opacity: 0.1;
+ background-image: url(./assets/kano.jpg);
+ background-position: top;
+ background-repeat: no-repeat;
+ background-size: cover; /*contain--Resize the background image to make sure the image is fully visible*/
+ background-origin: border-box;
+ content: '';
+ position: absolute;
+ top: 0px;
+ right: 0px;
+ bottom: 0px;
+ left: 0px;
+ opacity: 0.1;
 }
 
 #timeTableText {
-	text-align: center;
-	font-size: 1vw;
-	margin: 2vw;
-	line-height: 1.6;
+ text-align: center;
+ font-size: 1vw;
+ margin: 2vw;
+ line-height: 1.6;
 }
 
 /* CONTACT PAGE  */
 
 iframe {
-	width: 100%;
-	height: 100%;
+ width: 100%;
+ height: 100%;
 }
 
 /* FOOTER PAGE  */
 #FooterContainerDiv {
-	background-color: var(--blackJapPalette);
-	width: 100vw;
-	text-align: center;
-	opacity: 0.8;
+ background-color: var(--blackJapPalette);
+ width: 100vw;
+ text-align: center;
+ opacity: 0.8;
 }
 
 .linkSocial {
-	color: var(--textBeige);
-	transform: scale(1.8);
-	transition: all 0.3s ease-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	z-index: 5;
-	font-size: 3vh;
-	margin-top: 50%;
+ color: var(--textBeige);
+ transform: scale(1.8);
+ transition: all 0.3s ease-out;
+ -webkit-transition: all 0.3s ease-in-out;
+ -moz-transition: all 0.3s ease-in-out;
+ -ms-transition: all 0.3s ease-in-out;
+ -o-transition: all 0.3s ease-in-out;
+ z-index: 5;
+ font-size: 3vh;
+ margin-top: 50%;
 }
 
 .linkSocial:hover {
-	transform: scale(2.3);
-	color: var(--goldGrappFont);
+ transform: scale(2.3);
+ color: var(--goldGrappFont);
 }
 
 #footerText {
-	color: var(--textBeige);
-	font-size: 1vw;
+ color: var(--textBeige);
+ font-size: 1vw;
 }
 
 /* MERCHANDISE PAGE  */
 
 .sizeBox {
-	border: var(--textBeige) solid;
-	border-width: 1px;
-	padding: 10px;
-	margin: 10px;
-	color: var(--creamJapPalette);
-	box-sizing: border-box;
+ border: var(--textBeige) solid;
+ border-width: 1px;
+ padding: 10px;
+ margin: 10px;
+ color: var(--creamJapPalette);
+ box-sizing: border-box;
 }
 
 .childrenText {
-	font-size: 1.2em;
-	color: var(--textBeige);
-	text-align: left;
-	font-family: 'Montserrat', sans-serif;
+ font-size: 1.2em;
+ color: var(--textBeige);
+ text-align: left;
+ font-family: 'Montserrat', sans-serif;
 }
 
-/* <-----<----- <----- <-----  Affiliate SECTION  ------>------>------>------>------> */
+/* <-----<----- <----- <-----  Affiliate SECTION  Full Screen  ------>------>------>------>------> */
+
+#aboutTitleAff {
+
+		font-size: 2rem;
+		color: var(--textBeige);
+		letter-spacing: 10px;
+		text-align: center;
+		margin: 2vw;
+		align-self: center;
+
+   }
 
 #headContainerAff {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: center;
-	height: 80vh;
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-start;
+ align-items: flex-start;
+ height: 70vh;
+ width: 70vw;
+ text-align: left;
 }
 
-#headParaContainerAff {
-	width: 50vw;
-	text-align: left;
-}
+
 
 .about-contentAff {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-self: center;
-	width: 75vw;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ align-self: center;
+ width: 75vw;
 }
 
 .about-contentAff p {
-	margin: 5vw;
-	width: 90%;
-	font-size: 50%;
-	letter-spacing: px;
-	line-height: 1.6;
-	font-family: 'Montserrat', sans-serif;
-	list-style: none;
-	color: var(--textBeige);
+ margin: 5vw;
+ width: 90%;
+ font-size: 50%;
+ letter-spacing: px;
+ line-height: 1.6;
+ font-family: 'Montserrat', sans-serif;
+ list-style: none;
+ color: var(--textBeige);
 }
 
 #headParaAff {
-	font-size: 1.1vw;
-	line-height: 2.2;
-	width: 100%;
-	border-left: var(--goldGrappFont) solid;
-	padding-left: 2vw;
+ font-size: 1.1vw;
+ line-height: 2.2;
+ width: 100%;
+ border-left: var(--goldGrappFont) solid;
+ padding-left: 2vw;
 }
 
 #clubHeaderAff {
-	font-size: 1rem;
-	color: var(--textBeige);
-	letter-spacing: 10px;
-	text-align: center;
-	margin: 2vw;
-	align-self: center;
+ font-size: 1rem;
+ color: var(--textBeige);
+ letter-spacing: 10px;
+ text-align: center;
+ margin: 2vw;
+ align-self: center;
 }
 
 #councilPos {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	align-items: center;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+ align-items: center;
 }
 
 .affItem {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	width: 100%;
-	/* border: solid 0.2px #fff; */
-	margin: 2vw;
-	color: var(--textBeige);
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ width: 100%;
+ /* border: solid 0.2px #fff; */
+ margin: 2vw;
+ color: var(--textBeige);
 }
 
 .gridText {
-	letter-spacing: 4px;
-	line-height: 1.6;
-	font-family: 'Montserrat', sans-serif;
-	list-style: none;
-	color: var(--textBeige);
-	padding: 4px;
+ letter-spacing: 4px;
+ line-height: 1.6;
+ font-family: 'Montserrat', sans-serif;
+ list-style: none;
+ color: var(--textBeige);
+ padding: 4px;
 }
 
 .CEAImage {
-	width: 10vw;
-	height: 10vw;
-	opacity: 0.6;
-	border-radius: 50%;
-	background-color: white;
+ width: 10vw;
+ height: 10vw;
+ opacity: 0.6;
+ border-radius: 50%;
+ background-color: white;
 }
 .imageAboutAffBJC {
-	width: 10vw;
-	height: 10vw;
-	opacity: 0.6;
+ width: 10vw;
+ height: 10vw;
+ opacity: 0.6;
 }
 .imageAboutAffUKBJJA {
-	width: 20vw;
-	height: 10vw;
-	opacity: 0.6;
+ width: 20vw;
+ height: 10vw;
+ opacity: 0.6;
 }
 
 .blobAff {
-	opacity: 0.2;
-	position: absolute;
-	bottom: -50px;
-	left: 0px;
-	width: 100vw;
-	height: auto;
-	z-index: -1;
+ opacity: 0.2;
+ position: absolute;
+ bottom: -50px;
+ left: 0px;
+ width: 100vw;
+ height: auto;
+ z-index: -1;
 
-	/* animation: spin 25s linear 0s infinite normal forwards; */
+ /* animation: spin 25s linear 0s infinite normal forwards; */
 }
 
 @keyframes spin {
-	from {
-		rotate: 0deg;
-	}
+ from {
+  rotate: 0deg;
+ }
 
-	to {
-		rotate: 360deg;
-	}
+ to {
+  rotate: 360deg;
+ }
 }
 
 /* screenwidth less than 1024px
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 1025px) {
-	/* About Section
+ /* About Section
    -------------------------------------------------------------------- */
 
-	/* CHILD ATHLETES
+ /* CHILD ATHLETES
    -------------------------------------------------------------------- */
 
-	/* ADULT
+ /* ADULT
    -------------------------------------------------------------------- */
 
-	/* TIMETABLE
+ /* TIMETABLE
    -------------------------------------------------------------------- */
 
-	/* MEMBERSHIP
+ /* MEMBERSHIP
    -------------------------------------------------------------------- */
 
-	/* CONTACT
+ /* CONTACT
    -------------------------------------------------------------------- */
 
-	/* MERCH
+ /* MERCH
    -------------------------------------------------------------------- */
 
-	/* <-----<----- <----- <-----  Affiliate SECTION  ------>------>------>------>------> */
-	.about-contentAff {
-		width: 75vw;
-	}
+ /* <-----<----- <----- <-----  Affiliate SECTION  ------>------>------>------>------> */
+ .about-contentAff {
+  width: 75vw;
+ }
 
-	#headContainerAff {
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-start;
-		align-items: center;
-		height: 100%;
-	}
+ #headContainerAff {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+ }
 
-	#headParaContainerAff {
-		width: 50vw;
-		text-align: left;
-	}
+ #headParaContainerAff {
+  width: 50vw;
+  text-align: left;
+ }
 
-	.about-contentAff p {
-		margin: 5vw;
-		width: 90%;
-		font-size: 50%;
-		letter-spacing: px;
-		line-height: 1.6;
-		font-family: 'Montserrat', sans-serif;
-		list-style: none;
-		color: var(--textBeige);
-	}
+ .about-contentAff p {
+  margin: 5vw;
+  width: 90%;
+  font-size: 50%;
+  letter-spacing: px;
+  line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
+  list-style: none;
+  color: var(--textBeige);
+ }
 
-	#headParaAff {
-		font-size: 1.1vw;
-		line-height: 2.2;
-		width: 100%;
-		border-left: var(--goldGrappFont) solid;
-		padding-left: 2vw;
-	}
+ #headParaAff {
+  font-size: 1.1vw;
+  line-height: 2.2;
+  width: 100%;
+  border-left: var(--goldGrappFont) solid;
+  padding-left: 2vw;
+ }
 
-	#clubHeaderAff {
-		font-size: 1rem;
-		color: var(--textBeige);
-		letter-spacing: 10px;
-		text-align: center;
-		margin: 2vw;
-		align-self: center;
-	}
+ #clubHeaderAff {
+  font-size: 1rem;
+  color: var(--textBeige);
+  letter-spacing: 10px;
+  text-align: center;
+  margin: 2vw;
+  align-self: center;
+ }
 
-	#councilPos {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-		align-items: center;
-	}
+ #councilPos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+ }
 
-	.affItem {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		width: 100%;
-		/* border: solid 0.2px #fff; */
-		margin: 2vw;
-		color: var(--textBeige);
-	}
+ .affItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  /* border: solid 0.2px #fff; */
+  margin: 2vw;
+  color: var(--textBeige);
+ }
 
-	.gridText {
-		letter-spacing: 4px;
-		line-height: 1.6;
-		font-family: 'Montserrat', sans-serif;
-		list-style: none;
-		color: var(--textBeige);
-		padding: 4px;
-	}
+ .gridText {
+  letter-spacing: 4px;
+  line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
+  list-style: none;
+  color: var(--textBeige);
+  padding: 4px;
+ }
 
-	.CEAImage {
-		width: 10vw;
-		height: 10vw;
-		opacity: 0.6;
-		border-radius: 50%;
-		background-color: white;
-	}
-	.imageAboutAffBJC {
-		width: 10vw;
-		height: 10vw;
-		opacity: 0.6;
-	}
-	.imageAboutAffUKBJJA {
-		width: 20vw;
-		height: 10vw;
-		opacity: 0.6;
-	}
+ .CEAImage {
+  width: 10vw;
+  height: 10vw;
+  opacity: 0.6;
+  border-radius: 50%;
+  background-color: white;
+ }
+ .imageAboutAffBJC {
+  width: 10vw;
+  height: 10vw;
+  opacity: 0.6;
+ }
+ .imageAboutAffUKBJJA {
+  width: 20vw;
+  height: 10vw;
+  opacity: 0.6;
+ }
 
-	.blobAff {
-		opacity: 0.2;
-		position: absolute;
-		bottom: 500px;
-		left: 200px;
-		transform: rotate(-90deg);
-		width: 100vh;
-		z-index: -1;
-		/* animation: spin 25s linear 0s infinite normal forwards; */
-	}
+ .blobAff {
+  opacity: 0.2;
+  position: absolute;
+  bottom: 500px;
+  left: 200px;
+  transform: rotate(-90deg);
+  width: 100vh;
+  z-index: -1;
+  /* animation: spin 25s linear 0s infinite normal forwards; */
+ }
 }
 
 /* screenwidth less than 900px
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 900px) {
-	/* global classes and id's  */
-	.menu-btn {
-		position: absolute;
-		z-index: 3;
-		left: 20px;
-		top: 6vw;
-		cursor: pointer;
-		transition: all 1s ease-out;
-	}
+ /* global classes and id's  */
+ .menu-btn {
+  position: absolute;
+  z-index: 3;
+  left: 20px;
+  top: 6vw;
+  cursor: pointer;
+  transition: all 1s ease-out;
+ }
 
-	#aboutTitle {
-		min-width: 50vw;
-		font-family: 'Montserrat', sans-serif;
-		font-size: 100px;
-		color: var(--textBeige);
-		letter-spacing: 5px;
-		margin-top: 20vw;
-	}
+ #aboutTitle {
+  min-width: 50vw;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100px;
+  color: var(--textBeige);
+  letter-spacing: 5px;
+  margin-top: 20vw;
+ }
 
-	/* About Section
+ /* About Section
    -------------------------------------------------------------------- */
 
-	/* CHILD ATHLETES
+ /* CHILD ATHLETES
    -------------------------------------------------------------------- */
 
-	/* ADULT
+ /* ADULT
    -------------------------------------------------------------------- */
 
-	/* TIMETABLE
+ /* TIMETABLE
    -------------------------------------------------------------------- */
 
-	/* MEMBERSHIP
+ /* MEMBERSHIP
    -------------------------------------------------------------------- */
 
-	/* CONTACT
+ /* CONTACT
    -------------------------------------------------------------------- */
 
-	/* MERCH
+ /* MERCH
    -------------------------------------------------------------------- */
 
-	/* <-----<----- <----- <-----  Affiliate SECTION  ------>------>------>------>------> */
+ /* <-----<----- <----- <-----  Affiliate SECTION 900px ------>------>------>------>------> */
 
-	.about-contentAff {
-		width: 75vw;
-	}
+ .about-contentAff {
+  width: 75vw;
+ }
 
-	#headContainerAff {
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-start;
-		align-items: center;
-		height: 100%;
-		width: auto;
-	}
+ #headContainerAff {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: auto;
+ }
 
-	#headParaContainerAff {
-		width: 100%;
-		text-align: left;
-	}
+ #headParaContainerAff {
+  width: 100%;
+  text-align: left;
+ }
 
-	#headParaAff {
-		font-size: 2.3vw;
-		line-height: 2.2;
-		width: 100%;
-		border-left: var(--goldGrappFont) solid;
-		padding-left: 2vw;
-	}
+ #headParaAff {
+  font-size: 2.3vw;
+  line-height: 2.2;
+  width: 100%;
+  border-left: var(--goldGrappFont) solid;
+  padding-left: 2vw;
+ }
 
-	.about-contentAff p {
-		margin: 5vw;
-		width: 90%;
-		font-size: 50%;
-		letter-spacing: px;
-		line-height: 1.6;
-		font-family: 'Montserrat', sans-serif;
-		list-style: none;
-		color: var(--textBeige);
-	}
+ .about-contentAff p {
+  margin: 5vw;
+  width: 90%;
+  font-size: 50%;
+  letter-spacing: 4px;
+  line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
+  list-style: none;
+  color: var(--textBeige);
+ }
 
-	#clubHeaderAff {
-		font-size: 1rem;
-		color: var(--textBeige);
-		letter-spacing: 10px;
-		text-align: center;
-		margin: 2vw;
-		align-self: center;
-	}
+ #clubHeaderAff {
+  font-size: 1rem;
+  color: var(--textBeige);
+  letter-spacing: 10px;
+  text-align: center;
+  margin: 2vw;
+  align-self: center;
+ }
 
-	#councilPos {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-		align-items: center;
-	}
+ #councilPos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+ }
 
-	.affItem {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		width: 100%;
-		margin: 2vw;
-		color: var(--textBeige);
-	}
+ .affItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin: 2vw;
+  color: var(--textBeige);
+ }
 
-	.gridText {
-		letter-spacing: 4px;
-		line-height: 1.6;
-		font-family: 'Montserrat', sans-serif;
-		list-style: none;
-		color: var(--textBeige);
-		padding: 0px;
-	}
+ .gridText {
+  letter-spacing: 4px;
+  line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
+  list-style: none;
+  color: var(--textBeige);
+  padding: 0px;
+ }
 
-	.gridText li {
-		white-space: nowrap;
-	}
+ .gridText li {
+  white-space: nowrap;
+ }
 
-	.CEAImage {
-		width: 10vw;
-		height: 10vw;
-		opacity: 0.6;
-		border-radius: 50%;
-		background-color: white;
-	}
-	.imageAboutAffBJC {
-		width: 10vw;
-		height: 10vw;
-		opacity: 0.6;
-	}
-	.imageAboutAffUKBJJA {
-		width: 20vw;
-		height: 10vw;
-		opacity: 0.6;
-	}
+ .CEAImage {
+  width: 10vw;
+  height: 10vw;
+  opacity: 0.6;
+  border-radius: 50%;
+  background-color: white;
+ }
+ .imageAboutAffBJC {
+  width: 10vw;
+  height: 10vw;
+  opacity: 0.6;
+ }
+ .imageAboutAffUKBJJA {
+  width: 20vw;
+  height: 10vw;
+  opacity: 0.6;
+ }
 
-	.blobAff {
-		display: none;
-		/* animation: spin 25s linear 0s infinite normal forwards; */
-	}
+ .blobAff {
+  display: none;
+  /* animation: spin 25s linear 0s infinite normal forwards; */
+ }
 }
 
 /* mobile wide/smaller tablets
 ---------------------------------------------------------------------- */
 
 @media only screen and (max-width: 767px) {
-	/* Footer  */
+ /* Footer  */
 
-	#footerText {
-		color: var(--textBeige);
-		font-size: 3vw;
-	}
+ #footerText {
+  color: var(--textBeige);
+  font-size: 3vw;
+ }
 
-	/* About Section
+ /* About Section
    -------------------------------------------------------------------- */
-	.childrenBG {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-	}
+ .childrenBG {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 75vw;
+ }
 
-	#aboutImageBg {
-		height: 100vh;
-		width: 200%;
-		opacity: 0.1;
-		position: absolute;
-		right: 0;
-		z-index: -1;
-	}
+ #aboutImageBg {
+  height: 100vh;
+  width: 200%;
+  opacity: 0.1;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+ }
 
-	.about-content {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		align-self: center;
-		width: 100%;
-	}
+ .about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-self: center;
+  width: 100%;
+ }
 
-	#headContainer {
-		position: relative;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		height: 100vh;
-		width: 100vw;
-	}
+ #headContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100vw;
+ }
 
-	.about-content li {
-		font-size: 100%;
-		letter-spacing: 5px;
-		line-height: 1.6;
-		color: var(--textBeige);
-		text-align: center;
-		font-family: 'Montserrat', sans-serif;
-		list-style: none;
-		text-transform: uppercase;
-	}
+ .about-content li {
+  font-size: 100%;
+  letter-spacing: 5px;
+  line-height: 1.6;
+  color: var(--textBeige);
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  list-style: none;
+  text-transform: uppercase;
+ }
 
-	#headParaContainer {
-		width: 75vw;
-		position: relative;
-	}
+ #headParaContainer {
+  width: 75vw;
+  position: relative;
+ }
 
-	#headPara {
-		font-size: 75%;
-		line-height: 2.2;
-		width: 100%;
-		text-align: right;
-	}
+ #headPara {
+  font-size: 75%;
+  line-height: 2.2;
+  width: 100%;
+  text-align: right;
+ }
 
-	.imageContainerAbout {
-		width: 100%;
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: center;
-		text-align: center;
-	}
+ .imageContainerAbout {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+ }
 
-	.imageAbout {
-		width: 75vw;
-		height: 75vw;
-		border-radius: 1%;
-		filter: sepia(30%);
-		opacity: 0.6;
-	}
+ .imageAbout {
+  width: 75vw;
+  height: 75vw;
+  border-radius: 1%;
+  filter: sepia(30%);
+  opacity: 0.6;
+ }
 
-	.about-content p {
-		margin: 5vw;
-		width: 90%;
-		font-size: 75%;
-		letter-spacing: 4px;
-		line-height: 1.6;
-		font-family: 'Montserrat', sans-serif;
-		list-style: none;
-		color: var(--textBeige);
-	}
+ .about-content p {
+  margin: 5vw;
+  width: 90%;
+  font-size: 75%;
+  letter-spacing: 4px;
+  line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
+  list-style: none;
+  color: var(--textBeige);
+ }
 
-	#bottomTextAbout {
-		width: 100%;
-		text-align: center;
-	}
+ #bottomTextAbout {
+  width: 100%;
+  text-align: center;
+ }
 
-	.specChars {
-		color: var(--pinkJap);
-	}
-	/* CHILD ATHLETES
-   -------------------------------------------------------------------- */
-
-	/* ADULT
+ .specChars {
+  color: var(--pinkJap);
+ }
+ /* CHILD ATHLETES
    -------------------------------------------------------------------- */
 
-	/* TIMETABLE
-   -------------------------------------------------------------------- */
-	.tablebg {
-		opacity: 1;
-		height: 50vh;
-		width: 100%;
-		margin: auto;
-
-		text-align: center;
-	}
-
-	#timeTableText {
-		text-align: center;
-		font-size: 3vw;
-		line-height: 1.6;
-	}
-
-	.tablebg::after {
-		background-image: url(./assets/kano.jpg);
-		background-position: top;
-		background-repeat: no-repeat;
-		background-size: cover; /*contain--Resize the background image to make sure the image is fully visible*/
-		background-origin: border-box;
-		content: "";
-		position: absolute;
-		top: 0px;
-		right: 0px;
-		bottom: 0px;
-		left: 0px;
-		opacity: 0.1;
-	}
-
-	/* MEMBERSHIP
+ /* ADULT
    -------------------------------------------------------------------- */
 
-	#memTitle {
-		font-size: 2rem;
-		color: var(--optimalOnBlack);
-		letter-spacing: 5px;
-		text-align: center;
-		margin-top: 25vw;
-	}
+ /* TIMETABLE
+   -------------------------------------------------------------------- */
+ .tablebg {
+  opacity: 1;
+  height: 50vh;
+  width: 100%;
+  margin: auto;
 
-	/* CONTACT
+  text-align: center;
+ }
+
+ #timeTableText {
+  text-align: center;
+  font-size: 3vw;
+  line-height: 1.6;
+ }
+
+ .tablebg::after {
+  background-image: url(./assets/kano.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover; /*contain--Resize the background image to make sure the image is fully visible*/
+  background-origin: border-box;
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.1;
+ }
+
+ /* MEMBERSHIP
    -------------------------------------------------------------------- */
 
-	/* MERCH
+ #memTitle {
+  font-size: 2rem;
+  color: var(--optimalOnBlack);
+  letter-spacing: 5px;
+  text-align: center;
+  margin-top: 25vw;
+ }
+
+ /* CONTACT
+   -------------------------------------------------------------------- */
+
+ /* MERCH
    -------------------------------------------------------------------- */
 }
 
 @media only screen and (max-width: 480px) {
-	/* Header
+ /* Header
    -------------------------------------------------------------------- */
 
-	.homeBG {
-		height: 100vh;
-		background-color: var(--blackJapPalette);
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
+ .homeBG {
+  height: 100vh;
+  background-color: var(--blackJapPalette);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
 
-	#hucker-title {
-		transform: rotate(0deg);
-        align-self: center;
-		margin-left: auto;
-		margin-right: auto;
-	}
+ #hucker-title {
+  transform: rotate(0deg);
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+ }
 
-	#fullFatTitle {
-		font-size: 10vw;
-		color: var(--textBeige);
-		letter-spacing: 10px;
-	}
+ #fullFatTitle {
+  font-size: 10vw;
+  color: var(--textBeige);
+  letter-spacing: 10px;
+ }
 
-	#grappleStyle {
-		color: var(--goldGrappFont);
-		letter-spacing: 10px;
-		font-size: 12vw;
-	}
+ #grappleStyle {
+  color: var(--goldGrappFont);
+  letter-spacing: 10px;
+  font-size: 12vw;
+ }
 
-	#tsparticles {
-		position: fixed;
-		z-index: 1;
-		width: 100%;
-		height: 100%;
-		opacity: 0.4;
-	}
+ #tsparticles {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+ }
 
-	/* ABOUT
+ /* ABOUT
    -------------------------------------------------------------------- */
-/* About Section
+ /* About Section
    -------------------------------------------------------------------- */
-   .childrenBG {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-}
+ .childrenBG {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+ }
 
-#aboutTitle {
-	min-width: 50vw;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 100px;
-	color: var(--textBeige);
-	letter-spacing: 5px;
-	margin-bottom: 25vw;
-}
+ #aboutTitle {
+  min-width: 50vw;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100px;
+  color: var(--textBeige);
+  letter-spacing: 5px;
+  margin-bottom: 25vw;
+ }
 
-#aboutImageBg {
-	height: 100vh;
-	width: 200%;
-	opacity: 0.1;
-	position: absolute;
-	right: 0;
-	z-index: -1;
-}
+ #aboutImageBg {
+  height: 100vh;
+  width: 200%;
+  opacity: 0.1;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+ }
 
-.about-content {
-	display: flex;
-	flex-direction: column;
-	align-self: center;
-	width: 100%;
-}
+ .about-content {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 100%;
+ }
 
-#headContainer {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	height: 100vh;
-	width: 100vw;
-}
+ #headContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
+  width: 100vw;
+ }
 
-.about-content li {
-	font-size: 100%;
-	letter-spacing: 5px;
-	line-height: 1.6;
-	color: var(--textBeige);
-	text-align: center;
-	font-family: 'Montserrat', sans-serif;
-	list-style: none;
-	text-transform: uppercase;
-}
+ .about-content li {
+  font-size: 100%;
+  letter-spacing: 5px;
+  line-height: 1.6;
+  color: var(--textBeige);
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  list-style: none;
+  text-transform: uppercase;
+ }
 
-#headParaContainer {
-	width: 75vw;
-	position: relative;
-	margin-bottom: 10vw;
-}
+ #headParaContainer {
+  width: 75vw;
+  position: relative;
+  margin-bottom: 10vw;
+ }
 
-#headPara {
-	font-size: 75%;
-	line-height: 2.2;
-	width: 100%;
-	text-align: right;
-	padding-bottom: 10vw;
+ #headPara {
+  font-size: 75%;
+  line-height: 2.2;
+  width: 100%;
+  text-align: right;
+  padding-bottom: 10vw;
+ }
 
-}
+ .imageContainerAbout {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  text-indent: 30px;
+ }
 
-.imageContainerAbout {
-	width: 100%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	text-align: left;
-	text-indent: 30px;
-}
+ .imageAbout {
+  width: 75vw;
+  height: 75vw;
+  border-radius: 1%;
+  filter: sepia(30%);
+  opacity: 0.6;
+ }
 
-.imageAbout {
-	width: 75vw;
-	height: 75vw;
-	border-radius: 1%;
-	filter: sepia(30%);
-	opacity: 0.6;
-}
+ .about-content p {
+  margin: 5vw;
+  width: 90%;
+  font-size: 75%;
+  letter-spacing: 4px;
+  line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
+  list-style: none;
+  color: var(--textBeige);
+ }
 
-.about-content p {
-	margin: 5vw;
-	width: 90%;
-	font-size: 75%;
-	letter-spacing: 4px;
-	line-height: 1.6;
-	font-family: 'Montserrat', sans-serif;
-	list-style: none;
-	color: var(--textBeige);
-}
+ #bottomTextAbout {
+  width: 100%;
+  text-align: center;
+ }
 
-#bottomTextAbout {
-	width: 100%;
-	text-align: center;
-}
-
-.specChars {
-	color: var(--pinkJap);
-}
-	/* CHILD ATHLETES
-   -------------------------------------------------------------------- */
-
-	/* ADULT ATHLETES
+ .specChars {
+  color: var(--pinkJap);
+ }
+ /* CHILD ATHLETES
    -------------------------------------------------------------------- */
 
-	/* TIMETABLE
+ /* ADULT ATHLETES
    -------------------------------------------------------------------- */
 
-	/*Also uses #memFooter on Footer */
-
-	/* MEMBERSHIP
+ /* TIMETABLE
    -------------------------------------------------------------------- */
 
-	.memTitle {
-		font-size: 1.8rem;
-		position: relative;
-		left: 10%;
-	}
+ /*Also uses #memFooter on Footer */
 
-	#memFooter {
-		margin-bottom: 2vh;
-	}
-
-	/* CONTACT
-   -------------------------------------------------------------------- */
-	/*Also uses #memFooter and .memTitle on header and on Footer */
-
-	iframe {
-		width: 100%;
-		height: 100%;
-	}
-
-	.smStyle {
-		text-align: center;
-	}
-	/* MERCH
+ /* MEMBERSHIP
    -------------------------------------------------------------------- */
 
-   	/* <-----<----- <----- <-----  Affiliate SECTION  ------>------>------>------>------> */
+ .memTitle {
+  font-size: 1.8rem;
+  position: relative;
+  left: 10%;
+ }
 
-	.about-contentAff {
-		width: 75vw;
-	}
+ #memFooter {
+  margin-bottom: 2vh;
+ }
 
-	#aboutTitleAff {
-		min-width: 50vw;
-		font-family: 'Montserrat', sans-serif;
-		font-size: 100px;
-		color: var(--textBeige);
-		letter-spacing: 5px;
-		margin-top: 20vw;
-	}
+ /* CONTACT
+   -------------------------------------------------------------------- */
+ /*Also uses #memFooter and .memTitle on header and on Footer */
 
-	#headContainerAff {
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-start;
-		align-items: center;
-		height: 100%;
-		width: auto;
-	}
+ iframe {
+  width: 100%;
+  height: 100%;
+ }
 
-	#headParaContainerAff {
-		width: 100%;
-		text-align: left;
-	}
+ .smStyle {
+  text-align: center;
+ }
+ /* MERCH
+   -------------------------------------------------------------------- */
 
-	#headParaAff {
-		font-size: 2.3vw;
-		line-height: 2.2;
-		width: 100%;
-		border-left: var(--goldGrappFont) solid;
-		padding-left: 2vw;
-	}
+ /* <-----<----- <----- <-----  Affiliate SECTION  ------>------>------>------>------> */
 
-	.about-contentAff p {
-		margin: 5vw;
-		width: 90%;
-		font-size: 50%;
-		letter-spacing: px;
-		line-height: 1.6;
-		font-family: 'Montserrat', sans-serif;
-		list-style: none;
-		color: var(--textBeige);
-	}
+ .about-contentAff {
+  width: 75vw;
+ }
 
-	#clubHeaderAff {
-		font-size: 1rem;
-		color: var(--textBeige);
-		letter-spacing: 10px;
-		text-align: center;
-		margin: 2vw;
-		align-self: center;
-		white-space: nowrap;
-	}
+ #aboutTitleAff {
+  min-width: 50vw;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100px;
+  color: var(--textBeige);
+  letter-spacing: 5px;
+  margin-top: 20vw;
+ }
 
-	.clubTitleAff {
-		font-size: 1rem;
-	}
+ #headContainerAff {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: auto;
+ }
 
-	#councilPos {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-		align-items: center;
-	}
+ #headParaContainerAff {
+  width: 100%;
+  text-align: left;
+ }
 
-	.affItem {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: flex-start;
-		width: 100%;
-		margin: 3vw;
-		color: var(--textBeige);
-	}
+ #headParaAff {
+  font-size: 2.3vw;
+  line-height: 2.2;
+  width: 100%;
+  border-left: var(--goldGrappFont) solid;
+  padding-left: 2vw;
+ }
 
-	.gridText {
-		letter-spacing: 4px;
-		line-height: 1.6;
-		font-family: 'Montserrat', sans-serif;
-		list-style: none;
-		color: var(--textBeige);
-		padding: 0px;
-	}
+ .about-contentAff p {
+  margin: 5vw;
+  width: 90%;
+  font-size: 50%;
+  letter-spacing: px;
+  line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
+  list-style: none;
+  color: var(--textBeige);
+ }
 
+ #clubHeaderAff {
+  font-size: 1rem;
+  color: var(--textBeige);
+  letter-spacing: 10px;
+  text-align: center;
+  margin: 2vw;
+  align-self: center;
+  white-space: nowrap;
+ }
 
+ .clubTitleAff {
+  font-size: 1rem;
+ }
 
+ #councilPos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+ }
 
-	.gridText li {
-		white-space:pre-wrap;
-	}
+ .affItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  margin: 3vw;
+  color: var(--textBeige);
+ }
 
-	.CEAImage {
-		position: relative;
-		float: right;
-		width: 20vw;
-		height: 20vw;
-		opacity: 0.6;
-		border-radius: 50%;
-		background-color: white;
-	}
-	.imageAboutAffBJC {
-		width: 20vw;
-		height: 20vw;
-		opacity: 0.6;
-		margin: 10px;
-	}
-	.imageAboutAffUKBJJA {
-		width: 30vw;
-		height: 20vw;
-		opacity: 0.6;
-	}
+ .gridText {
+  letter-spacing: 4px;
+  line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
+  list-style: none;
+  color: var(--textBeige);
+  padding: 0px;
+ }
 
+ .gridText li {
+  white-space: pre-wrap;
+ }
 
-
+ .CEAImage {
+  position: relative;
+  float: right;
+  width: 20vw;
+  height: 20vw;
+  opacity: 0.6;
+  border-radius: 50%;
+  background-color: white;
+ }
+ .imageAboutAffBJC {
+  width: 20vw;
+  height: 20vw;
+  opacity: 0.6;
+  margin: 10px;
+ }
+ .imageAboutAffUKBJJA {
+  width: 30vw;
+  height: 20vw;
+  opacity: 0.6;
+ }
 }

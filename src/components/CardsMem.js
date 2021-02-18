@@ -18,7 +18,7 @@ function CardsMem({ header1, header2, image1, image2 }) {
 				</Card.Body>
 
 				<Card.Footer>
-				
+
 				</Card.Footer>
 			</Card>
 			<Card className='subTextFont cardText ' bg='dark'>
@@ -41,10 +41,6 @@ function CardsMem({ header1, header2, image1, image2 }) {
 	);
 }
 
-const style = {
-	width: '75%',
-	height: '',
-	backgroundColor: 'var(--goldGrappFont)'
-};
+
 
 export default CardsMem;

@@ -14,7 +14,7 @@ class Child extends Component {
 						<div>
 							<Fade left cascade>
 								<h1 id='memTitle'>
-									contact us 
+									contact
 								</h1>
 							</Fade>
 						</div>

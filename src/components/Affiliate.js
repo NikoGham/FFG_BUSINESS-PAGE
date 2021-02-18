@@ -25,23 +25,21 @@ class Affiliate extends Component {
 
 
 				<div className='childrenBG'>
-					<div id='aboutTitleAff'>
+					<div >
 						<Fade left cascade>
-							<h1>Affiliates</h1>
+							<h1 id='aboutTitleAff'>Affiliates</h1>
 						</Fade>
 					</div>
 
 					<div className='about-contentAff'>
 						<div id='headContainerAff'>
 							<Fade left slower>
-								<div id='headParaContainerAff'>
 									<p id='headParaAff'>
 										{this.state.headText}
 										<br />
 										<br /> {this.state.subText} <br /> <br />
 										{this.state.subsubText}
 									</p>
-								</div>
 							</Fade>
 						</div>
 						{/* add a Smooth scroll here  */}

@@ -49,7 +49,7 @@ const Affiliateitem = ({ className, text, image, club, web, inst, fb }) => {
 				)}
 			</div>
 			{(isBig) && <Image className={className} src={image} alt='Logo' />}
-			{!club && <Image className={className} src={image} alt='Logo' /> }
+			
 
 
 		</div>

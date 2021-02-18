@@ -5,9 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 const  Athletes = () => {
 
-		const headerStyle = {
-			margin: '3rem'
-		}
+	
 
 		return (
 			<Container className='childrenBG' fluid>
