@@ -317,7 +317,14 @@ nav li .link {
 
 /* <-----<----- <----- <-----  ABOUT SECTION END  ------>------>------>------>------> */
 
-/* CHILD ATHLETES  */
+/*  ATHLETES  */
+
+.cardAth {
+  width: 20rem;
+}
+
+
+
 
 /* use em to edit images to nice size  */
 .main {
