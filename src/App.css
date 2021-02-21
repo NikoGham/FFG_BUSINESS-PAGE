@@ -317,14 +317,14 @@ nav li .link {
 
 /* <-----<----- <----- <-----  ABOUT SECTION END  ------>------>------>------>------> */
 
-/*  ATHLETES  */
+/* <-----<----- <----- <-----  ATHLETES SECTION md lg  ------>------>------>------>------> */
+
+
 
 .cardAth {
-  width: 20rem;
+ width: 20rem;
+ margin: auto;
 }
-
-
-
 
 /* use em to edit images to nice size  */
 .main {
@@ -332,7 +332,7 @@ nav li .link {
  height: 40em;
 }
 
-/* MEMBERSHIP PAGE - TRANSITIONS */
+/* MEMBERSHIP PAGE  */
 
 #memTitle {
  font-size: 2rem;
@@ -394,15 +394,14 @@ nav li .link {
 
 /* CONTACT PAGE  */
 
-
 #contactTitle {
-  font-family: 'Nanum Myeongjo', serif;
-  font-size: 30px;
-  color: var(--textBeige);
-  letter-spacing: 5px;
-  margin-top: 2vw;
-text-align: center;
- }
+ font-family: 'Nanum Myeongjo', serif;
+ font-size: 30px;
+ color: var(--textBeige);
+ letter-spacing: 5px;
+ margin-top: 2vw;
+ text-align: center;
+}
 
 iframe {
  width: 75vw;
@@ -410,28 +409,25 @@ iframe {
 }
 
 .contactFormRow {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
 }
 
 #contactForm {
-  margin: 10px 10px;
-  width: 75vw;
+ margin: 10px 10px;
+ width: 75vw;
 
-  display: flex;
-  flex-direction: column;
+ display: flex;
+ flex-direction: column;
 }
-
-
 
 /* FOOTER PAGE  */
 
 .footerDrop {
-  bottom: 0px;
-  margin-top: 10px;
+ bottom: 0px;
+ margin-top: 10px;
 }
 #FooterContainerDiv {
  background-color: var(--blackJapPalette);
@@ -484,15 +480,13 @@ iframe {
 /* <-----<----- <----- <-----  Affiliate SECTION  Full Screen  ------>------>------>------>------> */
 
 #aboutTitleAff {
-
-		font-size: 2rem;
-		color: var(--textBeige);
-		letter-spacing: 10px;
-		text-align: center;
-		margin: 2vw;
-		align-self: center;
-
-   }
+ font-size: 2rem;
+ color: var(--textBeige);
+ letter-spacing: 10px;
+ text-align: center;
+ margin: 2vw;
+ align-self: center;
+}
 
 #headContainerAff {
  display: flex;
@@ -503,8 +497,6 @@ iframe {
  width: 70vw;
  text-align: left;
 }
-
-
 
 .about-contentAff {
  display: flex;
@@ -895,7 +887,7 @@ iframe {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  width: 75vw;
+  width: 100vw;
  }
 
  #aboutImageBg {
@@ -1027,7 +1019,7 @@ iframe {
 
  #memTitle {
   font-size: 2rem;
-  color: var(--optimalOnBlack);
+  color: var(--textBeige);
   letter-spacing: 5px;
   text-align: center;
   margin-top: 25vw;
@@ -1087,16 +1079,17 @@ iframe {
  .childrenBG {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
  }
 
  #aboutTitle {
   min-width: 50vw;
-  font-family: 'Montserrat', sans-serif;
   font-size: 100px;
   color: var(--textBeige);
   letter-spacing: 5px;
-  margin-bottom: 25vw;
+  margin-bottom: 20vw;
  }
 
  #aboutImageBg {
@@ -1197,8 +1190,19 @@ iframe {
 
  /*Also uses #memFooter on Footer */
 
- /* MEMBERSHIP
+ /* MEMBERSHIP >480px
    -------------------------------------------------------------------- */
+
+ #memTitle {
+  font-size: 1.5rem;
+  color: var(--textBeige);
+  letter-spacing: 4px;
+  text-align: center;
+  margin-top: 20vw;
+  margin-bottom: 10vw;
+  width: 100vw;
+  overflow-wrap: break-word;
+ }
 
  #contactTitle {
   font-family: 'Nanum Myeongjo', serif;
@@ -1235,11 +1239,12 @@ iframe {
 
  #aboutTitleAff {
   min-width: 50vw;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 100px;
+
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 30px;
   color: var(--textBeige);
   letter-spacing: 5px;
-  margin-top: 20vw;
+  margin-top: 7vw;
  }
 
  #headContainerAff {

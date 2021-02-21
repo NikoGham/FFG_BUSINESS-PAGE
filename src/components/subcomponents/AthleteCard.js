@@ -31,9 +31,9 @@ const CardsMem = ({ header, image, stats, grades,ach }) => {
 
  return (
   <CardDeck>
-   <Card className='cardAth text-center' bg='dark' text='light' border='dark'>
-    <Card.Header as='h4'>{header}</Card.Header>
-    <Card.Img variant='top' src={image} />
+   <Card className='cardAth childrenText' bg='dark' text='light' border='dark'>
+    <Card.Header as='h3'>{header}</Card.Header>
+    <Card.Img variant='top' src={image} style={{height:"auto"}} />
     <Card.Header>
      <Nav justify variant='tabs' defaultActiveKey='#first'>
       <Nav.Item>
