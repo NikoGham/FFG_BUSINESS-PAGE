@@ -18,7 +18,7 @@ const Athletes = () => {
  }
 
  return (
-  <Container className='childrenBG' fluid style={{ backgroundColor: 'blue' }}>
+  <Container className='childrenBG' fluid>
    <Row>
     <Col>
      <Fade left cascade>
@@ -27,10 +27,11 @@ const Athletes = () => {
     </Col>
    </Row>
    {/* Athelete Cards */}
-   <Row style={{ backgroundColor: 'red', width: '100%' }}>
-    <Col style={{ backgroundColor: 'green' }}>
+   <Row>
+    <Col id='rightLine'>
      <Row>
-      <Col md={6}>
+      <Col md={1} />
+      <Col md={5}>
        <AthleteCard
         header={data.cardData[0].name}
         image={image0}
@@ -39,7 +40,7 @@ const Athletes = () => {
         ach={data.cardData[0].ach}
        />
       </Col>
-      <Col md={6}>
+      <Col md={5}>
        <AthleteCard
         header={data.cardData[1].name}
         image={image1}
@@ -53,7 +54,8 @@ const Athletes = () => {
 
     <Col>
      <Row>
-      <Col md={6}>
+      <Col md={1} />
+      <Col md={5}>
        <AthleteCard
         header={data.cardData[3].name}
         image={image3}
@@ -62,7 +64,7 @@ const Athletes = () => {
         ach={data.cardData[3].ach}
        />
       </Col>
-      <Col md={6}>
+      <Col md={5}>
        <AthleteCard
         header={data.cardData[4].name}
         image={image4}
@@ -73,7 +75,9 @@ const Athletes = () => {
       </Col>
      </Row>
      <Row>
-      <Col md={6}>
+      <Col md={1} />
+
+      <Col md={5}>
        <AthleteCard
         header={data.cardData[2].name}
         image={image2}

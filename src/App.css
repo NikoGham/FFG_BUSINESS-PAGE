@@ -334,7 +334,7 @@ nav li .link {
 }
 
 .profileImgIn:hover {
- transform: scale(1.6);
+ transform: scale(1.3);
 }
 
 .cardText {
@@ -347,8 +347,13 @@ nav li .link {
 
 .cardAth {
  max-width: 80vw;
- height: auto;
- margin: auto;
+ height: 100%
+ ;
+ margin: 20px;
+}
+
+#rightLine {
+  border-right: solid var(--textBeige) 5px;
 }
 
 /* use em to edit images to nice size  */

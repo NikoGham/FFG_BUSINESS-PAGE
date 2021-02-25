@@ -32,13 +32,14 @@ const Merch = () => {
 		hood: '£35',
 		pinkHood: '30',
 		ruckSack: '£25',
-		sack: '£59',
+		camoSack: '£59',
+		sack: '£60',
 		short: '£25',
 		kidsTee: '£15',
 		hatPrice: '£18'
 	})
 
-	const { tee, hood, pinkHood, ruckSack, sack, short, kidsTee, hatPrice } = price
+	const { tee, hood, pinkHood, ruckSack, sack, short, kidsTee, hatPrice, camoSack } = price
 
 	return (
 		<Container className='childrenBG' fluid>
@@ -70,7 +71,7 @@ const Merch = () => {
 								box2Price={tee}
 								box3Price={tee}
 								box4Price={hood}
-								box5Price={ruckSack}
+								box5Price={camoSack}
 							/>
 						</Row>
 					</Fade>
