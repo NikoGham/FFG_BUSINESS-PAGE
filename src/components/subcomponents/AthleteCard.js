@@ -4,7 +4,7 @@ import CardDeck from 'react-bootstrap/CardDeck'
 import Nav from 'react-bootstrap/Nav'
 import Collapse from 'react-bootstrap/Collapse'
 
-const CardsMem = ({ header, image, stats, grades,ach }) => {
+const CardsMem = ({ header, image, stats, grades, ach }) => {
  //  const [tabState, setTabState] = useState({
  //   className1: '',
  //   className2: 'hide',
@@ -31,9 +31,12 @@ const CardsMem = ({ header, image, stats, grades,ach }) => {
 
  return (
   <CardDeck>
-   <Card className='cardAth childrenText' bg='dark' text='light' border='dark'>
+   <Card className='cardAth childrenText ' bg='dark' text='light' border='dark'>
     <Card.Header as='h3'>{header}</Card.Header>
-    <Card.Img variant='top' src={image} style={{height:"auto"}} />
+    <div className="profileImgOut">
+     <Card.Img className='profileImgIn' variant='top' src={image} style={{ height: 'auto' }} />
+    </div>
+
     <Card.Header>
      <Nav justify variant='tabs' defaultActiveKey='#first'>
       <Nav.Item>
@@ -89,7 +92,7 @@ const CardsMem = ({ header, image, stats, grades,ach }) => {
            ? setOpenG(!openG)
            : console.log(openG)
          }
-        setTimeout(setOpenA(!openA), 5000)
+         setTimeout(setOpenA(!openA), 5000)
         }}
         aria-controls='collapse-text'
         aria-expanded={openA}

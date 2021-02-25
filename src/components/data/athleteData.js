@@ -1,7 +1,7 @@
 export default {
  cardData: [
   {
-   name: 'Mattew Hucker',
+   name: 'Matthew Hucker',
    image: '../assets/ng.png',
    stats: 'stats',
    grades: 'grades',
@@ -22,11 +22,16 @@ export default {
    ach: 'Achievements',
   },
   {
-   name: 'Ocean',
-   image: '../assets/ng.png',
+   name: 'Ocean Hughes',
    stats: 'stats',
    grades: 'grades',
    ach: 'Achievements',
   },
+  {
+    name: 'William Adams',
+    stats: 'stats',
+    grades: 'grades',
+    ach: 'Achievements',
+   },
  ],
 }

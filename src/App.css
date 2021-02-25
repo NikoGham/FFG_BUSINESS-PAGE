@@ -319,10 +319,35 @@ nav li .link {
 
 /* <-----<----- <----- <-----  ATHLETES SECTION md lg  ------>------>------>------>------> */
 
+.profileImgOut {
+ width: 100%;
+ height: 100%;
+ overflow: hidden;
+}
 
+.profileImgIn {
+ transition: all 0.3s ease-out;
+ -webkit-transition: all 0.3s ease-in-out;
+ -moz-transition: all 0.3s ease-in-out;
+ -ms-transition: all 0.3s ease-in-out;
+ -o-transition: all 0.3s ease-in-out;
+}
+
+.profileImgIn:hover {
+ transform: scale(1.6);
+}
+
+.cardText {
+ font-weight: bold;
+}
+
+.cardText:hover {
+ transform: translate(0px, -20px);
+}
 
 .cardAth {
- width: 20rem;
+ max-width: 80vw;
+ height: auto;
  margin: auto;
 }
 

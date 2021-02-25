@@ -9,7 +9,7 @@ import child2 from '../assets/bvsg.jpg'
 import headImage from '../assets/17.jpg'
 import Footer from './Footer'
 
-import data from '../yourdata'
+import data from '../components/data/yourdata'
 
 class About extends Component {
 	state = {

@@ -28,13 +28,13 @@ const Merch = () => {
 	// const [ kidsShortsPrice ] = useState('£15')
 	// const [ kidsHoodyPrice ] = useState('£25')
 	const [ price  ] = useState({
-		tee: '£30', 
-		hood: '£35', 
-		pinkHood: '30', 
-		ruckSack: '£25', 
-		sack: '£60',
-		short: '£25', 
-		kidsTee: '£15', 
+		tee: '£30',
+		hood: '£35',
+		pinkHood: '30',
+		ruckSack: '£25',
+		sack: '£59',
+		short: '£25',
+		kidsTee: '£15',
 		hatPrice: '£18'
 	})
 
