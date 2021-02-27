@@ -78,7 +78,12 @@ const CardsMem = ({ header, image, stats, ach }) => {
      {/* <Card.Subtitle className="m-2 text-muted">Card Subtitle</Card.Subtitle> */}
      <Collapse in={openS}>
       <div id='collapse-text'>
-       <Card.Text style={{ color: 'white' }}>{stats} </Card.Text>
+       <Card.Text style={{ color: 'white' }}>
+        {' '}
+        {stats.map((stat) => (
+         <li>{stat.stat}</li>
+        ))}{' '}
+       </Card.Text>
       </div>
      </Collapse>
 

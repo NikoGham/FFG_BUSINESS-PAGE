@@ -1,10 +1,19 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Spinner from 'react-bootstrap/Spinner'
 import Fade from 'react-reveal/Fade'
 
 import Particles from './subcomponents/Particles'
 
 const Header = () => {
+ const [isMobile, setMobile] = useState(false)
+
+ useEffect(() => {
+    if (window.innerWidth < 500) {
+        setMobile(true)
+       }
+ }, [])
+
+
  const [loaded, setLoaded] = useState(false)
 
  window.onload = () => {
@@ -13,7 +22,7 @@ const Header = () => {
 
  return (
   <div className='homeBG'>
-   <Particles />
+   {isMobile? null : <Particles />}
 
    {!loaded && <Spinner animation='border' variant='warning' />}
    {loaded && <p id='hucker-title'>Matthew Hucker's</p>}
