@@ -60,6 +60,11 @@ ul li {
  list-style: none;
 }
 
+li {
+  list-style: none;
+  margin: 2px;
+}
+
 a {
  text-decoration: none;
  color: var(--goldGrappFont);
@@ -347,13 +352,12 @@ nav li .link {
 
 .cardAth {
  max-width: 80vw;
- height: 100%
- ;
+ height: auto;
  margin: 20px;
 }
 
 #rightLine {
-  border-right: solid var(--textBeige) 5px;
+ border-right: solid var(--textBeige) 5px;
 }
 
 /* use em to edit images to nice size  */
@@ -500,8 +504,8 @@ iframe {
  box-sizing: border-box;
 }
 
-.childrenText {
- font-size: 1.2em;
+.childrenTextMerch {
+
  color: var(--textBeige);
  text-align: left;
  font-family: 'Montserrat', sans-serif;
@@ -654,6 +658,21 @@ iframe {
  /* MERCH
    -------------------------------------------------------------------- */
 
+   .sizeBox {
+    border: var(--textBeige) solid;
+    border-width: 1px;
+    padding: 10px;
+    margin: 10px;
+    color: var(--creamJapPalette);
+    box-sizing: border-box;
+   }
+
+   .childrenTextMerch {
+
+    color: var(--textBeige);
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+   }
  /* <-----<----- <----- <-----  Affiliate SECTION  ------>------>------>------>------> */
  .about-contentAff {
   width: 75vw;

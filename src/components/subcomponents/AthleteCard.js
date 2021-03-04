@@ -31,7 +31,7 @@ const CardsMem = ({ header, image, stats, ach }) => {
  return (
   <CardDeck>
    <Card className='cardAth childrenText ' bg='dark' text='light' border='dark'>
-    <Card.Header as='h3'>{header}</Card.Header>
+    <Card.Header as='h4'>{header}</Card.Header>
     <div className='profileImgOut'>
      <Card.Img className='profileImgIn' variant='top' src={image} style={{ height: 'auto' }} />
     </div>
@@ -58,7 +58,7 @@ const CardsMem = ({ header, image, stats, ach }) => {
 
       <Nav.Item>
        <Nav.Link
-        href='#third'
+        href='#Achievements'
         onClick={() => {
          // eslint-disable-next-line
          {
@@ -78,18 +78,21 @@ const CardsMem = ({ header, image, stats, ach }) => {
      {/* <Card.Subtitle className="m-2 text-muted">Card Subtitle</Card.Subtitle> */}
      <Collapse in={openS}>
       <div id='collapse-text'>
-       <Card.Text style={{ color: 'white' }}>
-        {' '}
-        {stats.map((stat) => (
-         <li>{stat.stat}</li>
-        ))}{' '}
+       <Card.Text style={{ color: 'white', textDecoration: 'none', float: 'left' }}>
+         {stats.map((stat) => (
+          <li key={stat.id}>{stat.stat}</li>
+         ))}
        </Card.Text>
       </div>
      </Collapse>
 
      <Collapse in={openA}>
       <div id='collapse-text'>
-       <Card.Text>{ach}</Card.Text>
+       <Card.Text style={{ color: 'white', textDecoration: 'none' }}>
+         {ach.map((el) => (
+          <li key={el.id}>{el.ach}</li>
+         ))}
+       </Card.Text>
       </div>
      </Collapse>
     </Card.Body>

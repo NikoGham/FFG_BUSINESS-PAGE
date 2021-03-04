@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Fade from 'react-reveal/Fade'
 import Footer from './Footer'
 import { Container, Row, Col } from 'react-bootstrap'
-import CardsMem from './CardsMem'
+import CardsMem from './subcomponents/CardsMem'
 
 class Membership extends Component {
 	render() {

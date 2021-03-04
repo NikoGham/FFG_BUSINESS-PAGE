@@ -1,8 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Fade from 'react-reveal/Fade'
 import Footer from './Footer'
 import { Container, Row, Col } from 'react-bootstrap'
 import AthleteCard from './subcomponents/AthleteCard'
+import Collapse from 'react-bootstrap/Collapse'
+
 import data from './data/athleteData'
 import image3 from '../assets/oc.png'
 import image1 from '../assets/ng.png'
@@ -12,10 +14,8 @@ import image4 from '../assets/wa.png'
 
 const Athletes = () => {
  const length = data.cardData.length
- var i
- for (i = 0; i < length; i++) {
-  console.log(i)
- }
+
+ const [openYouths, setOpenYouths] = useState(true)
 
  return (
   <Container className='childrenBG' fluid>
@@ -30,8 +30,8 @@ const Athletes = () => {
    <Row>
     <Col id='rightLine'>
      <Row>
-      <Col md={1} />
-      <Col md={5}>
+      <Col lg={1} />
+      <Col lg={5}>
        <AthleteCard
         header={data.cardData[0].name}
         image={image0}
@@ -40,7 +40,7 @@ const Athletes = () => {
         ach={data.cardData[0].ach}
        />
       </Col>
-      <Col md={5}>
+      <Col lg={5}>
        <AthleteCard
         header={data.cardData[1].name}
         image={image1}
@@ -54,8 +54,18 @@ const Athletes = () => {
 
     <Col>
      <Row>
-      <Col md={1} />
-      <Col md={5}>
+      <Col lg={1} />
+
+      <Col lg={5}>
+       <AthleteCard
+        header={data.cardData[2].name}
+        image={image2}
+        stats={data.cardData[2].stats}
+        grades={data.cardData[2].grades}
+        ach={data.cardData[2].ach}
+       />
+      </Col>
+      <Col lg={5}>
        <AthleteCard
         header={data.cardData[3].name}
         image={image3}
@@ -64,26 +74,17 @@ const Athletes = () => {
         ach={data.cardData[3].ach}
        />
       </Col>
-      <Col md={5}>
+     </Row>
+     <Row>
+      <Col lg={1} />
+
+      <Col lg={5}>
        <AthleteCard
         header={data.cardData[4].name}
         image={image4}
         stats={data.cardData[4].stats}
         grades={data.cardData[4].grades}
         ach={data.cardData[4].ach}
-       />
-      </Col>
-     </Row>
-     <Row>
-      <Col md={1} />
-
-      <Col md={5}>
-       <AthleteCard
-        header={data.cardData[2].name}
-        image={image2}
-        stats={data.cardData[2].stats}
-        grades={data.cardData[2].grades}
-        ach={data.cardData[2].ach}
        />
       </Col>
      </Row>

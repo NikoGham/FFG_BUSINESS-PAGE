@@ -6,7 +6,7 @@ import child from '../assets/CHILD_PHOTO.jpg'
 import child1 from '../assets/Adult.jpg'
 import child2 from '../assets/bvsg.jpg'
 
-import headImage from '../assets/17.jpg'
+import headImage from '../assets/17.jpeg'
 import Footer from './Footer'
 
 import data from '../components/data/yourdata'
