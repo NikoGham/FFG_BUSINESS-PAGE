@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { MDBMask, MDBView, MDBContainer, MDBRow, MDBCol } from 'mdbreact'
 
 function MerchItem({

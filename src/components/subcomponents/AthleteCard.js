@@ -78,10 +78,15 @@ const CardsMem = ({ header, image, stats, ach }) => {
      {/* <Card.Subtitle className="m-2 text-muted">Card Subtitle</Card.Subtitle> */}
      <Collapse in={openS}>
       <div id='collapse-text'>
-       <Card.Text style={{ color: 'white', textDecoration: 'none', float: 'left' }}>
-         {stats.map((stat) => (
-          <li key={stat.id}>{stat.stat}</li>
-         ))}
+       <Card.Text style={{ color: 'white', textDecoration: 'none' }}>
+        {stats.map((stat) => (
+         <div>
+           <i class="fas fa-angle-double-right"></i>
+          <li style={{ display: 'inline' }} key={stat.id}>
+           {stat.stat}
+          </li>
+         </div>
+        ))}
        </Card.Text>
       </div>
      </Collapse>
@@ -89,9 +94,15 @@ const CardsMem = ({ header, image, stats, ach }) => {
      <Collapse in={openA}>
       <div id='collapse-text'>
        <Card.Text style={{ color: 'white', textDecoration: 'none' }}>
-         {ach.map((el) => (
-          <li key={el.id}>{el.ach}</li>
-         ))}
+        {ach.map((el) => (
+         <div>
+          <i class='far fa-check-circle'></i>
+
+          <li style={{ display: 'inline' }} key={el.id}>
+           {el.ach}
+          </li>
+         </div>
+        ))}
        </Card.Text>
       </div>
      </Collapse>

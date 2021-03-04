@@ -122,6 +122,13 @@ body {
  background-color: var(--blackJapPalette); /*Fixes background color durrrr */
 }
 
+.childrenText {
+
+  color: var(--textBeige);
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+ }
+
 /* <-----<----- <----- <-----  HEADER   ------>------>------>------>------> */
 
 .homeBG {
@@ -339,11 +346,12 @@ nav li .link {
 }
 
 .profileImgIn:hover {
- transform: scale(1.3);
+ transform: scale(1.2);
 }
 
 .cardText {
  font-weight: bold;
+
 }
 
 .cardText:hover {
@@ -352,7 +360,7 @@ nav li .link {
 
 .cardAth {
  max-width: 80vw;
- height: auto;
+ height: 100%;
  margin: 20px;
 }
 

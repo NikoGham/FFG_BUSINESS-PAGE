@@ -1,9 +1,8 @@
-import React, {useState} from 'react'
+import React from 'react'
 import Fade from 'react-reveal/Fade'
 import Footer from './Footer'
 import { Container, Row, Col } from 'react-bootstrap'
 import AthleteCard from './subcomponents/AthleteCard'
-import Collapse from 'react-bootstrap/Collapse'
 
 import data from './data/athleteData'
 import image3 from '../assets/oc.png'
@@ -13,9 +12,7 @@ import image0 from '../assets/mh.png'
 import image4 from '../assets/wa.png'
 
 const Athletes = () => {
- const length = data.cardData.length
 
- const [openYouths, setOpenYouths] = useState(true)
 
  return (
   <Container className='childrenBG' fluid>

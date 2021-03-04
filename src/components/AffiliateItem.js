@@ -16,14 +16,14 @@ const Affiliateitem = ({ className, text, image, club, web, inst, fb }) => {
 	return (
 		<div className='affItem'>
 			<div className='gridText'>
-				<h4 className={ club && "clubTitleAff"}>{text}</h4><div>
+				<h4 className={ club ? "clubTitleAff" : undefined}>{text}</h4><div>
 
 			</div>
 				{club && (
 					<ul>
 						<li>Head Coach: Craig Ewers</li>
 						<li>
-							<i class='fas fa-home' />
+							<i className='fas fa-home' />
 							<a target='_blank' rel='noopener noreferrer' href={web}>
 								{' '}
 								craigewersacademy.co.uk
