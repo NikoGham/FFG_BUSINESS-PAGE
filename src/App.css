@@ -144,6 +144,7 @@ body {
  transform: rotate(-10deg);
  font-family: mHucker;
  font-size: calc(12px + 2vw);
+ font-display: block;
  z-index: 8;
  color: var(--textBeige);
  align-self: flex-start;
@@ -442,6 +443,7 @@ nav li .link {
  color: var(--textBeige);
  letter-spacing: 5px;
  margin-top: 2vw;
+ margin-bottom: 100px;
  text-align: center;
 }
 

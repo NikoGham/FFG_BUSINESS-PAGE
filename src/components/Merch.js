@@ -13,12 +13,12 @@ import GreyJumperFront from '../assets/GreyHood.jpeg'
 import PinkJumperFront from '../assets/PinkHoodie.jpeg'
 import RuckSack from '../assets/RuckSack.jpeg'
 import SackFront from '../assets/SackFront.jpeg'
-import LeftHat from '../assets/LeftHat1.jpg'
-import FrontHat from '../assets/FrontHat1.jpg'
+import LeftHat from '../assets/LeftHat1.jpeg'
+import FrontHat from '../assets/FrontHat1.jpeg'
 import RightHat from '../assets/RightHat1.jpg'
 import BlackTeeChuck from '../assets/BlackTeeChuck1.jpg'
 // import KidsTeeBlack from '../assets/KidsTeeBlack.jpg'
-import ShortsSide from '../assets/ShortsSide.jpg'
+import ShortsSide from '../assets/ShortsSide.jpeg'
 import SackBlack from '../assets/SackBlack.jpg'
 import SackBlue from '../assets/SackBlue.jpg'
 import SackPink from '../assets/SackPink.jpg'
@@ -51,7 +51,7 @@ const Merch = () => {
     </Col>
    </Row>
    <Row>
-    <Col md={2} />
+    <Col md={1} />
     <Col>
      <Fade left slow>
       <Row>
@@ -75,10 +75,10 @@ const Merch = () => {
       </Row>
      </Fade>
     </Col>
-    <Col md={2} />
+    <Col md={1} />
    </Row>
    <Row>
-    <Col md={2} />
+    <Col md={1} />
     <Col>
      <Fade left slow>
       <Row>
@@ -102,10 +102,10 @@ const Merch = () => {
       </Row>
      </Fade>
     </Col>
-    <Col md={2} />
+    <Col md={1} />
    </Row>
    <Row>
-    <Col md={2} />
+    <Col md={1} />
     <Col>
      <Fade left slow>
       <Row>
@@ -130,10 +130,10 @@ const Merch = () => {
       </Row>
      </Fade>
     </Col>
-    <Col md={2} />
+    <Col md={1} />
    </Row>
    <Row>
-    <Col md={2} />
+    <Col md={1} />
     <Col>
      <Fade left slow>
       <Row>
@@ -152,7 +152,7 @@ const Merch = () => {
       </Row>
      </Fade>
     </Col>
-    <Col md={2} />
+    <Col md={1} />
    </Row>
    {/*FOOTER SECTION */}
 
