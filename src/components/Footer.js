@@ -6,7 +6,7 @@ const Footer = () => {
 			<hr style={{ width: '100%', margin: 'auto' }} />
 
 			<div style={style}>
-				<a target='_blank' rel='noopener noreferrer' href={'https://www.instagram.com/fullfatgrappling/'}>
+				<a target='_blank' rel='noopener noreferrer' href={'https://www.instagram.com/ffgrappling/'}>
 					<i className='fab fa-instagram linkSocial' />
 				</a>
 

@@ -3,17 +3,17 @@ export default {
   name: 'Matthew Hucker\'s',
   headerTagline: [
     'Matthew Hucker\'s',
-    
+
 
   ],
 
   abouttextlist: [
 
   ],
-  abouttext2: 'To be \'Full Fat\', is to practice entirely. This is achieved by voiding the neglect of technique, physical attributions or mental preparation. In Japan, the heart of the sport, the expectation to young judoka is to be fully aware of all techniques and how to perform them correctly in line with their performance style by the age of 16-18 years old. The judokas will also be highly advanced in mental toughness and respect for the sports culture and philosophy.',
+  abouttext2: 'To be \'Full Fat\', is to practice entirely. This is achieved by avoiding the neglect of technique, physical attributions and mental preparation. In Japan, the heart of the sport, the expectation of young judoka is to be fully aware of all techniques and how to perform them correctly in line with their performance style by the age of 16-18 years old. Judokas will be highly advanced in mental toughness and respect for the sports culture and philosophy.',
   abouttext21: ' Often in judo, judokas and coaches alike are caught up in physical toughness too early, resulting in successful and dominant results locally and early in development, but then becoming stuck at national and international levels later on.',
-  abouttextQuote:'By teaching our students the culture of judo, the importance of excellent technical ability and significance of repetition, we hope they will become unstuck at a later stage and increase the chance of our athletes longevity in the sport.',
-  abouttext3: 'We believe in the importance of children and adults learning to cope with loss and failure, consistently striving for success. To teach a judoka that by losing a fight, they stand to gain much more knowledge than the victor, means they don\'t need to receive a runners up medal to feel they have achieved something, avoiding false success.',
+  abouttextQuote:'By teaching our students the culture of judo, the importance of excellent technical ability and significance of repetition, we hope they will become unstuck at a later stage and increase the chance of our athlete\'s longevity in the sport.',
+  abouttext3: 'We believe in the importance of children and adults learning to cope with loss and failure. A consistency to strive for success. To teach a judoka that by losing a fight, they stand to gain much more knowledge than the victor, means they don\'t need to receive a runners up medal to feel they have achieved something, avoiding false success.',
   abouttext31: 'We welcome anybody from any walk of life who is willing to train hard, be respectful and have fun.',
   abouttext4: 'So don\'t be shy to approach us. Come along and watch or get on the mat, there is a class for everyone!',
 
