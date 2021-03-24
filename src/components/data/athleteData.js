@@ -41,7 +41,15 @@ export default {
     { id: 1, stat: 'Orange Belt Judo' },
     { id: 2, stat: 'Training since 2016' },
    ],
-   ach: [{ id: 1, ach: '' }],
+   ach: [],
+  },
+  {
+   name: 'Joe Dallard',
+   stats: [
+    { id: `${Math.floor(Math.random() * 9999)}`, stat: '2nd Dan Judo' },
+    { id: 2, stat: 'Training since 1995' },
+   ],
+   ach: [],
   },
  ],
 }

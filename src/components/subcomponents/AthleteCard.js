@@ -81,7 +81,7 @@ const CardsMem = ({ header, image, stats, ach }) => {
        <Card.Text style={{ color: 'white', textDecoration: 'none' }}>
         {stats.map((stat) => (
          <div>
-           <i class="fas fa-angle-double-right"></i>
+          <i class='fas fa-angle-double-right'></i>
           <li style={{ display: 'inline' }} key={stat.id}>
            {stat.stat}
           </li>

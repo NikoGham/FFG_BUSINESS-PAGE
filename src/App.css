@@ -61,8 +61,8 @@ ul li {
 }
 
 li {
-  list-style: none;
-  margin: 2px;
+ list-style: none;
+ margin: 2px;
 }
 
 a {
@@ -123,11 +123,10 @@ body {
 }
 
 .childrenText {
-
-  color: var(--textBeige);
-  text-align: left;
-  font-family: 'Montserrat', sans-serif;
- }
+ color: var(--textBeige);
+ text-align: left;
+ font-family: 'Montserrat', sans-serif;
+}
 
 /* <-----<----- <----- <-----  HEADER   ------>------>------>------>------> */
 
@@ -334,12 +333,12 @@ nav li .link {
 
 .profileImgOut {
  width: 100%;
- height: 100%;
+ height: auto;
  overflow: hidden;
 }
 
 .profileImgIn {
- transition: all 0.3s ease-out;
+ transition: all 0.5s ease-out;
  -webkit-transition: all 0.3s ease-in-out;
  -moz-transition: all 0.3s ease-in-out;
  -ms-transition: all 0.3s ease-in-out;
@@ -347,12 +346,11 @@ nav li .link {
 }
 
 .profileImgIn:hover {
- transform: scale(1.2);
+ transform: scale(1.3);
 }
 
 .cardText {
  font-weight: bold;
-
 }
 
 .cardText:hover {
@@ -360,8 +358,8 @@ nav li .link {
 }
 
 .cardAth {
- max-width: 80vw;
- height: 100%;
+ max-width: 85vw;
+ max-height: 600px;
  margin: 20px;
 }
 
@@ -515,7 +513,6 @@ iframe {
 }
 
 .childrenTextMerch {
-
  color: var(--textBeige);
  text-align: left;
  font-family: 'Montserrat', sans-serif;
@@ -668,21 +665,20 @@ iframe {
  /* MERCH
    -------------------------------------------------------------------- */
 
-   .sizeBox {
-    border: var(--textBeige) solid;
-    border-width: 1px;
-    padding: 10px;
-    margin: 10px;
-    color: var(--creamJapPalette);
-    box-sizing: border-box;
-   }
+ .sizeBox {
+  border: var(--textBeige) solid;
+  border-width: 1px;
+  padding: 10px;
+  margin: 10px;
+  color: var(--creamJapPalette);
+  box-sizing: border-box;
+ }
 
-   .childrenTextMerch {
-
-    color: var(--textBeige);
-    text-align: left;
-    font-family: 'Montserrat', sans-serif;
-   }
+ .childrenTextMerch {
+  color: var(--textBeige);
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+ }
  /* <-----<----- <----- <-----  Affiliate SECTION  ------>------>------>------>------> */
  .about-contentAff {
   width: 75vw;

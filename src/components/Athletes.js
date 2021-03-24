@@ -5,15 +5,14 @@ import { Container, Row, Col } from 'react-bootstrap'
 import AthleteCard from './subcomponents/AthleteCard'
 
 import data from './data/athleteData'
-import image3 from '../assets/oc.png'
+import image3 from '../assets/oc.jpg'
 import image1 from '../assets/ng.png'
-import image2 from '../assets/ch.png'
-import image0 from '../assets/mh.png'
-import image4 from '../assets/wa.png'
+import image2 from '../assets/ch.jpg'
+import image0 from '../assets/mh.jpg'
+import image4 from '../assets/wa.jpg'
+import image5 from '../assets/jd.jpg'
 
 const Athletes = () => {
-
-
  return (
   <Container className='childrenBG' fluid>
    <Row>
@@ -37,6 +36,19 @@ const Athletes = () => {
         ach={data.cardData[0].ach}
        />
       </Col>
+      <Col lg={5}>
+       <AthleteCard
+        header={data.cardData[5].name}
+        image={image5}
+        stats={data.cardData[5].stats}
+        grades={data.cardData[5].grades}
+        ach={data.cardData[5].ach}
+       />
+      </Col>
+     </Row>
+     <Row>
+      <Col lg={1} />
+
       <Col lg={5}>
        <AthleteCard
         header={data.cardData[1].name}
