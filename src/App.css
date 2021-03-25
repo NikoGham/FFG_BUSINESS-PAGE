@@ -303,9 +303,8 @@ nav li .link {
 .imageAbout {
  width: 25vw;
  height: 25vw;
- border-radius: 1%;
- filter: sepia(30%);
- opacity: 0.6;
+ border-radius: 0%;
+ opacity: 1;
 }
 
 .about-content p {

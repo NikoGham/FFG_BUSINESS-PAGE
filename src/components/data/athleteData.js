@@ -46,10 +46,13 @@ export default {
   {
    name: 'Joe Dallard',
    stats: [
-    { id: `${Math.floor(Math.random() * 9999)}`, stat: '2nd Dan Judo' },
-    { id: 2, stat: 'Training since 1995' },
+    { id: `${Math.floor(Math.random() * 9999)}`, stat: '1st Dan Judo' },
+    { id: 2, stat: 'Judo since 2002' },
+    { id: 3, stat: 'Blue BJJ' },
+
    ],
-   ach: [],
+   ach: [{ id: 1, ach: 'Completed lineout for Judo black' }],
+   
   },
  ],
 }
