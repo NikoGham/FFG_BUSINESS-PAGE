@@ -36,11 +36,7 @@ class Membership extends Component {
 				<Row>
 					<Col />
 				</Row>
-				<Row>
-					<Col>
-						<h2 style={headerStyle}> </h2>
-					</Col>
-				</Row>
+			
 				{/*FOOTER SECTION */}
 
 				<Row style={styleDiv2}>
