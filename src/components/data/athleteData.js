@@ -63,7 +63,7 @@ export default {
     { id: 3, stat: "Great Grandson of Kano" },
     { id: 4, stat: "Origin unknown" },
    ],
-   ach: [{ id: 1, ach: "Attended a 5am session once" }],
+   ach: [{ id: 1, ach: "Once attended a 5am session " }],
   },
   {
    name: "Charmain Alford",

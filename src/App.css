@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans&display=swap");
 
 @font-face {
  font-family: mHucker;
@@ -28,7 +28,7 @@ Text font :     font-family: 'Lato', sans-serif; */
 }
 
 .text {
- font-family: 'Lato', sans-serif;
+ font-family: "Lato", sans-serif;
  color: var(--textBeige);
 }
 
@@ -42,7 +42,7 @@ hr {
 
 h1,
 h3 {
- font-family: 'Nanum Myeongjo', serif;
+ font-family: "Nanum Myeongjo", serif;
  text-transform: uppercase;
 }
 
@@ -51,7 +51,7 @@ p {
 }
 
 .subTextFont {
- font-family: 'Montserrat', sans-serif;
+ font-family: "Montserrat", sans-serif;
  color: var(--textBeige);
  text-align: center;
 }
@@ -125,7 +125,7 @@ body {
 .childrenText {
  color: var(--textBeige);
  text-align: left;
- font-family: 'Montserrat', sans-serif;
+ font-family: "Montserrat", sans-serif;
 }
 
 /* <-----<----- <----- <-----  HEADER   ------>------>------>------>------> */
@@ -155,7 +155,7 @@ body {
 #fullFatTitle {
  font-size: 5vw;
  color: var(--textBeige);
- font-family: 'Nanum Myeongjo', serif;
+ font-family: "Nanum Myeongjo", serif;
  letter-spacing: 15px;
 }
 
@@ -230,6 +230,7 @@ nav li .link {
  display: flex;
  flex-direction: column;
  align-items: center;
+ justify-content: space-between;
  min-height: 100vh;
 }
 
@@ -273,7 +274,7 @@ nav li .link {
  line-height: 1.6;
  color: var(--optimalOnBlack);
  text-align: left;
- font-family: 'Montserrat', sans-serif;
+ font-family: "Montserrat", sans-serif;
  list-style: none;
  text-transform: uppercase;
 }
@@ -312,7 +313,7 @@ nav li .link {
  font-size: 1.2vw;
  letter-spacing: 4px;
  line-height: 1.6;
- font-family: 'Montserrat', sans-serif;
+ font-family: "Montserrat", sans-serif;
  list-style: none;
  color: var(--textBeige);
 }
@@ -399,9 +400,7 @@ nav li .link {
 #cardMemPriceText {
  color: var(--textBeige);
 }
-
 /* TIMETABLE PAGE  */
-
 .tablebg {
  opacity: 1;
  height: 50vh;
@@ -416,7 +415,7 @@ nav li .link {
  background-repeat: no-repeat;
  background-size: cover; /*contain--Resize the background image to make sure the image is fully visible*/
  background-origin: border-box;
- content: '';
+ content: "";
  position: absolute;
  top: 0px;
  right: 0px;
@@ -435,7 +434,7 @@ nav li .link {
 /* CONTACT PAGE  */
 
 #contactTitle {
- font-family: 'Nanum Myeongjo', serif;
+ font-family: "Nanum Myeongjo", serif;
  font-size: 30px;
  color: var(--textBeige);
  letter-spacing: 5px;
@@ -467,11 +466,14 @@ iframe {
 /* FOOTER PAGE  */
 
 .footerDrop {
- bottom: 0px;
- margin-top: 10px;
-}
-#FooterContainerDiv {
+ height: auto;
  background-color: var(--blackJapPalette);
+ position: relative;
+ bottom: 0px;
+ margin-top: 1rem;
+}
+
+#FooterContainerDiv {
  width: 100vw;
  text-align: center;
  opacity: 0.8;
@@ -514,7 +516,7 @@ iframe {
 .childrenTextMerch {
  color: var(--textBeige);
  text-align: left;
- font-family: 'Montserrat', sans-serif;
+ font-family: "Montserrat", sans-serif;
 }
 
 /* <-----<----- <----- <-----  Affiliate SECTION  Full Screen  ------>------>------>------>------> */
@@ -552,7 +554,7 @@ iframe {
  font-size: 50%;
  letter-spacing: px;
  line-height: 1.6;
- font-family: 'Montserrat', sans-serif;
+ font-family: "Montserrat", sans-serif;
  list-style: none;
  color: var(--textBeige);
 }
@@ -594,7 +596,7 @@ iframe {
 .gridText {
  letter-spacing: 4px;
  line-height: 1.6;
- font-family: 'Montserrat', sans-serif;
+ font-family: "Montserrat", sans-serif;
  list-style: none;
  color: var(--textBeige);
  padding: 4px;
@@ -676,7 +678,7 @@ iframe {
  .childrenTextMerch {
   color: var(--textBeige);
   text-align: left;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
  }
  /* <-----<----- <----- <-----  Affiliate SECTION  ------>------>------>------>------> */
  .about-contentAff {
@@ -702,7 +704,7 @@ iframe {
   font-size: 50%;
   letter-spacing: px;
   line-height: 1.6;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   list-style: none;
   color: var(--textBeige);
  }
@@ -744,7 +746,7 @@ iframe {
  .gridText {
   letter-spacing: 4px;
   line-height: 1.6;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   list-style: none;
   color: var(--textBeige);
   padding: 4px;
@@ -795,7 +797,7 @@ iframe {
 
  #aboutTitle {
   min-width: 50vw;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 100px;
   color: var(--textBeige);
   letter-spacing: 5px;
@@ -857,7 +859,7 @@ iframe {
   font-size: 50%;
   letter-spacing: 4px;
   line-height: 1.6;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   list-style: none;
   color: var(--textBeige);
  }
@@ -890,7 +892,7 @@ iframe {
  .gridText {
   letter-spacing: 4px;
   line-height: 1.6;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   list-style: none;
   color: var(--textBeige);
   padding: 0px;
@@ -976,7 +978,7 @@ iframe {
   line-height: 1.6;
   color: var(--textBeige);
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   list-style: none;
   text-transform: uppercase;
  }
@@ -1017,7 +1019,7 @@ iframe {
   font-size: 75%;
   letter-spacing: 4px;
   line-height: 1.6;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   list-style: none;
   color: var(--textBeige);
  }
@@ -1059,7 +1061,7 @@ iframe {
   background-repeat: no-repeat;
   background-size: cover; /*contain--Resize the background image to make sure the image is fully visible*/
   background-origin: border-box;
-  content: '';
+  content: "";
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1176,7 +1178,7 @@ iframe {
   line-height: 1.6;
   color: var(--textBeige);
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   list-style: none;
   text-transform: uppercase;
  }
@@ -1188,7 +1190,7 @@ iframe {
  }
 
  #headPara {
-  font-size: 75%;
+  font-size: 80%;
   line-height: 2.2;
   width: 100%;
   text-align: right;
@@ -1220,7 +1222,7 @@ iframe {
   font-size: 75%;
   letter-spacing: 4px;
   line-height: 1.6;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   list-style: none;
   color: var(--textBeige);
  }
@@ -1259,7 +1261,7 @@ iframe {
  }
 
  #contactTitle {
-  font-family: 'Nanum Myeongjo', serif;
+  font-family: "Nanum Myeongjo", serif;
   font-size: 30px;
   color: var(--textBeige);
   letter-spacing: 5px;
@@ -1294,7 +1296,7 @@ iframe {
  #aboutTitleAff {
   min-width: 50vw;
 
-  font-family: 'Nanum Myeongjo', serif;
+  font-family: "Nanum Myeongjo", serif;
   font-size: 30px;
   color: var(--textBeige);
   letter-spacing: 5px;
@@ -1316,7 +1318,7 @@ iframe {
  }
 
  #headParaAff {
-  font-size: 2.3vw;
+  font-size: 75%;
   line-height: 2.2;
   width: 100%;
   border-left: var(--goldGrappFont) solid;
@@ -1329,7 +1331,7 @@ iframe {
   font-size: 50%;
   letter-spacing: px;
   line-height: 1.6;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   list-style: none;
   color: var(--textBeige);
  }
@@ -1368,7 +1370,7 @@ iframe {
  .gridText {
   letter-spacing: 4px;
   line-height: 1.6;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   list-style: none;
   color: var(--textBeige);
   padding: 0px;

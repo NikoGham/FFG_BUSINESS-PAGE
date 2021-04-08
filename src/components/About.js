@@ -35,7 +35,7 @@ class About extends Component {
       <ul>
        <Fade left slow>
         <li>
-         Courtesy <span className="specChars">礼儀</span>
+         <a style={{color: "white"}}href="https://www.youtube.com/watch?v=Xf2-9eCsYjE"> Courtesy</a> <span className="specChars">礼儀</span>
         </li>
         <hr />
        </Fade>
